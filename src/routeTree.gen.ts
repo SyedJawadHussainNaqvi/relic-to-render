@@ -10,11 +10,235 @@
 
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
+import { Route as AboutCemetRouteImport } from './routes/about-cemet'
+import { Route as AboutDuetRouteImport } from './routes/about-duet'
+import { Route as AcademicCalendarRouteImport } from './routes/academic-calendar'
+import { Route as AcademicsRouteImport } from './routes/academics'
+import { Route as AdmissionsRouteImport } from './routes/admissions'
+import { Route as AlumniRouteImport } from './routes/alumni'
+import { Route as AnnualReportRouteImport } from './routes/annual-report'
+import { Route as AuthoritiesRouteImport } from './routes/authorities'
+import { Route as BusinessIncubationCenterRouteImport } from './routes/business-incubation-center'
+import { Route as CareerCounsellingRouteImport } from './routes/career-counselling'
+import { Route as CareersRouteImport } from './routes/careers'
+import { Route as CertificatesRouteImport } from './routes/certificates'
+import { Route as ConferenceSeminarsRouteImport } from './routes/conference-seminars'
+import { Route as ContinuesProfessionalDevelopmentRouteImport } from './routes/continues-professional-development'
+import { Route as ConvocationRouteImport } from './routes/convocation'
+import { Route as DirectoratesRouteImport } from './routes/directorates'
+import { Route as DownloadsRouteImport } from './routes/downloads'
+import { Route as Downloads2RouteImport } from './routes/downloads-2'
+import { Route as DuetCemetRouteImport } from './routes/duet-cemet'
+import { Route as ExaminationsRouteImport } from './routes/examinations'
+import { Route as FacultyDepartmentsRouteImport } from './routes/faculty-departments'
+import { Route as FeeStructureRouteImport } from './routes/fee-structure'
+import { Route as FinancialAssistanceDepartmentsRouteImport } from './routes/financial-assistance-departments'
+import { Route as FundingAgenciesRouteImport } from './routes/funding-agencies'
+import { Route as HecApprovedPhdSupervisorsRouteImport } from './routes/hec-approved-phd-supervisors'
+import { Route as IncubationCentreRouteImport } from './routes/incubation-centre'
+import { Route as IndustrialLiasonsAlumniAffairsRouteImport } from './routes/industrial-liasons-alumni-affairs'
+import { Route as InformationTechnologyRouteImport } from './routes/information-technology'
+import { Route as InternshipsRouteImport } from './routes/internships'
+import { Route as JournalRouteImport } from './routes/journal'
+import { Route as MicrosoftForAllRouteImport } from './routes/microsoft-for-all'
 import { Route as NewsRouteImport } from './routes/news'
+import { Route as OfficeOfResearchInnovationCommercialisationRouteImport } from './routes/office-of-research-innovation-commercialisation'
+import { Route as Officers2RouteImport } from './routes/officers-2'
+import { Route as OrganogramRouteImport } from './routes/organogram'
+import { Route as OutcomeBasedEducationObeRouteImport } from './routes/outcome-based-education-obe'
+import { Route as PlagiarismPolicyRouteImport } from './routes/plagiarism-policy'
+import { Route as PostgraduateProgramsRouteImport } from './routes/postgraduate-programs'
+import { Route as PostgraduateRegulationsRouteImport } from './routes/postgraduate-regulations'
+import { Route as PostgraduateStudiesRouteImport } from './routes/postgraduate-studies'
+import { Route as ProjectsRouteImport } from './routes/projects'
+import { Route as PublicationsRouteImport } from './routes/publications'
+import { Route as QualityEnhancementCellRouteImport } from './routes/quality-enhancement-cell'
+import { Route as RegulationsRouteImport } from './routes/regulations'
+import { Route as Research2RouteImport } from './routes/research-2'
+import { Route as ResearchEthicsPolicyRouteImport } from './routes/research-ethics-policy'
+import { Route as ResultsRouteImport } from './routes/results'
+import { Route as ScheduleRouteImport } from './routes/schedule'
+import { Route as ScholarshipsRouteImport } from './routes/scholarships'
+import { Route as Scholarships2RouteImport } from './routes/scholarships-2'
+import { Route as SeminarsWorkshopsRouteImport } from './routes/seminars-workshops'
+import { Route as ShuttleBusRoutesRouteImport } from './routes/shuttle-bus-routes'
+import { Route as SportsRouteImport } from './routes/sports'
+import { Route as StudentsRouteImport } from './routes/students'
+import { Route as StudentsAffairsRouteImport } from './routes/students-affairs'
+import { Route as StudentsSocietiesRouteImport } from './routes/students-societies'
+import { Route as TendersRouteImport } from './routes/tenders'
+import { Route as UndergradProgramsRouteImport } from './routes/undergrad-programs'
+import { Route as UndergradRegulationsRouteImport } from './routes/undergrad-regulations'
+import { Route as UniversityLinkagesRouteImport } from './routes/university-linkages'
+import { Route as UniversityPoliciesRouteImport } from './routes/university-policies'
+import { Route as ViceChancellorsMessage2RouteImport } from './routes/vice-chancellors-message-2'
+import { Route as VideoGalleryRouteImport } from './routes/video-gallery'
+import { Route as AboutDuetHistoricProfileRouteImport } from './routes/about-duet.historic-profile'
+import { Route as AboutDuetVisionMissionRouteImport } from './routes/about-duet.vision-mission'
 
 const IndexRoute = IndexRouteImport.update({
   id: '/',
   path: '/',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const AboutCemetRoute = AboutCemetRouteImport.update({
+  id: '/about-cemet',
+  path: '/about-cemet',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const AboutDuetRoute = AboutDuetRouteImport.update({
+  id: '/about-duet',
+  path: '/about-duet',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const AcademicCalendarRoute = AcademicCalendarRouteImport.update({
+  id: '/academic-calendar',
+  path: '/academic-calendar',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const AcademicsRoute = AcademicsRouteImport.update({
+  id: '/academics',
+  path: '/academics',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const AdmissionsRoute = AdmissionsRouteImport.update({
+  id: '/admissions',
+  path: '/admissions',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const AlumniRoute = AlumniRouteImport.update({
+  id: '/alumni',
+  path: '/alumni',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const AnnualReportRoute = AnnualReportRouteImport.update({
+  id: '/annual-report',
+  path: '/annual-report',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const AuthoritiesRoute = AuthoritiesRouteImport.update({
+  id: '/authorities',
+  path: '/authorities',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const BusinessIncubationCenterRoute =
+  BusinessIncubationCenterRouteImport.update({
+    id: '/business-incubation-center',
+    path: '/business-incubation-center',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const CareerCounsellingRoute = CareerCounsellingRouteImport.update({
+  id: '/career-counselling',
+  path: '/career-counselling',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const CareersRoute = CareersRouteImport.update({
+  id: '/careers',
+  path: '/careers',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const CertificatesRoute = CertificatesRouteImport.update({
+  id: '/certificates',
+  path: '/certificates',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ConferenceSeminarsRoute = ConferenceSeminarsRouteImport.update({
+  id: '/conference-seminars',
+  path: '/conference-seminars',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ContinuesProfessionalDevelopmentRoute =
+  ContinuesProfessionalDevelopmentRouteImport.update({
+    id: '/continues-professional-development',
+    path: '/continues-professional-development',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const ConvocationRoute = ConvocationRouteImport.update({
+  id: '/convocation',
+  path: '/convocation',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const DirectoratesRoute = DirectoratesRouteImport.update({
+  id: '/directorates',
+  path: '/directorates',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const DownloadsRoute = DownloadsRouteImport.update({
+  id: '/downloads',
+  path: '/downloads',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const Downloads2Route = Downloads2RouteImport.update({
+  id: '/downloads-2',
+  path: '/downloads-2',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const DuetCemetRoute = DuetCemetRouteImport.update({
+  id: '/duet-cemet',
+  path: '/duet-cemet',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ExaminationsRoute = ExaminationsRouteImport.update({
+  id: '/examinations',
+  path: '/examinations',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const FacultyDepartmentsRoute = FacultyDepartmentsRouteImport.update({
+  id: '/faculty-departments',
+  path: '/faculty-departments',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const FeeStructureRoute = FeeStructureRouteImport.update({
+  id: '/fee-structure',
+  path: '/fee-structure',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const FinancialAssistanceDepartmentsRoute =
+  FinancialAssistanceDepartmentsRouteImport.update({
+    id: '/financial-assistance-departments',
+    path: '/financial-assistance-departments',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const FundingAgenciesRoute = FundingAgenciesRouteImport.update({
+  id: '/funding-agencies',
+  path: '/funding-agencies',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const HecApprovedPhdSupervisorsRoute =
+  HecApprovedPhdSupervisorsRouteImport.update({
+    id: '/hec-approved-phd-supervisors',
+    path: '/hec-approved-phd-supervisors',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const IncubationCentreRoute = IncubationCentreRouteImport.update({
+  id: '/incubation-centre',
+  path: '/incubation-centre',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const IndustrialLiasonsAlumniAffairsRoute =
+  IndustrialLiasonsAlumniAffairsRouteImport.update({
+    id: '/industrial-liasons-alumni-affairs',
+    path: '/industrial-liasons-alumni-affairs',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const InformationTechnologyRoute = InformationTechnologyRouteImport.update({
+  id: '/information-technology',
+  path: '/information-technology',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const InternshipsRoute = InternshipsRouteImport.update({
+  id: '/internships',
+  path: '/internships',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const JournalRoute = JournalRouteImport.update({
+  id: '/journal',
+  path: '/journal',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const MicrosoftForAllRoute = MicrosoftForAllRouteImport.update({
+  id: '/microsoft-for-all',
+  path: '/microsoft-for-all',
   getParentRoute: () => rootRouteImport,
 } as any)
 const NewsRoute = NewsRouteImport.update({
@@ -22,31 +246,652 @@ const NewsRoute = NewsRouteImport.update({
   path: '/news',
   getParentRoute: () => rootRouteImport,
 } as any)
+const OfficeOfResearchInnovationCommercialisationRoute =
+  OfficeOfResearchInnovationCommercialisationRouteImport.update({
+    id: '/office-of-research-innovation-commercialisation',
+    path: '/office-of-research-innovation-commercialisation',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const Officers2Route = Officers2RouteImport.update({
+  id: '/officers-2',
+  path: '/officers-2',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const OrganogramRoute = OrganogramRouteImport.update({
+  id: '/organogram',
+  path: '/organogram',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const OutcomeBasedEducationObeRoute =
+  OutcomeBasedEducationObeRouteImport.update({
+    id: '/outcome-based-education-obe',
+    path: '/outcome-based-education-obe',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const PlagiarismPolicyRoute = PlagiarismPolicyRouteImport.update({
+  id: '/plagiarism-policy',
+  path: '/plagiarism-policy',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const PostgraduateProgramsRoute = PostgraduateProgramsRouteImport.update({
+  id: '/postgraduate-programs',
+  path: '/postgraduate-programs',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const PostgraduateRegulationsRoute = PostgraduateRegulationsRouteImport.update({
+  id: '/postgraduate-regulations',
+  path: '/postgraduate-regulations',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const PostgraduateStudiesRoute = PostgraduateStudiesRouteImport.update({
+  id: '/postgraduate-studies',
+  path: '/postgraduate-studies',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ProjectsRoute = ProjectsRouteImport.update({
+  id: '/projects',
+  path: '/projects',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const PublicationsRoute = PublicationsRouteImport.update({
+  id: '/publications',
+  path: '/publications',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const QualityEnhancementCellRoute = QualityEnhancementCellRouteImport.update({
+  id: '/quality-enhancement-cell',
+  path: '/quality-enhancement-cell',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const RegulationsRoute = RegulationsRouteImport.update({
+  id: '/regulations',
+  path: '/regulations',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const Research2Route = Research2RouteImport.update({
+  id: '/research-2',
+  path: '/research-2',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ResearchEthicsPolicyRoute = ResearchEthicsPolicyRouteImport.update({
+  id: '/research-ethics-policy',
+  path: '/research-ethics-policy',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ResultsRoute = ResultsRouteImport.update({
+  id: '/results',
+  path: '/results',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ScheduleRoute = ScheduleRouteImport.update({
+  id: '/schedule',
+  path: '/schedule',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ScholarshipsRoute = ScholarshipsRouteImport.update({
+  id: '/scholarships',
+  path: '/scholarships',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const Scholarships2Route = Scholarships2RouteImport.update({
+  id: '/scholarships-2',
+  path: '/scholarships-2',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const SeminarsWorkshopsRoute = SeminarsWorkshopsRouteImport.update({
+  id: '/seminars-workshops',
+  path: '/seminars-workshops',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ShuttleBusRoutesRoute = ShuttleBusRoutesRouteImport.update({
+  id: '/shuttle-bus-routes',
+  path: '/shuttle-bus-routes',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const SportsRoute = SportsRouteImport.update({
+  id: '/sports',
+  path: '/sports',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const StudentsRoute = StudentsRouteImport.update({
+  id: '/students',
+  path: '/students',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const StudentsAffairsRoute = StudentsAffairsRouteImport.update({
+  id: '/students-affairs',
+  path: '/students-affairs',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const StudentsSocietiesRoute = StudentsSocietiesRouteImport.update({
+  id: '/students-societies',
+  path: '/students-societies',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const TendersRoute = TendersRouteImport.update({
+  id: '/tenders',
+  path: '/tenders',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const UndergradProgramsRoute = UndergradProgramsRouteImport.update({
+  id: '/undergrad-programs',
+  path: '/undergrad-programs',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const UndergradRegulationsRoute = UndergradRegulationsRouteImport.update({
+  id: '/undergrad-regulations',
+  path: '/undergrad-regulations',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const UniversityLinkagesRoute = UniversityLinkagesRouteImport.update({
+  id: '/university-linkages',
+  path: '/university-linkages',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const UniversityPoliciesRoute = UniversityPoliciesRouteImport.update({
+  id: '/university-policies',
+  path: '/university-policies',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ViceChancellorsMessage2Route = ViceChancellorsMessage2RouteImport.update({
+  id: '/vice-chancellors-message-2',
+  path: '/vice-chancellors-message-2',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const VideoGalleryRoute = VideoGalleryRouteImport.update({
+  id: '/video-gallery',
+  path: '/video-gallery',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const AboutDuetHistoricProfileRoute =
+  AboutDuetHistoricProfileRouteImport.update({
+    id: '/historic-profile',
+    path: '/historic-profile',
+    getParentRoute: () => AboutDuetRoute,
+  } as any)
+const AboutDuetVisionMissionRoute = AboutDuetVisionMissionRouteImport.update({
+  id: '/vision-mission',
+  path: '/vision-mission',
+  getParentRoute: () => AboutDuetRoute,
+} as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
+  '/about-cemet': typeof AboutCemetRoute
+  '/about-duet': typeof AboutDuetRouteWithChildren
+  '/academic-calendar': typeof AcademicCalendarRoute
+  '/academics': typeof AcademicsRoute
+  '/admissions': typeof AdmissionsRoute
+  '/alumni': typeof AlumniRoute
+  '/annual-report': typeof AnnualReportRoute
+  '/authorities': typeof AuthoritiesRoute
+  '/business-incubation-center': typeof BusinessIncubationCenterRoute
+  '/career-counselling': typeof CareerCounsellingRoute
+  '/careers': typeof CareersRoute
+  '/certificates': typeof CertificatesRoute
+  '/conference-seminars': typeof ConferenceSeminarsRoute
+  '/continues-professional-development': typeof ContinuesProfessionalDevelopmentRoute
+  '/convocation': typeof ConvocationRoute
+  '/directorates': typeof DirectoratesRoute
+  '/downloads': typeof DownloadsRoute
+  '/downloads-2': typeof Downloads2Route
+  '/duet-cemet': typeof DuetCemetRoute
+  '/examinations': typeof ExaminationsRoute
+  '/faculty-departments': typeof FacultyDepartmentsRoute
+  '/fee-structure': typeof FeeStructureRoute
+  '/financial-assistance-departments': typeof FinancialAssistanceDepartmentsRoute
+  '/funding-agencies': typeof FundingAgenciesRoute
+  '/hec-approved-phd-supervisors': typeof HecApprovedPhdSupervisorsRoute
+  '/incubation-centre': typeof IncubationCentreRoute
+  '/industrial-liasons-alumni-affairs': typeof IndustrialLiasonsAlumniAffairsRoute
+  '/information-technology': typeof InformationTechnologyRoute
+  '/internships': typeof InternshipsRoute
+  '/journal': typeof JournalRoute
+  '/microsoft-for-all': typeof MicrosoftForAllRoute
   '/news': typeof NewsRoute
+  '/office-of-research-innovation-commercialisation': typeof OfficeOfResearchInnovationCommercialisationRoute
+  '/officers-2': typeof Officers2Route
+  '/organogram': typeof OrganogramRoute
+  '/outcome-based-education-obe': typeof OutcomeBasedEducationObeRoute
+  '/plagiarism-policy': typeof PlagiarismPolicyRoute
+  '/postgraduate-programs': typeof PostgraduateProgramsRoute
+  '/postgraduate-regulations': typeof PostgraduateRegulationsRoute
+  '/postgraduate-studies': typeof PostgraduateStudiesRoute
+  '/projects': typeof ProjectsRoute
+  '/publications': typeof PublicationsRoute
+  '/quality-enhancement-cell': typeof QualityEnhancementCellRoute
+  '/regulations': typeof RegulationsRoute
+  '/research-2': typeof Research2Route
+  '/research-ethics-policy': typeof ResearchEthicsPolicyRoute
+  '/results': typeof ResultsRoute
+  '/schedule': typeof ScheduleRoute
+  '/scholarships': typeof ScholarshipsRoute
+  '/scholarships-2': typeof Scholarships2Route
+  '/seminars-workshops': typeof SeminarsWorkshopsRoute
+  '/shuttle-bus-routes': typeof ShuttleBusRoutesRoute
+  '/sports': typeof SportsRoute
+  '/students': typeof StudentsRoute
+  '/students-affairs': typeof StudentsAffairsRoute
+  '/students-societies': typeof StudentsSocietiesRoute
+  '/tenders': typeof TendersRoute
+  '/undergrad-programs': typeof UndergradProgramsRoute
+  '/undergrad-regulations': typeof UndergradRegulationsRoute
+  '/university-linkages': typeof UniversityLinkagesRoute
+  '/university-policies': typeof UniversityPoliciesRoute
+  '/vice-chancellors-message-2': typeof ViceChancellorsMessage2Route
+  '/video-gallery': typeof VideoGalleryRoute
+  '/about-duet/historic-profile': typeof AboutDuetHistoricProfileRoute
+  '/about-duet/vision-mission': typeof AboutDuetVisionMissionRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
+  '/about-cemet': typeof AboutCemetRoute
+  '/about-duet': typeof AboutDuetRouteWithChildren
+  '/academic-calendar': typeof AcademicCalendarRoute
+  '/academics': typeof AcademicsRoute
+  '/admissions': typeof AdmissionsRoute
+  '/alumni': typeof AlumniRoute
+  '/annual-report': typeof AnnualReportRoute
+  '/authorities': typeof AuthoritiesRoute
+  '/business-incubation-center': typeof BusinessIncubationCenterRoute
+  '/career-counselling': typeof CareerCounsellingRoute
+  '/careers': typeof CareersRoute
+  '/certificates': typeof CertificatesRoute
+  '/conference-seminars': typeof ConferenceSeminarsRoute
+  '/continues-professional-development': typeof ContinuesProfessionalDevelopmentRoute
+  '/convocation': typeof ConvocationRoute
+  '/directorates': typeof DirectoratesRoute
+  '/downloads': typeof DownloadsRoute
+  '/downloads-2': typeof Downloads2Route
+  '/duet-cemet': typeof DuetCemetRoute
+  '/examinations': typeof ExaminationsRoute
+  '/faculty-departments': typeof FacultyDepartmentsRoute
+  '/fee-structure': typeof FeeStructureRoute
+  '/financial-assistance-departments': typeof FinancialAssistanceDepartmentsRoute
+  '/funding-agencies': typeof FundingAgenciesRoute
+  '/hec-approved-phd-supervisors': typeof HecApprovedPhdSupervisorsRoute
+  '/incubation-centre': typeof IncubationCentreRoute
+  '/industrial-liasons-alumni-affairs': typeof IndustrialLiasonsAlumniAffairsRoute
+  '/information-technology': typeof InformationTechnologyRoute
+  '/internships': typeof InternshipsRoute
+  '/journal': typeof JournalRoute
+  '/microsoft-for-all': typeof MicrosoftForAllRoute
   '/news': typeof NewsRoute
+  '/office-of-research-innovation-commercialisation': typeof OfficeOfResearchInnovationCommercialisationRoute
+  '/officers-2': typeof Officers2Route
+  '/organogram': typeof OrganogramRoute
+  '/outcome-based-education-obe': typeof OutcomeBasedEducationObeRoute
+  '/plagiarism-policy': typeof PlagiarismPolicyRoute
+  '/postgraduate-programs': typeof PostgraduateProgramsRoute
+  '/postgraduate-regulations': typeof PostgraduateRegulationsRoute
+  '/postgraduate-studies': typeof PostgraduateStudiesRoute
+  '/projects': typeof ProjectsRoute
+  '/publications': typeof PublicationsRoute
+  '/quality-enhancement-cell': typeof QualityEnhancementCellRoute
+  '/regulations': typeof RegulationsRoute
+  '/research-2': typeof Research2Route
+  '/research-ethics-policy': typeof ResearchEthicsPolicyRoute
+  '/results': typeof ResultsRoute
+  '/schedule': typeof ScheduleRoute
+  '/scholarships': typeof ScholarshipsRoute
+  '/scholarships-2': typeof Scholarships2Route
+  '/seminars-workshops': typeof SeminarsWorkshopsRoute
+  '/shuttle-bus-routes': typeof ShuttleBusRoutesRoute
+  '/sports': typeof SportsRoute
+  '/students': typeof StudentsRoute
+  '/students-affairs': typeof StudentsAffairsRoute
+  '/students-societies': typeof StudentsSocietiesRoute
+  '/tenders': typeof TendersRoute
+  '/undergrad-programs': typeof UndergradProgramsRoute
+  '/undergrad-regulations': typeof UndergradRegulationsRoute
+  '/university-linkages': typeof UniversityLinkagesRoute
+  '/university-policies': typeof UniversityPoliciesRoute
+  '/vice-chancellors-message-2': typeof ViceChancellorsMessage2Route
+  '/video-gallery': typeof VideoGalleryRoute
+  '/about-duet/historic-profile': typeof AboutDuetHistoricProfileRoute
+  '/about-duet/vision-mission': typeof AboutDuetVisionMissionRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
+  '/about-cemet': typeof AboutCemetRoute
+  '/about-duet': typeof AboutDuetRouteWithChildren
+  '/academic-calendar': typeof AcademicCalendarRoute
+  '/academics': typeof AcademicsRoute
+  '/admissions': typeof AdmissionsRoute
+  '/alumni': typeof AlumniRoute
+  '/annual-report': typeof AnnualReportRoute
+  '/authorities': typeof AuthoritiesRoute
+  '/business-incubation-center': typeof BusinessIncubationCenterRoute
+  '/career-counselling': typeof CareerCounsellingRoute
+  '/careers': typeof CareersRoute
+  '/certificates': typeof CertificatesRoute
+  '/conference-seminars': typeof ConferenceSeminarsRoute
+  '/continues-professional-development': typeof ContinuesProfessionalDevelopmentRoute
+  '/convocation': typeof ConvocationRoute
+  '/directorates': typeof DirectoratesRoute
+  '/downloads': typeof DownloadsRoute
+  '/downloads-2': typeof Downloads2Route
+  '/duet-cemet': typeof DuetCemetRoute
+  '/examinations': typeof ExaminationsRoute
+  '/faculty-departments': typeof FacultyDepartmentsRoute
+  '/fee-structure': typeof FeeStructureRoute
+  '/financial-assistance-departments': typeof FinancialAssistanceDepartmentsRoute
+  '/funding-agencies': typeof FundingAgenciesRoute
+  '/hec-approved-phd-supervisors': typeof HecApprovedPhdSupervisorsRoute
+  '/incubation-centre': typeof IncubationCentreRoute
+  '/industrial-liasons-alumni-affairs': typeof IndustrialLiasonsAlumniAffairsRoute
+  '/information-technology': typeof InformationTechnologyRoute
+  '/internships': typeof InternshipsRoute
+  '/journal': typeof JournalRoute
+  '/microsoft-for-all': typeof MicrosoftForAllRoute
   '/news': typeof NewsRoute
+  '/office-of-research-innovation-commercialisation': typeof OfficeOfResearchInnovationCommercialisationRoute
+  '/officers-2': typeof Officers2Route
+  '/organogram': typeof OrganogramRoute
+  '/outcome-based-education-obe': typeof OutcomeBasedEducationObeRoute
+  '/plagiarism-policy': typeof PlagiarismPolicyRoute
+  '/postgraduate-programs': typeof PostgraduateProgramsRoute
+  '/postgraduate-regulations': typeof PostgraduateRegulationsRoute
+  '/postgraduate-studies': typeof PostgraduateStudiesRoute
+  '/projects': typeof ProjectsRoute
+  '/publications': typeof PublicationsRoute
+  '/quality-enhancement-cell': typeof QualityEnhancementCellRoute
+  '/regulations': typeof RegulationsRoute
+  '/research-2': typeof Research2Route
+  '/research-ethics-policy': typeof ResearchEthicsPolicyRoute
+  '/results': typeof ResultsRoute
+  '/schedule': typeof ScheduleRoute
+  '/scholarships': typeof ScholarshipsRoute
+  '/scholarships-2': typeof Scholarships2Route
+  '/seminars-workshops': typeof SeminarsWorkshopsRoute
+  '/shuttle-bus-routes': typeof ShuttleBusRoutesRoute
+  '/sports': typeof SportsRoute
+  '/students': typeof StudentsRoute
+  '/students-affairs': typeof StudentsAffairsRoute
+  '/students-societies': typeof StudentsSocietiesRoute
+  '/tenders': typeof TendersRoute
+  '/undergrad-programs': typeof UndergradProgramsRoute
+  '/undergrad-regulations': typeof UndergradRegulationsRoute
+  '/university-linkages': typeof UniversityLinkagesRoute
+  '/university-policies': typeof UniversityPoliciesRoute
+  '/vice-chancellors-message-2': typeof ViceChancellorsMessage2Route
+  '/video-gallery': typeof VideoGalleryRoute
+  '/about-duet/historic-profile': typeof AboutDuetHistoricProfileRoute
+  '/about-duet/vision-mission': typeof AboutDuetVisionMissionRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/' | '/news'
+  fullPaths:
+    | '/'
+    | '/about-cemet'
+    | '/about-duet'
+    | '/academic-calendar'
+    | '/academics'
+    | '/admissions'
+    | '/alumni'
+    | '/annual-report'
+    | '/authorities'
+    | '/business-incubation-center'
+    | '/career-counselling'
+    | '/careers'
+    | '/certificates'
+    | '/conference-seminars'
+    | '/continues-professional-development'
+    | '/convocation'
+    | '/directorates'
+    | '/downloads'
+    | '/downloads-2'
+    | '/duet-cemet'
+    | '/examinations'
+    | '/faculty-departments'
+    | '/fee-structure'
+    | '/financial-assistance-departments'
+    | '/funding-agencies'
+    | '/hec-approved-phd-supervisors'
+    | '/incubation-centre'
+    | '/industrial-liasons-alumni-affairs'
+    | '/information-technology'
+    | '/internships'
+    | '/journal'
+    | '/microsoft-for-all'
+    | '/news'
+    | '/office-of-research-innovation-commercialisation'
+    | '/officers-2'
+    | '/organogram'
+    | '/outcome-based-education-obe'
+    | '/plagiarism-policy'
+    | '/postgraduate-programs'
+    | '/postgraduate-regulations'
+    | '/postgraduate-studies'
+    | '/projects'
+    | '/publications'
+    | '/quality-enhancement-cell'
+    | '/regulations'
+    | '/research-2'
+    | '/research-ethics-policy'
+    | '/results'
+    | '/schedule'
+    | '/scholarships'
+    | '/scholarships-2'
+    | '/seminars-workshops'
+    | '/shuttle-bus-routes'
+    | '/sports'
+    | '/students'
+    | '/students-affairs'
+    | '/students-societies'
+    | '/tenders'
+    | '/undergrad-programs'
+    | '/undergrad-regulations'
+    | '/university-linkages'
+    | '/university-policies'
+    | '/vice-chancellors-message-2'
+    | '/video-gallery'
+    | '/about-duet/historic-profile'
+    | '/about-duet/vision-mission'
   fileRoutesByTo: FileRoutesByTo
-  to: '/' | '/news'
-  id: '__root__' | '/' | '/news'
+  to:
+    | '/'
+    | '/about-cemet'
+    | '/about-duet'
+    | '/academic-calendar'
+    | '/academics'
+    | '/admissions'
+    | '/alumni'
+    | '/annual-report'
+    | '/authorities'
+    | '/business-incubation-center'
+    | '/career-counselling'
+    | '/careers'
+    | '/certificates'
+    | '/conference-seminars'
+    | '/continues-professional-development'
+    | '/convocation'
+    | '/directorates'
+    | '/downloads'
+    | '/downloads-2'
+    | '/duet-cemet'
+    | '/examinations'
+    | '/faculty-departments'
+    | '/fee-structure'
+    | '/financial-assistance-departments'
+    | '/funding-agencies'
+    | '/hec-approved-phd-supervisors'
+    | '/incubation-centre'
+    | '/industrial-liasons-alumni-affairs'
+    | '/information-technology'
+    | '/internships'
+    | '/journal'
+    | '/microsoft-for-all'
+    | '/news'
+    | '/office-of-research-innovation-commercialisation'
+    | '/officers-2'
+    | '/organogram'
+    | '/outcome-based-education-obe'
+    | '/plagiarism-policy'
+    | '/postgraduate-programs'
+    | '/postgraduate-regulations'
+    | '/postgraduate-studies'
+    | '/projects'
+    | '/publications'
+    | '/quality-enhancement-cell'
+    | '/regulations'
+    | '/research-2'
+    | '/research-ethics-policy'
+    | '/results'
+    | '/schedule'
+    | '/scholarships'
+    | '/scholarships-2'
+    | '/seminars-workshops'
+    | '/shuttle-bus-routes'
+    | '/sports'
+    | '/students'
+    | '/students-affairs'
+    | '/students-societies'
+    | '/tenders'
+    | '/undergrad-programs'
+    | '/undergrad-regulations'
+    | '/university-linkages'
+    | '/university-policies'
+    | '/vice-chancellors-message-2'
+    | '/video-gallery'
+    | '/about-duet/historic-profile'
+    | '/about-duet/vision-mission'
+  id:
+    | '__root__'
+    | '/'
+    | '/about-cemet'
+    | '/about-duet'
+    | '/academic-calendar'
+    | '/academics'
+    | '/admissions'
+    | '/alumni'
+    | '/annual-report'
+    | '/authorities'
+    | '/business-incubation-center'
+    | '/career-counselling'
+    | '/careers'
+    | '/certificates'
+    | '/conference-seminars'
+    | '/continues-professional-development'
+    | '/convocation'
+    | '/directorates'
+    | '/downloads'
+    | '/downloads-2'
+    | '/duet-cemet'
+    | '/examinations'
+    | '/faculty-departments'
+    | '/fee-structure'
+    | '/financial-assistance-departments'
+    | '/funding-agencies'
+    | '/hec-approved-phd-supervisors'
+    | '/incubation-centre'
+    | '/industrial-liasons-alumni-affairs'
+    | '/information-technology'
+    | '/internships'
+    | '/journal'
+    | '/microsoft-for-all'
+    | '/news'
+    | '/office-of-research-innovation-commercialisation'
+    | '/officers-2'
+    | '/organogram'
+    | '/outcome-based-education-obe'
+    | '/plagiarism-policy'
+    | '/postgraduate-programs'
+    | '/postgraduate-regulations'
+    | '/postgraduate-studies'
+    | '/projects'
+    | '/publications'
+    | '/quality-enhancement-cell'
+    | '/regulations'
+    | '/research-2'
+    | '/research-ethics-policy'
+    | '/results'
+    | '/schedule'
+    | '/scholarships'
+    | '/scholarships-2'
+    | '/seminars-workshops'
+    | '/shuttle-bus-routes'
+    | '/sports'
+    | '/students'
+    | '/students-affairs'
+    | '/students-societies'
+    | '/tenders'
+    | '/undergrad-programs'
+    | '/undergrad-regulations'
+    | '/university-linkages'
+    | '/university-policies'
+    | '/vice-chancellors-message-2'
+    | '/video-gallery'
+    | '/about-duet/historic-profile'
+    | '/about-duet/vision-mission'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
+  AboutCemetRoute: typeof AboutCemetRoute
+  AboutDuetRoute: typeof AboutDuetRouteWithChildren
+  AcademicCalendarRoute: typeof AcademicCalendarRoute
+  AcademicsRoute: typeof AcademicsRoute
+  AdmissionsRoute: typeof AdmissionsRoute
+  AlumniRoute: typeof AlumniRoute
+  AnnualReportRoute: typeof AnnualReportRoute
+  AuthoritiesRoute: typeof AuthoritiesRoute
+  BusinessIncubationCenterRoute: typeof BusinessIncubationCenterRoute
+  CareerCounsellingRoute: typeof CareerCounsellingRoute
+  CareersRoute: typeof CareersRoute
+  CertificatesRoute: typeof CertificatesRoute
+  ConferenceSeminarsRoute: typeof ConferenceSeminarsRoute
+  ContinuesProfessionalDevelopmentRoute: typeof ContinuesProfessionalDevelopmentRoute
+  ConvocationRoute: typeof ConvocationRoute
+  DirectoratesRoute: typeof DirectoratesRoute
+  DownloadsRoute: typeof DownloadsRoute
+  Downloads2Route: typeof Downloads2Route
+  DuetCemetRoute: typeof DuetCemetRoute
+  ExaminationsRoute: typeof ExaminationsRoute
+  FacultyDepartmentsRoute: typeof FacultyDepartmentsRoute
+  FeeStructureRoute: typeof FeeStructureRoute
+  FinancialAssistanceDepartmentsRoute: typeof FinancialAssistanceDepartmentsRoute
+  FundingAgenciesRoute: typeof FundingAgenciesRoute
+  HecApprovedPhdSupervisorsRoute: typeof HecApprovedPhdSupervisorsRoute
+  IncubationCentreRoute: typeof IncubationCentreRoute
+  IndustrialLiasonsAlumniAffairsRoute: typeof IndustrialLiasonsAlumniAffairsRoute
+  InformationTechnologyRoute: typeof InformationTechnologyRoute
+  InternshipsRoute: typeof InternshipsRoute
+  JournalRoute: typeof JournalRoute
+  MicrosoftForAllRoute: typeof MicrosoftForAllRoute
   NewsRoute: typeof NewsRoute
+  OfficeOfResearchInnovationCommercialisationRoute: typeof OfficeOfResearchInnovationCommercialisationRoute
+  Officers2Route: typeof Officers2Route
+  OrganogramRoute: typeof OrganogramRoute
+  OutcomeBasedEducationObeRoute: typeof OutcomeBasedEducationObeRoute
+  PlagiarismPolicyRoute: typeof PlagiarismPolicyRoute
+  PostgraduateProgramsRoute: typeof PostgraduateProgramsRoute
+  PostgraduateRegulationsRoute: typeof PostgraduateRegulationsRoute
+  PostgraduateStudiesRoute: typeof PostgraduateStudiesRoute
+  ProjectsRoute: typeof ProjectsRoute
+  PublicationsRoute: typeof PublicationsRoute
+  QualityEnhancementCellRoute: typeof QualityEnhancementCellRoute
+  RegulationsRoute: typeof RegulationsRoute
+  Research2Route: typeof Research2Route
+  ResearchEthicsPolicyRoute: typeof ResearchEthicsPolicyRoute
+  ResultsRoute: typeof ResultsRoute
+  ScheduleRoute: typeof ScheduleRoute
+  ScholarshipsRoute: typeof ScholarshipsRoute
+  Scholarships2Route: typeof Scholarships2Route
+  SeminarsWorkshopsRoute: typeof SeminarsWorkshopsRoute
+  ShuttleBusRoutesRoute: typeof ShuttleBusRoutesRoute
+  SportsRoute: typeof SportsRoute
+  StudentsRoute: typeof StudentsRoute
+  StudentsAffairsRoute: typeof StudentsAffairsRoute
+  StudentsSocietiesRoute: typeof StudentsSocietiesRoute
+  TendersRoute: typeof TendersRoute
+  UndergradProgramsRoute: typeof UndergradProgramsRoute
+  UndergradRegulationsRoute: typeof UndergradRegulationsRoute
+  UniversityLinkagesRoute: typeof UniversityLinkagesRoute
+  UniversityPoliciesRoute: typeof UniversityPoliciesRoute
+  ViceChancellorsMessage2Route: typeof ViceChancellorsMessage2Route
+  VideoGalleryRoute: typeof VideoGalleryRoute
 }
 
 declare module '@tanstack/react-router' {
@@ -58,6 +903,223 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof IndexRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/about-cemet': {
+      id: '/about-cemet'
+      path: '/about-cemet'
+      fullPath: '/about-cemet'
+      preLoaderRoute: typeof AboutCemetRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/about-duet': {
+      id: '/about-duet'
+      path: '/about-duet'
+      fullPath: '/about-duet'
+      preLoaderRoute: typeof AboutDuetRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/academic-calendar': {
+      id: '/academic-calendar'
+      path: '/academic-calendar'
+      fullPath: '/academic-calendar'
+      preLoaderRoute: typeof AcademicCalendarRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/academics': {
+      id: '/academics'
+      path: '/academics'
+      fullPath: '/academics'
+      preLoaderRoute: typeof AcademicsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/admissions': {
+      id: '/admissions'
+      path: '/admissions'
+      fullPath: '/admissions'
+      preLoaderRoute: typeof AdmissionsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/alumni': {
+      id: '/alumni'
+      path: '/alumni'
+      fullPath: '/alumni'
+      preLoaderRoute: typeof AlumniRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/annual-report': {
+      id: '/annual-report'
+      path: '/annual-report'
+      fullPath: '/annual-report'
+      preLoaderRoute: typeof AnnualReportRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/authorities': {
+      id: '/authorities'
+      path: '/authorities'
+      fullPath: '/authorities'
+      preLoaderRoute: typeof AuthoritiesRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/business-incubation-center': {
+      id: '/business-incubation-center'
+      path: '/business-incubation-center'
+      fullPath: '/business-incubation-center'
+      preLoaderRoute: typeof BusinessIncubationCenterRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/career-counselling': {
+      id: '/career-counselling'
+      path: '/career-counselling'
+      fullPath: '/career-counselling'
+      preLoaderRoute: typeof CareerCounsellingRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/careers': {
+      id: '/careers'
+      path: '/careers'
+      fullPath: '/careers'
+      preLoaderRoute: typeof CareersRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/certificates': {
+      id: '/certificates'
+      path: '/certificates'
+      fullPath: '/certificates'
+      preLoaderRoute: typeof CertificatesRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/conference-seminars': {
+      id: '/conference-seminars'
+      path: '/conference-seminars'
+      fullPath: '/conference-seminars'
+      preLoaderRoute: typeof ConferenceSeminarsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/continues-professional-development': {
+      id: '/continues-professional-development'
+      path: '/continues-professional-development'
+      fullPath: '/continues-professional-development'
+      preLoaderRoute: typeof ContinuesProfessionalDevelopmentRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/convocation': {
+      id: '/convocation'
+      path: '/convocation'
+      fullPath: '/convocation'
+      preLoaderRoute: typeof ConvocationRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/directorates': {
+      id: '/directorates'
+      path: '/directorates'
+      fullPath: '/directorates'
+      preLoaderRoute: typeof DirectoratesRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/downloads': {
+      id: '/downloads'
+      path: '/downloads'
+      fullPath: '/downloads'
+      preLoaderRoute: typeof DownloadsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/downloads-2': {
+      id: '/downloads-2'
+      path: '/downloads-2'
+      fullPath: '/downloads-2'
+      preLoaderRoute: typeof Downloads2RouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/duet-cemet': {
+      id: '/duet-cemet'
+      path: '/duet-cemet'
+      fullPath: '/duet-cemet'
+      preLoaderRoute: typeof DuetCemetRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/examinations': {
+      id: '/examinations'
+      path: '/examinations'
+      fullPath: '/examinations'
+      preLoaderRoute: typeof ExaminationsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/faculty-departments': {
+      id: '/faculty-departments'
+      path: '/faculty-departments'
+      fullPath: '/faculty-departments'
+      preLoaderRoute: typeof FacultyDepartmentsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/fee-structure': {
+      id: '/fee-structure'
+      path: '/fee-structure'
+      fullPath: '/fee-structure'
+      preLoaderRoute: typeof FeeStructureRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/financial-assistance-departments': {
+      id: '/financial-assistance-departments'
+      path: '/financial-assistance-departments'
+      fullPath: '/financial-assistance-departments'
+      preLoaderRoute: typeof FinancialAssistanceDepartmentsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/funding-agencies': {
+      id: '/funding-agencies'
+      path: '/funding-agencies'
+      fullPath: '/funding-agencies'
+      preLoaderRoute: typeof FundingAgenciesRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/hec-approved-phd-supervisors': {
+      id: '/hec-approved-phd-supervisors'
+      path: '/hec-approved-phd-supervisors'
+      fullPath: '/hec-approved-phd-supervisors'
+      preLoaderRoute: typeof HecApprovedPhdSupervisorsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/incubation-centre': {
+      id: '/incubation-centre'
+      path: '/incubation-centre'
+      fullPath: '/incubation-centre'
+      preLoaderRoute: typeof IncubationCentreRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/industrial-liasons-alumni-affairs': {
+      id: '/industrial-liasons-alumni-affairs'
+      path: '/industrial-liasons-alumni-affairs'
+      fullPath: '/industrial-liasons-alumni-affairs'
+      preLoaderRoute: typeof IndustrialLiasonsAlumniAffairsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/information-technology': {
+      id: '/information-technology'
+      path: '/information-technology'
+      fullPath: '/information-technology'
+      preLoaderRoute: typeof InformationTechnologyRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/internships': {
+      id: '/internships'
+      path: '/internships'
+      fullPath: '/internships'
+      preLoaderRoute: typeof InternshipsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/journal': {
+      id: '/journal'
+      path: '/journal'
+      fullPath: '/journal'
+      preLoaderRoute: typeof JournalRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/microsoft-for-all': {
+      id: '/microsoft-for-all'
+      path: '/microsoft-for-all'
+      fullPath: '/microsoft-for-all'
+      preLoaderRoute: typeof MicrosoftForAllRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/news': {
       id: '/news'
       path: '/news'
@@ -65,12 +1127,320 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof NewsRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/office-of-research-innovation-commercialisation': {
+      id: '/office-of-research-innovation-commercialisation'
+      path: '/office-of-research-innovation-commercialisation'
+      fullPath: '/office-of-research-innovation-commercialisation'
+      preLoaderRoute: typeof OfficeOfResearchInnovationCommercialisationRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/officers-2': {
+      id: '/officers-2'
+      path: '/officers-2'
+      fullPath: '/officers-2'
+      preLoaderRoute: typeof Officers2RouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/organogram': {
+      id: '/organogram'
+      path: '/organogram'
+      fullPath: '/organogram'
+      preLoaderRoute: typeof OrganogramRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/outcome-based-education-obe': {
+      id: '/outcome-based-education-obe'
+      path: '/outcome-based-education-obe'
+      fullPath: '/outcome-based-education-obe'
+      preLoaderRoute: typeof OutcomeBasedEducationObeRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/plagiarism-policy': {
+      id: '/plagiarism-policy'
+      path: '/plagiarism-policy'
+      fullPath: '/plagiarism-policy'
+      preLoaderRoute: typeof PlagiarismPolicyRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/postgraduate-programs': {
+      id: '/postgraduate-programs'
+      path: '/postgraduate-programs'
+      fullPath: '/postgraduate-programs'
+      preLoaderRoute: typeof PostgraduateProgramsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/postgraduate-regulations': {
+      id: '/postgraduate-regulations'
+      path: '/postgraduate-regulations'
+      fullPath: '/postgraduate-regulations'
+      preLoaderRoute: typeof PostgraduateRegulationsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/postgraduate-studies': {
+      id: '/postgraduate-studies'
+      path: '/postgraduate-studies'
+      fullPath: '/postgraduate-studies'
+      preLoaderRoute: typeof PostgraduateStudiesRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/projects': {
+      id: '/projects'
+      path: '/projects'
+      fullPath: '/projects'
+      preLoaderRoute: typeof ProjectsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/publications': {
+      id: '/publications'
+      path: '/publications'
+      fullPath: '/publications'
+      preLoaderRoute: typeof PublicationsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/quality-enhancement-cell': {
+      id: '/quality-enhancement-cell'
+      path: '/quality-enhancement-cell'
+      fullPath: '/quality-enhancement-cell'
+      preLoaderRoute: typeof QualityEnhancementCellRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/regulations': {
+      id: '/regulations'
+      path: '/regulations'
+      fullPath: '/regulations'
+      preLoaderRoute: typeof RegulationsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/research-2': {
+      id: '/research-2'
+      path: '/research-2'
+      fullPath: '/research-2'
+      preLoaderRoute: typeof Research2RouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/research-ethics-policy': {
+      id: '/research-ethics-policy'
+      path: '/research-ethics-policy'
+      fullPath: '/research-ethics-policy'
+      preLoaderRoute: typeof ResearchEthicsPolicyRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/results': {
+      id: '/results'
+      path: '/results'
+      fullPath: '/results'
+      preLoaderRoute: typeof ResultsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/schedule': {
+      id: '/schedule'
+      path: '/schedule'
+      fullPath: '/schedule'
+      preLoaderRoute: typeof ScheduleRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/scholarships': {
+      id: '/scholarships'
+      path: '/scholarships'
+      fullPath: '/scholarships'
+      preLoaderRoute: typeof ScholarshipsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/scholarships-2': {
+      id: '/scholarships-2'
+      path: '/scholarships-2'
+      fullPath: '/scholarships-2'
+      preLoaderRoute: typeof Scholarships2RouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/seminars-workshops': {
+      id: '/seminars-workshops'
+      path: '/seminars-workshops'
+      fullPath: '/seminars-workshops'
+      preLoaderRoute: typeof SeminarsWorkshopsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/shuttle-bus-routes': {
+      id: '/shuttle-bus-routes'
+      path: '/shuttle-bus-routes'
+      fullPath: '/shuttle-bus-routes'
+      preLoaderRoute: typeof ShuttleBusRoutesRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/sports': {
+      id: '/sports'
+      path: '/sports'
+      fullPath: '/sports'
+      preLoaderRoute: typeof SportsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/students': {
+      id: '/students'
+      path: '/students'
+      fullPath: '/students'
+      preLoaderRoute: typeof StudentsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/students-affairs': {
+      id: '/students-affairs'
+      path: '/students-affairs'
+      fullPath: '/students-affairs'
+      preLoaderRoute: typeof StudentsAffairsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/students-societies': {
+      id: '/students-societies'
+      path: '/students-societies'
+      fullPath: '/students-societies'
+      preLoaderRoute: typeof StudentsSocietiesRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/tenders': {
+      id: '/tenders'
+      path: '/tenders'
+      fullPath: '/tenders'
+      preLoaderRoute: typeof TendersRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/undergrad-programs': {
+      id: '/undergrad-programs'
+      path: '/undergrad-programs'
+      fullPath: '/undergrad-programs'
+      preLoaderRoute: typeof UndergradProgramsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/undergrad-regulations': {
+      id: '/undergrad-regulations'
+      path: '/undergrad-regulations'
+      fullPath: '/undergrad-regulations'
+      preLoaderRoute: typeof UndergradRegulationsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/university-linkages': {
+      id: '/university-linkages'
+      path: '/university-linkages'
+      fullPath: '/university-linkages'
+      preLoaderRoute: typeof UniversityLinkagesRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/university-policies': {
+      id: '/university-policies'
+      path: '/university-policies'
+      fullPath: '/university-policies'
+      preLoaderRoute: typeof UniversityPoliciesRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/vice-chancellors-message-2': {
+      id: '/vice-chancellors-message-2'
+      path: '/vice-chancellors-message-2'
+      fullPath: '/vice-chancellors-message-2'
+      preLoaderRoute: typeof ViceChancellorsMessage2RouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/video-gallery': {
+      id: '/video-gallery'
+      path: '/video-gallery'
+      fullPath: '/video-gallery'
+      preLoaderRoute: typeof VideoGalleryRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/about-duet/historic-profile': {
+      id: '/about-duet/historic-profile'
+      path: '/historic-profile'
+      fullPath: '/about-duet/historic-profile'
+      preLoaderRoute: typeof AboutDuetHistoricProfileRouteImport
+      parentRoute: typeof AboutDuetRoute
+    }
+    '/about-duet/vision-mission': {
+      id: '/about-duet/vision-mission'
+      path: '/vision-mission'
+      fullPath: '/about-duet/vision-mission'
+      preLoaderRoute: typeof AboutDuetVisionMissionRouteImport
+      parentRoute: typeof AboutDuetRoute
+    }
   }
 }
 
+interface AboutDuetRouteChildren {
+  AboutDuetHistoricProfileRoute: typeof AboutDuetHistoricProfileRoute
+  AboutDuetVisionMissionRoute: typeof AboutDuetVisionMissionRoute
+}
+
+const AboutDuetRouteChildren: AboutDuetRouteChildren = {
+  AboutDuetHistoricProfileRoute: AboutDuetHistoricProfileRoute,
+  AboutDuetVisionMissionRoute: AboutDuetVisionMissionRoute,
+}
+
+const AboutDuetRouteWithChildren = AboutDuetRoute._addFileChildren(
+  AboutDuetRouteChildren,
+)
+
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
+  AboutCemetRoute: AboutCemetRoute,
+  AboutDuetRoute: AboutDuetRouteWithChildren,
+  AcademicCalendarRoute: AcademicCalendarRoute,
+  AcademicsRoute: AcademicsRoute,
+  AdmissionsRoute: AdmissionsRoute,
+  AlumniRoute: AlumniRoute,
+  AnnualReportRoute: AnnualReportRoute,
+  AuthoritiesRoute: AuthoritiesRoute,
+  BusinessIncubationCenterRoute: BusinessIncubationCenterRoute,
+  CareerCounsellingRoute: CareerCounsellingRoute,
+  CareersRoute: CareersRoute,
+  CertificatesRoute: CertificatesRoute,
+  ConferenceSeminarsRoute: ConferenceSeminarsRoute,
+  ContinuesProfessionalDevelopmentRoute: ContinuesProfessionalDevelopmentRoute,
+  ConvocationRoute: ConvocationRoute,
+  DirectoratesRoute: DirectoratesRoute,
+  DownloadsRoute: DownloadsRoute,
+  Downloads2Route: Downloads2Route,
+  DuetCemetRoute: DuetCemetRoute,
+  ExaminationsRoute: ExaminationsRoute,
+  FacultyDepartmentsRoute: FacultyDepartmentsRoute,
+  FeeStructureRoute: FeeStructureRoute,
+  FinancialAssistanceDepartmentsRoute: FinancialAssistanceDepartmentsRoute,
+  FundingAgenciesRoute: FundingAgenciesRoute,
+  HecApprovedPhdSupervisorsRoute: HecApprovedPhdSupervisorsRoute,
+  IncubationCentreRoute: IncubationCentreRoute,
+  IndustrialLiasonsAlumniAffairsRoute: IndustrialLiasonsAlumniAffairsRoute,
+  InformationTechnologyRoute: InformationTechnologyRoute,
+  InternshipsRoute: InternshipsRoute,
+  JournalRoute: JournalRoute,
+  MicrosoftForAllRoute: MicrosoftForAllRoute,
   NewsRoute: NewsRoute,
+  OfficeOfResearchInnovationCommercialisationRoute:
+    OfficeOfResearchInnovationCommercialisationRoute,
+  Officers2Route: Officers2Route,
+  OrganogramRoute: OrganogramRoute,
+  OutcomeBasedEducationObeRoute: OutcomeBasedEducationObeRoute,
+  PlagiarismPolicyRoute: PlagiarismPolicyRoute,
+  PostgraduateProgramsRoute: PostgraduateProgramsRoute,
+  PostgraduateRegulationsRoute: PostgraduateRegulationsRoute,
+  PostgraduateStudiesRoute: PostgraduateStudiesRoute,
+  ProjectsRoute: ProjectsRoute,
+  PublicationsRoute: PublicationsRoute,
+  QualityEnhancementCellRoute: QualityEnhancementCellRoute,
+  RegulationsRoute: RegulationsRoute,
+  Research2Route: Research2Route,
+  ResearchEthicsPolicyRoute: ResearchEthicsPolicyRoute,
+  ResultsRoute: ResultsRoute,
+  ScheduleRoute: ScheduleRoute,
+  ScholarshipsRoute: ScholarshipsRoute,
+  Scholarships2Route: Scholarships2Route,
+  SeminarsWorkshopsRoute: SeminarsWorkshopsRoute,
+  ShuttleBusRoutesRoute: ShuttleBusRoutesRoute,
+  SportsRoute: SportsRoute,
+  StudentsRoute: StudentsRoute,
+  StudentsAffairsRoute: StudentsAffairsRoute,
+  StudentsSocietiesRoute: StudentsSocietiesRoute,
+  TendersRoute: TendersRoute,
+  UndergradProgramsRoute: UndergradProgramsRoute,
+  UndergradRegulationsRoute: UndergradRegulationsRoute,
+  UniversityLinkagesRoute: UniversityLinkagesRoute,
+  UniversityPoliciesRoute: UniversityPoliciesRoute,
+  ViceChancellorsMessage2Route: ViceChancellorsMessage2Route,
+  VideoGalleryRoute: VideoGalleryRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
