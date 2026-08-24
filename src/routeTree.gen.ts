@@ -11,7 +11,6 @@
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
 import { Route as AboutCemetRouteImport } from './routes/about-cemet'
-import { Route as AboutDuetRouteImport } from './routes/about-duet'
 import { Route as AcademicCalendarRouteImport } from './routes/academic-calendar'
 import { Route as AcademicsRouteImport } from './routes/academics'
 import { Route as AdmissionsRouteImport } from './routes/admissions'
@@ -73,6 +72,7 @@ import { Route as UniversityLinkagesRouteImport } from './routes/university-link
 import { Route as UniversityPoliciesRouteImport } from './routes/university-policies'
 import { Route as ViceChancellorsMessage2RouteImport } from './routes/vice-chancellors-message-2'
 import { Route as VideoGalleryRouteImport } from './routes/video-gallery'
+import { Route as AboutDuetIndexRouteImport } from './routes/about-duet.index'
 import { Route as AboutDuetHistoricProfileRouteImport } from './routes/about-duet.historic-profile'
 import { Route as AboutDuetVisionMissionRouteImport } from './routes/about-duet.vision-mission'
 
@@ -84,11 +84,6 @@ const IndexRoute = IndexRouteImport.update({
 const AboutCemetRoute = AboutCemetRouteImport.update({
   id: '/about-cemet',
   path: '/about-cemet',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const AboutDuetRoute = AboutDuetRouteImport.update({
-  id: '/about-duet',
-  path: '/about-duet',
   getParentRoute: () => rootRouteImport,
 } as any)
 const AcademicCalendarRoute = AcademicCalendarRouteImport.update({
@@ -403,22 +398,26 @@ const VideoGalleryRoute = VideoGalleryRouteImport.update({
   path: '/video-gallery',
   getParentRoute: () => rootRouteImport,
 } as any)
+const AboutDuetIndexRoute = AboutDuetIndexRouteImport.update({
+  id: '/about-duet/',
+  path: '/about-duet/',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const AboutDuetHistoricProfileRoute =
   AboutDuetHistoricProfileRouteImport.update({
-    id: '/historic-profile',
-    path: '/historic-profile',
-    getParentRoute: () => AboutDuetRoute,
+    id: '/about-duet/historic-profile',
+    path: '/about-duet/historic-profile',
+    getParentRoute: () => rootRouteImport,
   } as any)
 const AboutDuetVisionMissionRoute = AboutDuetVisionMissionRouteImport.update({
-  id: '/vision-mission',
-  path: '/vision-mission',
-  getParentRoute: () => AboutDuetRoute,
+  id: '/about-duet/vision-mission',
+  path: '/about-duet/vision-mission',
+  getParentRoute: () => rootRouteImport,
 } as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/about-cemet': typeof AboutCemetRoute
-  '/about-duet': typeof AboutDuetRouteWithChildren
   '/academic-calendar': typeof AcademicCalendarRoute
   '/academics': typeof AcademicsRoute
   '/admissions': typeof AdmissionsRoute
@@ -482,11 +481,11 @@ export interface FileRoutesByFullPath {
   '/video-gallery': typeof VideoGalleryRoute
   '/about-duet/historic-profile': typeof AboutDuetHistoricProfileRoute
   '/about-duet/vision-mission': typeof AboutDuetVisionMissionRoute
+  '/about-duet/': typeof AboutDuetIndexRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/about-cemet': typeof AboutCemetRoute
-  '/about-duet': typeof AboutDuetRouteWithChildren
   '/academic-calendar': typeof AcademicCalendarRoute
   '/academics': typeof AcademicsRoute
   '/admissions': typeof AdmissionsRoute
@@ -550,12 +549,12 @@ export interface FileRoutesByTo {
   '/video-gallery': typeof VideoGalleryRoute
   '/about-duet/historic-profile': typeof AboutDuetHistoricProfileRoute
   '/about-duet/vision-mission': typeof AboutDuetVisionMissionRoute
+  '/about-duet': typeof AboutDuetIndexRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
   '/about-cemet': typeof AboutCemetRoute
-  '/about-duet': typeof AboutDuetRouteWithChildren
   '/academic-calendar': typeof AcademicCalendarRoute
   '/academics': typeof AcademicsRoute
   '/admissions': typeof AdmissionsRoute
@@ -619,13 +618,13 @@ export interface FileRoutesById {
   '/video-gallery': typeof VideoGalleryRoute
   '/about-duet/historic-profile': typeof AboutDuetHistoricProfileRoute
   '/about-duet/vision-mission': typeof AboutDuetVisionMissionRoute
+  '/about-duet/': typeof AboutDuetIndexRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
   fullPaths:
     | '/'
     | '/about-cemet'
-    | '/about-duet'
     | '/academic-calendar'
     | '/academics'
     | '/admissions'
@@ -689,11 +688,11 @@ export interface FileRouteTypes {
     | '/video-gallery'
     | '/about-duet/historic-profile'
     | '/about-duet/vision-mission'
+    | '/about-duet/'
   fileRoutesByTo: FileRoutesByTo
   to:
     | '/'
     | '/about-cemet'
-    | '/about-duet'
     | '/academic-calendar'
     | '/academics'
     | '/admissions'
@@ -757,11 +756,11 @@ export interface FileRouteTypes {
     | '/video-gallery'
     | '/about-duet/historic-profile'
     | '/about-duet/vision-mission'
+    | '/about-duet'
   id:
     | '__root__'
     | '/'
     | '/about-cemet'
-    | '/about-duet'
     | '/academic-calendar'
     | '/academics'
     | '/admissions'
@@ -825,12 +824,12 @@ export interface FileRouteTypes {
     | '/video-gallery'
     | '/about-duet/historic-profile'
     | '/about-duet/vision-mission'
+    | '/about-duet/'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   AboutCemetRoute: typeof AboutCemetRoute
-  AboutDuetRoute: typeof AboutDuetRouteWithChildren
   AcademicCalendarRoute: typeof AcademicCalendarRoute
   AcademicsRoute: typeof AcademicsRoute
   AdmissionsRoute: typeof AdmissionsRoute
@@ -892,6 +891,9 @@ export interface RootRouteChildren {
   UniversityPoliciesRoute: typeof UniversityPoliciesRoute
   ViceChancellorsMessage2Route: typeof ViceChancellorsMessage2Route
   VideoGalleryRoute: typeof VideoGalleryRoute
+  AboutDuetHistoricProfileRoute: typeof AboutDuetHistoricProfileRoute
+  AboutDuetVisionMissionRoute: typeof AboutDuetVisionMissionRoute
+  AboutDuetIndexRoute: typeof AboutDuetIndexRoute
 }
 
 declare module '@tanstack/react-router' {
@@ -908,13 +910,6 @@ declare module '@tanstack/react-router' {
       path: '/about-cemet'
       fullPath: '/about-cemet'
       preLoaderRoute: typeof AboutCemetRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/about-duet': {
-      id: '/about-duet'
-      path: '/about-duet'
-      fullPath: '/about-duet'
-      preLoaderRoute: typeof AboutDuetRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/academic-calendar': {
@@ -1344,41 +1339,33 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof VideoGalleryRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/about-duet/': {
+      id: '/about-duet/'
+      path: '/about-duet'
+      fullPath: '/about-duet/'
+      preLoaderRoute: typeof AboutDuetIndexRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/about-duet/historic-profile': {
       id: '/about-duet/historic-profile'
-      path: '/historic-profile'
+      path: '/about-duet/historic-profile'
       fullPath: '/about-duet/historic-profile'
       preLoaderRoute: typeof AboutDuetHistoricProfileRouteImport
-      parentRoute: typeof AboutDuetRoute
+      parentRoute: typeof rootRouteImport
     }
     '/about-duet/vision-mission': {
       id: '/about-duet/vision-mission'
-      path: '/vision-mission'
+      path: '/about-duet/vision-mission'
       fullPath: '/about-duet/vision-mission'
       preLoaderRoute: typeof AboutDuetVisionMissionRouteImport
-      parentRoute: typeof AboutDuetRoute
+      parentRoute: typeof rootRouteImport
     }
   }
 }
 
-interface AboutDuetRouteChildren {
-  AboutDuetHistoricProfileRoute: typeof AboutDuetHistoricProfileRoute
-  AboutDuetVisionMissionRoute: typeof AboutDuetVisionMissionRoute
-}
-
-const AboutDuetRouteChildren: AboutDuetRouteChildren = {
-  AboutDuetHistoricProfileRoute: AboutDuetHistoricProfileRoute,
-  AboutDuetVisionMissionRoute: AboutDuetVisionMissionRoute,
-}
-
-const AboutDuetRouteWithChildren = AboutDuetRoute._addFileChildren(
-  AboutDuetRouteChildren,
-)
-
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   AboutCemetRoute: AboutCemetRoute,
-  AboutDuetRoute: AboutDuetRouteWithChildren,
   AcademicCalendarRoute: AcademicCalendarRoute,
   AcademicsRoute: AcademicsRoute,
   AdmissionsRoute: AdmissionsRoute,
@@ -1441,6 +1428,9 @@ const rootRouteChildren: RootRouteChildren = {
   UniversityPoliciesRoute: UniversityPoliciesRoute,
   ViceChancellorsMessage2Route: ViceChancellorsMessage2Route,
   VideoGalleryRoute: VideoGalleryRoute,
+  AboutDuetHistoricProfileRoute: AboutDuetHistoricProfileRoute,
+  AboutDuetVisionMissionRoute: AboutDuetVisionMissionRoute,
+  AboutDuetIndexRoute: AboutDuetIndexRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
