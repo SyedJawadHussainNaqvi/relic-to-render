@@ -1,24 +1,237 @@
-import { createFileRoute } from "@tanstack/react-router";
+import { createFileRoute, Link } from "@tanstack/react-router";
+import { useEffect, useState } from "react";
+import { aboutImg, campusBg, sliderImages } from "@/content/assets";
+import { mainMenu } from "@/content/menu";
+import postsJson from "@/content/posts.json";
 
-// No head() here: the home route inherits title/description/og/twitter from
-// __root.tsx, and ships no og:image so serve-time hosting can inject the
-// project's social preview (explicit og:image or latest screenshot).
 export const Route = createFileRoute("/")({
+  head: () => ({
+    meta: [
+      { title: "Dawood University of Engineering & Technology, Karachi" },
+      {
+        name: "description",
+        content:
+          "Dawood University of Engineering & Technology (DUET) Karachi — a public sector engineering university offering undergraduate, postgraduate and PhD programs across two campuses.",
+      },
+      { property: "og:title", content: "Dawood University of Engineering & Technology, Karachi" },
+      {
+        property: "og:description",
+        content:
+          "DUET Karachi: engineering, architecture and technology programs, admissions, examinations, research and student services.",
+      },
+      { property: "og:type", content: "website" },
+      { property: "og:url", content: "/" },
+    ],
+    links: [{ rel: "canonical", href: "/" }],
+  }),
   component: Index,
 });
 
-// IMPORTANT: Replace this placeholder. See ./README.md for routing conventions.
-function Index() {
+const posts = postsJson as Record<string, { title: string; paras: string[] }>;
+
+const stats = [
+  { value: "02", label: "Campuses" },
+  { value: "3000+", label: "Students" },
+  { value: "13", label: "Departments" },
+  { value: "11", label: "Convocations" },
+];
+
+function Slider() {
+  const [i, setI] = useState(0);
+  useEffect(() => {
+    const t = setInterval(() => setI((v) => (v + 1) % sliderImages.length), 5000);
+    return () => clearInterval(t);
+  }, []);
+  const current = sliderImages[i];
+
   return (
-    <div
-      className="flex min-h-screen items-center justify-center"
-      style={{ backgroundColor: "#fcfbf8" }}
-    >
-      <img
-        data-lovable-blank-page-placeholder="REMOVE_THIS"
-        src="https://cdn.gpteng.co/blank-app-v1.svg"
-        alt="Your app will live here!"
-      />
-    </div>
+    <section className="relative bg-brand-dark">
+      <div className="relative h-[260px] w-full overflow-hidden sm:h-[420px] lg:h-[520px]">
+        {sliderImages.map((s, idx) => (
+          <img
+            key={s.src}
+            src={s.src}
+            alt={s.alt}
+            loading={idx === 0 ? "eager" : "lazy"}
+            className={`absolute inset-0 h-full w-full object-cover transition-opacity duration-700 ${
+              idx === i ? "opacity-100" : "opacity-0"
+            }`}
+          />
+        ))}
+        <div className="absolute inset-0 bg-gradient-to-t from-brand/85 via-brand/25 to-transparent" />
+        <div className="absolute bottom-0 left-0 right-0">
+          <div className="mx-auto max-w-[1200px] px-4 pb-8">
+            <p className="font-display text-lg font-semibold text-white drop-shadow sm:text-3xl">
+              {current?.alt}
+            </p>
+            <div className="mt-4 flex gap-2">
+              {sliderImages.map((s, idx) => (
+                <button
+                  key={s.src}
+                  type="button"
+                  aria-label={`Show slide ${idx + 1}`}
+                  onClick={() => setI(idx)}
+                  className={`h-2 w-6 rounded-full transition-colors ${
+                    idx === i ? "bg-accent" : "bg-white/50"
+                  }`}
+                />
+              ))}
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}
+
+function Index() {
+  const newsEntries = Object.entries(posts).slice(0, 6);
+
+  return (
+    <main>
+      <Slider />
+
+      {/* Quick links strip */}
+      <section className="bg-accent">
+        <div className="mx-auto flex max-w-[1200px] flex-wrap gap-2 px-4 py-3">
+          {[
+            { label: "Apply Online", href: "https://admissions.duet.edu.pk/" },
+            { label: "Undergraduate Programs", to: "/undergrad-programs" },
+            { label: "Postgraduate Programs", to: "/postgraduate-programs" },
+            { label: "Fee Structure", to: "/fee-structure" },
+            { label: "Results", to: "/results" },
+            { label: "Downloads", to: "/downloads" },
+          ].map((l) =>
+            l.href ? (
+              <a
+                key={l.label}
+                href={l.href}
+                target="_blank"
+                rel="noreferrer"
+                className="rounded bg-brand px-3 py-1.5 text-[13px] font-semibold text-white hover:bg-brand-dark"
+              >
+                {l.label}
+              </a>
+            ) : (
+              <Link
+                key={l.label}
+                to={l.to as string}
+                className="rounded bg-brand px-3 py-1.5 text-[13px] font-semibold text-white hover:bg-brand-dark"
+              >
+                {l.label}
+              </Link>
+            ),
+          )}
+        </div>
+      </section>
+
+      {/* Welcome */}
+      <section className="mx-auto grid max-w-[1200px] gap-8 px-4 py-12 lg:grid-cols-[1.15fr_1fr]">
+        <div>
+          <h1 className="font-display text-2xl font-semibold text-brand sm:text-3xl">
+            Welcome to Dawood University of Engineering &amp; Technology
+          </h1>
+          <div className="mt-2 h-1 w-24 bg-accent" />
+          <p className="mt-5 text-[15px] leading-7 text-foreground/90">
+            Dawood College of Engineering and Technology (DCET), Karachi holds the significant status of
+            being the first professional college imparting engineering education established in the
+            private sector of Pakistan. The foundation stone of the institution was laid in 1962, and it
+            was later upgraded to Dawood University of Engineering &amp; Technology.
+          </p>
+          <p className="mt-4 text-[15px] leading-7 text-foreground/90">
+            The University offers undergraduate, postgraduate and doctoral programs in engineering,
+            architecture, planning and basic sciences, and is committed to producing graduates with the
+            technical competence and ethical grounding required by industry and society.
+          </p>
+          <div className="mt-6 flex flex-wrap gap-3">
+            <Link
+              to="/about-duet/historic-profile"
+              className="rounded bg-brand px-4 py-2 text-sm font-semibold text-white hover:bg-brand-dark"
+            >
+              Read more
+            </Link>
+            <Link
+              to="/vice-chancellors-message-2"
+              className="rounded border border-brand px-4 py-2 text-sm font-semibold text-brand hover:bg-muted"
+            >
+              Vice Chancellor's Message
+            </Link>
+          </div>
+        </div>
+        {aboutImg ? (
+          <img
+            src={aboutImg}
+            alt="Dawood University of Engineering & Technology campus building"
+            loading="lazy"
+            className="h-full w-full rounded object-cover shadow"
+          />
+        ) : null}
+      </section>
+
+      {/* Stats */}
+      <section
+        className="border-y border-border bg-brand bg-cover bg-center bg-blend-multiply"
+        style={campusBg ? { backgroundImage: `url(${campusBg})` } : undefined}
+      >
+        <div className="mx-auto grid max-w-[1200px] grid-cols-2 gap-6 px-4 py-10 sm:grid-cols-4">
+          {stats.map((s) => (
+            <div key={s.label} className="text-center text-white">
+              <div className="font-display text-3xl font-bold text-accent sm:text-4xl">{s.value}</div>
+              <div className="mt-1 text-[13px] uppercase tracking-wider">{s.label}</div>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      {/* Sections */}
+      <section className="mx-auto max-w-[1200px] px-4 py-12">
+        <h2 className="font-display text-2xl font-semibold text-brand">Explore the University</h2>
+        <div className="mt-1 h-1 w-24 bg-accent" />
+        <div className="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+          {mainMenu.slice(0, 8).map((g) => (
+            <Link
+              key={g.label}
+              to={g.to ?? "/"}
+              className="rounded border border-border bg-card p-5 transition-colors hover:border-accent"
+            >
+              <h3 className="font-display text-[15px] font-semibold text-brand">{g.label}</h3>
+              <p className="mt-2 text-[13px] leading-6 text-muted-foreground">
+                {g.items
+                  .slice(0, 3)
+                  .map((i) => i.label)
+                  .join(" · ") || "Openings and opportunities at DUET"}
+              </p>
+            </Link>
+          ))}
+        </div>
+      </section>
+
+      {/* News */}
+      <section className="bg-muted/60 py-12">
+        <div className="mx-auto max-w-[1200px] px-4">
+          <div className="flex items-end justify-between">
+            <div>
+              <h2 className="font-display text-2xl font-semibold text-brand">News &amp; Events</h2>
+              <div className="mt-1 h-1 w-24 bg-accent" />
+            </div>
+            <Link to="/news" className="text-[13px] font-semibold text-brand hover:text-accent-strong">
+              View all
+            </Link>
+          </div>
+          <div className="mt-6 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
+            {newsEntries.map(([slug, post]) => (
+              <article key={slug} className="rounded border border-border bg-card p-5">
+                <h3 className="font-display text-[15px] font-semibold leading-6 text-brand">
+                  {post.title}
+                </h3>
+                <p className="mt-2 line-clamp-4 text-[13.5px] leading-6 text-muted-foreground">
+                  {post.paras[0] ?? "Read the full announcement from Dawood University."}
+                </p>
+              </article>
+            ))}
+          </div>
+        </div>
+      </section>
+    </main>
   );
 }
