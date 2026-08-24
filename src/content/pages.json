@@ -114,8 +114,152 @@
    }
   ]
  },
+ "/academic-calendar": {
+  "title": "Academic Calendar",
+  "description": "The foundation stone of the Dawood College was laid by the former President of Pakistan (Late) Field Marshal Muhammad Ayub Khan in 1962. The Government of ",
+  "sidebar": [
+   {
+    "text": "Academic Calendar",
+    "to": "/academic-calendar"
+   },
+   {
+    "text": "Faculties & Departments",
+    "to": "/faculty-departments"
+   },
+   {
+    "text": "Undergraduate Programs",
+    "to": "/undergrad-programs"
+   },
+   {
+    "text": "Undergraduate Regulations",
+    "to": "/undergrad-regulations"
+   },
+   {
+    "text": "Postgraduate Programs",
+    "to": "/postgraduate-programs"
+   },
+   {
+    "text": "Postgraduate Regulations",
+    "to": "/postgraduate-regulations"
+   },
+   {
+    "text": "HEC Approved PhD Supervisors",
+    "to": "/hec-approved-phd-supervisors"
+   },
+   {
+    "text": "Outcome Based Education (OBE)",
+    "to": "/outcome-based-education-obe"
+   }
+  ],
+  "blocks": [
+   {
+    "t": "h",
+    "level": 3,
+    "text": "Academic Calendar 22-23 Academic Calendar BE Academic Calendar BS Academic Calendar MS/PhD."
+   },
+   {
+    "t": "links",
+    "items": [
+     {
+      "t": "link",
+      "text": "Academic Calendar 22-23",
+      "file": "ACADEMIC-CALENDAR-22-23.pdf"
+     },
+     {
+      "t": "link",
+      "text": "Academic Calendar BE",
+      "file": "BE-1.pdf"
+     },
+     {
+      "t": "link",
+      "text": "Academic Calendar BS",
+      "file": "BS-Copy.pdf"
+     },
+     {
+      "t": "link",
+      "text": "Academic Calendar MS/PhD.",
+      "file": "MS-PhD-1.pdf"
+     }
+    ]
+   },
+   {
+    "t": "h",
+    "level": 2,
+    "text": "D"
+   },
+   {
+    "t": "p",
+    "text": "The foundation stone of the Dawood College was laid by the former President of Pakistan (Late) Field Marshal Muhammad Ayub Khan in 1962. The Government of Sindh through an Act of the Provincial Assembly elevated the College to the status of University in 2013."
+   },
+   {
+    "t": "h",
+    "level": 3,
+    "text": "Contact Us"
+   },
+   {
+    "t": "h",
+    "level": 2,
+    "text": "Registrar +92 21 9923 2645 registrar@duet.edu.pk"
+   },
+   {
+    "t": "p",
+    "text": "Controller of Examination +92 21 9923 0476 controller.examination@duet.edu.pk"
+   },
+   {
+    "t": "p",
+    "text": "Directorate of Admissions +92 21 99230706, +92345-3656773 admissions@duet.edu.pk"
+   },
+   {
+    "t": "h",
+    "level": 3,
+    "text": "Quick Links"
+   },
+   {
+    "t": "list",
+    "ordered": false,
+    "items": [
+     "Admissions",
+     "Undergraduate Program",
+     "Postgraduate Program",
+     "Student Portal",
+     "FAQ"
+    ]
+   },
+   {
+    "t": "h",
+    "level": 3,
+    "text": "Campuses"
+   },
+   {
+    "t": "h",
+    "level": 3,
+    "text": "Jinnah Campus"
+   },
+   {
+    "t": "h",
+    "level": 3,
+    "text": "Dawood University of Engineering & Technology, New M. A. Jinnah Road, Karachi, Sindh, Pakistan (74800)."
+   },
+   {
+    "t": "h",
+    "level": 3,
+    "text": "Iqbal Campus"
+   },
+   {
+    "t": "h",
+    "level": 3,
+    "text": "Dawood University of Engineering & Technology, Block 17 Gulshan-e-Iqbal, Karachi, Sindh, Pakistan, (75300)."
+   }
+  ]
+ },
  "/academics": {
   "title": "Academics",
+  "description": "",
+  "sidebar": [],
+  "blocks": []
+ },
+ "/admissions": {
+  "title": "Admissions",
   "description": "",
   "sidebar": [],
   "blocks": []
@@ -2041,6 +2185,71 @@
   "description": "",
   "sidebar": [],
   "blocks": []
+ },
+ "/office-of-research-innovation-commercialisation": {
+  "title": "Office of Research Innovation & Commercialisation",
+  "description": "Dawood College of Engineering & Technology was established in 1964 and in 2013 upgraded to Dawood University of Engineering & Technology (DUET). DUET initi",
+  "sidebar": [
+   {
+    "text": "Admissions",
+    "to": "/admissions"
+   },
+   {
+    "text": "Business Incubation Center",
+    "to": "/business-incubation-center"
+   },
+   {
+    "text": "Continues Professional Development",
+    "to": "/continues-professional-development"
+   },
+   {
+    "text": "Financial Assistance Departments",
+    "to": "/financial-assistance-departments"
+   },
+   {
+    "text": "Industrial Liasons & Alumni Affairs",
+    "to": "/industrial-liasons-alumni-affairs"
+   },
+   {
+    "text": "Information Technology",
+    "to": "/information-technology"
+   },
+   {
+    "text": "Office of Research Innovation & Commercialisation",
+    "to": "/office-of-research-innovation-commercialisation"
+   },
+   {
+    "text": "Postgraduate Studies",
+    "to": "/postgraduate-studies"
+   },
+   {
+    "text": "Quality Enhancement cell",
+    "to": "/quality-enhancement-cell"
+   },
+   {
+    "text": "Sports",
+    "to": "/sports"
+   },
+   {
+    "text": "Students Affairs",
+    "to": "/students-affairs"
+   }
+  ],
+  "blocks": [
+   {
+    "t": "h",
+    "level": 1,
+    "text": "Office Of Research Innovation & Commercialization"
+   },
+   {
+    "t": "p",
+    "text": "Dawood College of Engineering & Technology was established in 1964 and in 2013 upgraded to Dawood University of Engineering & Technology (DUET). DUET initiated a Centre for Innovation, Research, Creativity, Learning and Entrepreneurship (CIRCLE) in 2015 and converted it into Office of Research, Innovation and Commercialization (ORIC) under the guidelines of Higher Education Commission (HEC). DUET aims at motivating and encouraging the students and faculties to make research top priority. The core objective is to promote and facilitate high quality academic research through leading the development of research strategy and policy, ensuring compliance with research governance requirements, supporting researchers to access funding and new collaborations."
+   },
+   {
+    "t": "p",
+    "text": "Objective > Promoting research culture in the university. > Educating faculty members and students about various research grants. > Enhancing university-industry relationships. > Promoting entrepreneurship, technology-transfer and commercialisation activities that enhance and support local and national economies. > Transforming research for the public’s benefit (patent development). > Liaises between researchers and funding agencies. > Facilitating the purchase of specialised equipment. > Organising seminars and workshops on innovative research practices, methods."
+   }
+  ]
  },
  "/officers-2": {
   "title": "Officers",
