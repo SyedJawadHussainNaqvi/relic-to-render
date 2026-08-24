@@ -1,7 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { ArchivedPage } from "@/components/site/ArchivedPage";
 
-export const Route = createFileRoute("/about-duet")({
+export const Route = createFileRoute("/about-duet/")({
   head: () => ({
     meta: [
       { title: "About DUET — DUET Karachi" },
