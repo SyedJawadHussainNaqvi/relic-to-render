@@ -1,0 +1,4044 @@
+{
+ "/about-cemet": {
+  "title": "ABOUT CEMET",
+  "description": "",
+  "sidebar": [],
+  "blocks": []
+ },
+ "/about-duet": {
+  "title": "About DUET",
+  "description": "",
+  "sidebar": [],
+  "blocks": []
+ },
+ "/about-duet/historic-profile": {
+  "title": "Historic Profile",
+  "description": "Dawood College of Engineering and Technology (DCET), Karachi holds a significant status of being the first Professional College imparting Engineering Educa",
+  "sidebar": [
+   {
+    "text": "Historic Profile",
+    "to": "/about-duet/historic-profile"
+   },
+   {
+    "text": "Vision & Mission",
+    "to": "/about-duet/vision-mission"
+   },
+   {
+    "text": "Vice Chancellor’s Message",
+    "to": "/vice-chancellors-message-2"
+   },
+   {
+    "text": "Authorities",
+    "to": "/authorities"
+   },
+   {
+    "text": "Officers",
+    "to": "/officers-2"
+   },
+   {
+    "text": "University Linkages",
+    "to": "/university-linkages"
+   },
+   {
+    "text": "Organogram",
+    "to": "/organogram"
+   },
+   {
+    "text": "Annual Report",
+    "to": "/annual-report"
+   }
+  ],
+  "blocks": [
+   {
+    "t": "p",
+    "text": "Dawood College of Engineering and Technology (DCET), Karachi holds a significant status of being the first Professional College imparting Engineering Education established in the private sector of Pakistan. The foundation stone of the Institution was laid in 1962 and the first batch of students was admitted in 1964. Dawood College imparting education in engineering disciplines was the vision of its founder Mr. Ahmed Dawood; an Industrialist cum Philanthropist, who’s great foresight considered it a necessity for the Industrial Development of Pakistan. With this vision the institute was the first to establish the disciplines of Chemical Engineering, Metallurgy and Materials Engineering; and Electronics Engineering. In 1972, Dawood College was nationalized and came under the administrative control of Federal Ministry of Education. Thereafter, two new academic programs were initiated viz. Industrial Engineering and Management; and Architecture and Planning (by merging the Karachi School of Architecture established in 1953). A new hostel was also constructed in Gulshan-e-Iqbal that later on changed to the Department of Architecture and Planning, and came to be known as the Iqbal Campus. Till now, the Iqbal Campus functions efficiently and simultaneously maintains its close ties with the main campus negating the factor of distance. The Institution since 2010 rode on the way to add more value to the industrial sector of the country by introducing four new Engineering Departments viz. Petroleum and Gas Engineering, Telecommunications Engineering, Computer Systems Engineering, and Energy and Environmental Engineering. In 2011 as a consequence of 18th Constitutional amendment Dawood College of Engineering and Technology was devolved to the Government of Sindh. The year 2013 was nonetheless but a stepping stone to lead the institution towards betterment and prosperity whereby, the Government of Sindh through an Act of the Provincial Assembly elevated the College to the status of a University i.e. Dawood University of Engineering and Technology (DUET), Karachi. With this up gradation, the appointment of Dr. Faizullah Abbasi as the first Vice Chancellor proved to be the juncture whereby the journey of transformation began. In 2013 the following Academic Programs at the Bachelor’s level were in play: 1. Architecture and Planning 2. Chemical Engineering 3. Computer Systems Engineering 4. Electronics Engineering 5. Energy and Environment Engineering 6. Industrial Engineering and Management 7. Metallurgy and Materials Engineering 8. Petroleum and Gas Engineering 9. Telecommunication Engineering The concerned programs are accredited by the Pakistan Council of Architects and Town Planners (PCATP) and Pakistan Engineering Council (PEC) respectively. In 2016 the project on “Strengthening of Dawood University of Engineering and Technology (DUET, Karachi” amounting to Rs.578 million was approved. This initiated refurbishing of Laboratories, establishing I.T infrastructure and PhD Scholarships for the faculty. From 2013 till present the institution has strived to strengthen its academics and research by inducting Ph.D. and Masters Faculty in all the departments. To date the University has up to 70 Ph.D. faculty (2022) and some 30 more are pursuing Ph.D. degrees abroad. In 2018, Dawood University of Engineering and Technology for the first time introduced Postgraduate programs leading to Ph.D. The University has since then produced 126 Masters Graduates till 2021. The institution, in 2020 also initiated new market driven programs concerning the Bachelors of Science in Mathematics, Computer Science, Artificial Intelligence, Cyber Security, and Business Information Systems. Precisely, Dawood University of Engineering & Technology maintains its position as an emerging and a promising Institution situated right in the city center where the Quaid’s Mausoleum lies in Karachi- the Industrial hub of Pakistan."
+   }
+  ]
+ },
+ "/about-duet/vision-mission": {
+  "title": "Vision & Mission",
+  "description": "Dawood University of Engineering & Technology aims to invest in human capital for accelerated advancement in engineering knowledge and practices, new front",
+  "sidebar": [
+   {
+    "text": "Historic Profile",
+    "to": "/about-duet/historic-profile"
+   },
+   {
+    "text": "Vision & Mission",
+    "to": "/about-duet/vision-mission"
+   },
+   {
+    "text": "Vice Chancellor’s Message",
+    "to": "/vice-chancellors-message-2"
+   },
+   {
+    "text": "Authorities",
+    "to": "/authorities"
+   },
+   {
+    "text": "Officers",
+    "to": "/officers-2"
+   },
+   {
+    "text": "University Linkages",
+    "to": "/university-linkages"
+   },
+   {
+    "text": "Organogram",
+    "to": "/organogram"
+   },
+   {
+    "text": "Annual Report",
+    "to": "/annual-report"
+   }
+  ],
+  "blocks": [
+   {
+    "t": "h",
+    "level": 1,
+    "text": "University Vision"
+   },
+   {
+    "t": "h",
+    "level": 3,
+    "text": "The University of Relevance Leading to Techno-preneurial Excellence."
+   },
+   {
+    "t": "h",
+    "level": 1,
+    "text": "University Mission"
+   },
+   {
+    "t": "p",
+    "text": "Dawood University of Engineering & Technology aims to invest in human capital for accelerated advancement in engineering knowledge and practices, new frontiers in R&D hence creating knowledge led economy and better future for generations to come."
+   }
+  ]
+ },
+ "/academic-calendar": {
+  "title": "Academic Calendar",
+  "description": "The foundation stone of the Dawood College was laid by the former President of Pakistan (Late) Field Marshal Muhammad Ayub Khan in 1962. The Government of ",
+  "sidebar": [
+   {
+    "text": "Academic Calendar",
+    "to": "/academic-calendar"
+   },
+   {
+    "text": "Faculties & Departments",
+    "to": "/faculty-departments"
+   },
+   {
+    "text": "Undergraduate Programs",
+    "to": "/undergrad-programs"
+   },
+   {
+    "text": "Undergraduate Regulations",
+    "to": "/undergrad-regulations"
+   },
+   {
+    "text": "Postgraduate Programs",
+    "to": "/postgraduate-programs"
+   },
+   {
+    "text": "Postgraduate Regulations",
+    "to": "/postgraduate-regulations"
+   },
+   {
+    "text": "HEC Approved PhD Supervisors",
+    "to": "/hec-approved-phd-supervisors"
+   },
+   {
+    "text": "Outcome Based Education (OBE)",
+    "to": "/outcome-based-education-obe"
+   }
+  ],
+  "blocks": [
+   {
+    "t": "h",
+    "level": 3,
+    "text": "Academic Calendar 22-23 Academic Calendar BE Academic Calendar BS Academic Calendar MS/PhD."
+   },
+   {
+    "t": "links",
+    "items": [
+     {
+      "t": "link",
+      "text": "Academic Calendar 22-23",
+      "file": "ACADEMIC-CALENDAR-22-23.pdf"
+     },
+     {
+      "t": "link",
+      "text": "Academic Calendar BE",
+      "file": "BE-1.pdf"
+     },
+     {
+      "t": "link",
+      "text": "Academic Calendar BS",
+      "file": "BS-Copy.pdf"
+     },
+     {
+      "t": "link",
+      "text": "Academic Calendar MS/PhD.",
+      "file": "MS-PhD-1.pdf"
+     }
+    ]
+   },
+   {
+    "t": "h",
+    "level": 2,
+    "text": "D"
+   },
+   {
+    "t": "p",
+    "text": "The foundation stone of the Dawood College was laid by the former President of Pakistan (Late) Field Marshal Muhammad Ayub Khan in 1962. The Government of Sindh through an Act of the Provincial Assembly elevated the College to the status of University in 2013."
+   },
+   {
+    "t": "h",
+    "level": 3,
+    "text": "Contact Us"
+   },
+   {
+    "t": "h",
+    "level": 2,
+    "text": "Registrar +92 21 9923 2645 registrar@duet.edu.pk"
+   },
+   {
+    "t": "p",
+    "text": "Controller of Examination +92 21 9923 0476 controller.examination@duet.edu.pk"
+   },
+   {
+    "t": "p",
+    "text": "Directorate of Admissions +92 21 99230706, +92345-3656773 admissions@duet.edu.pk"
+   },
+   {
+    "t": "h",
+    "level": 3,
+    "text": "Quick Links"
+   },
+   {
+    "t": "list",
+    "ordered": false,
+    "items": [
+     "Admissions",
+     "Undergraduate Program",
+     "Postgraduate Program",
+     "Student Portal",
+     "FAQ"
+    ]
+   },
+   {
+    "t": "h",
+    "level": 3,
+    "text": "Campuses"
+   },
+   {
+    "t": "h",
+    "level": 3,
+    "text": "Jinnah Campus"
+   },
+   {
+    "t": "h",
+    "level": 3,
+    "text": "Dawood University of Engineering & Technology, New M. A. Jinnah Road, Karachi, Sindh, Pakistan (74800)."
+   },
+   {
+    "t": "h",
+    "level": 3,
+    "text": "Iqbal Campus"
+   },
+   {
+    "t": "h",
+    "level": 3,
+    "text": "Dawood University of Engineering & Technology, Block 17 Gulshan-e-Iqbal, Karachi, Sindh, Pakistan, (75300)."
+   }
+  ]
+ },
+ "/academics": {
+  "title": "Academics",
+  "description": "",
+  "sidebar": [],
+  "blocks": []
+ },
+ "/admissions": {
+  "title": "Admissions",
+  "description": "",
+  "sidebar": [],
+  "blocks": []
+ },
+ "/alumni": {
+  "title": "Alumni",
+  "description": "",
+  "sidebar": [],
+  "blocks": [
+   {
+    "t": "h",
+    "level": 3,
+    "text": "Click here for Registration in Dawood University Alumni Association (DUAA) Membership!"
+   }
+  ]
+ },
+ "/annual-report": {
+  "title": "Budget",
+  "description": "",
+  "sidebar": [
+   {
+    "text": "Historic Profile",
+    "to": "/about-duet/historic-profile"
+   },
+   {
+    "text": "Vision & Mission",
+    "to": "/about-duet/vision-mission"
+   },
+   {
+    "text": "Vice Chancellor’s Message",
+    "to": "/vice-chancellors-message-2"
+   },
+   {
+    "text": "Authorities",
+    "to": "/authorities"
+   },
+   {
+    "text": "Officers",
+    "to": "/officers-2"
+   },
+   {
+    "text": "University Linkages",
+    "to": "/university-linkages"
+   },
+   {
+    "text": "Organogram",
+    "to": "/organogram"
+   },
+   {
+    "text": "Annual Report",
+    "to": "/annual-report"
+   }
+  ],
+  "blocks": [
+   {
+    "t": "h",
+    "level": 1,
+    "text": "Annual Report"
+   },
+   {
+    "t": "h",
+    "level": 3,
+    "text": "University Annual Report 2020"
+   },
+   {
+    "t": "links",
+    "items": [
+     {
+      "t": "link",
+      "text": "University Annual Report 2020",
+      "file": "Annual_Report_2020_20__Part_20I_.pdf"
+     }
+    ]
+   },
+   {
+    "t": "h",
+    "level": 3,
+    "text": "University Annual Report 2021"
+   },
+   {
+    "t": "links",
+    "items": [
+     {
+      "t": "link",
+      "text": "University Annual Report 2021",
+      "file": "Annual_Report_2020_20_Part_2.pdf"
+     }
+    ]
+   }
+  ]
+ },
+ "/authorities": {
+  "title": "Authorities",
+  "description": "",
+  "sidebar": [
+   {
+    "text": "Historic Profile",
+    "to": "/about-duet/historic-profile"
+   },
+   {
+    "text": "Vision & Mission",
+    "to": "/about-duet/vision-mission"
+   },
+   {
+    "text": "Vice Chancellor’s Message",
+    "to": "/vice-chancellors-message-2"
+   },
+   {
+    "text": "Authorities",
+    "to": "/authorities"
+   },
+   {
+    "text": "Officers",
+    "to": "/officers-2"
+   },
+   {
+    "text": "University Linkages",
+    "to": "/university-linkages"
+   },
+   {
+    "text": "Organogram",
+    "to": "/organogram"
+   },
+   {
+    "text": "Annual Report",
+    "to": "/annual-report"
+   }
+  ],
+  "blocks": [
+   {
+    "t": "list",
+    "ordered": false,
+    "items": [
+     "Senate",
+     "Syndicate",
+     "Academic Council"
+    ]
+   },
+   {
+    "t": "h",
+    "level": 3,
+    "text": "SENATE MEMBERS, DUET"
+   },
+   {
+    "t": "table",
+    "rows": [
+     [
+      "01",
+      "Honourable Syed Murad Ali Shah, Chief Minister of Sindh"
+     ],
+     [
+      "02",
+      "Mr. Zia Abbas Shah, Minister/Pro-Chancellor, DUET, Karachi"
+     ],
+     [
+      "03",
+      "Prof. Dr. Samreen Hussain, Vice Chancellor, DUET, Karachi"
+     ],
+     [
+      "04",
+      "Prof.Dr. Abdul Waheed Bhutto, Pro-Vice Chancellor, DUET, Karachi"
+     ],
+     [
+      "05",
+      "Mr. Ghanwar Ali Khan Isran, MPA, Government of Sindh"
+     ],
+     [
+      "06",
+      "Honourable Justice Shamsuddin Abbasi, Honourable Justice, High Court of Sindh, Karachi"
+     ],
+     [
+      "07",
+      "Secretary, Colleges Education and Literacy Department, Sindh, Government of Sindh"
+     ],
+     [
+      "08",
+      "Nominee of HEC, Islamabad"
+     ],
+     [
+      "09",
+      "Secretary, Universities and Boards Department, Government of Sindh"
+     ],
+     [
+      "10",
+      "Prof. Dr. Sarosh Hashmat Lodi, Vice Chancellor, NED University (Representative, Sindh HEC)"
+     ],
+     [
+      "11",
+      "Senator Taj Haider"
+     ],
+     [
+      "12",
+      "Prof. Dr. Ali Bux Soomro, Former Vice Chancellor, QUEST, Nawabshah"
+     ],
+     [
+      "13",
+      "Mufti Feroz Uddin Hazarvi, Alim",
+      ""
+     ],
+     [
+      "14",
+      "Ms. Nusrat Sultana, Former MPA, Sindh."
+     ],
+     [
+      "15",
+      "Prof.Dr. Zeeshan Ali Memon, Dean, Faculty of Engineering, DUET, Karachi"
+     ],
+     [
+      "16",
+      "Dr. Ghulam Abbas Kandhro, Dean, Faculty of Information Sciences and Humanities"
+     ],
+     [
+      "17",
+      "Prof. Dr. Hafiz Zahid Tunio, Professor/Chairman Telecommunication Engineering , DUET, Karachi"
+     ],
+     [
+      "18",
+      "Prof. Dr. Ghulamullah Maitlo, Professor, Chemical Engineering, DUET, Karachi"
+     ],
+     [
+      "19",
+      "Prof. Dr. Yasira Naeem Pasha, Dean Faculty of CARP, DUET"
+     ],
+     [
+      "20",
+      "Dr. Zahid Hussain Hulio, Chairman, Industrial Engineering and Management, DUET, Karachi"
+     ],
+     [
+      "21",
+      "Prof. Dr. Rashid Mustafa Korai, Chairman, Petroleum and Gas Engineering / Acting Controller of Examinations, DUET, Karachi"
+     ],
+     [
+      "22",
+      "Dr. Saleem Ahmed Phul, Chairman, Computer System Engineering, DUET, Karachi"
+     ],
+     [
+      "23",
+      "Dr. Abdul Karim Shah, Chairman, Chemical Engineering, DUET, Karachi"
+     ],
+     [
+      "24",
+      "Dr. Zeeshan Ali Memon, Assistant Professor/ Acting Chairperson, Telecommunication Engineering, DUET, Karachi"
+     ],
+     [
+      "25",
+      "Dr. Sajid Hussain Siyal, Chairman, Metallurgy and Materials Engineering, DUET, Karachi"
+     ],
+     [
+      "26",
+      "Dr. Muhammad Rauf, Chairman, Electronics Engineering, DUET, Karachi"
+     ],
+     [
+      "27",
+      "Dr. Fida Hussain Khoso , Associate Professor/Chairman Computer Science, DUET."
+     ],
+     [
+      "28",
+      "Dr. Azhar Iqbal, Professor/Chairman, Mathematics"
+     ],
+     [
+      "29",
+      "Dr. Ayaz Ali Shah, Chairman, Energy & Environment Engineering, DUET, Karachi"
+     ],
+     [
+      "30",
+      "Prof. Dr. Sakindar Ali Abbasi, Professor/Advisor Students Affairs, DUET, Karachi"
+     ],
+     [
+      "31",
+      "Chairman, BIE, Karachi"
+     ],
+     [
+      "32",
+      "Chairman, SBTE, Karachi"
+     ],
+     [
+      "33",
+      "Prof. Dr. Syed Asif Ali Shah, Registrar, DUET, Karachi"
+     ],
+     [
+      "34",
+      "Mr. Shaikh Muhammad Shabir, Director Finance, DUET, Karachi"
+     ],
+     [
+      "35",
+      "Dr. Arsalan Ansari, Associate Professor, Electronic Engineering, DUET, Karachi"
+     ],
+     [
+      "36",
+      "Dr. Inamullah Maitlo, Associate Professor, Metallurgy and Material Engineering, DUET, Karachi"
+     ],
+     [
+      "37",
+      "Engr. Muhammad Azam Usto, Assistant Professor, Chemical Engineering, DUET, Karachi"
+     ],
+     [
+      "38",
+      "Engr. Fahad Iqbal, Assistant Professor, Computer System Engineering, DUET, Karachi"
+     ],
+     [
+      "39",
+      "Ar. Faryal Sikandar, Assistant Professor, Architecture and Planning, DUET, Karachi"
+     ],
+     [
+      "40",
+      "Engr. Khuda Bux, Assistant Professor, Energy & Environment Engineering, DUET, Karachi"
+     ],
+     [
+      "41",
+      "Engr. Muhammad Fahad Riaz, Assistant Professor, Metallurgy and Materials Engineering, DUET, Karachi"
+     ],
+     [
+      "42",
+      "Engr. Nadia Mustaqim Ansari, Assistant Professor, Electronic Engineering, DUET, Karachi"
+     ],
+     [
+      "43",
+      "Engr. Rizwan Iqbal, Assistant Professor, Telecommunication Engineering, DUET, Karachi"
+     ],
+     [
+      "44",
+      "Engr. Shamim-ur-Rehman, Assistant Professor, Computer System Engineering, DUET, Karachi"
+     ],
+     [
+      "45",
+      "Engr. Ali Akbar Jafri, Assistant Professor, Industrial Engineering and Management, DUET, Karachi"
+     ],
+     [
+      "46",
+      "Engr. Bharat Kumar, Assistant Professor, Petroleum and Gas Engineering, DUET, Karachi"
+     ],
+     [
+      "47",
+      "Mr. Mushque Ahmed Jamali, Resident Auditor, DUET, Karachi"
+     ],
+     [
+      "48",
+      "Mr. Irfan Zafar, Assistant Librarian, DUET, Karachi"
+     ]
+    ]
+   },
+   {
+    "t": "h",
+    "level": 3,
+    "text": "ACADEMIC COUNCIL MEMBERS, DUET"
+   },
+   {
+    "t": "table",
+    "rows": [
+     [
+      "01",
+      "Prof. Dr. Samreen Hussain, Chairman , Vice Chancellor, DUET, Karachi."
+     ],
+     [
+      "02",
+      "Prof. Dr. Abdul Waheed Bhutto, Pro Vice Chancellor, DUET, Karachi."
+     ],
+     [
+      "03",
+      "Secretary , Colleges Education & Literacy Department, Government of Sindh, Karachi."
+     ],
+     [
+      "04",
+      "Mr. Irfan Zafar, Acting Librarian, DUET, Karachi."
+     ],
+     [
+      "05",
+      "Prof. Dr. Asma Abbas, Director of Advanced Studies,Board College at Simon’s Rock, Massachusetts, USA."
+     ],
+     [
+      "06",
+      "Prof. Dr. Muhammad Iqbal Bhangar, HEJ Research Institute of Chemistry, International Centre of Chemical and Biological Science,University of Karachi, Karachi."
+     ],
+     [
+      "07",
+      "Prof. Dr. Asad-ur-Rehman Khan , Dean, Faculty of Civil Engineering,NED University of Engineering and Technology, Karachi."
+     ],
+     [
+      "08",
+      "Prof. Dr. Syed Asif Ali Shah, Member / Secretary, Registrar, DUET, Karachi."
+     ],
+     [
+      "09",
+      "Prof. Dr. Zeeshan Ali, Dean, Faculty of PIMMEC, DUET, Karachi."
+     ],
+     [
+      "10",
+      "Prof. Dr. Ghulam Abbas Kandhro, Dean, Faculty of ISH / Chairperson, Department of Basic Science & Humanities, DUET, Karachi."
+     ],
+     [
+      "11",
+      "Prof. Dr. Hafiz Muhammad Zahid Tunio, Dean, Faculty of CEET / Chairperson, Department of Telecommunication Engineering, DUET, Karachi."
+     ],
+     [
+      "12",
+      "Prof. Dr. Ghulamullah Maitlo, Professor, Department of Chemical Engineering, DUET, Karachi."
+     ],
+     [
+      "13",
+      "Prof. Dr. Rashid Mustafa Korai, Chairperson / Acting Controller of Examinations, Department of Petroleum and Gas Engineering, DUET, Karachi."
+     ],
+     [
+      "14",
+      "Prof. Dr. Yasira Naeem Pasha, Dean, Faculty of CARP, DUET, Karachi."
+     ],
+     [
+      "15",
+      "Prof. Dr. Haroon Jangda, Professor, Department of Chemical Engineering, DUET, Karachi."
+     ],
+     [
+      "16",
+      "Dr. Zahid Hussain Hulio, Associate Professor / Chairperson, Department of Industrial Engineering and Management, DUET, Karachi."
+     ],
+     [
+      "17",
+      "Dr. Saleem Ahmed Phull, Associate Professor / Chairperson, Department of Computer System Engineering, DUET, Karachi."
+     ],
+     [
+      "18",
+      "Dr. Abdul Karim Shah, Associate Professor / Chairperson, Department of Chemical Engineering, DUET, Karachi."
+     ],
+     [
+      "19",
+      "Dr. Sajid Hussain Siyal, Associate Professor / Chairperson, Department of Metallurgy and Materials Engineering, DUET, Karachi."
+     ],
+     [
+      "20",
+      "Dr. Inamullah Maitlo, Associate Professor, Department of Metallurgy and Materials Engineering, DUET, Karachi."
+     ],
+     [
+      "21",
+      "Dr. Ramesh Kumar, Associate Professor, Department of Computer System Engineering, DUET, Karachi."
+     ],
+     [
+      "22",
+      "Dr.Azhar Iqbal, Associate Professor / Chairperson, Department of Mathematics, DUET, Karachi."
+     ],
+     [
+      "23",
+      "Dr. Fida Hussain Khoso, Associate Professor / Incharge Chairperson, Department of Computer Science, DUET, Karachi."
+     ],
+     [
+      "24",
+      "Dr. Muhammad Dawood Idress, Assistant Professor, Department of Industrial Engineering and Management, DUET, Karachi."
+     ],
+     [
+      "25",
+      "Dr. Muhammad Rauf, Assistant Professor / Acting Chairperson, Department of Electronic Engineering, DUET, Karachi."
+     ],
+     [
+      "26",
+      "Dr. Ayaz Ali Shah, Assistant Professor / Acting Chairperson, Department of Energy & Environment Engineering, DUET, Karachi."
+     ],
+     [
+      "27",
+      "Engr. Darya Khan Bhutto, Assistant Professor, Department of Petroleum and Gas Engineering, DUET, Karachi."
+     ],
+     [
+      "28",
+      "Engr. Muhammad Irfan, Assistant Professor, Department of Energy and Environment Engineering, DUET, Karachi."
+     ],
+     [
+      "29",
+      "Engr. Kashif Saleem, Assistant Professor, Department of Telecommunication Engineering, DUET, Karachi."
+     ]
+    ]
+   },
+   {
+    "t": "h",
+    "level": 3,
+    "text": "SYNDICATE MEMBERS, DUET"
+   },
+   {
+    "t": "table",
+    "rows": [
+     [
+      "01",
+      "Prof. Dr. Samreen Hussain, Vice Chancellor , DUET/ Chairperson, Syndicate"
+     ],
+     [
+      "02",
+      "Prof. Dr. Abdul Waheed Bhutto, Pro-Vice Chancellor , DUET"
+     ],
+     [
+      "03",
+      "Senator Taj Haider, Person of Eminence , nominated by the Chief Minister"
+     ],
+     [
+      "04",
+      "Mr. Ghanwar Ali Khan Isran, MPA , Government of Sindh"
+     ],
+     [
+      "05",
+      "Honourable Justice Shamsuddin Abbasi, Honourable Justice , High Court of Sindh, Karachi"
+     ],
+     [
+      "06",
+      "The Secretary, Colleges Education & Literacy Department , Government of Sindh"
+     ],
+     [
+      "07",
+      "Nominee of Higher Education Commission (HEC), Islamabad"
+     ],
+     [
+      "08",
+      "Mr. Muhammad Mureed Rahimoon, Secretary, Universities & Boards Department , Government of Sindh"
+     ],
+     [
+      "09",
+      "Prof. Dr. Sarosh Hashmat Lodi, Vice Chancellor, NED University ( Representative , Sindh HEC)"
+     ],
+     [
+      "10",
+      "Engr. Mukhtar Ali Shaikh, Person of Eminence , nominated by the Chief Minister"
+     ],
+     [
+      "11",
+      "Prof. Dr. Ali Bux Soomro, Person of Eminence , nominated by the Chief Minister"
+     ],
+     [
+      "12",
+      "Mufti Feroz Uddin Hazarvi, Alim , nominated by the Chief Minister"
+     ],
+     [
+      "13",
+      "Ms. Nusrat Sultana, Women, nominated by the Chief Minister"
+     ],
+     [
+      "14",
+      "Prof. Dr. Zeeshan Ali Memon, Dean , Faculty of Engineering, DUET"
+     ],
+     [
+      "15",
+      "Prof. Dr. Ghulamullah Maitlo, Professor , DUET"
+     ],
+     [
+      "16",
+      "Dr. Saleem Ahmed Phul, Associate Professor , DUET"
+     ],
+     [
+      "17",
+      "Engr. Sohail Rana, Assistant Professor , DUET"
+     ],
+     [
+      "18",
+      "Mr. Rafiq Rehman, Lecturer , DUET"
+     ]
+    ]
+   }
+  ]
+ },
+ "/business-incubation-center": {
+  "title": "Business Incubation Center",
+  "description": "",
+  "sidebar": [
+   {
+    "text": "Admissions",
+    "to": "/admissions"
+   },
+   {
+    "text": "Business Incubation Center",
+    "to": "/business-incubation-center"
+   },
+   {
+    "text": "Continues Professional Development",
+    "to": "/continues-professional-development"
+   },
+   {
+    "text": "Financial Assistance Departments",
+    "to": "/financial-assistance-departments"
+   },
+   {
+    "text": "Industrial Liasons & Alumni Affairs",
+    "to": "/industrial-liasons-alumni-affairs"
+   },
+   {
+    "text": "Information Technology",
+    "to": "/information-technology"
+   },
+   {
+    "text": "Office of Research Innovation & Commercialisation",
+    "to": "/office-of-research-innovation-commercialisation"
+   },
+   {
+    "text": "Postgraduate Studies",
+    "to": "/postgraduate-studies"
+   },
+   {
+    "text": "Quality Enhancement cell",
+    "to": "/quality-enhancement-cell"
+   },
+   {
+    "text": "Sports",
+    "to": "/sports"
+   },
+   {
+    "text": "Students Affairs",
+    "to": "/students-affairs"
+   }
+  ],
+  "blocks": [
+   {
+    "t": "h",
+    "level": 2,
+    "text": "Coming Soon..."
+   }
+  ]
+ },
+ "/career-counselling": {
+  "title": "Career Counselling",
+  "description": "",
+  "sidebar": [
+   {
+    "text": "Academic Calendar",
+    "to": "/academic-calendar"
+   },
+   {
+    "text": "University Policies",
+    "to": "/university-policies"
+   },
+   {
+    "text": "Scholarships",
+    "to": "/scholarships"
+   },
+   {
+    "text": "Students Affairs",
+    "to": "/students-affairs"
+   },
+   {
+    "text": "Results",
+    "to": "/results"
+   },
+   {
+    "text": "Internships",
+    "to": "/internships"
+   },
+   {
+    "text": "Career Counselling",
+    "to": "/career-counselling"
+   },
+   {
+    "text": "Shuttle Bus Routes",
+    "to": "/shuttle-bus-routes"
+   },
+   {
+    "text": "Students Societies",
+    "to": "/students-societies"
+   },
+   {
+    "text": "Seminars & Workshops",
+    "to": "/seminars-workshops"
+   }
+  ],
+  "blocks": [
+   {
+    "t": "h",
+    "level": 2,
+    "text": "Coming Soon..."
+   }
+  ]
+ },
+ "/careers": {
+  "title": "CAREERS",
+  "description": "",
+  "sidebar": [],
+  "blocks": [
+   {
+    "t": "h",
+    "level": 3,
+    "text": "To apply online please click on Registration link mentioned below:"
+   },
+   {
+    "t": "h",
+    "level": 3,
+    "text": "https://career.duet.edu.pk/"
+   },
+   {
+    "t": "links",
+    "items": [
+     {
+      "t": "link",
+      "text": "https://career.duet.edu.pk/",
+      "to": "/index.php/user/login"
+     }
+    ]
+   },
+   {
+    "t": "h",
+    "level": 3,
+    "text": "To Check Eligibility Criteria for Visiting Faculty click below:"
+   },
+   {
+    "t": "links",
+    "items": [
+     {
+      "t": "link",
+      "text": "Eligibility Criteria to apply for visiting faculty-",
+      "file": "Eligibility-Criteria-to-apply-for-visiting-faculty-.pdf"
+     }
+    ]
+   }
+  ]
+ },
+ "/certificates": {
+  "title": "Certificates",
+  "description": "",
+  "sidebar": [
+   {
+    "text": "Regulations",
+    "to": "/regulations"
+   },
+   {
+    "text": "Schedule",
+    "to": "/schedule"
+   },
+   {
+    "text": "Results",
+    "to": "/results"
+   },
+   {
+    "text": "Certificates",
+    "to": "/certificates"
+   },
+   {
+    "text": "Convocation",
+    "to": "/convocation"
+   },
+   {
+    "text": "Downloads",
+    "to": "/downloads-2"
+   }
+  ],
+  "blocks": [
+   {
+    "t": "h",
+    "level": 2,
+    "text": "Coming Soon..."
+   }
+  ]
+ },
+ "/conference-seminars": {
+  "title": "Conference & Seminars",
+  "description": "INTERNATIONAL CONFERENCE On Combating Natural Gas Shortages: Can Alternative Energy Provide an Efficient Solution and Relief to the Industry Gasping for Ga",
+  "sidebar": [
+   {
+    "text": "Projects",
+    "to": "/projects"
+   },
+   {
+    "text": "Journal",
+    "to": "/journal"
+   },
+   {
+    "text": "Publications",
+    "to": "/publications"
+   },
+   {
+    "text": "Conference & Seminars",
+    "to": "/conference-seminars"
+   },
+   {
+    "text": "Funding Agencies",
+    "to": "/funding-agencies"
+   },
+   {
+    "text": "Research",
+    "to": "/research"
+   },
+   {
+    "text": "Plagiarism Policy",
+    "to": "/plagiarism-policy"
+   }
+  ],
+  "blocks": [
+   {
+    "t": "p",
+    "text": "INTERNATIONAL CONFERENCE On Combating Natural Gas Shortages: Can Alternative Energy Provide an Efficient Solution and Relief to the Industry Gasping for Gas?"
+   }
+  ]
+ },
+ "/continues-professional-development": {
+  "title": "Continues Professional Development",
+  "description": "Add Your Heading Text HereDirectorate of Continuing Professional Development, Dawood University of engineering and Technology was established in 2008. The ",
+  "sidebar": [
+   {
+    "text": "Admissions",
+    "to": "/admissions"
+   },
+   {
+    "text": "Business Incubation Center",
+    "to": "/business-incubation-center"
+   },
+   {
+    "text": "Continues Professional Development",
+    "to": "/continues-professional-development"
+   },
+   {
+    "text": "Financial Assistance Departments",
+    "to": "/financial-assistance-departments"
+   },
+   {
+    "text": "Industrial Liasons & Alumni Affairs",
+    "to": "/industrial-liasons-alumni-affairs"
+   },
+   {
+    "text": "Information Technology",
+    "to": "/information-technology"
+   },
+   {
+    "text": "Office of Research Innovation & Commercialisation",
+    "to": "/office-of-research-innovation-commercialisation"
+   },
+   {
+    "text": "Postgraduate Studies",
+    "to": "/postgraduate-studies"
+   },
+   {
+    "text": "Quality Enhancement cell",
+    "to": "/quality-enhancement-cell"
+   },
+   {
+    "text": "Sports",
+    "to": "/sports"
+   },
+   {
+    "text": "Students Affairs",
+    "to": "/students-affairs"
+   }
+  ],
+  "blocks": [
+   {
+    "t": "p",
+    "text": "Add Your Heading Text HereDirectorate of Continuing Professional Development, Dawood University of engineering and Technology was established in 2008. The purpose of Directorate of Continuing Professional Development is to organize credit courses, certificate courses, professional education, professional development programs, trainings, workshops, seminars, conferences, etc. to help faculty, staff and students to enhance their skills and professional development."
+   },
+   {
+    "t": "p",
+    "text": "Pakistan Engineering Council (PEC) under PEC Act and CPD Byelaws-2008, is working for the professional growth and skill enhancement of ever growing engineering community. Under CPD framework, the engineers (both PEs and REs) are required to learn innovative and soft skills to be more effective in playing productive role towards nation building. DAWOOD UNIVERSITY OF ENGINEERING & TECHNOLOGY with its registered office at KARACHI has been licensed under \"PEC Professional Development of Engineers Byelaws-2008\", to carry out Continuing Professional Development activities to the Registered Engineers (REs) and Professional Engineers (PEs)"
+   }
+  ]
+ },
+ "/convocation": {
+  "title": "Convocation",
+  "description": "",
+  "sidebar": [
+   {
+    "text": "Regulations",
+    "to": "/regulations"
+   },
+   {
+    "text": "Schedule",
+    "to": "/schedule"
+   },
+   {
+    "text": "Results",
+    "to": "/results"
+   },
+   {
+    "text": "Certificates",
+    "to": "/certificates"
+   },
+   {
+    "text": "Convocation",
+    "to": "/convocation"
+   },
+   {
+    "text": "Downloads",
+    "to": "/downloads-2"
+   }
+  ],
+  "blocks": [
+   {
+    "t": "h",
+    "level": 2,
+    "text": "Coming Soon..."
+   }
+  ]
+ },
+ "/directorates": {
+  "title": "DIRECTORATES",
+  "description": "",
+  "sidebar": [],
+  "blocks": []
+ },
+ "/downloads-2": {
+  "title": "Downloads",
+  "description": "",
+  "sidebar": [
+   {
+    "text": "Regulations",
+    "to": "/regulations"
+   },
+   {
+    "text": "Schedule",
+    "to": "/schedule"
+   },
+   {
+    "text": "Results",
+    "to": "/results"
+   },
+   {
+    "text": "Certificates",
+    "to": "/certificates"
+   },
+   {
+    "text": "Convocation",
+    "to": "/convocation"
+   },
+   {
+    "text": "Downloads",
+    "to": "/downloads-2"
+   }
+  ],
+  "blocks": [
+   {
+    "t": "h",
+    "level": 2,
+    "text": "Coming Soon..."
+   }
+  ]
+ },
+ "/downloads": {
+  "title": "Downloads",
+  "description": "",
+  "sidebar": [],
+  "blocks": [
+   {
+    "t": "list",
+    "ordered": false,
+    "items": [
+     "Admission Cancellation for enrolled student",
+     "Turnitin-form",
+     "Research Remuneration Form",
+     "PT-Form",
+     "CQI Team Form (1)",
+     "English Proficiency Certificate",
+     "Employee ID Card Proforma",
+     "UNDERGRADUATE STUDENTS I.D CARD PROFORMA",
+     "PG STUDENTS I.D CARD PROFORMA",
+     "Enrollment Form Undergraduate",
+     "Enrollment Form Postgraduate",
+     "Migration Form",
+     "UNDERTAKING FOR DUPLICATE ENROLLMENT OR I.D CARD",
+     "Undertaking for Modification in Enrollment or I.D Card",
+     "AFFIDAVIT FOR NOT RECEIVED I.D OR ENROLLMENT CARD FROM DEPARTMENT",
+     "Marksheet Issuance Return"
+    ]
+   }
+  ]
+ },
+ "/duet-cemet": {
+  "title": "DUET-CEMET",
+  "description": "",
+  "sidebar": [],
+  "blocks": []
+ },
+ "/examinations": {
+  "title": "EXAMINATIONS",
+  "description": "",
+  "sidebar": [],
+  "blocks": []
+ },
+ "/faculty-departments": {
+  "title": "Faculty & Departments",
+  "description": "The foundation stone of the Dawood College was laid by the former President of Pakistan (Late) Field Marshal Muhammad Ayub Khan in 1962. The Government of ",
+  "sidebar": [
+   {
+    "text": "Academic Calendar",
+    "to": "/academic-calendar"
+   },
+   {
+    "text": "Faculties & Departments",
+    "to": "/faculty-departments"
+   },
+   {
+    "text": "Undergraduate Programs",
+    "to": "/undergrad-programs"
+   },
+   {
+    "text": "Undergraduate Regulations",
+    "to": "/undergrad-regulations"
+   },
+   {
+    "text": "Postgraduate Programs",
+    "to": "/postgraduate-programs"
+   },
+   {
+    "text": "Postgraduate Regulations",
+    "to": "/postgraduate-regulations"
+   },
+   {
+    "text": "HEC Approved PhD Supervisors",
+    "to": "/hec-approved-phd-supervisors"
+   },
+   {
+    "text": "Outcome Based Education (OBE)",
+    "to": "/outcome-based-education-obe"
+   }
+  ],
+  "blocks": [
+   {
+    "t": "h",
+    "level": 1,
+    "text": "Faculties and Departments"
+   },
+   {
+    "t": "list",
+    "ordered": false,
+    "items": [
+     "Faculty of IMEE",
+     "Faculty of PMC",
+     "Faculty of ICS",
+     "Faculty of BAS",
+     "Faculty of CARP"
+    ]
+   },
+   {
+    "t": "h",
+    "level": 3,
+    "text": "Faculty of Chemical, Energy & Environment, Industrial Engineering & Management, Mechanical, Metallurgy & Materials and Petroleum & Gas Engineering"
+   },
+   {
+    "t": "list",
+    "ordered": true,
+    "items": [
+     "Department of Chemical Engineering",
+     "Department of Energy & Environment Engineering",
+     "Department of Industrial Engineering & Management",
+     "Department of Metallurgy & Materials Engineering",
+     "Department of Petroleum & Gas Engineering"
+    ]
+   },
+   {
+    "t": "h",
+    "level": 3,
+    "text": "Faculty of Information & Computing Sciences"
+   },
+   {
+    "t": "list",
+    "ordered": true,
+    "items": [
+     "Department of Computer System Engineering",
+     "Department of Department of Electronic Engineering",
+     "Department of Telecommunication Engineering"
+    ]
+   },
+   {
+    "t": "h",
+    "level": 3,
+    "text": "Faculty of Information & Computing Sciences"
+   },
+   {
+    "t": "list",
+    "ordered": true,
+    "items": [
+     "Department of Computer System Engineering",
+     "Department of Department of Electronic Engineering",
+     "Department of Telecommunication Engineering"
+    ]
+   },
+   {
+    "t": "h",
+    "level": 3,
+    "text": "Faculty of BAS"
+   },
+   {
+    "t": "list",
+    "ordered": true,
+    "items": [
+     "Department of Basic Sciences and Humanities",
+     "Department of Computer Science",
+     "Department of Mathematics"
+    ]
+   },
+   {
+    "t": "h",
+    "level": 3,
+    "text": "Faculty of Civil Engineering and Architecture & Planning"
+   },
+   {
+    "t": "list",
+    "ordered": true,
+    "items": [
+     "Department of Architecture & Planning",
+     "Department of Civil Engineering"
+    ]
+   },
+   {
+    "t": "h",
+    "level": 2,
+    "text": "D"
+   },
+   {
+    "t": "p",
+    "text": "The foundation stone of the Dawood College was laid by the former President of Pakistan (Late) Field Marshal Muhammad Ayub Khan in 1962. The Government of Sindh through an Act of the Provincial Assembly elevated the College to the status of University in 2013."
+   },
+   {
+    "t": "h",
+    "level": 3,
+    "text": "Contact Us"
+   },
+   {
+    "t": "h",
+    "level": 2,
+    "text": "Registrar +92 21 9923 2645 registrar@duet.edu.pk"
+   },
+   {
+    "t": "p",
+    "text": "Controller of Examination +92 21 9923 0476 controller.examination@duet.edu.pk"
+   },
+   {
+    "t": "p",
+    "text": "Directorate of Admissions +92 21 99230706, +92345-3656773 admissions@duet.edu.pk"
+   },
+   {
+    "t": "h",
+    "level": 3,
+    "text": "Quick Links"
+   },
+   {
+    "t": "list",
+    "ordered": false,
+    "items": [
+     "Admissions",
+     "Undergraduate Program",
+     "Postgraduate Program",
+     "Student Portal",
+     "FAQ"
+    ]
+   },
+   {
+    "t": "h",
+    "level": 3,
+    "text": "Campuses"
+   },
+   {
+    "t": "h",
+    "level": 3,
+    "text": "Jinnah Campus"
+   },
+   {
+    "t": "h",
+    "level": 3,
+    "text": "Dawood University of Engineering & Technology, New M. A. Jinnah Road, Karachi, Sindh, Pakistan (74800)."
+   },
+   {
+    "t": "h",
+    "level": 3,
+    "text": "Iqbal Campus"
+   },
+   {
+    "t": "h",
+    "level": 3,
+    "text": "Dawood University of Engineering & Technology, Block 17 Gulshan-e-Iqbal, Karachi, Sindh, Pakistan, (75300)."
+   }
+  ]
+ },
+ "/fee-structure": {
+  "title": "Fee Structures",
+  "description": "Namun, ketika Ukraina terjerat dalam konflik mematikan dengan Rusia, Pielieshenko merasa panggilan yang lebih tinggi. Ia tidak hanya ingin memperjuangkan p",
+  "sidebar": [],
+  "blocks": [
+   {
+    "t": "h",
+    "level": 3,
+    "text": "Kisah Oleksandr Pielieshenko, Sang Juara Angkat Besi yang Gugur dalam Perang Melawan Rusia"
+   },
+   {
+    "t": "p",
+    "text": "Namun, ketika Ukraina terjerat dalam konflik mematikan dengan Rusia, Pielieshenko merasa panggilan yang lebih tinggi. Ia tidak hanya ingin memperjuangkan prestasi di atas podium, melainkan juga membela tanah airnya di medan perang. Keputusannya untuk bergabung dengan pasukan Ukraina sebagai seorang prajurit merupakan bukti nyata keberaniannya yang tak terbendung."
+   },
+   {
+    "t": "p",
+    "text": "Kisah kepahlawanan Pielieshenko mencapai puncaknya ketika ia terlibat dalam pertempuran sengit melawan pasukan Rusia. Meskipun keberanian dan kekuatannya sebagai atlet angkat besi menjadi modalnya, namun dalam medan perang, kekuatan fisik saja tidak cukup. Dalam pertarungan yang berat, Pielieshenko gugur sebagai seorang prajurit, meninggalkan luka mendalam bagi keluarga, teman, dan seluruh negaranya."
+   }
+  ]
+ },
+ "/financial-assistance-departments": {
+  "title": "Financial Assistance Departments",
+  "description": "Students from humble backgrounds always remain under continuous financial pressure. The effects of the weak economy, due to the Covid-19 pandemic, have fur",
+  "sidebar": [
+   {
+    "text": "Admissions",
+    "to": "/admissions"
+   },
+   {
+    "text": "Business Incubation Center",
+    "to": "/business-incubation-center"
+   },
+   {
+    "text": "Continues Professional Development",
+    "to": "/continues-professional-development"
+   },
+   {
+    "text": "Financial Assistance Departments",
+    "to": "/financial-assistance-departments"
+   },
+   {
+    "text": "Industrial Liasons & Alumni Affairs",
+    "to": "/industrial-liasons-alumni-affairs"
+   },
+   {
+    "text": "Information Technology",
+    "to": "/information-technology"
+   },
+   {
+    "text": "Office of Research Innovation & Commercialisation",
+    "to": "/office-of-research-innovation-commercialisation"
+   },
+   {
+    "text": "Postgraduate Studies",
+    "to": "/postgraduate-studies"
+   },
+   {
+    "text": "Quality Enhancement cell",
+    "to": "/quality-enhancement-cell"
+   },
+   {
+    "text": "Sports",
+    "to": "/sports"
+   },
+   {
+    "text": "Students Affairs",
+    "to": "/students-affairs"
+   }
+  ],
+  "blocks": [
+   {
+    "t": "h",
+    "level": 1,
+    "text": "Financial Assistance Development"
+   },
+   {
+    "t": "p",
+    "text": "Students from humble backgrounds always remain under continuous financial pressure. The effects of the weak economy, due to the Covid-19 pandemic, have further exacerbated the monetary miseries of many households. Assistantships that cover tuition fees and living costs could allow students to focus on their education rather than worry about the repercussions of the appalling economy. In addition, students could save their valuable time by keeping the focus on studies rather than working part-time. Scholarships could therefore ease the financial burden on students and families. Dawood University of Engineering and Technology (DUET) believes in human development and equal opportunity for all. There are various scholarships, such as Ehsaas, HEC Need Based, PEF, DCET Alumni, Kamran Educational Foundation, IEP-SAC, Pakistan Bait-ul-Mal, Sindh Endowment Scholarship available for needy and excellent students. The student scholarships are managed through the Financial Assistance Department (FAD). Various scholarships are announced by the FAD all year round. The record of the needy students, especially orphans and those belonging to the underprivileged areas is maintained, and assistance is provided to such students on a priority basis. At DUET, we take great pride in nurturing our future generations with great compassion and empathy. Prospective students and their families are assured that all students regardless of financial status-receive the same treatment because one of DUET's core values is to provide quality education to all students, regardless of ability to pay. Due to the emergence of COVID-19, the past year was very unfortunate that saw awful impacts of this terrible disease on the social and economic processes.The disruption of normal and the appalling effects of the economy has distressed many students. However, due to the unwavering efforts of the FAD, many funding agencies came forward to rescue these students. Last year FAD garnered around 791 scholarships for the neediest and deserving students. This year FAD has projected that 938 students will get benefit from various scholarship programs."
+   }
+  ]
+ },
+ "/funding-agencies": {
+  "title": "Funding Agencies",
+  "description": "",
+  "sidebar": [
+   {
+    "text": "Projects",
+    "to": "/projects"
+   },
+   {
+    "text": "Journal",
+    "to": "/journal"
+   },
+   {
+    "text": "Publications",
+    "to": "/publications"
+   },
+   {
+    "text": "Conference & Seminars",
+    "to": "/conference-seminars"
+   },
+   {
+    "text": "Funding Agencies",
+    "to": "/funding-agencies"
+   },
+   {
+    "text": "Research",
+    "to": "/research"
+   },
+   {
+    "text": "Plagiarism Policy",
+    "to": "/plagiarism-policy"
+   }
+  ],
+  "blocks": [
+   {
+    "t": "h",
+    "level": 2,
+    "text": "Coming Soon..."
+   }
+  ]
+ },
+ "/hec-approved-phd-supervisors": {
+  "title": "HEC Approved PhD Supervisors",
+  "description": "",
+  "sidebar": [
+   {
+    "text": "Academic Calendar",
+    "to": "/academic-calendar"
+   },
+   {
+    "text": "Faculties & Departments",
+    "to": "/faculty-departments"
+   },
+   {
+    "text": "Undergraduate Programs",
+    "to": "/undergrad-programs"
+   },
+   {
+    "text": "Undergraduate Regulations",
+    "to": "/undergrad-regulations"
+   },
+   {
+    "text": "Postgraduate Programs",
+    "to": "/postgraduate-programs"
+   },
+   {
+    "text": "Postgraduate Regulations",
+    "to": "/postgraduate-regulations"
+   },
+   {
+    "text": "HEC Approved PhD Supervisors",
+    "to": "/hec-approved-phd-supervisors"
+   },
+   {
+    "text": "Outcome Based Education (OBE)",
+    "to": "/outcome-based-education-obe"
+   }
+  ],
+  "blocks": [
+   {
+    "t": "h",
+    "level": 1,
+    "text": "HEC Approved PhD Supervisor"
+   },
+   {
+    "t": "table",
+    "rows": [
+     [
+      "S. No.",
+      "Supervisor Name",
+      "Designation",
+      "SUBJECT"
+     ],
+     [
+      "1",
+      "Samreen Hussain",
+      "Vice Chancellor and Professor",
+      "Engineering & Technology"
+     ],
+     [
+      "2",
+      "Abdul Waheed Bhutto",
+      "Professor",
+      "Engineering & Technology"
+     ],
+     [
+      "3",
+      "Muhammad Zahid Tunio",
+      "Professor",
+      "Engineering & Technology"
+     ],
+     [
+      "4",
+      "Yasira Naeem Pasha",
+      "Professor",
+      "Social Sciences"
+     ],
+     [
+      "5",
+      "Ghulamullah Maitlo",
+      "Professor",
+      "Engineering & Technology"
+     ],
+     [
+      "6",
+      "Asif Ali Shah",
+      "Professor",
+      "Engineering & Technology"
+     ],
+     [
+      "7",
+      "Sikander Ali Abbasi",
+      "Advisor Student Affairs",
+      "Engineering & Technology"
+     ],
+     [
+      "8",
+      "Saleem Ahmed",
+      "Associate Professor",
+      "Engineering & Technology"
+     ],
+     [
+      "9",
+      "Fida Hussain",
+      "Associate Professor",
+      "Physical Sciences"
+     ],
+     [
+      "10",
+      "Ghulam Abbas Kandhro",
+      "Associate Professor",
+      "Physical Sciences"
+     ],
+     [
+      "11",
+      "Inamullah Maitlo",
+      "Associate Professor",
+      "Engineering & Technology"
+     ],
+     [
+      "12",
+      "Ramesh Kumar",
+      "Associate Professor",
+      "Engineering & Technology"
+     ],
+     [
+      "13",
+      "Zahid Hussain Hulio",
+      "Associate Professor",
+      "Engineering & Technology"
+     ],
+     [
+      "14",
+      "Sajid Hussain Siyal",
+      "Chairman and Associate Professor",
+      "Engineering & Technology"
+     ],
+     [
+      "15",
+      "Shaukat Ali Mazari",
+      "Assistant Professor",
+      "Engineering & Technology"
+     ],
+     [
+      "16",
+      "Dost Muhammad Saqib Bhatti",
+      "Assistant Professor",
+      "Engineering & Technology"
+     ],
+     [
+      "17",
+      "Muhammad Dawood Idrees",
+      "Assistant Professor",
+      "Engineering & Technology"
+     ],
+     [
+      "18",
+      "Muhammad Rauf",
+      "Assistant Professor",
+      "Engineering & Technology"
+     ],
+     [
+      "19",
+      "Sajid Hussain Siyal",
+      "Assistant Professor",
+      "Engineering & Technology"
+     ],
+     [
+      "20",
+      "Arsalan Ansari",
+      "Assistant Professor",
+      "Engineering & Technology"
+     ],
+     [
+      "21",
+      "Awais Gul Airij Gul",
+      "Assistant Professor",
+      "Engineering & Technology"
+     ],
+     [
+      "22",
+      "Arsalan Ahmed",
+      "Assistant Professor",
+      "Social Sciences"
+     ],
+     [
+      "23",
+      "Adnan Waqar",
+      "Assistant Professor",
+      "Engineering & Technology"
+     ],
+     [
+      "24",
+      "Atif Jamil",
+      "Assistant Professor",
+      "Engineering & Technology"
+     ],
+     [
+      "25",
+      "Abdul Sami",
+      "Assistant Professor",
+      "Engineering & Technology"
+     ],
+     [
+      "26",
+      "Zeeshan Ali",
+      "Assistant Professor",
+      "Engineering & Technology"
+     ],
+     [
+      "27",
+      "Irfan ali chandio",
+      "Assistant Professor",
+      "Engineering & Technology"
+     ],
+     [
+      "28",
+      "Muhammad Hashim Dahri",
+      "Assistant Professor",
+      "Engineering & Technology"
+     ],
+     [
+      "29",
+      "zulfiqar hussain qadir bux pathan",
+      "Assistant Professor",
+      "Physical Sciences"
+     ],
+     [
+      "30",
+      "Ihsanullah Sooho",
+      "Lecturer",
+      "Engineering & Technology"
+     ],
+     [
+      "31",
+      "Ayaz Ali Shah",
+      "Assistant Professor",
+      "Engineering & Technology"
+     ],
+     [
+      "32",
+      "Asif Aziz Memon",
+      "Assistant Professor",
+      "Engineering & Technology"
+     ],
+     [
+      "33",
+      "Najeebullah Lashari",
+      "Assistant Professor",
+      "Engineering & Technology"
+     ],
+     [
+      "34",
+      "Pervaiz Ali Channar",
+      "Assistant Professor",
+      "Physical Sciences"
+     ],
+     [
+      "35",
+      "Muhammad Ilyas Abro",
+      "Assistant Professor",
+      "Physical Sciences"
+     ],
+     [
+      "36",
+      "Bulbul Jan",
+      "Assistant Professor",
+      "Physical Sciences"
+     ],
+     [
+      "37",
+      "Abdul Fatah Soomro",
+      "Assistant Professor",
+      "Engineering & Technology"
+     ],
+     [
+      "38",
+      "Waheed Ali Abro",
+      "Assistant Professor",
+      "Engineering & Technology"
+     ],
+     [
+      "39",
+      "Bilal Shams",
+      "Assistant Professor",
+      "Engineering & Technology"
+     ]
+    ]
+   }
+  ]
+ },
+ "/incubation-centre": {
+  "title": "INCUBATION CENTRE",
+  "description": "The proposal filled in all respects and with all required attachments (provided in the template) must reach at the following address on or before 20th Octo",
+  "sidebar": [],
+  "blocks": [
+   {
+    "t": "links",
+    "items": [
+     {
+      "t": "link",
+      "text": "CEMET Call For Proposal (CFP)",
+      "file": "CEMET-Call-For-Proposal-CFP.pdf"
+     },
+     {
+      "t": "link",
+      "text": "Eligibility Criteria",
+      "file": "Eligibility-Criteria-DUET-CEMET-Startup-Grant.pdf"
+     },
+     {
+      "t": "link",
+      "text": "Proposal Template",
+      "to": "/wp-content/uploads/2023/09/Proposal-Template-DUET-CEMET-Startup-Grant-1.docx"
+     },
+     {
+      "t": "link",
+      "text": "Evaluation Performa",
+      "file": "Evaluation-Performa-DUET-CEMET-Startup-Grant.pdf"
+     }
+    ]
+   },
+   {
+    "t": "p",
+    "text": "The proposal filled in all respects and with all required attachments (provided in the template) must reach at the following address on or before 20th October 2023. The Registrar Office, Dawood University of Engineering and Technology, New M.A. Jinnah Road, Karachi(74800) +92-21-9923-2645 registrar@duet.edu.pk"
+   }
+  ]
+ },
+ "/industrial-liasons-alumni-affairs": {
+  "title": "Industrial Liasons & Alumni Affairs",
+  "description": "Directorate of Industrial Liaison & Alumni Affairs is been working on its full pace since its inception and have achieved major milestones till now. Direct",
+  "sidebar": [
+   {
+    "text": "Admissions",
+    "to": "/admissions"
+   },
+   {
+    "text": "Business Incubation Center",
+    "to": "/business-incubation-center"
+   },
+   {
+    "text": "Continues Professional Development",
+    "to": "/continues-professional-development"
+   },
+   {
+    "text": "Financial Assistance Departments",
+    "to": "/financial-assistance-departments"
+   },
+   {
+    "text": "Industrial Liasons & Alumni Affairs",
+    "to": "/industrial-liasons-alumni-affairs"
+   },
+   {
+    "text": "Information Technology",
+    "to": "/information-technology"
+   },
+   {
+    "text": "Office of Research Innovation & Commercialisation",
+    "to": "/office-of-research-innovation-commercialisation"
+   },
+   {
+    "text": "Postgraduate Studies",
+    "to": "/postgraduate-studies"
+   },
+   {
+    "text": "Quality Enhancement cell",
+    "to": "/quality-enhancement-cell"
+   },
+   {
+    "text": "Sports",
+    "to": "/sports"
+   },
+   {
+    "text": "Students Affairs",
+    "to": "/students-affairs"
+   }
+  ],
+  "blocks": [
+   {
+    "t": "p",
+    "text": "Directorate of Industrial Liaison & Alumni Affairs is been working on its full pace since its inception and have achieved major milestones till now. Directorate of Industrial Liaison & Alumni Affairs is proudly responsible of various activities related to industry and students of Dawood University and has been fulfilling the responsibilities of Industrial liaison which includes communication, coordination , planning and formulating a bridge between Industry and University. Along with shores of Industrial Liaison Directorate of Industrial Liaison & Alumni Affairs handles the most important portfolio which is Alumni Affairs and in which DILAA is responsible for making database of the alumnus and maintaining their profile through digital Alumni portal on website and on Facebook Page which helps Dawood University of Engineering & Technology to understand their alumni current market standing and where they are employed along with complete data profile of Alumnus."
+   },
+   {
+    "t": "p",
+    "text": "The summary of activities which are performed on annual basis are as follows. Job Fair > Senior Alumni Interaction Session > Pakistan Engineering Council Accreditation Visit. > Online Portal for professional Resume Development. > Mock Interviews. > Educational Exhibition > On campus Recruitment Drive > Summer Internship Programs > Alumni Dinner > Industrial Visits > Sponsorship for events and activities."
+   }
+  ]
+ },
+ "/information-technology": {
+  "title": "Information Technology",
+  "description": "The Directorate of Information Technology (IT) at DUET has advanced infrastructure with robust Information and Communication System. The directorate provid",
+  "sidebar": [
+   {
+    "text": "Admissions",
+    "to": "/admissions"
+   },
+   {
+    "text": "Business Incubation Center",
+    "to": "/business-incubation-center"
+   },
+   {
+    "text": "Continues Professional Development",
+    "to": "/continues-professional-development"
+   },
+   {
+    "text": "Financial Assistance Departments",
+    "to": "/financial-assistance-departments"
+   },
+   {
+    "text": "Industrial Liasons & Alumni Affairs",
+    "to": "/industrial-liasons-alumni-affairs"
+   },
+   {
+    "text": "Information Technology",
+    "to": "/information-technology"
+   },
+   {
+    "text": "Office of Research Innovation & Commercialisation",
+    "to": "/office-of-research-innovation-commercialisation"
+   },
+   {
+    "text": "Postgraduate Studies",
+    "to": "/postgraduate-studies"
+   },
+   {
+    "text": "Quality Enhancement cell",
+    "to": "/quality-enhancement-cell"
+   },
+   {
+    "text": "Sports",
+    "to": "/sports"
+   },
+   {
+    "text": "Students Affairs",
+    "to": "/students-affairs"
+   }
+  ],
+  "blocks": [
+   {
+    "t": "h",
+    "level": 1,
+    "text": "Directorate of Information Technology"
+   },
+   {
+    "t": "p",
+    "text": "The Directorate of Information Technology (IT) at DUET has advanced infrastructure with robust Information and Communication System. The directorate provide high performance computing facilities to faculty, students and staff within Jinnah and Iqbal campus. The state-of-the-art facility is equipped with network of high speed fibre optics. The key areas of the IT department offer following facilities and resources. at DUET."
+   },
+   {
+    "t": "p",
+    "text": "Dr. Izhar Hussain Zaidi Director IT Dawood University of Engineering and Technology"
+   },
+   {
+    "t": "p",
+    "text": "The Information & Technology Department offers a broad spectrum of diversified services provided by its various sections. The department comprises of two main Sections i.e."
+   },
+   {
+    "t": "p",
+    "text": "1. Network & Hardware Section"
+   },
+   {
+    "t": "p",
+    "text": "Operational Services : 24x7 NOC operations Network Support IT infrastructure feasibility & planning. Service deployment & configurations (Firewalls, Routers, Internet Access, Email gateways etc.) Network Analysis, Design and Deployment (Wireless, wired and Optical Fiber)."
+   },
+   {
+    "t": "p",
+    "text": "The Pakistan Education and Research Network (FERN) connect DUET through high-speed internet bandwidth. DUET has Pern Facility with capacity of 300Mbps which provide high speed internet connectivity. The network provides inter-campus connectivity of Jinnah and Iqbal campus through optical fiber links and with other educational organization."
+   },
+   {
+    "t": "p",
+    "text": "The facility provide access to high quality international and national research journals, E-books and reports."
+   },
+   {
+    "t": "p",
+    "text": "State-of-the-Art data center with 1 server rack along with 2 network racks with capacity to host multiple servers at 4.8Gbps"
+   },
+   {
+    "t": "p",
+    "text": "Huawei-Wi-Fi connectivity within DUET campus provide accessibility to LAN and WAN services on personal Computer and Wi-Fi mobile phones."
+   },
+   {
+    "t": "p",
+    "text": "2. Development Tool & Services"
+   },
+   {
+    "t": "p",
+    "text": "- SQL- database- MS SQL, Management Studio 18"
+   },
+   {
+    "t": "p",
+    "text": "- .NET- ASP.NET, Web Application, Visual studio 2017"
+   },
+   {
+    "t": "p",
+    "text": "- Azure Cloud- Admission PHP, Framework quaternate development"
+   },
+   {
+    "t": "p",
+    "text": "- Website – hosting services hoster.pk, WordPress"
+   },
+   {
+    "t": "p",
+    "text": "- portal software- ASP.net"
+   },
+   {
+    "t": "p",
+    "text": "- QUE Management system for Admission interview PHP Based"
+   },
+   {
+    "t": "p",
+    "text": "DUET has official web-portal registered with PKNIC as www.duet.edu.pk . This portal covers regular updates of the events such as workshops, conferences, Alumni affairs, Research projects and job openings."
+   },
+   {
+    "t": "p",
+    "text": "Students' Microsoft IDs have been created by an administrator and students log in to the DUET Portal. Students can generate a semester fee challan and examination fee challan, check their attendance, and submit their examination forms."
+   },
+   {
+    "t": "p",
+    "text": "Students need to fill their admission forms online and generate the admission fee challan, after submitting the fee challan they will generate admit card to appear in the entry test. The admission department also reviews the list of applied students. After the entry test admission department generates the merit list to call for an interview and then final merit list generates."
+   },
+   {
+    "t": "p",
+    "text": "Attendance Management System"
+   },
+   {
+    "t": "p",
+    "text": "We have developed attendance management where subjects will be assigned to teachers according to timetable and teachers will be able to mark attendance of their subjects. Students can check their attendance on their portal. Chairman has the rights to generate attendance reports according to their requirements."
+   },
+   {
+    "t": "p",
+    "text": "We have developed Helpdesk system for Students, Faculty, and Staff can lodge complaints about all I.T related issues on the helpdesk system where I.T will generate tickets and assign job to the concern person to resolve the issue on priority basis."
+   },
+   {
+    "t": "p",
+    "text": "Audio/Video Live Conferencing:"
+   },
+   {
+    "t": "p",
+    "text": "DUET has Audio/Video conferencing facility available at vice-conference room. This resource connects DUET to local and international Audio/Video Facilities of virtual universities, classes, conferences, seminars and online meetings."
+   },
+   {
+    "t": "p",
+    "text": "The Email Server of DUET IS deployed in the NOC and Provide more 8787 active no of accounts on our portal of Microsoft Office 365. These accounts offer secure E-mail services to faculty, students, and staff."
+   }
+  ]
+ },
+ "/internships": {
+  "title": "Internships",
+  "description": "",
+  "sidebar": [
+   {
+    "text": "Academic Calendar",
+    "to": "/academic-calendar"
+   },
+   {
+    "text": "University Policies",
+    "to": "/university-policies"
+   },
+   {
+    "text": "Scholarships",
+    "to": "/scholarships"
+   },
+   {
+    "text": "Students Affairs",
+    "to": "/students-affairs"
+   },
+   {
+    "text": "Results",
+    "to": "/results"
+   },
+   {
+    "text": "Internships",
+    "to": "/internships"
+   },
+   {
+    "text": "Career Counselling",
+    "to": "/career-counselling"
+   },
+   {
+    "text": "Shuttle Bus Routes",
+    "to": "/shuttle-bus-routes"
+   },
+   {
+    "text": "Students Societies",
+    "to": "/students-societies"
+   },
+   {
+    "text": "Seminars & Workshops",
+    "to": "/seminars-workshops"
+   }
+  ],
+  "blocks": [
+   {
+    "t": "h",
+    "level": 2,
+    "text": "Coming Soon..."
+   }
+  ]
+ },
+ "/journal": {
+  "title": "Journal",
+  "description": "",
+  "sidebar": [
+   {
+    "text": "Projects",
+    "to": "/projects"
+   },
+   {
+    "text": "Journal",
+    "to": "/journal"
+   },
+   {
+    "text": "Publications",
+    "to": "/publications"
+   },
+   {
+    "text": "Conference & Seminars",
+    "to": "/conference-seminars"
+   },
+   {
+    "text": "Funding Agencies",
+    "to": "/funding-agencies"
+   },
+   {
+    "text": "Research",
+    "to": "/research"
+   },
+   {
+    "text": "Plagiarism Policy",
+    "to": "/plagiarism-policy"
+   }
+  ],
+  "blocks": [
+   {
+    "t": "h",
+    "level": 1,
+    "text": "Journals"
+   },
+   {
+    "t": "h",
+    "level": 2,
+    "text": "Coming Soon..."
+   }
+  ]
+ },
+ "/microsoft-for-all": {
+  "title": "Microsoft for All",
+  "description": "",
+  "sidebar": [],
+  "blocks": []
+ },
+ "/office-of-research-innovation-commercialisation": {
+  "title": "Office of Research Innovation & Commercialisation",
+  "description": "Dawood College of Engineering & Technology was established in 1964 and in 2013 upgraded to Dawood University of Engineering & Technology (DUET). DUET initi",
+  "sidebar": [
+   {
+    "text": "Admissions",
+    "to": "/admissions"
+   },
+   {
+    "text": "Business Incubation Center",
+    "to": "/business-incubation-center"
+   },
+   {
+    "text": "Continues Professional Development",
+    "to": "/continues-professional-development"
+   },
+   {
+    "text": "Financial Assistance Departments",
+    "to": "/financial-assistance-departments"
+   },
+   {
+    "text": "Industrial Liasons & Alumni Affairs",
+    "to": "/industrial-liasons-alumni-affairs"
+   },
+   {
+    "text": "Information Technology",
+    "to": "/information-technology"
+   },
+   {
+    "text": "Office of Research Innovation & Commercialisation",
+    "to": "/office-of-research-innovation-commercialisation"
+   },
+   {
+    "text": "Postgraduate Studies",
+    "to": "/postgraduate-studies"
+   },
+   {
+    "text": "Quality Enhancement cell",
+    "to": "/quality-enhancement-cell"
+   },
+   {
+    "text": "Sports",
+    "to": "/sports"
+   },
+   {
+    "text": "Students Affairs",
+    "to": "/students-affairs"
+   }
+  ],
+  "blocks": [
+   {
+    "t": "h",
+    "level": 1,
+    "text": "Office Of Research Innovation & Commercialization"
+   },
+   {
+    "t": "p",
+    "text": "Dawood College of Engineering & Technology was established in 1964 and in 2013 upgraded to Dawood University of Engineering & Technology (DUET). DUET initiated a Centre for Innovation, Research, Creativity, Learning and Entrepreneurship (CIRCLE) in 2015 and converted it into Office of Research, Innovation and Commercialization (ORIC) under the guidelines of Higher Education Commission (HEC). DUET aims at motivating and encouraging the students and faculties to make research top priority. The core objective is to promote and facilitate high quality academic research through leading the development of research strategy and policy, ensuring compliance with research governance requirements, supporting researchers to access funding and new collaborations."
+   },
+   {
+    "t": "p",
+    "text": "Objective > Promoting research culture in the university. > Educating faculty members and students about various research grants. > Enhancing university-industry relationships. > Promoting entrepreneurship, technology-transfer and commercialisation activities that enhance and support local and national economies. > Transforming research for the public’s benefit (patent development). > Liaises between researchers and funding agencies. > Facilitating the purchase of specialised equipment. > Organising seminars and workshops on innovative research practices, methods."
+   }
+  ]
+ },
+ "/officers-2": {
+  "title": "Officers",
+  "description": "",
+  "sidebar": [
+   {
+    "text": "Historic Profile",
+    "to": "/about-duet/historic-profile"
+   },
+   {
+    "text": "Vision & Mission",
+    "to": "/about-duet/vision-mission"
+   },
+   {
+    "text": "Vice Chancellor’s Message",
+    "to": "/vice-chancellors-message-2"
+   },
+   {
+    "text": "Authorities",
+    "to": "/authorities"
+   },
+   {
+    "text": "Officers",
+    "to": "/officers-2"
+   },
+   {
+    "text": "University Linkages",
+    "to": "/university-linkages"
+   },
+   {
+    "text": "Organogram",
+    "to": "/organogram"
+   },
+   {
+    "text": "Annual Report",
+    "to": "/annual-report"
+   }
+  ],
+  "blocks": [
+   {
+    "t": "table",
+    "rows": [
+     [
+      "01",
+      "Vice Chancellor Prof. Dr. Samreen Hussain e-mail: vc@duet.edu.pk Phone: 021-99230701 ext:267"
+     ],
+     [
+      "02",
+      "Pro- Vice Chancellor Prof. Dr. Abdul Waheed Bhutto e-mail: ProVc@duet.edu.pk Phone: 021-99230701 ext:267"
+     ],
+     [
+      "03",
+      "Registrar Prof. Dr. Asif Ali Shah e-mail: registar@duet.edu.pk Phone: 021-9923645"
+     ],
+     [
+      "04",
+      "Controller of Examinations Prof. Dr. Rashid Mustafa Korai e-mail: controller.examination@duet.edu.pk Phone: 021-99230476"
+     ],
+     [
+      "05",
+      "Dean, Faculty of Engineering Prof. Dr. Zeeshan Ali Memon e-mail: dean.pimmec@duet.edu.pk Phone: 021-34921353"
+     ],
+     [
+      "06",
+      "Dean, Faculty of Information, Sciences and Humanities Prof. Dr. Ghulam Abbas Kandhro e-mail: dean.ish@duet.edu.pk Phone: 021-99232644"
+     ],
+     [
+      "07",
+      "Dean Faculty Civil and Architecture & Planning Prof. Dr. Yasira Naeem Pasha e-mail: dean.carp@duet.edu.pk Phone: 021-99243367"
+     ],
+     [
+      "08",
+      "Dean Faculty of Computer, Electrical, Electronics and Telecommunication Prof. Dr. Hafiz M. Zahid Tunio e-mail: dean.ceet@duet.edu.pk"
+     ],
+     [
+      "09",
+      "Director, Planning and Development Prof. Dr. Yasira Naeem Pasha e-mail: dr.yasiranaeempasha@duet.edu.pk Phone: 021-99243874"
+     ],
+     [
+      "10",
+      "Director Finance Mr. Shabbir Shaikh e-mail: dir.finance@duet.edu.pk Phone: 021-99231195"
+     ],
+     [
+      "11",
+      "Director, Information and Communication Technology Dr. Syed Izhar Hussain e-mail: dir.it@duet.edu.pk"
+     ],
+     [
+      "12",
+      "Advisor, Student Affairs Prof. Dr. Sikandar Ali Abbasi e-mail: dir.sa@duet.edu.pk Phone: 021-99231195-8"
+     ],
+     [
+      "13",
+      "Director, Quality Enhancement Cell Dr. Arsalan Ansari E-mail: dir.qec@duet.edu.pk Phone: 021-34911080"
+     ],
+     [
+      "14",
+      "Director, ORIC Dr. Ramaish Kumar e-mail: dir.oric@duet.edu.pk Phone: 021-99231195"
+     ],
+     [
+      "15",
+      "Director, Business Incubation Center Dr. Abdul Sami e-mail: dir.bic@duet.edu.pk"
+     ],
+     [
+      "16",
+      "Director, Post Graduate Studies Dr. Atif Jamil e-mail: dir.pgs@duet.edu.pk Phone: 021-34131107"
+     ],
+     [
+      "17",
+      "Director, Industrial Liaison and Alumni Affairs Dr. Muhammad Dawood Idress e-mail: dir.ilaa@duet.edu.pk Phone: ‎021 99232382"
+     ],
+     [
+      "18",
+      "Director, Financial Assistance Department Dr. Tahir Hussain e-mail: dir.fad@duet.edu.pk Phone: 021-99231105"
+     ],
+     [
+      "19",
+      "Director, Continuous Professional Development Dr. Zubair Ahmed e-mail: dir.cpd@duet.edu.pk"
+     ],
+     [
+      "20",
+      "Director Sports Dr. Inamullah Maitlo e-mail: dir.sports@duet.edu.pk"
+     ]
+    ]
+   }
+  ]
+ },
+ "/organogram": {
+  "title": "Organogram",
+  "description": "",
+  "sidebar": [
+   {
+    "text": "Historic Profile",
+    "to": "/about-duet/historic-profile"
+   },
+   {
+    "text": "Vision & Mission",
+    "to": "/about-duet/vision-mission"
+   },
+   {
+    "text": "Vice Chancellor’s Message",
+    "to": "/vice-chancellors-message-2"
+   },
+   {
+    "text": "Authorities",
+    "to": "/authorities"
+   },
+   {
+    "text": "Officers",
+    "to": "/officers-2"
+   },
+   {
+    "text": "University Linkages",
+    "to": "/university-linkages"
+   },
+   {
+    "text": "Organogram",
+    "to": "/organogram"
+   },
+   {
+    "text": "Annual Report",
+    "to": "/annual-report"
+   }
+  ],
+  "blocks": []
+ },
+ "/outcome-based-education-obe": {
+  "title": "Outcome Based Education (OBE)",
+  "description": "",
+  "sidebar": [
+   {
+    "text": "Academic Calendar",
+    "to": "/academic-calendar"
+   },
+   {
+    "text": "Faculties & Departments",
+    "to": "/faculty-departments"
+   },
+   {
+    "text": "Undergraduate Programs",
+    "to": "/undergrad-programs"
+   },
+   {
+    "text": "Undergraduate Regulations",
+    "to": "/undergrad-regulations"
+   },
+   {
+    "text": "Postgraduate Programs",
+    "to": "/postgraduate-programs"
+   },
+   {
+    "text": "Postgraduate Regulations",
+    "to": "/postgraduate-regulations"
+   },
+   {
+    "text": "HEC Approved PhD Supervisors",
+    "to": "/hec-approved-phd-supervisors"
+   },
+   {
+    "text": "Outcome Based Education (OBE)",
+    "to": "/outcome-based-education-obe"
+   }
+  ],
+  "blocks": [
+   {
+    "t": "h",
+    "level": 2,
+    "text": "Coming Soon..."
+   }
+  ]
+ },
+ "/plagiarism-policy": {
+  "title": "Plagiarism Policy",
+  "description": "Plagiarism Policy of Dawood university of Engineering & Technology, Karachi.",
+  "sidebar": [
+   {
+    "text": "Projects",
+    "to": "/projects"
+   },
+   {
+    "text": "Journal",
+    "to": "/journal"
+   },
+   {
+    "text": "Publications",
+    "to": "/publications"
+   },
+   {
+    "text": "Conference & Seminars",
+    "to": "/conference-seminars"
+   },
+   {
+    "text": "Funding Agencies",
+    "to": "/funding-agencies"
+   },
+   {
+    "text": "Research",
+    "to": "/research"
+   },
+   {
+    "text": "Plagiarism Policy",
+    "to": "/plagiarism-policy"
+   }
+  ],
+  "blocks": [
+   {
+    "t": "links",
+    "items": [
+     {
+      "t": "link",
+      "text": "Plagiarism Policy",
+      "file": "DUET-Plagiarism-Policy.pdf"
+     }
+    ]
+   },
+   {
+    "t": "p",
+    "text": "Plagiarism Policy of Dawood university of Engineering & Technology, Karachi."
+   }
+  ]
+ },
+ "/postgraduate-programs": {
+  "title": "Postgraduate Programs",
+  "description": "",
+  "sidebar": [
+   {
+    "text": "Academic Calendar",
+    "to": "/academic-calendar"
+   },
+   {
+    "text": "Faculties & Departments",
+    "to": "/faculty-departments"
+   },
+   {
+    "text": "Undergraduate Programs",
+    "to": "/undergrad-programs"
+   },
+   {
+    "text": "Undergraduate Regulations",
+    "to": "/undergrad-regulations"
+   },
+   {
+    "text": "Postgraduate Programs",
+    "to": "/postgraduate-programs"
+   },
+   {
+    "text": "Postgraduate Regulations",
+    "to": "/postgraduate-regulations"
+   },
+   {
+    "text": "HEC Approved PhD Supervisors",
+    "to": "/hec-approved-phd-supervisors"
+   },
+   {
+    "text": "Outcome Based Education (OBE)",
+    "to": "/outcome-based-education-obe"
+   }
+  ],
+  "blocks": [
+   {
+    "t": "list",
+    "ordered": true,
+    "items": [
+     "MS Chemical Engineering",
+     "MS Electronic Engineering",
+     "MS Telecommunication Engineering",
+     "MS Industrial Chemistry",
+     "MS Metallurgy & Material Engineering",
+     "MS Industrial Engineering",
+     "PhD. Chemical Engineering",
+     "PhD. Computer Engineering",
+     "PhD. Industrial Engineering and Management",
+     "PhD. Metallurgy & Materials Engineering",
+     "PhD. Telecommunication Engineering",
+     "PhD. Electronics Engineering and Management"
+    ]
+   }
+  ]
+ },
+ "/postgraduate-regulations": {
+  "title": "Postgraduate Regulations",
+  "description": "",
+  "sidebar": [
+   {
+    "text": "Academic Calendar",
+    "to": "/academic-calendar"
+   },
+   {
+    "text": "Faculties & Departments",
+    "to": "/faculty-departments"
+   },
+   {
+    "text": "Undergraduate Programs",
+    "to": "/undergrad-programs"
+   },
+   {
+    "text": "Undergraduate Regulations",
+    "to": "/undergrad-regulations"
+   },
+   {
+    "text": "Postgraduate Programs",
+    "to": "/postgraduate-programs"
+   },
+   {
+    "text": "Postgraduate Regulations",
+    "to": "/postgraduate-regulations"
+   },
+   {
+    "text": "HEC Approved PhD Supervisors",
+    "to": "/hec-approved-phd-supervisors"
+   },
+   {
+    "text": "Outcome Based Education (OBE)",
+    "to": "/outcome-based-education-obe"
+   }
+  ],
+  "blocks": [
+   {
+    "t": "h",
+    "level": 3,
+    "text": "Regulations For MS Regulations for PhD."
+   },
+   {
+    "t": "links",
+    "items": [
+     {
+      "t": "link",
+      "text": "Regulations For MS",
+      "file": "Regulations-for-MS-Program.pdf"
+     },
+     {
+      "t": "link",
+      "text": "Regulations for PhD.",
+      "file": "Regulations-for-PhD-Degree-1.pdf"
+     }
+    ]
+   }
+  ]
+ },
+ "/postgraduate-studies": {
+  "title": "Postgraduate Studies",
+  "description": "DUET started postgraduate program through the Directorate of Postgraduate Studies in 2017 in different fields of engineering. Currently the postgraduate pr",
+  "sidebar": [
+   {
+    "text": "Admissions",
+    "to": "/admissions"
+   },
+   {
+    "text": "Business Incubation Center",
+    "to": "/business-incubation-center"
+   },
+   {
+    "text": "Continues Professional Development",
+    "to": "/continues-professional-development"
+   },
+   {
+    "text": "Financial Assistance Departments",
+    "to": "/financial-assistance-departments"
+   },
+   {
+    "text": "Industrial Liasons & Alumni Affairs",
+    "to": "/industrial-liasons-alumni-affairs"
+   },
+   {
+    "text": "Information Technology",
+    "to": "/information-technology"
+   },
+   {
+    "text": "Office of Research Innovation & Commercialisation",
+    "to": "/office-of-research-innovation-commercialisation"
+   },
+   {
+    "text": "Postgraduate Studies",
+    "to": "/postgraduate-studies"
+   },
+   {
+    "text": "Quality Enhancement cell",
+    "to": "/quality-enhancement-cell"
+   },
+   {
+    "text": "Sports",
+    "to": "/sports"
+   },
+   {
+    "text": "Students Affairs",
+    "to": "/students-affairs"
+   }
+  ],
+  "blocks": [
+   {
+    "t": "p",
+    "text": "DUET started postgraduate program through the Directorate of Postgraduate Studies in 2017 in different fields of engineering. Currently the postgraduate programs are being offered at MS and/or PhD level in the following disciplines: Chemical Engineering Electronic Engineering Industrial Engineering & Management Metallurgy & Materials Engineering. Computer System Engineering"
+   },
+   {
+    "t": "p",
+    "text": "In DUET, we comply all the policies and guidelines of Higher Education Commission for offering MS/PhD programs. The course contents of MS/PhD programs are approved from statutory bodies of DUET. We also perform Advanced Studies and Research Board Meetings (ASRB) on regular basis for the implementation of policies and to further strengthening program studies and learning experience of MS/PhD students."
+   }
+  ]
+ },
+ "/projects": {
+  "title": "Projects",
+  "description": "Research Project Completion Report 2022",
+  "sidebar": [
+   {
+    "text": "Projects",
+    "to": "/projects"
+   },
+   {
+    "text": "Journal",
+    "to": "/journal"
+   },
+   {
+    "text": "Publications",
+    "to": "/publications"
+   },
+   {
+    "text": "Conference & Seminars",
+    "to": "/conference-seminars"
+   },
+   {
+    "text": "Funding Agencies",
+    "to": "/funding-agencies"
+   },
+   {
+    "text": "Research",
+    "to": "/research"
+   },
+   {
+    "text": "Plagiarism Policy",
+    "to": "/plagiarism-policy"
+   }
+  ],
+  "blocks": [
+   {
+    "t": "h",
+    "level": 3,
+    "text": "Research Project Completion Report 2022"
+   },
+   {
+    "t": "links",
+    "items": [
+     {
+      "t": "link",
+      "text": "Research Project Completion Report 2022",
+      "file": "Research-Project-Completion-Report-2022.pdf"
+     }
+    ]
+   },
+   {
+    "t": "p",
+    "text": "Research Project Completion Report 2022"
+   }
+  ]
+ },
+ "/publications": {
+  "title": "Publications",
+  "description": "Research Publicaitons (2022)",
+  "sidebar": [
+   {
+    "text": "Projects",
+    "to": "/projects"
+   },
+   {
+    "text": "Journal",
+    "to": "/journal"
+   },
+   {
+    "text": "Publications",
+    "to": "/publications"
+   },
+   {
+    "text": "Conference & Seminars",
+    "to": "/conference-seminars"
+   },
+   {
+    "text": "Funding Agencies",
+    "to": "/funding-agencies"
+   },
+   {
+    "text": "Research",
+    "to": "/research"
+   },
+   {
+    "text": "Plagiarism Policy",
+    "to": "/plagiarism-policy"
+   }
+  ],
+  "blocks": [
+   {
+    "t": "h",
+    "level": 3,
+    "text": "Research Publications"
+   },
+   {
+    "t": "p",
+    "text": "Research Publicaitons (2022)"
+   },
+   {
+    "t": "links",
+    "items": [
+     {
+      "t": "link",
+      "text": "Research Publicaitons (2022)",
+      "file": "Architecture-Planning-2022.pdf"
+     }
+    ]
+   },
+   {
+    "t": "p",
+    "text": "Research Publicaitons (2021)"
+   },
+   {
+    "t": "links",
+    "items": [
+     {
+      "t": "link",
+      "text": "Research Publicaitons (2021)",
+      "file": "Architecture-Planning-2021.pdf"
+     }
+    ]
+   },
+   {
+    "t": "p",
+    "text": "Research Publicaitons (2023)"
+   },
+   {
+    "t": "links",
+    "items": [
+     {
+      "t": "link",
+      "text": "Research Publicaitons (2023)",
+      "to": "/wp-content/uploads/2023/12/BSH-Departments-Research-Publication-Data-June-2023-only.xlsx"
+     },
+     {
+      "t": "link",
+      "text": "Research Publicaitons (2022)",
+      "to": "/wp-content/uploads/2023/12/BSH-Departments-Research-Publication-Data-June-2022-only.xlsx"
+     },
+     {
+      "t": "link",
+      "text": "Research Publicaitons (2021)",
+      "to": "/wp-content/uploads/2023/12/BSH-Departments-Research-Publication-Data-June-2021-only.xlsx"
+     },
+     {
+      "t": "link",
+      "text": "Research Publicaitons (2022)",
+      "file": "Chemical-Engineering-2022.pdf"
+     },
+     {
+      "t": "link",
+      "text": "Research Publicaitons (2021)",
+      "file": "Chemical-Engineering-2021.pdf"
+     },
+     {
+      "t": "link",
+      "text": "Research Publicaitons (2022)",
+      "file": "Electronic-Engineering-2022.pdf"
+     },
+     {
+      "t": "link",
+      "text": "Research Publicaitons (2021)",
+      "file": "Electronic-Engineering-2021.pdf"
+     },
+     {
+      "t": "link",
+      "text": "Research Publicaitons (2022)",
+      "file": "Energy-Environment-2022.pdf"
+     },
+     {
+      "t": "link",
+      "text": "Research Publicaitons (2021)",
+      "file": "Energy-Environment-2021.pdf"
+     },
+     {
+      "t": "link",
+      "text": "Research Publicaitons (2022)",
+      "file": "Industrial-2022.pdf"
+     },
+     {
+      "t": "link",
+      "text": "Research Publicaitons (2021)",
+      "file": "Industrial-2021.pdf"
+     },
+     {
+      "t": "link",
+      "text": "Research Publicaitons (2022)",
+      "file": "Metallurgy-Materials-2022.pdf"
+     },
+     {
+      "t": "link",
+      "text": "Research Publicaitons (2021)",
+      "file": "Metallurgy-Materials-2021.pdf"
+     },
+     {
+      "t": "link",
+      "text": "Research Publicaitons (2022)",
+      "file": "Basic-Science-2022.pdf"
+     },
+     {
+      "t": "link",
+      "text": "Research Publicaitons (2021)",
+      "file": "Basic-Science-2021.pdf"
+     },
+     {
+      "t": "link",
+      "text": "Research Publicaitons (2022)",
+      "file": "Petroleum-Gas-2022.pdf"
+     },
+     {
+      "t": "link",
+      "text": "Research Publicaitons (2021)",
+      "file": "Petroleum-Gas-2021.pdf"
+     }
+    ]
+   }
+  ]
+ },
+ "/quality-enhancement-cell": {
+  "title": "Quality Enhancement cell",
+  "description": "Quality Assurance (QA) holds an indispensable importance in a world where competition is changing gears every now and then. In an ever-evolving education s",
+  "sidebar": [
+   {
+    "text": "Admissions",
+    "to": "/admissions"
+   },
+   {
+    "text": "Business Incubation Center",
+    "to": "/business-incubation-center"
+   },
+   {
+    "text": "Continues Professional Development",
+    "to": "/continues-professional-development"
+   },
+   {
+    "text": "Financial Assistance Departments",
+    "to": "/financial-assistance-departments"
+   },
+   {
+    "text": "Industrial Liasons & Alumni Affairs",
+    "to": "/industrial-liasons-alumni-affairs"
+   },
+   {
+    "text": "Information Technology",
+    "to": "/information-technology"
+   },
+   {
+    "text": "Office of Research Innovation & Commercialisation",
+    "to": "/office-of-research-innovation-commercialisation"
+   },
+   {
+    "text": "Postgraduate Studies",
+    "to": "/postgraduate-studies"
+   },
+   {
+    "text": "Quality Enhancement cell",
+    "to": "/quality-enhancement-cell"
+   },
+   {
+    "text": "Sports",
+    "to": "/sports"
+   },
+   {
+    "text": "Students Affairs",
+    "to": "/students-affairs"
+   }
+  ],
+  "blocks": [
+   {
+    "t": "p",
+    "text": "Quality Assurance (QA) holds an indispensable importance in a world where competition is changing gears every now and then. In an ever-evolving education sector modern institutions need a healthy equilibrium between growth and performance to stay ahead in the competition. The outlook of modern education sector, outlining inbroad strokes what our priorities must be, suggests that assurance of quality and development of quality control measures is fundamental to progress in this highly competed field. Higher Education Commission (HEC), in an effort to promote academic qualityassurance in Pakistan, entrenched Quality Assurance Agency (QAA) which oversees the Quality Enhancement Cells (QECs) operating in every public and private higher education institutions. These entities within the university setup, ensures the implementation of quality improvement policies and reviews the status of ongoing practices through an extensive assessment process. Quality Enhancement Cell-DUET Dawood University of Engineering and Technology (DUET), in pursuit of its mission, recognizes that quality improvement is the key principle for continuing growth and development. In luscious autumn of 2009, Quality Enhancement Cell (QEC) was inaugurated in the university with aim to instill the sense of upholding the principles of quality assurance and continued academic excellence which resonates deeply with Dawood university's academic creed. The standards and quality assurance produces set by the cell added a lot to the prestige of DUET in its various programs. The cell is responsible for the review of quality and standards of teaching and learning in engineering disciplines. It deals with all sorts of matter related with standards of each academic program and is responsible for developing quality assurance and method of evaluation and validation so that standards should be maintained."
+   },
+   {
+    "t": "p",
+    "text": "Vision of QEC-DUET standards, policies, and practices to fulfil futuristic academic demands to compete locally and globally. Mission of QEC-DUET Enhance quality in both teaching and learning areas in an effective measurable way at all levels of studies. To develop the quality skills in all departments of DUET to meet the challenges of the real world. Promote research - based teaching and learning to find the new dimensions of engineering and technology. Bridging gap between HEC and the University to develop a Model for Quality Assurance."
+   },
+   {
+    "t": "p",
+    "text": "Objectives of QEC-DUET Introduce Self-Assessment culture at DUET as prescribed by Higher Education Commission of Pakistan to evaluate, analyze, and implement quality at all levels . QEC complies measurable standards of Quality Assurance through capacity building of faculty and students. Establishing a system to utilize available infrastructure in a productive manner and along with this, discover needs of additional one to get quality results of teaching and learning outcomes. Utilize the available resources in a uniform way to get more benefits from the same. Introduce and develop quality examination standards to ensure transparent results. Introduce and promote self and systematic academic audit. Seek affiliation and collaboration with high-rank and recognized national and international agencies. Establish Joint venture, twinning and collaborative projects with international Universities of repute and work on grant/funding proposals of UNESCO, UNDP, EC and others."
+   }
+  ]
+ },
+ "/regulations": {
+  "title": "Regulations",
+  "description": "",
+  "sidebar": [
+   {
+    "text": "Regulations",
+    "to": "/regulations"
+   },
+   {
+    "text": "Schedule",
+    "to": "/schedule"
+   },
+   {
+    "text": "Results",
+    "to": "/results"
+   },
+   {
+    "text": "Certificates",
+    "to": "/certificates"
+   },
+   {
+    "text": "Convocation",
+    "to": "/convocation"
+   },
+   {
+    "text": "Downloads",
+    "to": "/downloads-2"
+   }
+  ],
+  "blocks": [
+   {
+    "t": "h",
+    "level": 2,
+    "text": "Coming Soon..."
+   }
+  ]
+ },
+ "/research-2": {
+  "title": "RESEARCH",
+  "description": "",
+  "sidebar": [],
+  "blocks": []
+ },
+ "/research-ethics-policy": {
+  "title": "Research Ethics Policy",
+  "description": "",
+  "sidebar": [],
+  "blocks": [
+   {
+    "t": "h",
+    "level": 2,
+    "text": "Coming Soon..."
+   }
+  ]
+ },
+ "/results": {
+  "title": "Results",
+  "description": "",
+  "sidebar": [
+   {
+    "text": "Regulations",
+    "to": "/regulations"
+   },
+   {
+    "text": "Schedule",
+    "to": "/schedule"
+   },
+   {
+    "text": "Results",
+    "to": "/results"
+   },
+   {
+    "text": "Certificates",
+    "to": "/certificates"
+   },
+   {
+    "text": "Convocation",
+    "to": "/convocation"
+   },
+   {
+    "text": "Downloads",
+    "to": "/downloads-2"
+   }
+  ],
+  "blocks": [
+   {
+    "t": "list",
+    "ordered": false,
+    "items": [
+     "TRANSPORT PHENOMENA, SUMMER SEMESTER 2023",
+     "THEORY OF AUTOMATA, SUMMER SEMESTER 2023",
+     "THEORY OF ARCHITECTURE II, SUMMER SEMESTER 2023",
+     "TECHNICAL REPORT WRITING & COMMUNICATION SKILLS, SUMMER SEMESTER 2023",
+     "SOLID WASTE MANAGEMENT, SUMMER SEMESTER 2023",
+     "SIGNALS & SYSTEMS, SUMMER SEMESTER 2023",
+     "RESEARCH METHODS & THESIS WRITING, SUMMER SEMESTER 2023",
+     "RESEARCH METHODS & THESIS WRITING, SUMMER SEMESTER 2023"
+    ]
+   },
+   {
+    "t": "list",
+    "ordered": false,
+    "items": [
+     "B Architecture Ar Batch 2019 results Ar Batch 2019/f results Ar Batch 2020/F results Ar Batch 2021/f results Ar Batch 2022/f results",
+     "BE Computer Systems CS Batch 2019/f results CS Batch 2020/f results CS Batch 2021/f results CS Batch 2022/f results",
+     "BE Electronics ES Batch 2019/f results ES Batch 2020/f results ES Batch 2021/f results ES Batch 2022/f results",
+     "BE Chemical CH Batch 2019/f results CH Batch 2020/f results CH Batch 2021/f results CH Batch 2022/f results",
+     "BE Energy and Enviornment EE Batch 2019/f results EE Batch 2020/f results EE Batch 2021/f results EE Batch 2022/f results",
+     "BE Industrial Engg and Management IEM Batch 2019/f results IEM Batch 2020/f results IEM Batch 2021/f results IEM Batch 2022/f results",
+     "BE Metallurgy and Materials MME Batch 2019/f results MME Batch 2020/f results MME Batch 2021/f results MME Batch 2022/f results",
+     "BE Petroleum and Gas Engg PG Batch 2019/f results PG Batch 2020/F results PG Batch 2021/f results PG Batch 2022/f results",
+     "BE Telecommunication TE Batch 2019/f results TE Batch 2020/f results TE Batch 2021/f results TE Batch 2022/f results",
+     "BS Computer Science BSCS Batch 19F results BSCS Batch 20F results BSCS Batch 21F results BSCS Batch 22F results",
+     "BS Maths Maths Batch 19F results Maths Batch 20F results Maths Batch 21F results Maths Batch 22F results",
+     "BS Cyber Security CY Batch 19F results CY Batch 20F results CY Batch 21F results CY Batch 22F results",
+     "BS Environmental Science BS ENV Batch 19F results BS ENV Batch 20F results BS ENV Batch 21F results BS ENV Batch 22F results",
+     "BS Business Information System BIS Batch 19F results BIS Batch 20F results BIS Batch 21F results BIS Batch 22F results",
+     "BS Artificial Intelligence BS AI Batch 19F results BS AI Batch 20F results BS AI Batch 21F results BS AI Batch 22F results",
+     "BS Chemistry BS CHY batch 19F results BS CHY batch 20F results BS CHY batch 21F results BS CHY batch 22F results"
+    ]
+   },
+   {
+    "t": "list",
+    "ordered": false,
+    "items": [
+     "Ar Batch 2019 results",
+     "Ar Batch 2019/f results",
+     "Ar Batch 2020/F results",
+     "Ar Batch 2021/f results",
+     "Ar Batch 2022/f results"
+    ]
+   },
+   {
+    "t": "list",
+    "ordered": false,
+    "items": [
+     "CS Batch 2019/f results",
+     "CS Batch 2020/f results",
+     "CS Batch 2021/f results",
+     "CS Batch 2022/f results"
+    ]
+   },
+   {
+    "t": "list",
+    "ordered": false,
+    "items": [
+     "ES Batch 2019/f results",
+     "ES Batch 2020/f results",
+     "ES Batch 2021/f results",
+     "ES Batch 2022/f results"
+    ]
+   },
+   {
+    "t": "list",
+    "ordered": false,
+    "items": [
+     "CH Batch 2019/f results",
+     "CH Batch 2020/f results",
+     "CH Batch 2021/f results",
+     "CH Batch 2022/f results"
+    ]
+   },
+   {
+    "t": "list",
+    "ordered": false,
+    "items": [
+     "EE Batch 2019/f results",
+     "EE Batch 2020/f results",
+     "EE Batch 2021/f results",
+     "EE Batch 2022/f results"
+    ]
+   },
+   {
+    "t": "list",
+    "ordered": false,
+    "items": [
+     "IEM Batch 2019/f results",
+     "IEM Batch 2020/f results",
+     "IEM Batch 2021/f results",
+     "IEM Batch 2022/f results"
+    ]
+   },
+   {
+    "t": "list",
+    "ordered": false,
+    "items": [
+     "MME Batch 2019/f results",
+     "MME Batch 2020/f results",
+     "MME Batch 2021/f results",
+     "MME Batch 2022/f results"
+    ]
+   },
+   {
+    "t": "list",
+    "ordered": false,
+    "items": [
+     "PG Batch 2019/f results",
+     "PG Batch 2020/F results",
+     "PG Batch 2021/f results",
+     "PG Batch 2022/f results"
+    ]
+   },
+   {
+    "t": "list",
+    "ordered": false,
+    "items": [
+     "TE Batch 2019/f results",
+     "TE Batch 2020/f results",
+     "TE Batch 2021/f results",
+     "TE Batch 2022/f results"
+    ]
+   },
+   {
+    "t": "list",
+    "ordered": false,
+    "items": [
+     "BSCS Batch 19F results",
+     "BSCS Batch 20F results",
+     "BSCS Batch 21F results",
+     "BSCS Batch 22F results"
+    ]
+   },
+   {
+    "t": "list",
+    "ordered": false,
+    "items": [
+     "Maths Batch 19F results",
+     "Maths Batch 20F results",
+     "Maths Batch 21F results",
+     "Maths Batch 22F results"
+    ]
+   },
+   {
+    "t": "list",
+    "ordered": false,
+    "items": [
+     "CY Batch 19F results",
+     "CY Batch 20F results",
+     "CY Batch 21F results",
+     "CY Batch 22F results"
+    ]
+   },
+   {
+    "t": "list",
+    "ordered": false,
+    "items": [
+     "BS ENV Batch 19F results",
+     "BS ENV Batch 20F results",
+     "BS ENV Batch 21F results",
+     "BS ENV Batch 22F results"
+    ]
+   },
+   {
+    "t": "list",
+    "ordered": false,
+    "items": [
+     "BIS Batch 19F results",
+     "BIS Batch 20F results",
+     "BIS Batch 21F results",
+     "BIS Batch 22F results"
+    ]
+   },
+   {
+    "t": "list",
+    "ordered": false,
+    "items": [
+     "BS AI Batch 19F results",
+     "BS AI Batch 20F results",
+     "BS AI Batch 21F results",
+     "BS AI Batch 22F results"
+    ]
+   },
+   {
+    "t": "list",
+    "ordered": false,
+    "items": [
+     "BS CHY batch 19F results",
+     "BS CHY batch 20F results",
+     "BS CHY batch 21F results",
+     "BS CHY batch 22F results"
+    ]
+   }
+  ]
+ },
+ "/schedule": {
+  "title": "Schedule",
+  "description": "",
+  "sidebar": [
+   {
+    "text": "Regulations",
+    "to": "/regulations"
+   },
+   {
+    "text": "Schedule",
+    "to": "/schedule"
+   },
+   {
+    "text": "Results",
+    "to": "/results"
+   },
+   {
+    "text": "Certificates",
+    "to": "/certificates"
+   },
+   {
+    "text": "Convocation",
+    "to": "/convocation"
+   },
+   {
+    "text": "Downloads",
+    "to": "/downloads-2"
+   }
+  ],
+  "blocks": [
+   {
+    "t": "h",
+    "level": 2,
+    "text": "Coming Soon..."
+   }
+  ]
+ },
+ "/scholarships-2": {
+  "title": "Scholarships",
+  "description": "",
+  "sidebar": [],
+  "blocks": []
+ },
+ "/scholarships": {
+  "title": "Scholarships",
+  "description": "",
+  "sidebar": [
+   {
+    "text": "Academic Calendar",
+    "to": "/academic-calendar"
+   },
+   {
+    "text": "University Policies",
+    "to": "/university-policies"
+   },
+   {
+    "text": "Scholarships",
+    "to": "/scholarships"
+   },
+   {
+    "text": "Students Affairs",
+    "to": "/students-affairs"
+   },
+   {
+    "text": "Results",
+    "to": "/results"
+   },
+   {
+    "text": "Internships",
+    "to": "/internships"
+   },
+   {
+    "text": "Career Counselling",
+    "to": "/career-counselling"
+   },
+   {
+    "text": "Shuttle Bus Routes",
+    "to": "/shuttle-bus-routes"
+   },
+   {
+    "text": "Students Societies",
+    "to": "/students-societies"
+   },
+   {
+    "text": "Seminars & Workshops",
+    "to": "/seminars-workshops"
+   }
+  ],
+  "blocks": [
+   {
+    "t": "h",
+    "level": 2,
+    "text": "Coming Soon..."
+   }
+  ]
+ },
+ "/seminars-workshops": {
+  "title": "Seminars & Workshops",
+  "description": "",
+  "sidebar": [
+   {
+    "text": "Academic Calendar",
+    "to": "/academic-calendar"
+   },
+   {
+    "text": "University Policies",
+    "to": "/university-policies"
+   },
+   {
+    "text": "Scholarships",
+    "to": "/scholarships"
+   },
+   {
+    "text": "Students Affairs",
+    "to": "/students-affairs"
+   },
+   {
+    "text": "Results",
+    "to": "/results"
+   },
+   {
+    "text": "Internships",
+    "to": "/internships"
+   },
+   {
+    "text": "Career Counselling",
+    "to": "/career-counselling"
+   },
+   {
+    "text": "Shuttle Bus Routes",
+    "to": "/shuttle-bus-routes"
+   },
+   {
+    "text": "Students Societies",
+    "to": "/students-societies"
+   },
+   {
+    "text": "Seminars & Workshops",
+    "to": "/seminars-workshops"
+   }
+  ],
+  "blocks": [
+   {
+    "t": "h",
+    "level": 2,
+    "text": "Coming Soon..."
+   }
+  ]
+ },
+ "/shuttle-bus-routes": {
+  "title": "Shuttle Bus Routes",
+  "description": "",
+  "sidebar": [
+   {
+    "text": "Academic Calendar",
+    "to": "/academic-calendar"
+   },
+   {
+    "text": "University Policies",
+    "to": "/university-policies"
+   },
+   {
+    "text": "Scholarships",
+    "to": "/scholarships"
+   },
+   {
+    "text": "Students Affairs",
+    "to": "/students-affairs"
+   },
+   {
+    "text": "Results",
+    "to": "/results"
+   },
+   {
+    "text": "Internships",
+    "to": "/internships"
+   },
+   {
+    "text": "Career Counselling",
+    "to": "/career-counselling"
+   },
+   {
+    "text": "Shuttle Bus Routes",
+    "to": "/shuttle-bus-routes"
+   },
+   {
+    "text": "Students Societies",
+    "to": "/students-societies"
+   },
+   {
+    "text": "Seminars & Workshops",
+    "to": "/seminars-workshops"
+   }
+  ],
+  "blocks": [
+   {
+    "t": "h",
+    "level": 2,
+    "text": "Coming Soon..."
+   }
+  ]
+ },
+ "/sports": {
+  "title": "Sports",
+  "description": "The primary function of any university is, off course, academic, but university recognizes the importance & value for development of physical skills and fo",
+  "sidebar": [
+   {
+    "text": "Facilities",
+    "to": "/facilities"
+   },
+   {
+    "text": "Events",
+    "to": "/events"
+   },
+   {
+    "text": "DUET Games",
+    "to": "/duet-games"
+   },
+   {
+    "text": "Sports Gallery",
+    "to": "/sports-gallery"
+   }
+  ],
+  "blocks": [
+   {
+    "t": "h",
+    "level": 1,
+    "text": "Directorate of Sports"
+   },
+   {
+    "t": "p",
+    "text": "The primary function of any university is, off course, academic, but university recognizes the importance & value for development of physical skills and fostering of recreational needs of students and staff in promoting good health, wellbeing and good fellow/sportsmanship. It also recognizes that considerable publicity of student’s achievements values in the area of sports. It also provides young people with the opportunity to get fit and to always adopt healthy lifestyle. The Directorate of Sports arranges well organized sports and recreation programs/activities for the students and faculty/staff members on regular basis. Our sports activities are meant to provide quality fitness and conclusive environment that inspires participants to engage in competitive events on various levels, institutional and national. The main purpose of sports activities is to provide plenty of opportunities to students to keep them healthy with desirable character and remarkable personality traits. The sports activities are geared to provide wide participation in extracurricular activities (among student’s and faculties of the university) and inter-varsity sports activities in national sporting events. Teams for Cricket, Football, Volleyball, Table Tennis, Badminton, and athletics are actively participating in the supporting events in the country."
+   },
+   {
+    "t": "h",
+    "level": 2,
+    "text": "Dr. Inamullah Maitlo Director Sports / Associate Professor"
+   }
+  ]
+ },
+ "/students-affairs": {
+  "title": "Students Affairs",
+  "description": "",
+  "sidebar": [
+   {
+    "text": "Academic Calendar",
+    "to": "/academic-calendar"
+   },
+   {
+    "text": "University Policies",
+    "to": "/university-policies"
+   },
+   {
+    "text": "Scholarships",
+    "to": "/scholarships"
+   },
+   {
+    "text": "Students Affairs",
+    "to": "/students-affairs"
+   },
+   {
+    "text": "Results",
+    "to": "/results"
+   },
+   {
+    "text": "Internships",
+    "to": "/internships"
+   },
+   {
+    "text": "Career Counselling",
+    "to": "/career-counselling"
+   },
+   {
+    "text": "Shuttle Bus Routes",
+    "to": "/shuttle-bus-routes"
+   },
+   {
+    "text": "Students Societies",
+    "to": "/students-societies"
+   },
+   {
+    "text": "Seminars & Workshops",
+    "to": "/seminars-workshops"
+   }
+  ],
+  "blocks": [
+   {
+    "t": "h",
+    "level": 1,
+    "text": "Student Affairs"
+   },
+   {
+    "t": "h",
+    "level": 2,
+    "text": "Coming Soon..."
+   }
+  ]
+ },
+ "/students-societies": {
+  "title": "Students Societies",
+  "description": "",
+  "sidebar": [
+   {
+    "text": "Academic Calendar",
+    "to": "/academic-calendar"
+   },
+   {
+    "text": "University Policies",
+    "to": "/university-policies"
+   },
+   {
+    "text": "Scholarships",
+    "to": "/scholarships"
+   },
+   {
+    "text": "Students Affairs",
+    "to": "/students-affairs"
+   },
+   {
+    "text": "Results",
+    "to": "/results"
+   },
+   {
+    "text": "Internships",
+    "to": "/internships"
+   },
+   {
+    "text": "Career Counselling",
+    "to": "/career-counselling"
+   },
+   {
+    "text": "Shuttle Bus Routes",
+    "to": "/shuttle-bus-routes"
+   },
+   {
+    "text": "Students Societies",
+    "to": "/students-societies"
+   },
+   {
+    "text": "Seminars & Workshops",
+    "to": "/seminars-workshops"
+   }
+  ],
+  "blocks": [
+   {
+    "t": "h",
+    "level": 2,
+    "text": "Coming Soon..."
+   }
+  ]
+ },
+ "/students": {
+  "title": "STUDENTS",
+  "description": "",
+  "sidebar": [],
+  "blocks": []
+ },
+ "/tenders": {
+  "title": "Tenders",
+  "description": "",
+  "sidebar": [
+   {
+    "text": "2",
+    "to": "/tenders/page/2"
+   },
+   {
+    "text": "3",
+    "to": "/tenders/page/3"
+   },
+   {
+    "text": "5",
+    "to": "/tenders/page/5"
+   },
+   {
+    "text": "Next »",
+    "to": "/tenders/page/2"
+   }
+  ],
+  "blocks": [
+   {
+    "t": "h",
+    "level": 3,
+    "text": "Tender for Fixed Assets"
+   },
+   {
+    "t": "links",
+    "items": [
+     {
+      "t": "link",
+      "text": "Tender for Fixed Assets",
+      "to": "/2024/01/30/tender-for-fixed-assets"
+     }
+    ]
+   },
+   {
+    "t": "h",
+    "level": 3,
+    "text": "Tender for Examination Material"
+   },
+   {
+    "t": "links",
+    "items": [
+     {
+      "t": "link",
+      "text": "Tender for Examination Material",
+      "to": "/2024/01/30/tender-for-examination-material"
+     }
+    ]
+   },
+   {
+    "t": "h",
+    "level": 3,
+    "text": "Tender Book for Auditorium Revamping Work"
+   },
+   {
+    "t": "links",
+    "items": [
+     {
+      "t": "link",
+      "text": "Tender Book for Auditorium Revamping Work",
+      "to": "/2024/01/24/tender-book-for-auditorium-revamping-work"
+     }
+    ]
+   },
+   {
+    "t": "h",
+    "level": 3,
+    "text": "NIT Revamping Renovation Work Auditorium"
+   },
+   {
+    "t": "links",
+    "items": [
+     {
+      "t": "link",
+      "text": "NIT Revamping Renovation Work Auditorium",
+      "to": "/2024/01/24/nit-revamping-renovation-work-auditorium"
+     }
+    ]
+   },
+   {
+    "t": "h",
+    "level": 3,
+    "text": "Tender Book for Lab Equipment for EE"
+   },
+   {
+    "t": "links",
+    "items": [
+     {
+      "t": "link",
+      "text": "Tender Book for Lab Equipment for EE",
+      "to": "/2024/01/24/tender-book-for-lab-equipment-for-ee"
+     }
+    ]
+   }
+  ]
+ },
+ "/undergrad-programs": {
+  "title": "Undergrad Programs",
+  "description": "",
+  "sidebar": [
+   {
+    "text": "Academic Calendar",
+    "to": "/academic-calendar"
+   },
+   {
+    "text": "Faculties & Departments",
+    "to": "/faculty-departments"
+   },
+   {
+    "text": "Undergraduate Programs",
+    "to": "/undergrad-programs"
+   },
+   {
+    "text": "Undergraduate Regulations",
+    "to": "/undergrad-regulations"
+   },
+   {
+    "text": "Postgraduate Programs",
+    "to": "/postgraduate-programs"
+   },
+   {
+    "text": "Postgraduate Regulations",
+    "to": "/postgraduate-regulations"
+   },
+   {
+    "text": "HEC Approved PhD Supervisors",
+    "to": "/hec-approved-phd-supervisors"
+   },
+   {
+    "text": "Outcome Based Education (OBE)",
+    "to": "/outcome-based-education-obe"
+   }
+  ],
+  "blocks": [
+   {
+    "t": "h",
+    "level": 1,
+    "text": "Undergraduate Programs"
+   },
+   {
+    "t": "list",
+    "ordered": true,
+    "items": [
+     "BArch Architecture and Planning",
+     "BE Civil Engineering",
+     "BE Chemical Engineering",
+     "BE Computer System Engineering",
+     "BE Electronic Engineering",
+     "BE Energy and Environment Engineering",
+     "BE Industrial Engineering and Management",
+     "BE Metallurgy and Materials Engineering",
+     "BE Petroleum and Gas Engineering",
+     "BE Telecommunication Engineering",
+     "BS Computer Science",
+     "BS Artificial Intelligence",
+     "BS Cyber Security",
+     "BS Mathematics"
+    ]
+   }
+  ]
+ },
+ "/undergrad-regulations": {
+  "title": "Undergraduate Regulations",
+  "description": "",
+  "sidebar": [
+   {
+    "text": "Academic Calendar",
+    "to": "/academic-calendar"
+   },
+   {
+    "text": "Faculties & Departments",
+    "to": "/faculty-departments"
+   },
+   {
+    "text": "Undergraduate Programs",
+    "to": "/undergrad-programs"
+   },
+   {
+    "text": "Undergraduate Regulations",
+    "to": "/undergrad-regulations"
+   },
+   {
+    "text": "Postgraduate Programs",
+    "to": "/postgraduate-programs"
+   },
+   {
+    "text": "Postgraduate Regulations",
+    "to": "/postgraduate-regulations"
+   },
+   {
+    "text": "HEC Approved PhD Supervisors",
+    "to": "/hec-approved-phd-supervisors"
+   },
+   {
+    "text": "Outcome Based Education (OBE)",
+    "to": "/outcome-based-education-obe"
+   }
+  ],
+  "blocks": [
+   {
+    "t": "h",
+    "level": 1,
+    "text": "Regulations"
+   },
+   {
+    "t": "h",
+    "level": 3,
+    "text": "Regulations for Semester System of BS Program"
+   },
+   {
+    "t": "links",
+    "items": [
+     {
+      "t": "link",
+      "text": "Regulations for Semester System of BS Program",
+      "file": "Regulations-for-Semester-System-of-BS-Program-1.pdf"
+     }
+    ]
+   }
+  ]
+ },
+ "/university-linkages": {
+  "title": "University Linkages",
+  "description": "Memorandum of Understanding Between DUET and NED",
+  "sidebar": [
+   {
+    "text": "Historic Profile",
+    "to": "/about-duet/historic-profile"
+   },
+   {
+    "text": "Vision & Mission",
+    "to": "/about-duet/vision-mission"
+   },
+   {
+    "text": "Vice Chancellor’s Message",
+    "to": "/vice-chancellors-message-2"
+   },
+   {
+    "text": "Authorities",
+    "to": "/authorities"
+   },
+   {
+    "text": "Officers",
+    "to": "/officers-2"
+   },
+   {
+    "text": "University Linkages",
+    "to": "/university-linkages"
+   },
+   {
+    "text": "Organogram",
+    "to": "/organogram"
+   },
+   {
+    "text": "Annual Report",
+    "to": "/annual-report"
+   }
+  ],
+  "blocks": [
+   {
+    "t": "h",
+    "level": 3,
+    "text": "Memorandum"
+   },
+   {
+    "t": "links",
+    "items": [
+     {
+      "t": "link",
+      "text": "Memorandum",
+      "file": "MEMORANDUM-OF-UNDERSTANDING.pdf"
+     }
+    ]
+   },
+   {
+    "t": "p",
+    "text": "Memorandum of Understanding Between DUET and NED"
+   },
+   {
+    "t": "links",
+    "items": [
+     {
+      "t": "link",
+      "text": "Memorandum of Understanding Between DUET and NED",
+      "file": "MEMORANDUM-OF-UNDERSTANDING.pdf"
+     }
+    ]
+   }
+  ]
+ },
+ "/university-policies": {
+  "title": "University Policies",
+  "description": "POLICY ON DRUGS & TOBACCO ABUSE",
+  "sidebar": [
+   {
+    "text": "Academic Calendar",
+    "to": "/academic-calendar"
+   },
+   {
+    "text": "University Policies",
+    "to": "/university-policies"
+   },
+   {
+    "text": "Scholarships",
+    "to": "/scholarships"
+   },
+   {
+    "text": "Students Affairs",
+    "to": "/students-affairs"
+   },
+   {
+    "text": "Results",
+    "to": "/results"
+   },
+   {
+    "text": "Internships",
+    "to": "/internships"
+   },
+   {
+    "text": "Career Counselling",
+    "to": "/career-counselling"
+   },
+   {
+    "text": "Shuttle Bus Routes",
+    "to": "/shuttle-bus-routes"
+   },
+   {
+    "text": "Students Societies",
+    "to": "/students-societies"
+   },
+   {
+    "text": "Seminars & Workshops",
+    "to": "/seminars-workshops"
+   }
+  ],
+  "blocks": [
+   {
+    "t": "h",
+    "level": 3,
+    "text": "SEXUAL HARASSMENT POLICY"
+   },
+   {
+    "t": "links",
+    "items": [
+     {
+      "t": "link",
+      "text": "SEXUAL HARASSMENT POLICY",
+      "file": "SEXUALHARASSMENT-POLICY.pdf"
+     }
+    ]
+   },
+   {
+    "t": "h",
+    "level": 3,
+    "text": "POLICY ON DRUGS & TOBACCO ABUSE"
+   },
+   {
+    "t": "links",
+    "items": [
+     {
+      "t": "link",
+      "text": "POLICY ON DRUGS & TOBACCO ABUSE",
+      "file": "POLICY-ON-DRUG-AND-TOBACCO-ABUSE-IN-HEIS-IN-PAKISTAN-2021.pdf"
+     }
+    ]
+   },
+   {
+    "t": "p",
+    "text": "POLICY ON DRUGS & TOBACCO ABUSE"
+   }
+  ]
+ },
+ "/vice-chancellors-message-2": {
+  "title": "Vice Chancellor’s Message",
+  "description": "I am grateful to Allah the Almighty for His countless blessings in me. I am indebted to Honourable Chief Minister Syed Murad Ali Shah for his trust in me a",
+  "sidebar": [
+   {
+    "text": "Historic Profile",
+    "to": "/about-duet/historic-profile"
+   },
+   {
+    "text": "Vision & Mission",
+    "to": "/about-duet/vision-mission"
+   },
+   {
+    "text": "Vice Chancellor’s Message",
+    "to": "/vice-chancellors-message-2"
+   },
+   {
+    "text": "Authorities",
+    "to": "/authorities"
+   },
+   {
+    "text": "Officers",
+    "to": "/officers-2"
+   },
+   {
+    "text": "University Linkages",
+    "to": "/university-linkages"
+   },
+   {
+    "text": "Organogram",
+    "to": "/organogram"
+   },
+   {
+    "text": "Annual Report",
+    "to": "/annual-report"
+   }
+  ],
+  "blocks": [
+   {
+    "t": "h",
+    "level": 1,
+    "text": "Vice Chancellor's Message Prof. Dr. Samreen Hussain (TI)"
+   },
+   {
+    "t": "p",
+    "text": "I am grateful to Allah the Almighty for His countless blessings in me. I am indebted to Honourable Chief Minister Syed Murad Ali Shah for his trust in me and providing me yet another assignment full of challenges. As a Vice Chancellor, I have inherited a financial deficit of 400M and liabilities of 148M. Challenges like insufficient space for these many Undergraduate programs, hybrid system of education ( neither term nor semester), over staffing yet unavailability of dedicated Human Resources on essential positions, a lot of manual /paperwork, struggling quality of teaching especially in undergraduate programs, dearth of computing facilities and core laboratories equipment etc. On a positive side, a sizable Endowment Fund, good number of PhD faculty, cooperative staff and motivated students. With the support and efforts of my team DUET, I will try to establish a transparent governance model through good practices, subordination of personal interests, implementing check & balance mechanisms and making DUET a most rewarding institution for high performing professionals. Introducing “Digital DUET Initiative” for paperless working for cost and time efficient routine operations as well as reducing environmental hazards. With few policy reforms and better financial management & discipline we can gain all that we deserve and aim for ! On the Academic front, will try to implement the semester system , in letter and spirit, to let students enjoy the flexibility and ease of choosing credits as per their intellectual convenience. Including all stakeholders to draw the roadmap for faculty development for pedagogical sophistication, improve quality of course contents, designing market based elective courses, and fruitful industry linkages for better employability of graduates as well as joint entrepreneurial endeavors and resource mobilization through Public Private Partnerships. For Students, Dawood University shall provide many opportunities to grow academically, intellectually, socially and as well-rounded human beings. To achieve this, I and my Faculty shall strive to create an environment where critical thinking is emphasized, teamwork is promoted, Sportsmanship is encouraged, technology awareness is instilled, new veins of knowledge are explored, multi-cultural awareness and empathy are developed, interpersonal competencies are fostered, practical life skills are honed, and an ethical perspective is woven into its fabric. As Vice Chancellor, I am deeply committed to attracting a body of students dedicated to academic excellence, research for regional challenges & way forward, and service to society. In our mission to contribute to national development, we shall focus on the professional development of our students to provide you with the knowledge, skills & environment required to develop confident leaders, independent thinkers and creative entrepreneurs. In the end, I would like to request Alumni of Dawood University to come forward and help their alma mater to reach the heights of academic excellence with their knowledge, experience, commitment and financial and moral support. We at Dawood, are committed to acknowledge our Alumni and their success through launching the “ Dawood University Alumni Excellence Awards”. Soon, we shall reach out to you for nominations. As a new team lead , I am looking forward to the trust, guidance and support of all Statutory Bodies. Dear team, students and Alumni; there’s a lot we have to do this year. I believe that nothing is impossible if the will and clear intent is there. We can convert challenges into opportunities. So gel in together and build upon each other’s strengths with a positive and constructive mindset. Wish me luck and work in the best interest of our beloved Dawood University!"
+   }
+  ]
+ },
+ "/video-gallery": {
+  "title": "Video Gallery",
+  "description": "",
+  "sidebar": [],
+  "blocks": []
+ }
+}
