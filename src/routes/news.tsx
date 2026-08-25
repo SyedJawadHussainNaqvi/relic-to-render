@@ -51,11 +51,19 @@ function NewsPage() {
       </div>
 
       <div className="mx-auto max-w-[1200px] space-y-6 px-4 py-10">
-        {entries.map(([path, post]) => (
-          <article key={path} className="rounded border border-border bg-card p-6">
+        {entries.map((post) => (
+          <article key={post.id} className="rounded border border-border bg-card p-6">
             <h2 className="font-display text-lg font-semibold text-brand">{post.title}</h2>
+            {post.image_url ? (
+              <img
+                src={post.image_url}
+                alt={post.title}
+                loading="lazy"
+                className="mt-4 max-h-96 w-full rounded object-cover"
+              />
+            ) : null}
             <div className="mt-3 space-y-3">
-              {post.paras.map((p, i) => (
+              {post.body.split("\n\n").filter(Boolean).map((p, i) => (
                 <p key={i} className="text-[15px] leading-7 text-foreground/90">
                   {p}
                 </p>
