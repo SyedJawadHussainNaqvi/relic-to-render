@@ -18,10 +18,10 @@ cp .env.production.example .env          # fill in the real values first
 NITRO_PRESET=node-server npm run build
 ```
 
-Output:
+Output (verified working):
 
-- `dist/server/index.mjs` — the Node server entry
-- `dist/client/` — static assets, served by the same process
+- `.output/server/index.mjs` — the Node server entry
+- `.output/public/` — static assets, served by the same process
 
 The `VITE_*` values must be correct **before** building; they are baked into the
 browser bundle.
@@ -29,11 +29,14 @@ browser bundle.
 ## 2. Upload
 
 ```bash
-rsync -avz --delete dist/ package.json package-lock.json .env \
-  root@YOUR_VPS_IP:/var/www/duet/
+rsync -avz --delete .output/ root@YOUR_VPS_IP:/var/www/duet/.output/
+rsync -avz .env root@YOUR_VPS_IP:/var/www/duet/
 ```
 
 Or drag the same files into hPanel's File Manager under `/var/www/duet`.
+
+The bundle is self-contained — no `node_modules` and no `npm install` are needed
+on the server.
 
 ## 3. Install and start (on the VPS)
 
@@ -43,8 +46,7 @@ curl -fsSL https://deb.nodesource.com/setup_22.x | bash - && apt-get install -y 
 npm install -g pm2
 
 cd /var/www/duet
-npm ci --omit=dev
-pm2 start dist/server/index.mjs --name duet --update-env
+pm2 start .output/server/index.mjs --name duet --update-env
 pm2 save && pm2 startup
 ```
 
