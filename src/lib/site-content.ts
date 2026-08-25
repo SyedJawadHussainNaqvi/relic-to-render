@@ -72,23 +72,55 @@ export function buildMenu(rows: NavRow[]): SiteMenu {
   };
 }
 
+// In the browser, read the published content straight from the Data API (public
+// `anon` read policies). This keeps live content working on hosts that serve the
+// build as plain static files, where server functions do not exist. During SSR
+// and prerendering the server functions are used instead.
+const inBrowser = () => typeof window !== "undefined";
+
+async function browserRows<T>(
+  table: "nav_items" | "slider_slides" | "news_posts",
+  columns: string,
+): Promise<T[]> {
+  const { supabase } = await import("@/integrations/supabase/client");
+  const { data } = await supabase
+    .from(table)
+    .select(columns)
+    .eq("is_published", true)
+    .order("sort_order", { ascending: true });
+  return (data ?? []) as T[];
+}
+
 export const navQueryOptions = queryOptions({
   queryKey: ["nav-items"],
-  queryFn: () => fetchNavItems() as Promise<NavRow[]>,
+  queryFn: () =>
+    inBrowser()
+      ? browserRows<NavRow>("nav_items", "id, section, parent_key, label, to_path, href, sort_order")
+      : (fetchNavItems() as Promise<NavRow[]>),
   staleTime: 30_000,
 });
 
 export const slidesQueryOptions = queryOptions({
   queryKey: ["slider-slides"],
-  queryFn: () => fetchSlides() as Promise<SlideRow[]>,
+  queryFn: () =>
+    inBrowser()
+      ? browserRows<SlideRow>("slider_slides", "id, image_url, alt_text, caption, link_to, sort_order")
+      : (fetchSlides() as Promise<SlideRow[]>),
   staleTime: 30_000,
 });
 
 export const newsQueryOptions = queryOptions({
   queryKey: ["news-posts"],
-  queryFn: () => fetchNewsPosts() as Promise<NewsRow[]>,
+  queryFn: () =>
+    inBrowser()
+      ? browserRows<NewsRow>(
+          "news_posts",
+          "id, slug, title, excerpt, body, image_url, published_at, sort_order",
+        )
+      : (fetchNewsPosts() as Promise<NewsRow[]>),
   staleTime: 30_000,
 });
+
 
 /** Slides shown on the homepage; falls back to the recovered images. */
 export function resolveSlides(rows: SlideRow[]) {
