@@ -9,7 +9,7 @@ import { defineConfig } from "@lovable.dev/vite-tanstack-config";
 
 // Self-hosting:
 //   NITRO_PRESET=node-server npm run build  -> plain Node server bundle in .output/
-//   NITRO_PRESET=static      npm run build  -> prerendered static files in .output/public/
+//   npm run build:static                    -> prerendered static HTML in .output/public/
 // Unset (Lovable builds) keeps the default Cloudflare target.
 const selfHostPreset = process.env["NITRO_PRESET"];
 const prerenderAll = process.env["PRERENDER"] === "1";
@@ -49,8 +49,6 @@ export default defineConfig({
     ? {
         nitro: {
           preset: selfHostPreset,
-          // The static preset needs nitro's default dirs so the prerender step can
-          // boot the build; node-server gets a deterministic .output/ layout.
           output: {
             dir: ".output",
             serverDir: ".output/server",
