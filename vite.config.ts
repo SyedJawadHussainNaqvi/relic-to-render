@@ -37,7 +37,7 @@ export default defineConfig({
     // nitro/vite builds from this
     // The prerender/preview server resolves the default entry name, so the
     // custom SSR error wrapper is only wired up for server builds.
-    ...(prerenderAll ? {} : { server: { entry: "server" } }),
+    server: { entry: "server" },
     ...(prerenderAll
       ? {
           prerender: { enabled: true, crawlLinks: true },
@@ -45,7 +45,9 @@ export default defineConfig({
         }
       : {}),
   },
-  ...(selfHostPreset
+  // Static export: no deploy adapter, plain vite build + prerender to dist/client.
+  ...(prerenderAll ? { nitro: false as const } : {}),
+  ...(selfHostPreset && !prerenderAll
     ? {
         nitro: {
           preset: selfHostPreset,
