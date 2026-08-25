@@ -7,6 +7,14 @@ DirectoryIndex index.html
 <IfModule mod_rewrite.c>
   RewriteEngine On
 
+  # Force HTTPS (Hostinger terminates SSL upstream, so check the forwarded proto)
+  RewriteCond %{HTTPS} !=on
+  RewriteCond %{HTTP:X-Forwarded-Proto} !https
+  RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
+
+  # Staff area lives on the app host, not on this static host
+  RewriteRule ^(auth|admin)(/.*)?$ https://relic-to-render.lovable.app/$1$2 [R=302,L]
+
   # /about-duet -> /about-duet/index.html (clean URLs, no redirect)
   RewriteCond %{REQUEST_FILENAME} !-f
   RewriteCond %{REQUEST_FILENAME}/index.html -f
