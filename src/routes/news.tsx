@@ -25,10 +25,9 @@ export const Route = createFileRoute("/news")({
   component: NewsPage,
 });
 
-const posts = postsJson as Record<string, { title: string; paras: string[] }>;
-
 function NewsPage() {
-  const entries = Object.entries(posts);
+  const { data } = useQuery(newsQueryOptions);
+  const entries = data ?? [];
   return (
     <main>
       <div
