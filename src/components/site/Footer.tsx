@@ -97,9 +97,15 @@ export function Footer() {
       <div className="border-t border-white/15 py-3 text-center text-[12px] text-white/70">
         Copyright © Dawood University of Engineering &amp; Technology, Karachi. All rights reserved.
         <span className="px-2">·</span>
-        <Link to="/auth" className="hover:text-accent">
-          Staff login
-        </Link>
+        {adminOrigin ? (
+          <a href={`${adminOrigin}/auth`} className="hover:text-accent">
+            Staff login
+          </a>
+        ) : (
+          <Link to="/auth" className="hover:text-accent">
+            Staff login
+          </Link>
+        )}
       </div>
     </footer>
   );
