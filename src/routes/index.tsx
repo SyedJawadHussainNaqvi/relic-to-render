@@ -1,8 +1,9 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
+import { useQuery } from "@tanstack/react-query";
 import { useEffect, useState } from "react";
-import { aboutImg, campusBg, sliderImages } from "@/content/assets";
-import { mainMenu } from "@/content/menu";
-import postsJson from "@/content/posts.json";
+import { aboutImg, campusBg } from "@/content/assets";
+import { useSiteMenu } from "@/hooks/useSiteMenu";
+import { newsQueryOptions, resolveSlides, slidesQueryOptions } from "@/lib/site-content";
 
 export const Route = createFileRoute("/")({
   head: () => ({
