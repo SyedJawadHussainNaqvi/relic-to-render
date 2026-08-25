@@ -2,6 +2,12 @@ import { Link } from "@tanstack/react-router";
 import { logoSquare } from "@/content/assets";
 import { useSiteMenu } from "@/hooks/useSiteMenu";
 
+/**
+ * On static hosts (e.g. Hostinger Cloud) the staff area cannot run, so point
+ * "Staff login" at the origin that hosts /auth and /admin.
+ */
+const adminOrigin = (import.meta.env["VITE_ADMIN_ORIGIN"] as string | undefined)?.replace(/\/$/, "");
+
 export function Footer() {
   const { main: mainMenu, utility: utilityLinks } = useSiteMenu();
 
@@ -97,9 +103,15 @@ export function Footer() {
       <div className="border-t border-white/15 py-3 text-center text-[12px] text-white/70">
         Copyright © Dawood University of Engineering &amp; Technology, Karachi. All rights reserved.
         <span className="px-2">·</span>
-        <Link to="/auth" className="hover:text-accent">
-          Staff login
-        </Link>
+        {adminOrigin ? (
+          <a href={`${adminOrigin}/auth`} className="hover:text-accent">
+            Staff login
+          </a>
+        ) : (
+          <Link to="/auth" className="hover:text-accent">
+            Staff login
+          </Link>
+        )}
       </div>
     </footer>
   );
