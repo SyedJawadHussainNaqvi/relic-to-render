@@ -25,6 +25,12 @@ export const Route = createFileRoute("/")({
     ],
     links: [{ rel: "canonical", href: "/" }],
   }),
+  loader: async ({ context }) => {
+    await Promise.all([
+      context.queryClient.ensureQueryData(slidesQueryOptions),
+      context.queryClient.ensureQueryData(newsQueryOptions),
+    ]);
+  },
   component: Index,
 });
 
