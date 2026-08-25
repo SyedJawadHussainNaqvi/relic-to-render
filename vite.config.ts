@@ -40,7 +40,7 @@ export default defineConfig({
     server: { entry: "server" },
     ...(prerenderAll
       ? {
-          prerender: { enabled: true, crawlLinks: true },
+          prerender: { enabled: true, crawlLinks: false },
           pages: publicRoutePaths().map((path) => ({ path, prerender: { enabled: true } })),
         }
       : {}),
