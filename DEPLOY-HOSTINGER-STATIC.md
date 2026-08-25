@@ -60,9 +60,9 @@ hundreds of thousands of views a day, and effectively unlimited with the CDN on.
 
 ## What is intentionally not on Hostinger
 
-`/auth` and `/admin` need the backend session and are meant to stay on the
-Lovable-hosted copy. They are excluded from the static export; if someone opens
-those paths on Hostinger they land on the homepage.
+`/auth` and `/admin` are not prerendered. Keep using the Lovable-hosted copy for
+staff sign-in and content editing — that URL already has the sign-in redirect
+configured, and edits made there appear on the Hostinger site straight away.
 
 For a full server-side deployment (SSR + admin on your own machine) see
 `DEPLOY-HOSTINGER.md`, which requires a VPS.
