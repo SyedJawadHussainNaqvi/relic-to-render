@@ -2,6 +2,12 @@ import { Link } from "@tanstack/react-router";
 import { logoSquare } from "@/content/assets";
 import { useSiteMenu } from "@/hooks/useSiteMenu";
 
+/**
+ * On static hosts (e.g. Hostinger Cloud) the staff area cannot run, so point
+ * "Staff login" at the origin that hosts /auth and /admin.
+ */
+const adminOrigin = (import.meta.env["VITE_ADMIN_ORIGIN"] as string | undefined)?.replace(/\/$/, "");
+
 export function Footer() {
   const { main: mainMenu, utility: utilityLinks } = useSiteMenu();
 
