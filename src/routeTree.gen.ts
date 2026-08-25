@@ -78,6 +78,7 @@ import { Route as AuthenticatedAdminRouteImport } from './routes/_authenticated/
 import { Route as AboutDuetIndexRouteImport } from './routes/about-duet.index'
 import { Route as AboutDuetHistoricProfileRouteImport } from './routes/about-duet.historic-profile'
 import { Route as AboutDuetVisionMissionRouteImport } from './routes/about-duet.vision-mission'
+import { Route as AuthenticatedAdminIndexRouteImport } from './routes/_authenticated/admin.index'
 
 const IndexRoute = IndexRouteImport.update({
   id: '/',
@@ -431,6 +432,11 @@ const AboutDuetVisionMissionRoute = AboutDuetVisionMissionRouteImport.update({
   path: '/about-duet/vision-mission',
   getParentRoute: () => rootRouteImport,
 } as any)
+const AuthenticatedAdminIndexRoute = AuthenticatedAdminIndexRouteImport.update({
+  id: '/',
+  path: '/',
+  getParentRoute: () => AuthenticatedAdminRoute,
+} as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
@@ -497,10 +503,11 @@ export interface FileRoutesByFullPath {
   '/university-policies': typeof UniversityPoliciesRoute
   '/vice-chancellors-message-2': typeof ViceChancellorsMessage2Route
   '/video-gallery': typeof VideoGalleryRoute
-  '/admin': typeof AuthenticatedAdminRoute
+  '/admin': typeof AuthenticatedAdminRouteWithChildren
   '/about-duet/historic-profile': typeof AboutDuetHistoricProfileRoute
   '/about-duet/vision-mission': typeof AboutDuetVisionMissionRoute
   '/about-duet/': typeof AboutDuetIndexRoute
+  '/admin/': typeof AuthenticatedAdminIndexRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
@@ -567,10 +574,10 @@ export interface FileRoutesByTo {
   '/university-policies': typeof UniversityPoliciesRoute
   '/vice-chancellors-message-2': typeof ViceChancellorsMessage2Route
   '/video-gallery': typeof VideoGalleryRoute
-  '/admin': typeof AuthenticatedAdminRoute
   '/about-duet/historic-profile': typeof AboutDuetHistoricProfileRoute
   '/about-duet/vision-mission': typeof AboutDuetVisionMissionRoute
   '/about-duet': typeof AboutDuetIndexRoute
+  '/admin': typeof AuthenticatedAdminIndexRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
@@ -639,10 +646,11 @@ export interface FileRoutesById {
   '/university-policies': typeof UniversityPoliciesRoute
   '/vice-chancellors-message-2': typeof ViceChancellorsMessage2Route
   '/video-gallery': typeof VideoGalleryRoute
-  '/_authenticated/admin': typeof AuthenticatedAdminRoute
+  '/_authenticated/admin': typeof AuthenticatedAdminRouteWithChildren
   '/about-duet/historic-profile': typeof AboutDuetHistoricProfileRoute
   '/about-duet/vision-mission': typeof AboutDuetVisionMissionRoute
   '/about-duet/': typeof AboutDuetIndexRoute
+  '/_authenticated/admin/': typeof AuthenticatedAdminIndexRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
@@ -715,6 +723,7 @@ export interface FileRouteTypes {
     | '/about-duet/historic-profile'
     | '/about-duet/vision-mission'
     | '/about-duet/'
+    | '/admin/'
   fileRoutesByTo: FileRoutesByTo
   to:
     | '/'
@@ -781,10 +790,10 @@ export interface FileRouteTypes {
     | '/university-policies'
     | '/vice-chancellors-message-2'
     | '/video-gallery'
-    | '/admin'
     | '/about-duet/historic-profile'
     | '/about-duet/vision-mission'
     | '/about-duet'
+    | '/admin'
   id:
     | '__root__'
     | '/'
@@ -856,6 +865,7 @@ export interface FileRouteTypes {
     | '/about-duet/historic-profile'
     | '/about-duet/vision-mission'
     | '/about-duet/'
+    | '/_authenticated/admin/'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
@@ -1414,15 +1424,33 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof AboutDuetVisionMissionRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/_authenticated/admin/': {
+      id: '/_authenticated/admin/'
+      path: '/'
+      fullPath: '/admin/'
+      preLoaderRoute: typeof AuthenticatedAdminIndexRouteImport
+      parentRoute: typeof AuthenticatedAdminRoute
+    }
   }
 }
 
+interface AuthenticatedAdminRouteChildren {
+  AuthenticatedAdminIndexRoute: typeof AuthenticatedAdminIndexRoute
+}
+
+const AuthenticatedAdminRouteChildren: AuthenticatedAdminRouteChildren = {
+  AuthenticatedAdminIndexRoute: AuthenticatedAdminIndexRoute,
+}
+
+const AuthenticatedAdminRouteWithChildren =
+  AuthenticatedAdminRoute._addFileChildren(AuthenticatedAdminRouteChildren)
+
 interface AuthenticatedRouteRouteChildren {
-  AuthenticatedAdminRoute: typeof AuthenticatedAdminRoute
+  AuthenticatedAdminRoute: typeof AuthenticatedAdminRouteWithChildren
 }
 
 const AuthenticatedRouteRouteChildren: AuthenticatedRouteRouteChildren = {
-  AuthenticatedAdminRoute: AuthenticatedAdminRoute,
+  AuthenticatedAdminRoute: AuthenticatedAdminRouteWithChildren,
 }
 
 const AuthenticatedRouteRouteWithChildren =
