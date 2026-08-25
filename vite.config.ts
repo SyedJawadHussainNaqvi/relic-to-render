@@ -47,11 +47,17 @@ export default defineConfig({
     ? {
         nitro: {
           preset: selfHostPreset,
-          output: {
-            dir: ".output",
-            serverDir: ".output/server",
-            publicDir: ".output/public",
-          },
+          // The static preset needs nitro's default dirs so the prerender step can
+          // boot the build; node-server gets a deterministic .output/ layout.
+          ...(isStatic
+            ? {}
+            : {
+                output: {
+                  dir: ".output",
+                  serverDir: ".output/server",
+                  publicDir: ".output/public",
+                },
+              }),
         },
       }
     : {}),
