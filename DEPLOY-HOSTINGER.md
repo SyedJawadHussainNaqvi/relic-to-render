@@ -38,7 +38,7 @@ Or drag the same files into hPanel's File Manager under `/var/www/duet`.
 The bundle is self-contained — no `node_modules` and no `npm install` are needed
 on the server.
 
-## 3. Install and start (on the VPS)
+## 3. Start it (on the VPS)
 
 ```bash
 ssh root@YOUR_VPS_IP
@@ -46,11 +46,13 @@ curl -fsSL https://deb.nodesource.com/setup_22.x | bash - && apt-get install -y 
 npm install -g pm2
 
 cd /var/www/duet
+set -a && . ./.env && set +a          # pm2 does not read .env by itself
 pm2 start .output/server/index.mjs --name duet --update-env
 pm2 save && pm2 startup
 ```
 
 Check it: `curl -I http://127.0.0.1:3000` should return `200`.
+
 
 ## 4. Nginx reverse proxy
 
