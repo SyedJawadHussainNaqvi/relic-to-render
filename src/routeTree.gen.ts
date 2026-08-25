@@ -10,6 +10,7 @@
 
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
+import { Route as AuthenticatedRouteRouteImport } from './routes/_authenticated/route'
 import { Route as AboutCemetRouteImport } from './routes/about-cemet'
 import { Route as AcademicCalendarRouteImport } from './routes/academic-calendar'
 import { Route as AcademicsRouteImport } from './routes/academics'
@@ -73,6 +74,7 @@ import { Route as UniversityLinkagesRouteImport } from './routes/university-link
 import { Route as UniversityPoliciesRouteImport } from './routes/university-policies'
 import { Route as ViceChancellorsMessage2RouteImport } from './routes/vice-chancellors-message-2'
 import { Route as VideoGalleryRouteImport } from './routes/video-gallery'
+import { Route as AuthenticatedAdminRouteImport } from './routes/_authenticated/admin'
 import { Route as AboutDuetIndexRouteImport } from './routes/about-duet.index'
 import { Route as AboutDuetHistoricProfileRouteImport } from './routes/about-duet.historic-profile'
 import { Route as AboutDuetVisionMissionRouteImport } from './routes/about-duet.vision-mission'
@@ -80,6 +82,10 @@ import { Route as AboutDuetVisionMissionRouteImport } from './routes/about-duet.
 const IndexRoute = IndexRouteImport.update({
   id: '/',
   path: '/',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const AuthenticatedRouteRoute = AuthenticatedRouteRouteImport.update({
+  id: '/_authenticated',
   getParentRoute: () => rootRouteImport,
 } as any)
 const AboutCemetRoute = AboutCemetRouteImport.update({
@@ -404,6 +410,11 @@ const VideoGalleryRoute = VideoGalleryRouteImport.update({
   path: '/video-gallery',
   getParentRoute: () => rootRouteImport,
 } as any)
+const AuthenticatedAdminRoute = AuthenticatedAdminRouteImport.update({
+  id: '/admin',
+  path: '/admin',
+  getParentRoute: () => AuthenticatedRouteRoute,
+} as any)
 const AboutDuetIndexRoute = AboutDuetIndexRouteImport.update({
   id: '/about-duet/',
   path: '/about-duet/',
@@ -486,6 +497,7 @@ export interface FileRoutesByFullPath {
   '/university-policies': typeof UniversityPoliciesRoute
   '/vice-chancellors-message-2': typeof ViceChancellorsMessage2Route
   '/video-gallery': typeof VideoGalleryRoute
+  '/admin': typeof AuthenticatedAdminRoute
   '/about-duet/historic-profile': typeof AboutDuetHistoricProfileRoute
   '/about-duet/vision-mission': typeof AboutDuetVisionMissionRoute
   '/about-duet/': typeof AboutDuetIndexRoute
@@ -555,6 +567,7 @@ export interface FileRoutesByTo {
   '/university-policies': typeof UniversityPoliciesRoute
   '/vice-chancellors-message-2': typeof ViceChancellorsMessage2Route
   '/video-gallery': typeof VideoGalleryRoute
+  '/admin': typeof AuthenticatedAdminRoute
   '/about-duet/historic-profile': typeof AboutDuetHistoricProfileRoute
   '/about-duet/vision-mission': typeof AboutDuetVisionMissionRoute
   '/about-duet': typeof AboutDuetIndexRoute
@@ -562,6 +575,7 @@ export interface FileRoutesByTo {
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
+  '/_authenticated': typeof AuthenticatedRouteRouteWithChildren
   '/about-cemet': typeof AboutCemetRoute
   '/academic-calendar': typeof AcademicCalendarRoute
   '/academics': typeof AcademicsRoute
@@ -625,6 +639,7 @@ export interface FileRoutesById {
   '/university-policies': typeof UniversityPoliciesRoute
   '/vice-chancellors-message-2': typeof ViceChancellorsMessage2Route
   '/video-gallery': typeof VideoGalleryRoute
+  '/_authenticated/admin': typeof AuthenticatedAdminRoute
   '/about-duet/historic-profile': typeof AboutDuetHistoricProfileRoute
   '/about-duet/vision-mission': typeof AboutDuetVisionMissionRoute
   '/about-duet/': typeof AboutDuetIndexRoute
@@ -696,6 +711,7 @@ export interface FileRouteTypes {
     | '/university-policies'
     | '/vice-chancellors-message-2'
     | '/video-gallery'
+    | '/admin'
     | '/about-duet/historic-profile'
     | '/about-duet/vision-mission'
     | '/about-duet/'
@@ -765,12 +781,14 @@ export interface FileRouteTypes {
     | '/university-policies'
     | '/vice-chancellors-message-2'
     | '/video-gallery'
+    | '/admin'
     | '/about-duet/historic-profile'
     | '/about-duet/vision-mission'
     | '/about-duet'
   id:
     | '__root__'
     | '/'
+    | '/_authenticated'
     | '/about-cemet'
     | '/academic-calendar'
     | '/academics'
@@ -834,6 +852,7 @@ export interface FileRouteTypes {
     | '/university-policies'
     | '/vice-chancellors-message-2'
     | '/video-gallery'
+    | '/_authenticated/admin'
     | '/about-duet/historic-profile'
     | '/about-duet/vision-mission'
     | '/about-duet/'
@@ -841,6 +860,7 @@ export interface FileRouteTypes {
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
+  AuthenticatedRouteRoute: typeof AuthenticatedRouteRouteWithChildren
   AboutCemetRoute: typeof AboutCemetRoute
   AcademicCalendarRoute: typeof AcademicCalendarRoute
   AcademicsRoute: typeof AcademicsRoute
@@ -916,6 +936,13 @@ declare module '@tanstack/react-router' {
       path: '/'
       fullPath: '/'
       preLoaderRoute: typeof IndexRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/_authenticated': {
+      id: '/_authenticated'
+      path: ''
+      fullPath: '/'
+      preLoaderRoute: typeof AuthenticatedRouteRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/about-cemet': {
@@ -1359,6 +1386,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof VideoGalleryRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/_authenticated/admin': {
+      id: '/_authenticated/admin'
+      path: '/admin'
+      fullPath: '/admin'
+      preLoaderRoute: typeof AuthenticatedAdminRouteImport
+      parentRoute: typeof AuthenticatedRouteRoute
+    }
     '/about-duet/': {
       id: '/about-duet/'
       path: '/about-duet'
@@ -1383,8 +1417,20 @@ declare module '@tanstack/react-router' {
   }
 }
 
+interface AuthenticatedRouteRouteChildren {
+  AuthenticatedAdminRoute: typeof AuthenticatedAdminRoute
+}
+
+const AuthenticatedRouteRouteChildren: AuthenticatedRouteRouteChildren = {
+  AuthenticatedAdminRoute: AuthenticatedAdminRoute,
+}
+
+const AuthenticatedRouteRouteWithChildren =
+  AuthenticatedRouteRoute._addFileChildren(AuthenticatedRouteRouteChildren)
+
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
+  AuthenticatedRouteRoute: AuthenticatedRouteRouteWithChildren,
   AboutCemetRoute: AboutCemetRoute,
   AcademicCalendarRoute: AcademicCalendarRoute,
   AcademicsRoute: AcademicsRoute,
