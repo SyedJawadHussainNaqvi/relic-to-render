@@ -28,8 +28,6 @@ export const Route = createFileRoute("/")({
   component: Index,
 });
 
-const posts = postsJson as Record<string, { title: string; paras: string[] }>;
-
 const stats = [
   { value: "02", label: "Campuses" },
   { value: "3000+", label: "Students" },
@@ -38,24 +36,29 @@ const stats = [
 ];
 
 function Slider() {
+  const { data } = useQuery(slidesQueryOptions);
+  const slides = resolveSlides(data ?? []);
   const [i, setI] = useState(0);
+  const count = slides.length;
   useEffect(() => {
-    const t = setInterval(() => setI((v) => (v + 1) % sliderImages.length), 5000);
+    if (count < 2) return;
+    const t = setInterval(() => setI((v) => (v + 1) % count), 5000);
     return () => clearInterval(t);
-  }, []);
-  const current = sliderImages[i];
+  }, [count]);
+  const active = count ? i % count : 0;
+  const current = slides[active];
 
   return (
     <section className="relative bg-brand-dark">
       <div className="relative h-[260px] w-full overflow-hidden sm:h-[420px] lg:h-[520px]">
-        {sliderImages.map((s, idx) => (
+        {slides.map((s, idx) => (
           <img
             key={s.src}
             src={s.src}
             alt={s.alt}
             loading={idx === 0 ? "eager" : "lazy"}
             className={`absolute inset-0 h-full w-full object-cover transition-opacity duration-700 ${
-              idx === i ? "opacity-100" : "opacity-0"
+              idx === active ? "opacity-100" : "opacity-0"
             }`}
           />
         ))}
@@ -63,17 +66,17 @@ function Slider() {
         <div className="absolute bottom-0 left-0 right-0">
           <div className="mx-auto max-w-[1200px] px-4 pb-8">
             <p className="font-display text-lg font-semibold text-white drop-shadow sm:text-3xl">
-              {current?.alt}
+              {current?.caption}
             </p>
             <div className="mt-4 flex gap-2">
-              {sliderImages.map((s, idx) => (
+              {slides.map((s, idx) => (
                 <button
                   key={s.src}
                   type="button"
                   aria-label={`Show slide ${idx + 1}`}
                   onClick={() => setI(idx)}
                   className={`h-2 w-6 rounded-full transition-colors ${
-                    idx === i ? "bg-accent" : "bg-white/50"
+                    idx === active ? "bg-accent" : "bg-white/50"
                   }`}
                 />
               ))}
@@ -86,7 +89,9 @@ function Slider() {
 }
 
 function Index() {
-  const newsEntries = Object.entries(posts).slice(0, 6);
+  const { main: mainMenu } = useSiteMenu();
+  const { data: news } = useQuery(newsQueryOptions);
+  const newsEntries = (news ?? []).slice(0, 6);
 
   return (
     <main>
