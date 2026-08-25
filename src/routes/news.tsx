@@ -1,6 +1,7 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
+import { useQuery } from "@tanstack/react-query";
 import { campusBg } from "@/content/assets";
-import postsJson from "@/content/posts.json";
+import { newsQueryOptions } from "@/lib/site-content";
 
 export const Route = createFileRoute("/news")({
   head: () => ({
