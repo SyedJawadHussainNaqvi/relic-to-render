@@ -4,8 +4,8 @@ import { supabase } from "@/integrations/supabase/client";
 type State = { loading: boolean; isAdmin: boolean; email: string | null };
 
 /**
- * Checks the signed-in user's admin role. If nobody is an admin yet, the first
- * signed-in user claims the role (database-side guard, one time only).
+ * Checks the signed-in user's admin role. Roles are granted server-side only —
+ * users can never grant themselves the admin role.
  */
 export function useAdmin(): State {
   const [state, setState] = useState<State>({ loading: true, isAdmin: false, email: null });
@@ -24,11 +24,8 @@ export function useAdmin(): State {
         .select("role")
         .eq("user_id", user.id)
         .eq("role", "admin");
-      let isAdmin = Boolean(roles?.length);
-      if (!isAdmin) {
-        const { data: claimed } = await supabase.rpc("claim_first_admin");
-        isAdmin = claimed === true;
-      }
+      const isAdmin = Boolean(roles?.length);
+
       if (active) setState({ loading: false, isAdmin, email: user.email ?? null });
     })();
     return () => {
