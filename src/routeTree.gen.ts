@@ -16,6 +16,7 @@ import { Route as AcademicsRouteImport } from './routes/academics'
 import { Route as AdmissionsRouteImport } from './routes/admissions'
 import { Route as AlumniRouteImport } from './routes/alumni'
 import { Route as AnnualReportRouteImport } from './routes/annual-report'
+import { Route as AuthRouteImport } from './routes/auth'
 import { Route as AuthoritiesRouteImport } from './routes/authorities'
 import { Route as BusinessIncubationCenterRouteImport } from './routes/business-incubation-center'
 import { Route as CareerCounsellingRouteImport } from './routes/career-counselling'
@@ -109,6 +110,11 @@ const AlumniRoute = AlumniRouteImport.update({
 const AnnualReportRoute = AnnualReportRouteImport.update({
   id: '/annual-report',
   path: '/annual-report',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const AuthRoute = AuthRouteImport.update({
+  id: '/auth',
+  path: '/auth',
   getParentRoute: () => rootRouteImport,
 } as any)
 const AuthoritiesRoute = AuthoritiesRouteImport.update({
@@ -423,6 +429,7 @@ export interface FileRoutesByFullPath {
   '/admissions': typeof AdmissionsRoute
   '/alumni': typeof AlumniRoute
   '/annual-report': typeof AnnualReportRoute
+  '/auth': typeof AuthRoute
   '/authorities': typeof AuthoritiesRoute
   '/business-incubation-center': typeof BusinessIncubationCenterRoute
   '/career-counselling': typeof CareerCounsellingRoute
@@ -491,6 +498,7 @@ export interface FileRoutesByTo {
   '/admissions': typeof AdmissionsRoute
   '/alumni': typeof AlumniRoute
   '/annual-report': typeof AnnualReportRoute
+  '/auth': typeof AuthRoute
   '/authorities': typeof AuthoritiesRoute
   '/business-incubation-center': typeof BusinessIncubationCenterRoute
   '/career-counselling': typeof CareerCounsellingRoute
@@ -560,6 +568,7 @@ export interface FileRoutesById {
   '/admissions': typeof AdmissionsRoute
   '/alumni': typeof AlumniRoute
   '/annual-report': typeof AnnualReportRoute
+  '/auth': typeof AuthRoute
   '/authorities': typeof AuthoritiesRoute
   '/business-incubation-center': typeof BusinessIncubationCenterRoute
   '/career-counselling': typeof CareerCounsellingRoute
@@ -630,6 +639,7 @@ export interface FileRouteTypes {
     | '/admissions'
     | '/alumni'
     | '/annual-report'
+    | '/auth'
     | '/authorities'
     | '/business-incubation-center'
     | '/career-counselling'
@@ -698,6 +708,7 @@ export interface FileRouteTypes {
     | '/admissions'
     | '/alumni'
     | '/annual-report'
+    | '/auth'
     | '/authorities'
     | '/business-incubation-center'
     | '/career-counselling'
@@ -766,6 +777,7 @@ export interface FileRouteTypes {
     | '/admissions'
     | '/alumni'
     | '/annual-report'
+    | '/auth'
     | '/authorities'
     | '/business-incubation-center'
     | '/career-counselling'
@@ -835,6 +847,7 @@ export interface RootRouteChildren {
   AdmissionsRoute: typeof AdmissionsRoute
   AlumniRoute: typeof AlumniRoute
   AnnualReportRoute: typeof AnnualReportRoute
+  AuthRoute: typeof AuthRoute
   AuthoritiesRoute: typeof AuthoritiesRoute
   BusinessIncubationCenterRoute: typeof BusinessIncubationCenterRoute
   CareerCounsellingRoute: typeof CareerCounsellingRoute
@@ -945,6 +958,13 @@ declare module '@tanstack/react-router' {
       path: '/annual-report'
       fullPath: '/annual-report'
       preLoaderRoute: typeof AnnualReportRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/auth': {
+      id: '/auth'
+      path: '/auth'
+      fullPath: '/auth'
+      preLoaderRoute: typeof AuthRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/authorities': {
@@ -1371,6 +1391,7 @@ const rootRouteChildren: RootRouteChildren = {
   AdmissionsRoute: AdmissionsRoute,
   AlumniRoute: AlumniRoute,
   AnnualReportRoute: AnnualReportRoute,
+  AuthRoute: AuthRoute,
   AuthoritiesRoute: AuthoritiesRoute,
   BusinessIncubationCenterRoute: BusinessIncubationCenterRoute,
   CareerCounsellingRoute: CareerCounsellingRoute,
