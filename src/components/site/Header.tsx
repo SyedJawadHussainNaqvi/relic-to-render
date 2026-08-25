@@ -1,7 +1,8 @@
 import { Link } from "@tanstack/react-router";
 import { useState } from "react";
-import { cemetLinks, mainMenu, utilityLinks, type MenuItem } from "@/content/menu";
+import type { MenuItem } from "@/content/menu";
 import { logo } from "@/content/assets";
+import { useSiteMenu } from "@/hooks/useSiteMenu";
 
 function ItemLink({ item, className }: { item: MenuItem; className?: string }) {
   if (item.href) {
@@ -20,6 +21,7 @@ function ItemLink({ item, className }: { item: MenuItem; className?: string }) {
 
 export function Header() {
   const [openMobile, setOpenMobile] = useState(false);
+  const { main: mainMenu, utility: utilityLinks, cemet: cemetLinks } = useSiteMenu();
 
   return (
     <header className="w-full">
