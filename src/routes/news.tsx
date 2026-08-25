@@ -22,6 +22,7 @@ export const Route = createFileRoute("/news")({
     ],
     links: [{ rel: "canonical", href: "/news" }],
   }),
+  loader: ({ context }) => context.queryClient.ensureQueryData(newsQueryOptions),
   component: NewsPage,
 });
 
