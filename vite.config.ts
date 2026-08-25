@@ -35,7 +35,9 @@ export default defineConfig({
   tanstackStart: {
     // Redirect TanStack Start's bundled server entry to src/server.ts (our SSR error wrapper).
     // nitro/vite builds from this
-    server: { entry: "server" },
+    // The prerender/preview server resolves the default entry name, so the
+    // custom SSR error wrapper is only wired up for server builds.
+    ...(isStatic ? {} : { server: { entry: "server" } }),
     ...(isStatic
       ? {
           prerender: { enabled: true, crawlLinks: true },
