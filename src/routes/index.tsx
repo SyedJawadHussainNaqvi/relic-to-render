@@ -225,13 +225,13 @@ function Index() {
             </Link>
           </div>
           <div className="mt-6 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
-            {newsEntries.map(([slug, post]) => (
-              <article key={slug} className="rounded border border-border bg-card p-5">
+            {newsEntries.map((post) => (
+              <article key={post.id} className="rounded border border-border bg-card p-5">
                 <h3 className="font-display text-[15px] font-semibold leading-6 text-brand">
                   {post.title}
                 </h3>
                 <p className="mt-2 line-clamp-4 text-[13.5px] leading-6 text-muted-foreground">
-                  {post.paras[0] ?? "Read the full announcement from Dawood University."}
+                  {post.excerpt || post.body.split("\n\n")[0] || "Read the full announcement from Dawood University."}
                 </p>
               </article>
             ))}
