@@ -79,6 +79,7 @@ import { Route as AboutDuetIndexRouteImport } from './routes/about-duet.index'
 import { Route as AboutDuetHistoricProfileRouteImport } from './routes/about-duet.historic-profile'
 import { Route as AboutDuetVisionMissionRouteImport } from './routes/about-duet.vision-mission'
 import { Route as AuthenticatedAdminIndexRouteImport } from './routes/_authenticated/admin.index'
+import { Route as AuthenticatedAdminNavigationRouteImport } from './routes/_authenticated/admin.navigation'
 import { Route as AuthenticatedAdminNewsRouteImport } from './routes/_authenticated/admin.news'
 
 const IndexRoute = IndexRouteImport.update({
@@ -438,6 +439,12 @@ const AuthenticatedAdminIndexRoute = AuthenticatedAdminIndexRouteImport.update({
   path: '/',
   getParentRoute: () => AuthenticatedAdminRoute,
 } as any)
+const AuthenticatedAdminNavigationRoute =
+  AuthenticatedAdminNavigationRouteImport.update({
+    id: '/navigation',
+    path: '/navigation',
+    getParentRoute: () => AuthenticatedAdminRoute,
+  } as any)
 const AuthenticatedAdminNewsRoute = AuthenticatedAdminNewsRouteImport.update({
   id: '/news',
   path: '/news',
@@ -513,6 +520,7 @@ export interface FileRoutesByFullPath {
   '/about-duet/historic-profile': typeof AboutDuetHistoricProfileRoute
   '/about-duet/vision-mission': typeof AboutDuetVisionMissionRoute
   '/about-duet/': typeof AboutDuetIndexRoute
+  '/admin/navigation': typeof AuthenticatedAdminNavigationRoute
   '/admin/news': typeof AuthenticatedAdminNewsRoute
   '/admin/': typeof AuthenticatedAdminIndexRoute
 }
@@ -584,6 +592,7 @@ export interface FileRoutesByTo {
   '/about-duet/historic-profile': typeof AboutDuetHistoricProfileRoute
   '/about-duet/vision-mission': typeof AboutDuetVisionMissionRoute
   '/about-duet': typeof AboutDuetIndexRoute
+  '/admin/navigation': typeof AuthenticatedAdminNavigationRoute
   '/admin/news': typeof AuthenticatedAdminNewsRoute
   '/admin': typeof AuthenticatedAdminIndexRoute
 }
@@ -658,6 +667,7 @@ export interface FileRoutesById {
   '/about-duet/historic-profile': typeof AboutDuetHistoricProfileRoute
   '/about-duet/vision-mission': typeof AboutDuetVisionMissionRoute
   '/about-duet/': typeof AboutDuetIndexRoute
+  '/_authenticated/admin/navigation': typeof AuthenticatedAdminNavigationRoute
   '/_authenticated/admin/news': typeof AuthenticatedAdminNewsRoute
   '/_authenticated/admin/': typeof AuthenticatedAdminIndexRoute
 }
@@ -732,6 +742,7 @@ export interface FileRouteTypes {
     | '/about-duet/historic-profile'
     | '/about-duet/vision-mission'
     | '/about-duet/'
+    | '/admin/navigation'
     | '/admin/news'
     | '/admin/'
   fileRoutesByTo: FileRoutesByTo
@@ -803,6 +814,7 @@ export interface FileRouteTypes {
     | '/about-duet/historic-profile'
     | '/about-duet/vision-mission'
     | '/about-duet'
+    | '/admin/navigation'
     | '/admin/news'
     | '/admin'
   id:
@@ -876,6 +888,7 @@ export interface FileRouteTypes {
     | '/about-duet/historic-profile'
     | '/about-duet/vision-mission'
     | '/about-duet/'
+    | '/_authenticated/admin/navigation'
     | '/_authenticated/admin/news'
     | '/_authenticated/admin/'
   fileRoutesById: FileRoutesById
@@ -1443,6 +1456,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof AuthenticatedAdminIndexRouteImport
       parentRoute: typeof AuthenticatedAdminRoute
     }
+    '/_authenticated/admin/navigation': {
+      id: '/_authenticated/admin/navigation'
+      path: '/navigation'
+      fullPath: '/admin/navigation'
+      preLoaderRoute: typeof AuthenticatedAdminNavigationRouteImport
+      parentRoute: typeof AuthenticatedAdminRoute
+    }
     '/_authenticated/admin/news': {
       id: '/_authenticated/admin/news'
       path: '/news'
@@ -1454,11 +1474,13 @@ declare module '@tanstack/react-router' {
 }
 
 interface AuthenticatedAdminRouteChildren {
+  AuthenticatedAdminNavigationRoute: typeof AuthenticatedAdminNavigationRoute
   AuthenticatedAdminNewsRoute: typeof AuthenticatedAdminNewsRoute
   AuthenticatedAdminIndexRoute: typeof AuthenticatedAdminIndexRoute
 }
 
 const AuthenticatedAdminRouteChildren: AuthenticatedAdminRouteChildren = {
+  AuthenticatedAdminNavigationRoute: AuthenticatedAdminNavigationRoute,
   AuthenticatedAdminNewsRoute: AuthenticatedAdminNewsRoute,
   AuthenticatedAdminIndexRoute: AuthenticatedAdminIndexRoute,
 }
