@@ -1,8 +1,10 @@
 import { Link } from "@tanstack/react-router";
-import { mainMenu, utilityLinks } from "@/content/menu";
 import { logoSquare } from "@/content/assets";
+import { useSiteMenu } from "@/hooks/useSiteMenu";
 
 export function Footer() {
+  const { main: mainMenu, utility: utilityLinks } = useSiteMenu();
+
   return (
     <footer className="mt-10 bg-brand text-brand-foreground">
       <div className="mx-auto grid max-w-[1200px] gap-8 px-4 py-10 sm:grid-cols-2 lg:grid-cols-4">
@@ -94,6 +96,10 @@ export function Footer() {
 
       <div className="border-t border-white/15 py-3 text-center text-[12px] text-white/70">
         Copyright © Dawood University of Engineering &amp; Technology, Karachi. All rights reserved.
+        <span className="px-2">·</span>
+        <Link to="/auth" className="hover:text-accent">
+          Staff login
+        </Link>
       </div>
     </footer>
   );

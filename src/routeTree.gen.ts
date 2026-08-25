@@ -10,12 +10,14 @@
 
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
+import { Route as AuthenticatedRouteRouteImport } from './routes/_authenticated/route'
 import { Route as AboutCemetRouteImport } from './routes/about-cemet'
 import { Route as AcademicCalendarRouteImport } from './routes/academic-calendar'
 import { Route as AcademicsRouteImport } from './routes/academics'
 import { Route as AdmissionsRouteImport } from './routes/admissions'
 import { Route as AlumniRouteImport } from './routes/alumni'
 import { Route as AnnualReportRouteImport } from './routes/annual-report'
+import { Route as AuthRouteImport } from './routes/auth'
 import { Route as AuthoritiesRouteImport } from './routes/authorities'
 import { Route as BusinessIncubationCenterRouteImport } from './routes/business-incubation-center'
 import { Route as CareerCounsellingRouteImport } from './routes/career-counselling'
@@ -72,13 +74,21 @@ import { Route as UniversityLinkagesRouteImport } from './routes/university-link
 import { Route as UniversityPoliciesRouteImport } from './routes/university-policies'
 import { Route as ViceChancellorsMessage2RouteImport } from './routes/vice-chancellors-message-2'
 import { Route as VideoGalleryRouteImport } from './routes/video-gallery'
+import { Route as AuthenticatedAdminRouteImport } from './routes/_authenticated/admin'
 import { Route as AboutDuetIndexRouteImport } from './routes/about-duet.index'
 import { Route as AboutDuetHistoricProfileRouteImport } from './routes/about-duet.historic-profile'
 import { Route as AboutDuetVisionMissionRouteImport } from './routes/about-duet.vision-mission'
+import { Route as AuthenticatedAdminIndexRouteImport } from './routes/_authenticated/admin.index'
+import { Route as AuthenticatedAdminNavigationRouteImport } from './routes/_authenticated/admin.navigation'
+import { Route as AuthenticatedAdminNewsRouteImport } from './routes/_authenticated/admin.news'
 
 const IndexRoute = IndexRouteImport.update({
   id: '/',
   path: '/',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const AuthenticatedRouteRoute = AuthenticatedRouteRouteImport.update({
+  id: '/_authenticated',
   getParentRoute: () => rootRouteImport,
 } as any)
 const AboutCemetRoute = AboutCemetRouteImport.update({
@@ -109,6 +119,11 @@ const AlumniRoute = AlumniRouteImport.update({
 const AnnualReportRoute = AnnualReportRouteImport.update({
   id: '/annual-report',
   path: '/annual-report',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const AuthRoute = AuthRouteImport.update({
+  id: '/auth',
+  path: '/auth',
   getParentRoute: () => rootRouteImport,
 } as any)
 const AuthoritiesRoute = AuthoritiesRouteImport.update({
@@ -398,6 +413,11 @@ const VideoGalleryRoute = VideoGalleryRouteImport.update({
   path: '/video-gallery',
   getParentRoute: () => rootRouteImport,
 } as any)
+const AuthenticatedAdminRoute = AuthenticatedAdminRouteImport.update({
+  id: '/admin',
+  path: '/admin',
+  getParentRoute: () => AuthenticatedRouteRoute,
+} as any)
 const AboutDuetIndexRoute = AboutDuetIndexRouteImport.update({
   id: '/about-duet/',
   path: '/about-duet/',
@@ -414,6 +434,22 @@ const AboutDuetVisionMissionRoute = AboutDuetVisionMissionRouteImport.update({
   path: '/about-duet/vision-mission',
   getParentRoute: () => rootRouteImport,
 } as any)
+const AuthenticatedAdminIndexRoute = AuthenticatedAdminIndexRouteImport.update({
+  id: '/',
+  path: '/',
+  getParentRoute: () => AuthenticatedAdminRoute,
+} as any)
+const AuthenticatedAdminNavigationRoute =
+  AuthenticatedAdminNavigationRouteImport.update({
+    id: '/navigation',
+    path: '/navigation',
+    getParentRoute: () => AuthenticatedAdminRoute,
+  } as any)
+const AuthenticatedAdminNewsRoute = AuthenticatedAdminNewsRouteImport.update({
+  id: '/news',
+  path: '/news',
+  getParentRoute: () => AuthenticatedAdminRoute,
+} as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
@@ -423,6 +459,7 @@ export interface FileRoutesByFullPath {
   '/admissions': typeof AdmissionsRoute
   '/alumni': typeof AlumniRoute
   '/annual-report': typeof AnnualReportRoute
+  '/auth': typeof AuthRoute
   '/authorities': typeof AuthoritiesRoute
   '/business-incubation-center': typeof BusinessIncubationCenterRoute
   '/career-counselling': typeof CareerCounsellingRoute
@@ -479,9 +516,13 @@ export interface FileRoutesByFullPath {
   '/university-policies': typeof UniversityPoliciesRoute
   '/vice-chancellors-message-2': typeof ViceChancellorsMessage2Route
   '/video-gallery': typeof VideoGalleryRoute
+  '/admin': typeof AuthenticatedAdminRouteWithChildren
   '/about-duet/historic-profile': typeof AboutDuetHistoricProfileRoute
   '/about-duet/vision-mission': typeof AboutDuetVisionMissionRoute
   '/about-duet/': typeof AboutDuetIndexRoute
+  '/admin/navigation': typeof AuthenticatedAdminNavigationRoute
+  '/admin/news': typeof AuthenticatedAdminNewsRoute
+  '/admin/': typeof AuthenticatedAdminIndexRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
@@ -491,6 +532,7 @@ export interface FileRoutesByTo {
   '/admissions': typeof AdmissionsRoute
   '/alumni': typeof AlumniRoute
   '/annual-report': typeof AnnualReportRoute
+  '/auth': typeof AuthRoute
   '/authorities': typeof AuthoritiesRoute
   '/business-incubation-center': typeof BusinessIncubationCenterRoute
   '/career-counselling': typeof CareerCounsellingRoute
@@ -550,16 +592,21 @@ export interface FileRoutesByTo {
   '/about-duet/historic-profile': typeof AboutDuetHistoricProfileRoute
   '/about-duet/vision-mission': typeof AboutDuetVisionMissionRoute
   '/about-duet': typeof AboutDuetIndexRoute
+  '/admin/navigation': typeof AuthenticatedAdminNavigationRoute
+  '/admin/news': typeof AuthenticatedAdminNewsRoute
+  '/admin': typeof AuthenticatedAdminIndexRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
+  '/_authenticated': typeof AuthenticatedRouteRouteWithChildren
   '/about-cemet': typeof AboutCemetRoute
   '/academic-calendar': typeof AcademicCalendarRoute
   '/academics': typeof AcademicsRoute
   '/admissions': typeof AdmissionsRoute
   '/alumni': typeof AlumniRoute
   '/annual-report': typeof AnnualReportRoute
+  '/auth': typeof AuthRoute
   '/authorities': typeof AuthoritiesRoute
   '/business-incubation-center': typeof BusinessIncubationCenterRoute
   '/career-counselling': typeof CareerCounsellingRoute
@@ -616,9 +663,13 @@ export interface FileRoutesById {
   '/university-policies': typeof UniversityPoliciesRoute
   '/vice-chancellors-message-2': typeof ViceChancellorsMessage2Route
   '/video-gallery': typeof VideoGalleryRoute
+  '/_authenticated/admin': typeof AuthenticatedAdminRouteWithChildren
   '/about-duet/historic-profile': typeof AboutDuetHistoricProfileRoute
   '/about-duet/vision-mission': typeof AboutDuetVisionMissionRoute
   '/about-duet/': typeof AboutDuetIndexRoute
+  '/_authenticated/admin/navigation': typeof AuthenticatedAdminNavigationRoute
+  '/_authenticated/admin/news': typeof AuthenticatedAdminNewsRoute
+  '/_authenticated/admin/': typeof AuthenticatedAdminIndexRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
@@ -630,6 +681,7 @@ export interface FileRouteTypes {
     | '/admissions'
     | '/alumni'
     | '/annual-report'
+    | '/auth'
     | '/authorities'
     | '/business-incubation-center'
     | '/career-counselling'
@@ -686,9 +738,13 @@ export interface FileRouteTypes {
     | '/university-policies'
     | '/vice-chancellors-message-2'
     | '/video-gallery'
+    | '/admin'
     | '/about-duet/historic-profile'
     | '/about-duet/vision-mission'
     | '/about-duet/'
+    | '/admin/navigation'
+    | '/admin/news'
+    | '/admin/'
   fileRoutesByTo: FileRoutesByTo
   to:
     | '/'
@@ -698,6 +754,7 @@ export interface FileRouteTypes {
     | '/admissions'
     | '/alumni'
     | '/annual-report'
+    | '/auth'
     | '/authorities'
     | '/business-incubation-center'
     | '/career-counselling'
@@ -757,15 +814,20 @@ export interface FileRouteTypes {
     | '/about-duet/historic-profile'
     | '/about-duet/vision-mission'
     | '/about-duet'
+    | '/admin/navigation'
+    | '/admin/news'
+    | '/admin'
   id:
     | '__root__'
     | '/'
+    | '/_authenticated'
     | '/about-cemet'
     | '/academic-calendar'
     | '/academics'
     | '/admissions'
     | '/alumni'
     | '/annual-report'
+    | '/auth'
     | '/authorities'
     | '/business-incubation-center'
     | '/career-counselling'
@@ -822,19 +884,25 @@ export interface FileRouteTypes {
     | '/university-policies'
     | '/vice-chancellors-message-2'
     | '/video-gallery'
+    | '/_authenticated/admin'
     | '/about-duet/historic-profile'
     | '/about-duet/vision-mission'
     | '/about-duet/'
+    | '/_authenticated/admin/navigation'
+    | '/_authenticated/admin/news'
+    | '/_authenticated/admin/'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
+  AuthenticatedRouteRoute: typeof AuthenticatedRouteRouteWithChildren
   AboutCemetRoute: typeof AboutCemetRoute
   AcademicCalendarRoute: typeof AcademicCalendarRoute
   AcademicsRoute: typeof AcademicsRoute
   AdmissionsRoute: typeof AdmissionsRoute
   AlumniRoute: typeof AlumniRoute
   AnnualReportRoute: typeof AnnualReportRoute
+  AuthRoute: typeof AuthRoute
   AuthoritiesRoute: typeof AuthoritiesRoute
   BusinessIncubationCenterRoute: typeof BusinessIncubationCenterRoute
   CareerCounsellingRoute: typeof CareerCounsellingRoute
@@ -905,6 +973,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof IndexRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/_authenticated': {
+      id: '/_authenticated'
+      path: ''
+      fullPath: '/'
+      preLoaderRoute: typeof AuthenticatedRouteRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/about-cemet': {
       id: '/about-cemet'
       path: '/about-cemet'
@@ -945,6 +1020,13 @@ declare module '@tanstack/react-router' {
       path: '/annual-report'
       fullPath: '/annual-report'
       preLoaderRoute: typeof AnnualReportRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/auth': {
+      id: '/auth'
+      path: '/auth'
+      fullPath: '/auth'
+      preLoaderRoute: typeof AuthRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/authorities': {
@@ -1339,6 +1421,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof VideoGalleryRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/_authenticated/admin': {
+      id: '/_authenticated/admin'
+      path: '/admin'
+      fullPath: '/admin'
+      preLoaderRoute: typeof AuthenticatedAdminRouteImport
+      parentRoute: typeof AuthenticatedRouteRoute
+    }
     '/about-duet/': {
       id: '/about-duet/'
       path: '/about-duet'
@@ -1360,17 +1449,66 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof AboutDuetVisionMissionRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/_authenticated/admin/': {
+      id: '/_authenticated/admin/'
+      path: '/'
+      fullPath: '/admin/'
+      preLoaderRoute: typeof AuthenticatedAdminIndexRouteImport
+      parentRoute: typeof AuthenticatedAdminRoute
+    }
+    '/_authenticated/admin/navigation': {
+      id: '/_authenticated/admin/navigation'
+      path: '/navigation'
+      fullPath: '/admin/navigation'
+      preLoaderRoute: typeof AuthenticatedAdminNavigationRouteImport
+      parentRoute: typeof AuthenticatedAdminRoute
+    }
+    '/_authenticated/admin/news': {
+      id: '/_authenticated/admin/news'
+      path: '/news'
+      fullPath: '/admin/news'
+      preLoaderRoute: typeof AuthenticatedAdminNewsRouteImport
+      parentRoute: typeof AuthenticatedAdminRoute
+    }
   }
 }
 
+interface AuthenticatedAdminRouteChildren {
+  AuthenticatedAdminNavigationRoute: typeof AuthenticatedAdminNavigationRoute
+  AuthenticatedAdminNewsRoute: typeof AuthenticatedAdminNewsRoute
+  AuthenticatedAdminIndexRoute: typeof AuthenticatedAdminIndexRoute
+}
+
+const AuthenticatedAdminRouteChildren: AuthenticatedAdminRouteChildren = {
+  AuthenticatedAdminNavigationRoute: AuthenticatedAdminNavigationRoute,
+  AuthenticatedAdminNewsRoute: AuthenticatedAdminNewsRoute,
+  AuthenticatedAdminIndexRoute: AuthenticatedAdminIndexRoute,
+}
+
+const AuthenticatedAdminRouteWithChildren =
+  AuthenticatedAdminRoute._addFileChildren(AuthenticatedAdminRouteChildren)
+
+interface AuthenticatedRouteRouteChildren {
+  AuthenticatedAdminRoute: typeof AuthenticatedAdminRouteWithChildren
+}
+
+const AuthenticatedRouteRouteChildren: AuthenticatedRouteRouteChildren = {
+  AuthenticatedAdminRoute: AuthenticatedAdminRouteWithChildren,
+}
+
+const AuthenticatedRouteRouteWithChildren =
+  AuthenticatedRouteRoute._addFileChildren(AuthenticatedRouteRouteChildren)
+
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
+  AuthenticatedRouteRoute: AuthenticatedRouteRouteWithChildren,
   AboutCemetRoute: AboutCemetRoute,
   AcademicCalendarRoute: AcademicCalendarRoute,
   AcademicsRoute: AcademicsRoute,
   AdmissionsRoute: AdmissionsRoute,
   AlumniRoute: AlumniRoute,
   AnnualReportRoute: AnnualReportRoute,
+  AuthRoute: AuthRoute,
   AuthoritiesRoute: AuthoritiesRoute,
   BusinessIncubationCenterRoute: BusinessIncubationCenterRoute,
   CareerCounsellingRoute: CareerCounsellingRoute,
