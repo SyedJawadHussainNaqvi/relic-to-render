@@ -12,7 +12,7 @@ import { defineConfig } from "@lovable.dev/vite-tanstack-config";
 //   NITRO_PRESET=static      npm run build  -> prerendered static files in .output/public/
 // Unset (Lovable builds) keeps the default Cloudflare target.
 const selfHostPreset = process.env["NITRO_PRESET"];
-const isStatic = selfHostPreset === "static";
+const prerenderAll = process.env["PRERENDER"] === "1";
 
 /** Public route paths derived from src/routes, used as prerender entry points. */
 function publicRoutePaths(): string[] {
@@ -37,8 +37,8 @@ export default defineConfig({
     // nitro/vite builds from this
     // The prerender/preview server resolves the default entry name, so the
     // custom SSR error wrapper is only wired up for server builds.
-    ...(isStatic ? {} : { server: { entry: "server" } }),
-    ...(isStatic
+    ...(prerenderAll ? {} : { server: { entry: "server" } }),
+    ...(prerenderAll
       ? {
           prerender: { enabled: true, crawlLinks: true },
           pages: publicRoutePaths().map((path) => ({ path, prerender: { enabled: true } })),
@@ -51,15 +51,11 @@ export default defineConfig({
           preset: selfHostPreset,
           // The static preset needs nitro's default dirs so the prerender step can
           // boot the build; node-server gets a deterministic .output/ layout.
-          ...(isStatic
-            ? {}
-            : {
-                output: {
-                  dir: ".output",
-                  serverDir: ".output/server",
-                  publicDir: ".output/public",
-                },
-              }),
+          output: {
+            dir: ".output",
+            serverDir: ".output/server",
+            publicDir: ".output/public",
+          },
         },
       }
     : {}),
