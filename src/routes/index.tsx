@@ -21,10 +21,48 @@ export const Route = createFileRoute("/")({
           "DUET Karachi: engineering, architecture and technology programs, admissions, examinations, research and student services.",
       },
       { property: "og:type", content: "website" },
-      { property: "og:url", content: "/" },
+      { property: "og:url", content: "https://www.duet.edu.pk/" },
+      { property: "og:image", content: "https://www.duet.edu.pk/media/about.jpg" },
+      { name: "twitter:image", content: "https://www.duet.edu.pk/media/about.jpg" },
     ],
-    links: [{ rel: "canonical", href: "/" }],
+    links: [{ rel: "canonical", href: "https://www.duet.edu.pk/" }],
+    scripts: [
+      {
+        type: "application/ld+json",
+        children: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "CollegeOrUniversity",
+          name: "Dawood University of Engineering & Technology",
+          alternateName: "DUET Karachi",
+          url: "https://www.duet.edu.pk/",
+          logo: "https://www.duet.edu.pk/media/duet_logo-300x227.png",
+          image: "https://www.duet.edu.pk/media/about.jpg",
+          description:
+            "Public sector engineering university in Karachi, Pakistan offering undergraduate, postgraduate and doctoral programs in engineering, architecture, planning and basic sciences.",
+          foundingDate: "1962",
+          address: {
+            "@type": "PostalAddress",
+            streetAddress: "New M. A. Jinnah Road",
+            addressLocality: "Karachi",
+            addressRegion: "Sindh",
+            postalCode: "74800",
+            addressCountry: "PK",
+          },
+          contactPoint: [
+            {
+              "@type": "ContactPoint",
+              contactType: "admissions",
+              url: "https://admissions.duet.edu.pk/",
+              areaServed: "PK",
+              availableLanguage: ["en", "ur"],
+            },
+          ],
+          sameAs: ["https://admissions.duet.edu.pk/"],
+        }),
+      },
+    ],
   }),
+
   loader: async ({ context }) => {
     await Promise.all([
       context.queryClient.ensureQueryData(slidesQueryOptions),
