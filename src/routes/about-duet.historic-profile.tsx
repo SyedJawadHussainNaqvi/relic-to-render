@@ -10,6 +10,8 @@ export const Route = createFileRoute("/about-duet/historic-profile")({
       { property: "og:description", content: "Dawood College of Engineering and Technology (DCET), Karachi holds a significant status of being the first Professional College imparting Engineering Educa" },
       { property: "og:type", content: "website" },
       { property: "og:url", content: "https://www.duet.edu.pk/about-duet/historic-profile" },
+      { property: "og:image", content: "https://www.duet.edu.pk/media/about.jpg" },
+      { name: "twitter:image", content: "https://www.duet.edu.pk/media/about.jpg" },
     ],
     links: [{ rel: "canonical", href: "https://www.duet.edu.pk/about-duet/historic-profile" }],
   }),

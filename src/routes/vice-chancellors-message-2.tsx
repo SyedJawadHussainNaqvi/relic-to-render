@@ -10,6 +10,8 @@ export const Route = createFileRoute("/vice-chancellors-message-2")({
       { property: "og:description", content: "I am grateful to Allah the Almighty for His countless blessings in me. I am indebted to Honourable Chief Minister Syed Murad Ali Shah for his trust in me a" },
       { property: "og:type", content: "website" },
       { property: "og:url", content: "https://www.duet.edu.pk/vice-chancellors-message-2" },
+      { property: "og:image", content: "https://www.duet.edu.pk/media/about.jpg" },
+      { name: "twitter:image", content: "https://www.duet.edu.pk/media/about.jpg" },
     ],
     links: [{ rel: "canonical", href: "https://www.duet.edu.pk/vice-chancellors-message-2" }],
   }),

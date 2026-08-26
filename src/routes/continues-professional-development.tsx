@@ -10,6 +10,8 @@ export const Route = createFileRoute("/continues-professional-development")({
       { property: "og:description", content: "Add Your Heading Text HereDirectorate of Continuing Professional Development, Dawood University of engineering and Technology was established in 2008. The " },
       { property: "og:type", content: "website" },
       { property: "og:url", content: "https://www.duet.edu.pk/continues-professional-development" },
+      { property: "og:image", content: "https://www.duet.edu.pk/media/about.jpg" },
+      { name: "twitter:image", content: "https://www.duet.edu.pk/media/about.jpg" },
     ],
     links: [{ rel: "canonical", href: "https://www.duet.edu.pk/continues-professional-development" }],
   }),

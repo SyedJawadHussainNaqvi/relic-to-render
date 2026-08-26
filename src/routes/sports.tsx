@@ -10,6 +10,8 @@ export const Route = createFileRoute("/sports")({
       { property: "og:description", content: "The primary function of any university is, off course, academic, but university recognizes the importance & value for development of physical skills and fo" },
       { property: "og:type", content: "website" },
       { property: "og:url", content: "https://www.duet.edu.pk/sports" },
+      { property: "og:image", content: "https://www.duet.edu.pk/media/about.jpg" },
+      { name: "twitter:image", content: "https://www.duet.edu.pk/media/about.jpg" },
     ],
     links: [{ rel: "canonical", href: "https://www.duet.edu.pk/sports" }],
   }),
