@@ -10,6 +10,8 @@ export const Route = createFileRoute("/information-technology")({
       { property: "og:description", content: "The Directorate of Information Technology (IT) at DUET has advanced infrastructure with robust Information and Communication System. The directorate provid" },
       { property: "og:type", content: "website" },
       { property: "og:url", content: "https://www.duet.edu.pk/information-technology" },
+      { property: "og:image", content: "https://www.duet.edu.pk/media/about.jpg" },
+      { name: "twitter:image", content: "https://www.duet.edu.pk/media/about.jpg" },
     ],
     links: [{ rel: "canonical", href: "https://www.duet.edu.pk/information-technology" }],
   }),

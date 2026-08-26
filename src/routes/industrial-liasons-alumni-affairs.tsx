@@ -10,6 +10,8 @@ export const Route = createFileRoute("/industrial-liasons-alumni-affairs")({
       { property: "og:description", content: "Directorate of Industrial Liaison & Alumni Affairs is been working on its full pace since its inception and have achieved major milestones till now. Direct" },
       { property: "og:type", content: "website" },
       { property: "og:url", content: "https://www.duet.edu.pk/industrial-liasons-alumni-affairs" },
+      { property: "og:image", content: "https://www.duet.edu.pk/media/about.jpg" },
+      { name: "twitter:image", content: "https://www.duet.edu.pk/media/about.jpg" },
     ],
     links: [{ rel: "canonical", href: "https://www.duet.edu.pk/industrial-liasons-alumni-affairs" }],
   }),

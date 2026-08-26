@@ -10,6 +10,8 @@ export const Route = createFileRoute("/postgraduate-studies")({
       { property: "og:description", content: "DUET started postgraduate program through the Directorate of Postgraduate Studies in 2017 in different fields of engineering. Currently the postgraduate pr" },
       { property: "og:type", content: "website" },
       { property: "og:url", content: "https://www.duet.edu.pk/postgraduate-studies" },
+      { property: "og:image", content: "https://www.duet.edu.pk/media/about.jpg" },
+      { name: "twitter:image", content: "https://www.duet.edu.pk/media/about.jpg" },
     ],
     links: [{ rel: "canonical", href: "https://www.duet.edu.pk/postgraduate-studies" }],
   }),

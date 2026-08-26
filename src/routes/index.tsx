@@ -57,6 +57,11 @@ export const Route = createFileRoute("/")({
               availableLanguage: ["en", "ur"],
             },
           ],
+          numberOfStudents: 3000,
+          subOrganization: [
+            { "@type": "CollegeOrUniversity", name: "DUET Main Campus, Karachi" },
+            { "@type": "CollegeOrUniversity", name: "DUET Second Campus, Karachi" },
+          ],
           sameAs: ["https://admissions.duet.edu.pk/"],
         }),
       },

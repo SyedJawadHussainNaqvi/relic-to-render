@@ -10,6 +10,8 @@ export const Route = createFileRoute("/conference-seminars")({
       { property: "og:description", content: "INTERNATIONAL CONFERENCE On Combating Natural Gas Shortages: Can Alternative Energy Provide an Efficient Solution and Relief to the Industry Gasping for Ga" },
       { property: "og:type", content: "website" },
       { property: "og:url", content: "https://www.duet.edu.pk/conference-seminars" },
+      { property: "og:image", content: "https://www.duet.edu.pk/media/about.jpg" },
+      { name: "twitter:image", content: "https://www.duet.edu.pk/media/about.jpg" },
     ],
     links: [{ rel: "canonical", href: "https://www.duet.edu.pk/conference-seminars" }],
   }),
