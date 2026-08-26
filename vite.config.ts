@@ -28,7 +28,8 @@ function publicRoutePaths(): string[] {
         .join("/"),
     )
     .map((p) => (p === "/" ? "/" : p.replace(/\/$/, "")));
-  return Array.from(new Set(["/", ...paths]));
+  // /sitemap.xml is a server route; prerendering it emits a static file for static hosts.
+  return Array.from(new Set(["/", "/sitemap.xml", ...paths]));
 }
 
 export default defineConfig({
