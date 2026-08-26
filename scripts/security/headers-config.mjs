@@ -8,6 +8,7 @@
  */
 import { createHash } from "node:crypto";
 import { readFile } from "node:fs/promises";
+import * as parse5 from "parse5";
 
 export const SUPABASE_ORIGIN = "https://ldbqlcfrphmmiwtllsxm.supabase.co";
 
