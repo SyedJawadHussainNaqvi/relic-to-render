@@ -1,7 +1,9 @@
 import { createFileRoute, useNavigate, useRouter } from "@tanstack/react-router";
 import { useEffect, useState } from "react";
+import { useServerFn } from "@tanstack/react-start";
 import { supabase } from "@/integrations/supabase/client";
 import { lovable } from "@/integrations/lovable/index";
+import { registerCmsUser, verifyCmsSession } from "@/lib/cms-access.functions";
 
 export const Route = createFileRoute("/auth")({
   head: () => ({
