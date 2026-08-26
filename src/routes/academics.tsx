@@ -33,6 +33,8 @@ export const Route = createFileRoute("/academics")({
               "@id": "https://www.duet.edu.pk/#university",
               name: "Dawood University of Engineering & Technology",
               alternateName: "DUET Karachi",
+              description:
+                "Dawood University of Engineering & Technology (DUET) is a public engineering university in Karachi, Sindh, offering undergraduate and postgraduate programmes in engineering, technology and applied sciences.",
               url: "https://www.duet.edu.pk/",
               logo: "https://www.duet.edu.pk/media/duet_logo-300x227.png",
               foundingDate: "1962",
@@ -69,7 +71,12 @@ export const Route = createFileRoute("/academics")({
               url: URL,
               name: TITLE,
               description: DESCRIPTION,
-              isPartOf: { "@id": "https://www.duet.edu.pk/#university" },
+              isPartOf: {
+                "@type": "WebSite",
+                "@id": "https://www.duet.edu.pk/#website",
+                url: "https://www.duet.edu.pk/",
+                name: "Dawood University of Engineering & Technology",
+              },
             },
           ],
         }),

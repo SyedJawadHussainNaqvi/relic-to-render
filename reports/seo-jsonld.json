@@ -1,9 +1,9 @@
 {
   "target": "http://localhost:4399",
-  "generated_at": "2026-08-26T02:17:59.700Z",
+  "generated_at": "2026-08-26T02:18:24.319Z",
   "pages_total": 66,
-  "pages_passed": 64,
-  "pages_failed": 2,
+  "pages_passed": 66,
+  "pages_failed": 0,
   "results": [
     {
       "path": "/",
@@ -106,14 +106,12 @@
         "ListItem",
         "Organization",
         "PostalAddress",
-        "WebPage"
+        "WebPage",
+        "WebSite"
       ],
-      "errors": [
-        "block[0].@graph[0]: CollegeOrUniversity is missing required property \"description\"",
-        "block[0].@graph[3].isPartOf: object has no @type"
-      ],
+      "errors": [],
       "warnings": [],
-      "passed": false
+      "passed": true
     },
     {
       "path": "/academic-calendar",
@@ -215,14 +213,12 @@
         "ListItem",
         "Organization",
         "PostalAddress",
-        "WebPage"
+        "WebPage",
+        "WebSite"
       ],
-      "errors": [
-        "block[0].@graph[0]: CollegeOrUniversity is missing required property \"description\"",
-        "block[0].@graph[3].isPartOf: object has no @type"
-      ],
+      "errors": [],
       "warnings": [],
-      "passed": false
+      "passed": true
     },
     {
       "path": "/fee-structure",
