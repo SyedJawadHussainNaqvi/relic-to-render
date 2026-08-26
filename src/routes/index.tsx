@@ -101,6 +101,9 @@ function Slider() {
             src={s.src}
             alt={s.alt}
             loading={idx === 0 ? "eager" : "lazy"}
+            fetchPriority={idx === 0 ? "high" : "low"}
+            width={1600}
+            height={700}
             className={`absolute inset-0 h-full w-full object-cover transition-opacity duration-700 ${
               idx === active ? "opacity-100" : "opacity-0"
             }`}
@@ -197,8 +200,9 @@ function Index() {
             <Link
               to="/about-duet/historic-profile"
               className="rounded bg-brand px-4 py-2 text-sm font-semibold text-white hover:bg-brand-dark"
+              aria-label="Read more about DUET's historic profile"
             >
-              Read more
+              Read more about DUET
             </Link>
             <Link
               to="/vice-chancellors-message-2"
@@ -213,6 +217,8 @@ function Index() {
             src={aboutImg}
             alt="Dawood University of Engineering & Technology campus building"
             loading="lazy"
+            width={900}
+            height={600}
             className="h-full w-full rounded object-cover shadow"
           />
         ) : null}

@@ -46,7 +46,7 @@ export function Header() {
       <div className="border-b border-border bg-card">
         <div className="mx-auto flex max-w-[1200px] items-center justify-between gap-4 px-3 py-3">
           <Link to="/" className="flex items-center gap-3">
-            {logo ? <img src={logo} alt="Dawood University of Engineering & Technology" className="h-16 w-auto" /> : null}
+            {logo ? <img src={logo} alt="Dawood University of Engineering & Technology" width={300} height={227} className="h-16 w-auto" /> : null}
             <span className="font-display text-brand leading-tight">
               <span className="block text-lg font-semibold sm:text-2xl">Dawood University</span>
               <span className="block text-[11px] sm:text-sm">of Engineering &amp; Technology Karachi</span>
