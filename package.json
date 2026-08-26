@@ -11,7 +11,10 @@
     "build:dev": "vite build --mode development",
     "preview": "vite preview",
     "lint": "eslint .",
-    "format": "prettier --write ."
+    "format": "prettier --write .",
+    "security:headers": "node scripts/security/verify-headers.mjs",
+    "security:browsers": "node scripts/security/csp-browser-report.mjs",
+    "security:verify": "npm run security:headers && npm run security:browsers"
   },
   "overrides": {
     "rolldown": "1.2.1"
