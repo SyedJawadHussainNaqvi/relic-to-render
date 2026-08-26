@@ -9,9 +9,9 @@ export const Route = createFileRoute("/postgraduate-regulations")({
       { property: "og:title", content: "Postgraduate Regulations — DUET Karachi" },
       { property: "og:description", content: "Postgraduate Regulations at Dawood University of Engineering & Technology, Karachi." },
       { property: "og:type", content: "website" },
-      { property: "og:url", content: "/postgraduate-regulations" },
+      { property: "og:url", content: "https://www.duet.edu.pk/postgraduate-regulations" },
     ],
-    links: [{ rel: "canonical", href: "/postgraduate-regulations" }],
+    links: [{ rel: "canonical", href: "https://www.duet.edu.pk/postgraduate-regulations" }],
   }),
   component: () => <ArchivedPage path="/postgraduate-regulations" />,
 });

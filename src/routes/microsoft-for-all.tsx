@@ -9,9 +9,9 @@ export const Route = createFileRoute("/microsoft-for-all")({
       { property: "og:title", content: "Microsoft for All — DUET Karachi" },
       { property: "og:description", content: "Microsoft for All at Dawood University of Engineering & Technology, Karachi." },
       { property: "og:type", content: "website" },
-      { property: "og:url", content: "/microsoft-for-all" },
+      { property: "og:url", content: "https://www.duet.edu.pk/microsoft-for-all" },
     ],
-    links: [{ rel: "canonical", href: "/microsoft-for-all" }],
+    links: [{ rel: "canonical", href: "https://www.duet.edu.pk/microsoft-for-all" }],
   }),
   component: () => <ArchivedPage path="/microsoft-for-all" />,
 });

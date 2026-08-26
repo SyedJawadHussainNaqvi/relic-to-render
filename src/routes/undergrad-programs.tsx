@@ -9,9 +9,9 @@ export const Route = createFileRoute("/undergrad-programs")({
       { property: "og:title", content: "Undergrad Programs — DUET Karachi" },
       { property: "og:description", content: "Undergrad Programs at Dawood University of Engineering & Technology, Karachi." },
       { property: "og:type", content: "website" },
-      { property: "og:url", content: "/undergrad-programs" },
+      { property: "og:url", content: "https://www.duet.edu.pk/undergrad-programs" },
     ],
-    links: [{ rel: "canonical", href: "/undergrad-programs" }],
+    links: [{ rel: "canonical", href: "https://www.duet.edu.pk/undergrad-programs" }],
   }),
   component: () => <ArchivedPage path="/undergrad-programs" />,
 });

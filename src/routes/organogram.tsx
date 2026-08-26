@@ -9,9 +9,9 @@ export const Route = createFileRoute("/organogram")({
       { property: "og:title", content: "Organogram — DUET Karachi" },
       { property: "og:description", content: "Organogram at Dawood University of Engineering & Technology, Karachi." },
       { property: "og:type", content: "website" },
-      { property: "og:url", content: "/organogram" },
+      { property: "og:url", content: "https://www.duet.edu.pk/organogram" },
     ],
-    links: [{ rel: "canonical", href: "/organogram" }],
+    links: [{ rel: "canonical", href: "https://www.duet.edu.pk/organogram" }],
   }),
   component: () => <ArchivedPage path="/organogram" />,
 });

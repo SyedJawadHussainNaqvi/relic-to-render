@@ -9,9 +9,9 @@ export const Route = createFileRoute("/fee-structure")({
       { property: "og:title", content: "Fee Structures — DUET Karachi" },
       { property: "og:description", content: "Namun, ketika Ukraina terjerat dalam konflik mematikan dengan Rusia, Pielieshenko merasa panggilan yang lebih tinggi. Ia tidak hanya ingin memperjuangkan p" },
       { property: "og:type", content: "website" },
-      { property: "og:url", content: "/fee-structure" },
+      { property: "og:url", content: "https://www.duet.edu.pk/fee-structure" },
     ],
-    links: [{ rel: "canonical", href: "/fee-structure" }],
+    links: [{ rel: "canonical", href: "https://www.duet.edu.pk/fee-structure" }],
   }),
   component: () => <ArchivedPage path="/fee-structure" />,
 });

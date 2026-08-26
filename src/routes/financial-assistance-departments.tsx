@@ -9,9 +9,9 @@ export const Route = createFileRoute("/financial-assistance-departments")({
       { property: "og:title", content: "Financial Assistance Departments — DUET Karachi" },
       { property: "og:description", content: "Students from humble backgrounds always remain under continuous financial pressure. The effects of the weak economy, due to the Covid-19 pandemic, have fur" },
       { property: "og:type", content: "website" },
-      { property: "og:url", content: "/financial-assistance-departments" },
+      { property: "og:url", content: "https://www.duet.edu.pk/financial-assistance-departments" },
     ],
-    links: [{ rel: "canonical", href: "/financial-assistance-departments" }],
+    links: [{ rel: "canonical", href: "https://www.duet.edu.pk/financial-assistance-departments" }],
   }),
   component: () => <ArchivedPage path="/financial-assistance-departments" />,
 });

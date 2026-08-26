@@ -9,9 +9,9 @@ export const Route = createFileRoute("/shuttle-bus-routes")({
       { property: "og:title", content: "Shuttle Bus Routes — DUET Karachi" },
       { property: "og:description", content: "Shuttle Bus Routes at Dawood University of Engineering & Technology, Karachi." },
       { property: "og:type", content: "website" },
-      { property: "og:url", content: "/shuttle-bus-routes" },
+      { property: "og:url", content: "https://www.duet.edu.pk/shuttle-bus-routes" },
     ],
-    links: [{ rel: "canonical", href: "/shuttle-bus-routes" }],
+    links: [{ rel: "canonical", href: "https://www.duet.edu.pk/shuttle-bus-routes" }],
   }),
   component: () => <ArchivedPage path="/shuttle-bus-routes" />,
 });

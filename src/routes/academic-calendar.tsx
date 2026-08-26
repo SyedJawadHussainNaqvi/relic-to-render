@@ -9,9 +9,9 @@ export const Route = createFileRoute("/academic-calendar")({
       { property: "og:title", content: "Academic Calendar — DUET Karachi" },
       { property: "og:description", content: "The foundation stone of the Dawood College was laid by the former President of Pakistan (Late) Field Marshal Muhammad Ayub Khan in 1962. The Government of " },
       { property: "og:type", content: "website" },
-      { property: "og:url", content: "/academic-calendar" },
+      { property: "og:url", content: "https://www.duet.edu.pk/academic-calendar" },
     ],
-    links: [{ rel: "canonical", href: "/academic-calendar" }],
+    links: [{ rel: "canonical", href: "https://www.duet.edu.pk/academic-calendar" }],
   }),
   component: () => <ArchivedPage path="/academic-calendar" />,
 });
