@@ -8,6 +8,7 @@
  */
 import { readdir, readFile, writeFile, stat, rm } from "node:fs/promises";
 import { join, extname, basename } from "node:path";
+import { inlineScripts, pagePolicy, sha256Base64 } from "./security/headers-config.mjs";
 
 const ROOT = "dist/client";
 const TEXT_EXT = new Set([".html", ".js", ".mjs", ".css", ".json", ".txt", ".map", ".xml", ".webmanifest"]);
@@ -52,4 +53,27 @@ for (const file of files) {
   rewritten += 1;
 }
 
-console.log(`[sanitize-static] rewrote ${rewritten} file(s), removed ${removed} staff chunk(s)`);
+// 3. Inject a strict per-page Content-Security-Policy. Every inline script is
+//    pinned by SHA-256 hash, so the policy needs no 'unsafe-inline'.
+let policed = 0;
+for (const file of files) {
+  if (extname(file) !== ".html") continue;
+  try {
+    await stat(file);
+  } catch {
+    continue;
+  }
+  let html = await readFile(file, "utf8");
+  html = html.replace(/\s*<meta http-equiv="Content-Security-Policy"[^>]*>/gi, "");
+  const hashes = [...new Set(inlineScripts(html).map(sha256Base64))];
+  const meta = `<meta http-equiv="Content-Security-Policy" content="${pagePolicy(hashes)}">`;
+  html = html.includes("<head>")
+    ? html.replace("<head>", `<head>${meta}`)
+    : `${meta}${html}`;
+  await writeFile(file, html);
+  policed += 1;
+}
+
+console.log(
+  `[sanitize-static] rewrote ${rewritten} file(s), removed ${removed} staff chunk(s), CSP on ${policed} page(s)`,
+);

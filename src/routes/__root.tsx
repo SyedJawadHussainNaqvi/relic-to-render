@@ -139,6 +139,12 @@ function RootShell({ children }: { children: ReactNode }) {
 function RootComponent() {
   const { queryClient } = Route.useRouteContext();
 
+  useEffect(() => {
+    // Anonymous Core Web Vitals collection for the SOC dashboard.
+    void import("@/lib/web-vitals").then((m) => m.reportWebVitals());
+  }, []);
+
+
   return (
     <QueryClientProvider client={queryClient}>
       <div className="flex min-h-screen flex-col">

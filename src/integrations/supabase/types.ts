@@ -131,6 +131,242 @@ export type Database = {
         }
         Relationships: []
       }
+      soc_controls: {
+        Row: {
+          category: string
+          code: string
+          created_at: string
+          description: string | null
+          evidence: string | null
+          id: string
+          last_reviewed_at: string | null
+          next_review_at: string | null
+          owner: string | null
+          sort_order: number
+          status: string
+          title: string
+          updated_at: string
+        }
+        Insert: {
+          category: string
+          code: string
+          created_at?: string
+          description?: string | null
+          evidence?: string | null
+          id?: string
+          last_reviewed_at?: string | null
+          next_review_at?: string | null
+          owner?: string | null
+          sort_order?: number
+          status?: string
+          title: string
+          updated_at?: string
+        }
+        Update: {
+          category?: string
+          code?: string
+          created_at?: string
+          description?: string | null
+          evidence?: string | null
+          id?: string
+          last_reviewed_at?: string | null
+          next_review_at?: string | null
+          owner?: string | null
+          sort_order?: number
+          status?: string
+          title?: string
+          updated_at?: string
+        }
+        Relationships: []
+      }
+      soc_csp_violations: {
+        Row: {
+          blocked_uri: string | null
+          document_uri: string | null
+          effective_directive: string | null
+          id: string
+          line_number: number | null
+          occurrences: number
+          reported_at: string
+          source_file: string | null
+          user_agent: string | null
+          violated_directive: string | null
+        }
+        Insert: {
+          blocked_uri?: string | null
+          document_uri?: string | null
+          effective_directive?: string | null
+          id?: string
+          line_number?: number | null
+          occurrences?: number
+          reported_at?: string
+          source_file?: string | null
+          user_agent?: string | null
+          violated_directive?: string | null
+        }
+        Update: {
+          blocked_uri?: string | null
+          document_uri?: string | null
+          effective_directive?: string | null
+          id?: string
+          line_number?: number | null
+          occurrences?: number
+          reported_at?: string
+          source_file?: string | null
+          user_agent?: string | null
+          violated_directive?: string | null
+        }
+        Relationships: []
+      }
+      soc_route_checks: {
+        Row: {
+          created_at: string
+          failures: Json
+          headers: Json
+          id: string
+          passed: boolean
+          path: string
+          response_ms: number | null
+          run_id: string
+          status_code: number | null
+        }
+        Insert: {
+          created_at?: string
+          failures?: Json
+          headers?: Json
+          id?: string
+          passed?: boolean
+          path: string
+          response_ms?: number | null
+          run_id: string
+          status_code?: number | null
+        }
+        Update: {
+          created_at?: string
+          failures?: Json
+          headers?: Json
+          id?: string
+          passed?: boolean
+          path?: string
+          response_ms?: number | null
+          run_id?: string
+          status_code?: number | null
+        }
+        Relationships: [
+          {
+            foreignKeyName: "soc_route_checks_run_id_fkey"
+            columns: ["run_id"]
+            isOneToOne: false
+            referencedRelation: "soc_scan_runs"
+            referencedColumns: ["id"]
+          },
+        ]
+      }
+      soc_scan_runs: {
+        Row: {
+          created_at: string
+          csp_violations: number
+          engines: string[]
+          finished_at: string | null
+          id: string
+          notes: string | null
+          routes_failed: number
+          routes_passed: number
+          routes_total: number
+          source: string
+          started_at: string
+          target: string
+        }
+        Insert: {
+          created_at?: string
+          csp_violations?: number
+          engines?: string[]
+          finished_at?: string | null
+          id?: string
+          notes?: string | null
+          routes_failed?: number
+          routes_passed?: number
+          routes_total?: number
+          source?: string
+          started_at?: string
+          target: string
+        }
+        Update: {
+          created_at?: string
+          csp_violations?: number
+          engines?: string[]
+          finished_at?: string | null
+          id?: string
+          notes?: string | null
+          routes_failed?: number
+          routes_passed?: number
+          routes_total?: number
+          source?: string
+          started_at?: string
+          target?: string
+        }
+        Relationships: []
+      }
+      soc_uptime_samples: {
+        Row: {
+          checked_at: string
+          id: string
+          is_up: boolean
+          path: string
+          response_ms: number | null
+          status_code: number | null
+          target: string
+        }
+        Insert: {
+          checked_at?: string
+          id?: string
+          is_up?: boolean
+          path: string
+          response_ms?: number | null
+          status_code?: number | null
+          target: string
+        }
+        Update: {
+          checked_at?: string
+          id?: string
+          is_up?: boolean
+          path?: string
+          response_ms?: number | null
+          status_code?: number | null
+          target?: string
+        }
+        Relationships: []
+      }
+      soc_web_vitals: {
+        Row: {
+          device: string | null
+          id: string
+          metric: string
+          path: string
+          rating: string | null
+          recorded_at: string
+          value: number
+        }
+        Insert: {
+          device?: string | null
+          id?: string
+          metric: string
+          path: string
+          rating?: string | null
+          recorded_at?: string
+          value: number
+        }
+        Update: {
+          device?: string | null
+          id?: string
+          metric?: string
+          path?: string
+          rating?: string | null
+          recorded_at?: string
+          value?: number
+        }
+        Relationships: []
+      }
       user_roles: {
         Row: {
           created_at: string

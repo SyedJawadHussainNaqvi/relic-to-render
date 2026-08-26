@@ -11,7 +11,10 @@
     "build:dev": "vite build --mode development",
     "preview": "vite preview",
     "lint": "eslint .",
-    "format": "prettier --write ."
+    "format": "prettier --write .",
+    "security:headers": "node scripts/security/verify-headers.mjs",
+    "security:browsers": "node scripts/security/csp-browser-report.mjs",
+    "security:verify": "npm run security:headers && npm run security:browsers"
   },
   "overrides": {
     "rolldown": "1.2.1"
@@ -87,6 +90,7 @@
     "eslint-plugin-react-refresh": "^0.4.20",
     "globals": "^15.15.0",
     "nitro": "3.0.260603-beta",
+    "parse5": "^8.0.1",
     "prettier": "^3.7.3",
     "typescript": "^5.8.3",
     "typescript-eslint": "^8.56.1",
