@@ -7,11 +7,12 @@
     "dev": "vite dev",
     "build": "vite build",
     "build:node": "NITRO_PRESET=node-server vite build",
-    "build:static": "PRERENDER=1 vite build && node scripts/sanitize-static.mjs",
+    "build:static": "PRERENDER=1 vite build && node scripts/sanitize-static.mjs && npm run seo:jsonld",
     "build:dev": "vite build --mode development",
     "preview": "vite preview",
     "lint": "eslint .",
     "format": "prettier --write .",
+    "seo:jsonld": "node scripts/seo/validate-jsonld.mjs",
     "security:headers": "node scripts/security/verify-headers.mjs",
     "security:browsers": "node scripts/security/csp-browser-report.mjs",
     "security:verify": "npm run security:headers && npm run security:browsers"
