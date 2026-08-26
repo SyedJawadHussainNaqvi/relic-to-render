@@ -55,7 +55,7 @@ function fmt(value: string | null | undefined) {
   return value ? new Date(value).toLocaleString() : "—";
 }
 
-function Stat({ label, value, tone }: { label: string; value: string | number; tone?: "bad" | "good" }) {
+function Stat({ label, value, tone }: { label: string; value: string | number; tone?: "bad" | "good" | undefined }) {
   return (
     <Card>
       <p className="text-[12px] uppercase tracking-wider text-muted-foreground">{label}</p>

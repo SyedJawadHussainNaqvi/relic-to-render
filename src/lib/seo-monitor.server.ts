@@ -44,7 +44,8 @@ export async function collectSeoSnapshot(source: "manual" | "scheduled"): Promis
   };
   await supabaseAdmin.from("seo_sitemap_snapshots").insert(snapshot);
 
-  const rows: Record<string, unknown>[] = [];
+  type PageRow = { source: string; site_url: string; page_url: string } & Record<string, unknown>;
+  const rows: PageRow[] = [];
   let indexed = 0;
   for (const pageUrl of keyPageUrls()) {
     try {
@@ -79,7 +80,7 @@ export async function collectSeoSnapshot(source: "manual" | "scheduled"): Promis
       });
     }
   }
-  if (rows.length) await supabaseAdmin.from("seo_page_checks").insert(rows);
+  if (rows.length) await supabaseAdmin.from("seo_page_checks").insert(rows as never);
 
   return {
     site_url: siteUrl,
