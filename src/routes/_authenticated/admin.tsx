@@ -16,6 +16,7 @@ const tabs = [
   { to: "/admin", label: "Slider", exact: true },
   { to: "/admin/news", label: "News & Events" },
   { to: "/admin/navigation", label: "Navigation" },
+  { to: "/admin/seo", label: "SEO Monitoring" },
   { to: "/admin/soc", label: "Security & SOC" },
 ] as const;
 

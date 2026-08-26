@@ -95,6 +95,182 @@ export type Database = {
         }
         Relationships: []
       }
+      seo_jsonld_issues: {
+        Row: {
+          id: string
+          message: string
+          path: string
+          run_id: string
+          schema_types: string[]
+          severity: string
+        }
+        Insert: {
+          id?: string
+          message: string
+          path: string
+          run_id: string
+          schema_types?: string[]
+          severity?: string
+        }
+        Update: {
+          id?: string
+          message?: string
+          path?: string
+          run_id?: string
+          schema_types?: string[]
+          severity?: string
+        }
+        Relationships: [
+          {
+            foreignKeyName: "seo_jsonld_issues_run_id_fkey"
+            columns: ["run_id"]
+            isOneToOne: false
+            referencedRelation: "seo_jsonld_runs"
+            referencedColumns: ["id"]
+          },
+        ]
+      }
+      seo_jsonld_runs: {
+        Row: {
+          id: string
+          notes: string | null
+          pages_failed: number
+          pages_passed: number
+          pages_total: number
+          source: string
+          started_at: string
+          target: string
+        }
+        Insert: {
+          id?: string
+          notes?: string | null
+          pages_failed?: number
+          pages_passed?: number
+          pages_total?: number
+          source?: string
+          started_at?: string
+          target: string
+        }
+        Update: {
+          id?: string
+          notes?: string | null
+          pages_failed?: number
+          pages_passed?: number
+          pages_total?: number
+          source?: string
+          started_at?: string
+          target?: string
+        }
+        Relationships: []
+      }
+      seo_page_checks: {
+        Row: {
+          checked_at: string
+          coverage_state: string | null
+          crawled_as: string | null
+          google_canonical: string | null
+          id: string
+          in_sitemap: boolean
+          indexing_state: string | null
+          last_crawl_time: string | null
+          page_fetch_state: string | null
+          page_url: string
+          raw: Json | null
+          rich_results_verdict: string | null
+          robots_txt_state: string | null
+          site_url: string
+          source: string
+          user_canonical: string | null
+          verdict: string | null
+        }
+        Insert: {
+          checked_at?: string
+          coverage_state?: string | null
+          crawled_as?: string | null
+          google_canonical?: string | null
+          id?: string
+          in_sitemap?: boolean
+          indexing_state?: string | null
+          last_crawl_time?: string | null
+          page_fetch_state?: string | null
+          page_url: string
+          raw?: Json | null
+          rich_results_verdict?: string | null
+          robots_txt_state?: string | null
+          site_url: string
+          source?: string
+          user_canonical?: string | null
+          verdict?: string | null
+        }
+        Update: {
+          checked_at?: string
+          coverage_state?: string | null
+          crawled_as?: string | null
+          google_canonical?: string | null
+          id?: string
+          in_sitemap?: boolean
+          indexing_state?: string | null
+          last_crawl_time?: string | null
+          page_fetch_state?: string | null
+          page_url?: string
+          raw?: Json | null
+          rich_results_verdict?: string | null
+          robots_txt_state?: string | null
+          site_url?: string
+          source?: string
+          user_canonical?: string | null
+          verdict?: string | null
+        }
+        Relationships: []
+      }
+      seo_sitemap_snapshots: {
+        Row: {
+          captured_at: string
+          errors: number
+          id: string
+          indexed_urls: number
+          is_pending: boolean
+          last_downloaded: string | null
+          last_submitted: string | null
+          notes: string | null
+          site_url: string
+          sitemap_url: string
+          source: string
+          submitted_urls: number
+          warnings: number
+        }
+        Insert: {
+          captured_at?: string
+          errors?: number
+          id?: string
+          indexed_urls?: number
+          is_pending?: boolean
+          last_downloaded?: string | null
+          last_submitted?: string | null
+          notes?: string | null
+          site_url: string
+          sitemap_url: string
+          source?: string
+          submitted_urls?: number
+          warnings?: number
+        }
+        Update: {
+          captured_at?: string
+          errors?: number
+          id?: string
+          indexed_urls?: number
+          is_pending?: boolean
+          last_downloaded?: string | null
+          last_submitted?: string | null
+          notes?: string | null
+          site_url?: string
+          sitemap_url?: string
+          source?: string
+          submitted_urls?: number
+          warnings?: number
+        }
+        Relationships: []
+      }
       slider_slides: {
         Row: {
           alt_text: string

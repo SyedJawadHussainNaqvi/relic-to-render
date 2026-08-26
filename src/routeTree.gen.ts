@@ -82,8 +82,10 @@ import { Route as AboutDuetVisionMissionRouteImport } from './routes/about-duet.
 import { Route as AuthenticatedAdminIndexRouteImport } from './routes/_authenticated/admin.index'
 import { Route as AuthenticatedAdminNavigationRouteImport } from './routes/_authenticated/admin.navigation'
 import { Route as AuthenticatedAdminNewsRouteImport } from './routes/_authenticated/admin.news'
+import { Route as AuthenticatedAdminSeoRouteImport } from './routes/_authenticated/admin.seo'
 import { Route as AuthenticatedAdminSocRouteImport } from './routes/_authenticated/admin.soc'
 import { Route as ApiPublicCspReportRouteImport } from './routes/api/public/csp-report'
+import { Route as ApiPublicSeoCollectRouteImport } from './routes/api/public/seo-collect'
 import { Route as ApiPublicSocCollectRouteImport } from './routes/api/public/soc-collect'
 import { Route as ApiPublicWebVitalsRouteImport } from './routes/api/public/web-vitals'
 
@@ -460,6 +462,11 @@ const AuthenticatedAdminNewsRoute = AuthenticatedAdminNewsRouteImport.update({
   path: '/news',
   getParentRoute: () => AuthenticatedAdminRoute,
 } as any)
+const AuthenticatedAdminSeoRoute = AuthenticatedAdminSeoRouteImport.update({
+  id: '/seo',
+  path: '/seo',
+  getParentRoute: () => AuthenticatedAdminRoute,
+} as any)
 const AuthenticatedAdminSocRoute = AuthenticatedAdminSocRouteImport.update({
   id: '/soc',
   path: '/soc',
@@ -468,6 +475,11 @@ const AuthenticatedAdminSocRoute = AuthenticatedAdminSocRouteImport.update({
 const ApiPublicCspReportRoute = ApiPublicCspReportRouteImport.update({
   id: '/api/public/csp-report',
   path: '/api/public/csp-report',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ApiPublicSeoCollectRoute = ApiPublicSeoCollectRouteImport.update({
+  id: '/api/public/seo-collect',
+  path: '/api/public/seo-collect',
   getParentRoute: () => rootRouteImport,
 } as any)
 const ApiPublicSocCollectRoute = ApiPublicSocCollectRouteImport.update({
@@ -553,8 +565,10 @@ export interface FileRoutesByFullPath {
   '/about-duet/': typeof AboutDuetIndexRoute
   '/admin/navigation': typeof AuthenticatedAdminNavigationRoute
   '/admin/news': typeof AuthenticatedAdminNewsRoute
+  '/admin/seo': typeof AuthenticatedAdminSeoRoute
   '/admin/soc': typeof AuthenticatedAdminSocRoute
   '/api/public/csp-report': typeof ApiPublicCspReportRoute
+  '/api/public/seo-collect': typeof ApiPublicSeoCollectRoute
   '/api/public/soc-collect': typeof ApiPublicSocCollectRoute
   '/api/public/web-vitals': typeof ApiPublicWebVitalsRoute
   '/admin/': typeof AuthenticatedAdminIndexRoute
@@ -630,8 +644,10 @@ export interface FileRoutesByTo {
   '/about-duet': typeof AboutDuetIndexRoute
   '/admin/navigation': typeof AuthenticatedAdminNavigationRoute
   '/admin/news': typeof AuthenticatedAdminNewsRoute
+  '/admin/seo': typeof AuthenticatedAdminSeoRoute
   '/admin/soc': typeof AuthenticatedAdminSocRoute
   '/api/public/csp-report': typeof ApiPublicCspReportRoute
+  '/api/public/seo-collect': typeof ApiPublicSeoCollectRoute
   '/api/public/soc-collect': typeof ApiPublicSocCollectRoute
   '/api/public/web-vitals': typeof ApiPublicWebVitalsRoute
   '/admin': typeof AuthenticatedAdminIndexRoute
@@ -710,8 +726,10 @@ export interface FileRoutesById {
   '/about-duet/': typeof AboutDuetIndexRoute
   '/_authenticated/admin/navigation': typeof AuthenticatedAdminNavigationRoute
   '/_authenticated/admin/news': typeof AuthenticatedAdminNewsRoute
+  '/_authenticated/admin/seo': typeof AuthenticatedAdminSeoRoute
   '/_authenticated/admin/soc': typeof AuthenticatedAdminSocRoute
   '/api/public/csp-report': typeof ApiPublicCspReportRoute
+  '/api/public/seo-collect': typeof ApiPublicSeoCollectRoute
   '/api/public/soc-collect': typeof ApiPublicSocCollectRoute
   '/api/public/web-vitals': typeof ApiPublicWebVitalsRoute
   '/_authenticated/admin/': typeof AuthenticatedAdminIndexRoute
@@ -790,8 +808,10 @@ export interface FileRouteTypes {
     | '/about-duet/'
     | '/admin/navigation'
     | '/admin/news'
+    | '/admin/seo'
     | '/admin/soc'
     | '/api/public/csp-report'
+    | '/api/public/seo-collect'
     | '/api/public/soc-collect'
     | '/api/public/web-vitals'
     | '/admin/'
@@ -867,8 +887,10 @@ export interface FileRouteTypes {
     | '/about-duet'
     | '/admin/navigation'
     | '/admin/news'
+    | '/admin/seo'
     | '/admin/soc'
     | '/api/public/csp-report'
+    | '/api/public/seo-collect'
     | '/api/public/soc-collect'
     | '/api/public/web-vitals'
     | '/admin'
@@ -946,8 +968,10 @@ export interface FileRouteTypes {
     | '/about-duet/'
     | '/_authenticated/admin/navigation'
     | '/_authenticated/admin/news'
+    | '/_authenticated/admin/seo'
     | '/_authenticated/admin/soc'
     | '/api/public/csp-report'
+    | '/api/public/seo-collect'
     | '/api/public/soc-collect'
     | '/api/public/web-vitals'
     | '/_authenticated/admin/'
@@ -1024,6 +1048,7 @@ export interface RootRouteChildren {
   AboutDuetVisionMissionRoute: typeof AboutDuetVisionMissionRoute
   AboutDuetIndexRoute: typeof AboutDuetIndexRoute
   ApiPublicCspReportRoute: typeof ApiPublicCspReportRoute
+  ApiPublicSeoCollectRoute: typeof ApiPublicSeoCollectRoute
   ApiPublicSocCollectRoute: typeof ApiPublicSocCollectRoute
   ApiPublicWebVitalsRoute: typeof ApiPublicWebVitalsRoute
 }
@@ -1541,6 +1566,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof AuthenticatedAdminNewsRouteImport
       parentRoute: typeof AuthenticatedAdminRoute
     }
+    '/_authenticated/admin/seo': {
+      id: '/_authenticated/admin/seo'
+      path: '/seo'
+      fullPath: '/admin/seo'
+      preLoaderRoute: typeof AuthenticatedAdminSeoRouteImport
+      parentRoute: typeof AuthenticatedAdminRoute
+    }
     '/_authenticated/admin/soc': {
       id: '/_authenticated/admin/soc'
       path: '/soc'
@@ -1553,6 +1585,13 @@ declare module '@tanstack/react-router' {
       path: '/api/public/csp-report'
       fullPath: '/api/public/csp-report'
       preLoaderRoute: typeof ApiPublicCspReportRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/api/public/seo-collect': {
+      id: '/api/public/seo-collect'
+      path: '/api/public/seo-collect'
+      fullPath: '/api/public/seo-collect'
+      preLoaderRoute: typeof ApiPublicSeoCollectRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/api/public/soc-collect': {
@@ -1575,6 +1614,7 @@ declare module '@tanstack/react-router' {
 interface AuthenticatedAdminRouteChildren {
   AuthenticatedAdminNavigationRoute: typeof AuthenticatedAdminNavigationRoute
   AuthenticatedAdminNewsRoute: typeof AuthenticatedAdminNewsRoute
+  AuthenticatedAdminSeoRoute: typeof AuthenticatedAdminSeoRoute
   AuthenticatedAdminSocRoute: typeof AuthenticatedAdminSocRoute
   AuthenticatedAdminIndexRoute: typeof AuthenticatedAdminIndexRoute
 }
@@ -1582,6 +1622,7 @@ interface AuthenticatedAdminRouteChildren {
 const AuthenticatedAdminRouteChildren: AuthenticatedAdminRouteChildren = {
   AuthenticatedAdminNavigationRoute: AuthenticatedAdminNavigationRoute,
   AuthenticatedAdminNewsRoute: AuthenticatedAdminNewsRoute,
+  AuthenticatedAdminSeoRoute: AuthenticatedAdminSeoRoute,
   AuthenticatedAdminSocRoute: AuthenticatedAdminSocRoute,
   AuthenticatedAdminIndexRoute: AuthenticatedAdminIndexRoute,
 }
@@ -1672,6 +1713,7 @@ const rootRouteChildren: RootRouteChildren = {
   AboutDuetVisionMissionRoute: AboutDuetVisionMissionRoute,
   AboutDuetIndexRoute: AboutDuetIndexRoute,
   ApiPublicCspReportRoute: ApiPublicCspReportRoute,
+  ApiPublicSeoCollectRoute: ApiPublicSeoCollectRoute,
   ApiPublicSocCollectRoute: ApiPublicSocCollectRoute,
   ApiPublicWebVitalsRoute: ApiPublicWebVitalsRoute,
 }
