@@ -1,0 +1,680 @@
+{
+  "target": "http://localhost:4399",
+  "generated_at": "2026-08-26T02:17:22.418Z",
+  "pages_total": 66,
+  "pages_passed": 63,
+  "pages_failed": 3,
+  "results": [
+    {
+      "path": "/",
+      "blocks": 1,
+      "types": [
+        "CollegeOrUniversity",
+        "ContactPoint",
+        "PostalAddress"
+      ],
+      "errors": [
+        "block[0].subOrganization[0]: CollegeOrUniversity is missing required property \"url\"",
+        "block[0].subOrganization[0]: CollegeOrUniversity is missing required property \"description\"",
+        "block[0].subOrganization[0]: CollegeOrUniversity is missing required property \"address\"",
+        "block[0].subOrganization[1]: CollegeOrUniversity is missing required property \"url\"",
+        "block[0].subOrganization[1]: CollegeOrUniversity is missing required property \"description\"",
+        "block[0].subOrganization[1]: CollegeOrUniversity is missing required property \"address\""
+      ],
+      "warnings": [],
+      "passed": false
+    },
+    {
+      "path": "/about-duet",
+      "blocks": 0,
+      "types": [],
+      "errors": [],
+      "warnings": [
+        "page has no JSON-LD structured data"
+      ],
+      "passed": true
+    },
+    {
+      "path": "/about-duet/historic-profile",
+      "blocks": 0,
+      "types": [],
+      "errors": [],
+      "warnings": [
+        "page has no JSON-LD structured data"
+      ],
+      "passed": true
+    },
+    {
+      "path": "/about-duet/vision-mission",
+      "blocks": 0,
+      "types": [],
+      "errors": [],
+      "warnings": [
+        "page has no JSON-LD structured data"
+      ],
+      "passed": true
+    },
+    {
+      "path": "/vice-chancellors-message-2",
+      "blocks": 0,
+      "types": [],
+      "errors": [],
+      "warnings": [
+        "page has no JSON-LD structured data"
+      ],
+      "passed": true
+    },
+    {
+      "path": "/authorities",
+      "blocks": 0,
+      "types": [],
+      "errors": [],
+      "warnings": [
+        "page has no JSON-LD structured data"
+      ],
+      "passed": true
+    },
+    {
+      "path": "/officers-2",
+      "blocks": 0,
+      "types": [],
+      "errors": [],
+      "warnings": [
+        "page has no JSON-LD structured data"
+      ],
+      "passed": true
+    },
+    {
+      "path": "/organogram",
+      "blocks": 0,
+      "types": [],
+      "errors": [],
+      "warnings": [
+        "page has no JSON-LD structured data"
+      ],
+      "passed": true
+    },
+    {
+      "path": "/directorates",
+      "blocks": 0,
+      "types": [],
+      "errors": [],
+      "warnings": [
+        "page has no JSON-LD structured data"
+      ],
+      "passed": true
+    },
+    {
+      "path": "/academics",
+      "blocks": 1,
+      "types": [],
+      "errors": [
+        "block[0]: object has no @type",
+        "route must expose BreadcrumbList structured data"
+      ],
+      "warnings": [],
+      "passed": false
+    },
+    {
+      "path": "/academic-calendar",
+      "blocks": 0,
+      "types": [],
+      "errors": [],
+      "warnings": [
+        "page has no JSON-LD structured data"
+      ],
+      "passed": true
+    },
+    {
+      "path": "/faculty-departments",
+      "blocks": 0,
+      "types": [],
+      "errors": [],
+      "warnings": [
+        "page has no JSON-LD structured data"
+      ],
+      "passed": true
+    },
+    {
+      "path": "/undergrad-programs",
+      "blocks": 0,
+      "types": [],
+      "errors": [],
+      "warnings": [
+        "page has no JSON-LD structured data"
+      ],
+      "passed": true
+    },
+    {
+      "path": "/undergrad-regulations",
+      "blocks": 0,
+      "types": [],
+      "errors": [],
+      "warnings": [
+        "page has no JSON-LD structured data"
+      ],
+      "passed": true
+    },
+    {
+      "path": "/postgraduate-programs",
+      "blocks": 0,
+      "types": [],
+      "errors": [],
+      "warnings": [
+        "page has no JSON-LD structured data"
+      ],
+      "passed": true
+    },
+    {
+      "path": "/postgraduate-regulations",
+      "blocks": 0,
+      "types": [],
+      "errors": [],
+      "warnings": [
+        "page has no JSON-LD structured data"
+      ],
+      "passed": true
+    },
+    {
+      "path": "/postgraduate-studies",
+      "blocks": 0,
+      "types": [],
+      "errors": [],
+      "warnings": [
+        "page has no JSON-LD structured data"
+      ],
+      "passed": true
+    },
+    {
+      "path": "/regulations",
+      "blocks": 0,
+      "types": [],
+      "errors": [],
+      "warnings": [
+        "page has no JSON-LD structured data"
+      ],
+      "passed": true
+    },
+    {
+      "path": "/outcome-based-education-obe",
+      "blocks": 0,
+      "types": [],
+      "errors": [],
+      "warnings": [
+        "page has no JSON-LD structured data"
+      ],
+      "passed": true
+    },
+    {
+      "path": "/admissions",
+      "blocks": 1,
+      "types": [],
+      "errors": [
+        "block[0]: object has no @type",
+        "route must expose BreadcrumbList structured data"
+      ],
+      "warnings": [],
+      "passed": false
+    },
+    {
+      "path": "/fee-structure",
+      "blocks": 0,
+      "types": [],
+      "errors": [],
+      "warnings": [
+        "page has no JSON-LD structured data"
+      ],
+      "passed": true
+    },
+    {
+      "path": "/scholarships",
+      "blocks": 0,
+      "types": [],
+      "errors": [],
+      "warnings": [
+        "page has no JSON-LD structured data"
+      ],
+      "passed": true
+    },
+    {
+      "path": "/scholarships-2",
+      "blocks": 0,
+      "types": [],
+      "errors": [],
+      "warnings": [
+        "page has no JSON-LD structured data"
+      ],
+      "passed": true
+    },
+    {
+      "path": "/financial-assistance-departments",
+      "blocks": 0,
+      "types": [],
+      "errors": [],
+      "warnings": [
+        "page has no JSON-LD structured data"
+      ],
+      "passed": true
+    },
+    {
+      "path": "/examinations",
+      "blocks": 0,
+      "types": [],
+      "errors": [],
+      "warnings": [
+        "page has no JSON-LD structured data"
+      ],
+      "passed": true
+    },
+    {
+      "path": "/results",
+      "blocks": 0,
+      "types": [],
+      "errors": [],
+      "warnings": [
+        "page has no JSON-LD structured data"
+      ],
+      "passed": true
+    },
+    {
+      "path": "/schedule",
+      "blocks": 0,
+      "types": [],
+      "errors": [],
+      "warnings": [
+        "page has no JSON-LD structured data"
+      ],
+      "passed": true
+    },
+    {
+      "path": "/certificates",
+      "blocks": 0,
+      "types": [],
+      "errors": [],
+      "warnings": [
+        "page has no JSON-LD structured data"
+      ],
+      "passed": true
+    },
+    {
+      "path": "/convocation",
+      "blocks": 0,
+      "types": [],
+      "errors": [],
+      "warnings": [
+        "page has no JSON-LD structured data"
+      ],
+      "passed": true
+    },
+    {
+      "path": "/research-2",
+      "blocks": 0,
+      "types": [],
+      "errors": [],
+      "warnings": [
+        "page has no JSON-LD structured data"
+      ],
+      "passed": true
+    },
+    {
+      "path": "/office-of-research-innovation-commercialisation",
+      "blocks": 0,
+      "types": [],
+      "errors": [],
+      "warnings": [
+        "page has no JSON-LD structured data"
+      ],
+      "passed": true
+    },
+    {
+      "path": "/hec-approved-phd-supervisors",
+      "blocks": 0,
+      "types": [],
+      "errors": [],
+      "warnings": [
+        "page has no JSON-LD structured data"
+      ],
+      "passed": true
+    },
+    {
+      "path": "/publications",
+      "blocks": 0,
+      "types": [],
+      "errors": [],
+      "warnings": [
+        "page has no JSON-LD structured data"
+      ],
+      "passed": true
+    },
+    {
+      "path": "/projects",
+      "blocks": 0,
+      "types": [],
+      "errors": [],
+      "warnings": [
+        "page has no JSON-LD structured data"
+      ],
+      "passed": true
+    },
+    {
+      "path": "/journal",
+      "blocks": 0,
+      "types": [],
+      "errors": [],
+      "warnings": [
+        "page has no JSON-LD structured data"
+      ],
+      "passed": true
+    },
+    {
+      "path": "/funding-agencies",
+      "blocks": 0,
+      "types": [],
+      "errors": [],
+      "warnings": [
+        "page has no JSON-LD structured data"
+      ],
+      "passed": true
+    },
+    {
+      "path": "/plagiarism-policy",
+      "blocks": 0,
+      "types": [],
+      "errors": [],
+      "warnings": [
+        "page has no JSON-LD structured data"
+      ],
+      "passed": true
+    },
+    {
+      "path": "/research-ethics-policy",
+      "blocks": 0,
+      "types": [],
+      "errors": [],
+      "warnings": [
+        "page has no JSON-LD structured data"
+      ],
+      "passed": true
+    },
+    {
+      "path": "/conference-seminars",
+      "blocks": 0,
+      "types": [],
+      "errors": [],
+      "warnings": [
+        "page has no JSON-LD structured data"
+      ],
+      "passed": true
+    },
+    {
+      "path": "/seminars-workshops",
+      "blocks": 0,
+      "types": [],
+      "errors": [],
+      "warnings": [
+        "page has no JSON-LD structured data"
+      ],
+      "passed": true
+    },
+    {
+      "path": "/quality-enhancement-cell",
+      "blocks": 0,
+      "types": [],
+      "errors": [],
+      "warnings": [
+        "page has no JSON-LD structured data"
+      ],
+      "passed": true
+    },
+    {
+      "path": "/continues-professional-development",
+      "blocks": 0,
+      "types": [],
+      "errors": [],
+      "warnings": [
+        "page has no JSON-LD structured data"
+      ],
+      "passed": true
+    },
+    {
+      "path": "/university-linkages",
+      "blocks": 0,
+      "types": [],
+      "errors": [],
+      "warnings": [
+        "page has no JSON-LD structured data"
+      ],
+      "passed": true
+    },
+    {
+      "path": "/university-policies",
+      "blocks": 0,
+      "types": [],
+      "errors": [],
+      "warnings": [
+        "page has no JSON-LD structured data"
+      ],
+      "passed": true
+    },
+    {
+      "path": "/business-incubation-center",
+      "blocks": 0,
+      "types": [],
+      "errors": [],
+      "warnings": [
+        "page has no JSON-LD structured data"
+      ],
+      "passed": true
+    },
+    {
+      "path": "/incubation-centre",
+      "blocks": 0,
+      "types": [],
+      "errors": [],
+      "warnings": [
+        "page has no JSON-LD structured data"
+      ],
+      "passed": true
+    },
+    {
+      "path": "/duet-cemet",
+      "blocks": 0,
+      "types": [],
+      "errors": [],
+      "warnings": [
+        "page has no JSON-LD structured data"
+      ],
+      "passed": true
+    },
+    {
+      "path": "/about-cemet",
+      "blocks": 0,
+      "types": [],
+      "errors": [],
+      "warnings": [
+        "page has no JSON-LD structured data"
+      ],
+      "passed": true
+    },
+    {
+      "path": "/microsoft-for-all",
+      "blocks": 0,
+      "types": [],
+      "errors": [],
+      "warnings": [
+        "page has no JSON-LD structured data"
+      ],
+      "passed": true
+    },
+    {
+      "path": "/information-technology",
+      "blocks": 0,
+      "types": [],
+      "errors": [],
+      "warnings": [
+        "page has no JSON-LD structured data"
+      ],
+      "passed": true
+    },
+    {
+      "path": "/students",
+      "blocks": 0,
+      "types": [],
+      "errors": [],
+      "warnings": [
+        "page has no JSON-LD structured data"
+      ],
+      "passed": true
+    },
+    {
+      "path": "/students-affairs",
+      "blocks": 0,
+      "types": [],
+      "errors": [],
+      "warnings": [
+        "page has no JSON-LD structured data"
+      ],
+      "passed": true
+    },
+    {
+      "path": "/students-societies",
+      "blocks": 0,
+      "types": [],
+      "errors": [],
+      "warnings": [
+        "page has no JSON-LD structured data"
+      ],
+      "passed": true
+    },
+    {
+      "path": "/sports",
+      "blocks": 0,
+      "types": [],
+      "errors": [],
+      "warnings": [
+        "page has no JSON-LD structured data"
+      ],
+      "passed": true
+    },
+    {
+      "path": "/career-counselling",
+      "blocks": 0,
+      "types": [],
+      "errors": [],
+      "warnings": [
+        "page has no JSON-LD structured data"
+      ],
+      "passed": true
+    },
+    {
+      "path": "/careers",
+      "blocks": 0,
+      "types": [],
+      "errors": [],
+      "warnings": [
+        "page has no JSON-LD structured data"
+      ],
+      "passed": true
+    },
+    {
+      "path": "/internships",
+      "blocks": 0,
+      "types": [],
+      "errors": [],
+      "warnings": [
+        "page has no JSON-LD structured data"
+      ],
+      "passed": true
+    },
+    {
+      "path": "/industrial-liasons-alumni-affairs",
+      "blocks": 0,
+      "types": [],
+      "errors": [],
+      "warnings": [
+        "page has no JSON-LD structured data"
+      ],
+      "passed": true
+    },
+    {
+      "path": "/alumni",
+      "blocks": 0,
+      "types": [],
+      "errors": [],
+      "warnings": [
+        "page has no JSON-LD structured data"
+      ],
+      "passed": true
+    },
+    {
+      "path": "/shuttle-bus-routes",
+      "blocks": 0,
+      "types": [],
+      "errors": [],
+      "warnings": [
+        "page has no JSON-LD structured data"
+      ],
+      "passed": true
+    },
+    {
+      "path": "/news",
+      "blocks": 0,
+      "types": [],
+      "errors": [],
+      "warnings": [
+        "page has no JSON-LD structured data"
+      ],
+      "passed": true
+    },
+    {
+      "path": "/tenders",
+      "blocks": 0,
+      "types": [],
+      "errors": [],
+      "warnings": [
+        "page has no JSON-LD structured data"
+      ],
+      "passed": true
+    },
+    {
+      "path": "/downloads",
+      "blocks": 0,
+      "types": [],
+      "errors": [],
+      "warnings": [
+        "page has no JSON-LD structured data"
+      ],
+      "passed": true
+    },
+    {
+      "path": "/downloads-2",
+      "blocks": 0,
+      "types": [],
+      "errors": [],
+      "warnings": [
+        "page has no JSON-LD structured data"
+      ],
+      "passed": true
+    },
+    {
+      "path": "/annual-report",
+      "blocks": 0,
+      "types": [],
+      "errors": [],
+      "warnings": [
+        "page has no JSON-LD structured data"
+      ],
+      "passed": true
+    },
+    {
+      "path": "/video-gallery",
+      "blocks": 0,
+      "types": [],
+      "errors": [],
+      "warnings": [
+        "page has no JSON-LD structured data"
+      ],
+      "passed": true
+    }
+  ]
+}
