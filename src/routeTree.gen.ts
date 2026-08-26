@@ -63,6 +63,7 @@ import { Route as ScholarshipsRouteImport } from './routes/scholarships'
 import { Route as Scholarships2RouteImport } from './routes/scholarships-2'
 import { Route as SeminarsWorkshopsRouteImport } from './routes/seminars-workshops'
 import { Route as ShuttleBusRoutesRouteImport } from './routes/shuttle-bus-routes'
+import { Route as SitemapDotxmlRouteImport } from './routes/sitemap[.]xml'
 import { Route as SportsRouteImport } from './routes/sports'
 import { Route as StudentsRouteImport } from './routes/students'
 import { Route as StudentsAffairsRouteImport } from './routes/students-affairs'
@@ -358,6 +359,11 @@ const ShuttleBusRoutesRoute = ShuttleBusRoutesRouteImport.update({
   path: '/shuttle-bus-routes',
   getParentRoute: () => rootRouteImport,
 } as any)
+const SitemapDotxmlRoute = SitemapDotxmlRouteImport.update({
+  id: '/sitemap.xml',
+  path: '/sitemap.xml',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const SportsRoute = SportsRouteImport.update({
   id: '/sports',
   path: '/sports',
@@ -505,6 +511,7 @@ export interface FileRoutesByFullPath {
   '/scholarships-2': typeof Scholarships2Route
   '/seminars-workshops': typeof SeminarsWorkshopsRoute
   '/shuttle-bus-routes': typeof ShuttleBusRoutesRoute
+  '/sitemap.xml': typeof SitemapDotxmlRoute
   '/sports': typeof SportsRoute
   '/students': typeof StudentsRoute
   '/students-affairs': typeof StudentsAffairsRoute
@@ -578,6 +585,7 @@ export interface FileRoutesByTo {
   '/scholarships-2': typeof Scholarships2Route
   '/seminars-workshops': typeof SeminarsWorkshopsRoute
   '/shuttle-bus-routes': typeof ShuttleBusRoutesRoute
+  '/sitemap.xml': typeof SitemapDotxmlRoute
   '/sports': typeof SportsRoute
   '/students': typeof StudentsRoute
   '/students-affairs': typeof StudentsAffairsRoute
@@ -652,6 +660,7 @@ export interface FileRoutesById {
   '/scholarships-2': typeof Scholarships2Route
   '/seminars-workshops': typeof SeminarsWorkshopsRoute
   '/shuttle-bus-routes': typeof ShuttleBusRoutesRoute
+  '/sitemap.xml': typeof SitemapDotxmlRoute
   '/sports': typeof SportsRoute
   '/students': typeof StudentsRoute
   '/students-affairs': typeof StudentsAffairsRoute
@@ -727,6 +736,7 @@ export interface FileRouteTypes {
     | '/scholarships-2'
     | '/seminars-workshops'
     | '/shuttle-bus-routes'
+    | '/sitemap.xml'
     | '/sports'
     | '/students'
     | '/students-affairs'
@@ -800,6 +810,7 @@ export interface FileRouteTypes {
     | '/scholarships-2'
     | '/seminars-workshops'
     | '/shuttle-bus-routes'
+    | '/sitemap.xml'
     | '/sports'
     | '/students'
     | '/students-affairs'
@@ -873,6 +884,7 @@ export interface FileRouteTypes {
     | '/scholarships-2'
     | '/seminars-workshops'
     | '/shuttle-bus-routes'
+    | '/sitemap.xml'
     | '/sports'
     | '/students'
     | '/students-affairs'
@@ -948,6 +960,7 @@ export interface RootRouteChildren {
   Scholarships2Route: typeof Scholarships2Route
   SeminarsWorkshopsRoute: typeof SeminarsWorkshopsRoute
   ShuttleBusRoutesRoute: typeof ShuttleBusRoutesRoute
+  SitemapDotxmlRoute: typeof SitemapDotxmlRoute
   SportsRoute: typeof SportsRoute
   StudentsRoute: typeof StudentsRoute
   StudentsAffairsRoute: typeof StudentsAffairsRoute
@@ -1344,6 +1357,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof ShuttleBusRoutesRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/sitemap.xml': {
+      id: '/sitemap.xml'
+      path: '/sitemap.xml'
+      fullPath: '/sitemap.xml'
+      preLoaderRoute: typeof SitemapDotxmlRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/sports': {
       id: '/sports'
       path: '/sports'
@@ -1555,6 +1575,7 @@ const rootRouteChildren: RootRouteChildren = {
   Scholarships2Route: Scholarships2Route,
   SeminarsWorkshopsRoute: SeminarsWorkshopsRoute,
   ShuttleBusRoutesRoute: ShuttleBusRoutesRoute,
+  SitemapDotxmlRoute: SitemapDotxmlRoute,
   SportsRoute: SportsRoute,
   StudentsRoute: StudentsRoute,
   StudentsAffairsRoute: StudentsAffairsRoute,
