@@ -89,3 +89,11 @@ export async function sitemapPaths(root = "dist/client") {
   });
   return [...new Set(paths)];
 }
+
+// CLI: `node scripts/security/serve-static.mjs --port 4401` for manual checks.
+if (import.meta.url === `file://${process.argv[1]}`) {
+  const portArg = process.argv.indexOf("--port");
+  const port = portArg > -1 ? Number(process.argv[portArg + 1]) : 4400;
+  const server = await startStaticServer({ port });
+  console.log(`[serve-static] ${server.origin}`);
+}
