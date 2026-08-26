@@ -1,11 +1,48 @@
 # Hostinger (Apache) configuration for the prerendered static build.
 # Copied verbatim into the build output; harmless on non-Apache hosts.
+#
+# The enforcing Content-Security-Policy is injected per page as a <meta> tag at
+# build time (with SHA-256 hashes for every inline script, so no 'unsafe-inline'
+# is needed). This file adds the directives a meta tag cannot express plus all
+# other security, caching and firewall rules.
 
-Options -MultiViews
+Options -Indexes -MultiViews
 DirectoryIndex index.html
+ServerSignature Off
 
+# =====================================================================
+# Firewall: request method, bad bots, exploit probes, hotlinking
+# =====================================================================
 <IfModule mod_rewrite.c>
   RewriteEngine On
+
+  # 1. Allow only the methods a static site needs
+  RewriteCond %{REQUEST_METHOD} !^(GET|HEAD|POST|OPTIONS)$
+  RewriteRule ^ - [F,L]
+
+  # 2. Block known scrapers, vulnerability scanners and mass downloaders
+  RewriteCond %{HTTP_USER_AGENT} (ahrefsbot|semrushbot|dotbot|mj12bot|blexbot|petalbot|seznambot|serpstatbot|zgrab|masscan|nmap|nikto|sqlmap|acunetix|nessus|wpscan|havij|fimap|libwww-perl|python-requests|curl/7\.(1|2|3)|httrack|wget|harvest|extractor) [NC]
+  RewriteRule ^ - [F,L]
+
+  # 3. Block empty user agents on POST (bot signature)
+  RewriteCond %{REQUEST_METHOD} =POST
+  RewriteCond %{HTTP_USER_AGENT} ^$
+  RewriteRule ^ - [F,L]
+
+  # 4. Block common exploit probe paths (this site is not WordPress/PHP)
+  RewriteCond %{REQUEST_URI} (^|/)(wp-admin|wp-login\.php|wp-content|wp-includes|xmlrpc\.php|\.env|\.git|\.svn|\.aws|vendor/phpunit|phpmyadmin|adminer\.php|shell\.php|eval-stdin\.php|config\.php\.bak) [NC]
+  RewriteRule ^ - [F,L]
+
+  # 5. Block obvious injection patterns in the query string
+  RewriteCond %{QUERY_STRING} (union([^a-z]|\s)+select|base64_decode\(|<script|%3Cscript|\.\./\.\./|/etc/passwd) [NC]
+  RewriteRule ^ - [F,L]
+
+  # 6. Hotlink protection for media (allow direct hits and the university domains)
+  RewriteCond %{HTTP_REFERER} !^$
+  RewriteCond %{HTTP_REFERER} !^https?://([a-z0-9-]+\.)?duet\.edu\.pk/ [NC]
+  RewriteCond %{HTTP_REFERER} !^https?://(www\.)?google\.[a-z.]+/ [NC]
+  RewriteCond %{REQUEST_URI} ^/media/.*\.(jpe?g|png|webp|gif|svg)$ [NC]
+  RewriteRule ^ - [F,L]
 
   # Force HTTPS (Hostinger terminates SSL upstream, so check the forwarded proto)
   RewriteCond %{HTTPS} !=on
@@ -25,6 +62,18 @@ DirectoryIndex index.html
   RewriteCond %{REQUEST_FILENAME} !-f
   RewriteCond %{REQUEST_FILENAME} !-d
   RewriteRule ^ /index.html [L]
+</IfModule>
+
+# Never serve dotfiles, source, backups or archives
+<FilesMatch "(^\.|\.(env|ini|log|sh|sql|bak|old|orig|save|swp|tmp|ts|tsx|map|zip|tar|gz|md|json5|lock)$)">
+  Require all denied
+</FilesMatch>
+<FilesMatch "^(package(-lock)?\.json|bun\.lock|bunfig\.toml|tsconfig\.json|vite\.config\.ts|\.htaccess|\.htpasswd)$">
+  Require all denied
+</FilesMatch>
+
+<IfModule mod_alias.c>
+  RedirectMatch 404 /\.git
 </IfModule>
 
 # --- Compression: the single biggest win for high traffic ---
@@ -61,9 +110,13 @@ DirectoryIndex index.html
   Header always set Permissions-Policy "geolocation=(), microphone=(), camera=()"
   Header always set Strict-Transport-Security "max-age=31536000; includeSubDomains; preload" env=HTTPS
   Header always set Cross-Origin-Opener-Policy "same-origin"
+  Header always set Cross-Origin-Resource-Policy "same-site"
   Header always set X-DNS-Prefetch-Control "on"
-  Header always set Content-Security-Policy "default-src 'self'; base-uri 'self'; object-src 'none'; frame-ancestors 'self'; form-action 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' data: https://fonts.gstatic.com; img-src 'self' data: https:; connect-src 'self' https://*.supabase.co https://ldbqlcfrphmmiwtllsxm.supabase.co; upgrade-insecure-requests"
+  # Frame-ancestors and reporting cannot be set from a <meta> tag; the rest of
+  # the enforcing policy (including per-page script hashes) is in the page HTML.
+  Header always set Content-Security-Policy "frame-ancestors 'self'"
   Header unset X-Powered-By
+  Header unset Server
 
   # Sitemap / robots stay fresh
   <FilesMatch "(sitemap\.xml|robots\.txt)$">
