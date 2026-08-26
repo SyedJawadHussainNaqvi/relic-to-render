@@ -8,12 +8,16 @@ import { newsQueryOptions, resolveSlides, slidesQueryOptions } from "@/lib/site-
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Dawood University of Engineering & Technology, Karachi" },
+      { title: "DUET Karachi | Dawood University of Engineering & Technology" },
       {
         name: "description",
         content:
-          "Dawood University of Engineering & Technology (DUET) Karachi — a public sector engineering university offering undergraduate, postgraduate and PhD programs across two campuses.",
+          "Dawood University of Engineering & Technology (DUET), Karachi — public sector engineering university in Pakistan offering BE, BS, MS and PhD programs, admissions, fee structure, results and research.",
       },
+      { name: "keywords", content: "DUET Karachi, Dawood University, engineering universities in Karachi, DUET admission, DUET fee structure, DUET results, engineering university Pakistan" },
+      { name: "geo.region", content: "PK-SD" },
+      { name: "geo.placename", content: "Karachi" },
+
       { property: "og:title", content: "Dawood University of Engineering & Technology, Karachi" },
       {
         property: "og:description",
