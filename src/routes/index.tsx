@@ -1,8 +1,8 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { useQuery } from "@tanstack/react-query";
-import { useEffect, useState } from "react";
+import { memo, useCallback, useEffect, useMemo, useState } from "react";
 import { aboutImg, campusBg } from "@/content/assets";
-import { useSiteMenu } from "@/hooks/useSiteMenu";
+import HomeSections from "@/components/home/HomeSections";
 import { newsQueryOptions, resolveSlides, slidesQueryOptions } from "@/lib/site-content";
 
 export const Route = createFileRoute("/")({
@@ -84,9 +84,9 @@ const stats = [
   { value: "11", label: "Convocations" },
 ];
 
-function Slider() {
+const Slider = memo(function Slider() {
   const { data } = useQuery(slidesQueryOptions);
-  const slides = resolveSlides(data ?? []);
+  const slides = useMemo(() => resolveSlides(data ?? []), [data]);
   const [i, setI] = useState(0);
   const count = slides.length;
   useEffect(() => {
@@ -94,6 +94,7 @@ function Slider() {
     const t = setInterval(() => setI((v) => (v + 1) % count), 5000);
     return () => clearInterval(t);
   }, [count]);
+  const select = useCallback((idx: number) => setI(idx), []);
   const active = count ? i % count : 0;
   const current = slides[active];
 
@@ -126,7 +127,7 @@ function Slider() {
                   key={s.src}
                   type="button"
                   aria-label={`Show slide ${idx + 1}`}
-                  onClick={() => setI(idx)}
+                  onClick={() => select(idx)}
                   className={`h-2 w-6 rounded-full transition-colors ${
                     idx === active ? "bg-accent" : "bg-white/50"
                   }`}
@@ -138,12 +139,9 @@ function Slider() {
       </div>
     </section>
   );
-}
+});
 
 function Index() {
-  const { main: mainMenu } = useSiteMenu();
-  const { data: news } = useQuery(newsQueryOptions);
-  const newsEntries = (news ?? []).slice(0, 6);
 
   return (
     <main>
@@ -244,55 +242,9 @@ function Index() {
         </div>
       </section>
 
-      {/* Sections */}
-      <section className="mx-auto max-w-[1200px] px-4 py-12">
-        <h2 className="font-display text-2xl font-semibold text-brand">Explore the University</h2>
-        <div className="mt-1 h-1 w-24 bg-accent" />
-        <div className="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
-          {mainMenu.slice(0, 8).map((g) => (
-            <Link
-              key={g.label}
-              to={g.to ?? "/"}
-              className="rounded border border-border bg-card p-5 transition-colors hover:border-accent"
-            >
-              <h3 className="font-display text-[15px] font-semibold text-brand">{g.label}</h3>
-              <p className="mt-2 text-[13px] leading-6 text-muted-foreground">
-                {g.items
-                  .slice(0, 3)
-                  .map((i) => i.label)
-                  .join(" · ") || "Openings and opportunities at DUET"}
-              </p>
-            </Link>
-          ))}
-        </div>
-      </section>
+      {/* Below-the-fold sections (memoized, data-driven) */}
+      <HomeSections />
 
-      {/* News */}
-      <section className="bg-muted/60 py-12">
-        <div className="mx-auto max-w-[1200px] px-4">
-          <div className="flex items-end justify-between">
-            <div>
-              <h2 className="font-display text-2xl font-semibold text-brand">News &amp; Events</h2>
-              <div className="mt-1 h-1 w-24 bg-accent" />
-            </div>
-            <Link to="/news" className="text-[13px] font-semibold text-brand hover:text-accent-strong">
-              View all
-            </Link>
-          </div>
-          <div className="mt-6 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
-            {newsEntries.map((post) => (
-              <article key={post.id} className="rounded border border-border bg-card p-5">
-                <h3 className="font-display text-[15px] font-semibold leading-6 text-brand">
-                  {post.title}
-                </h3>
-                <p className="mt-2 line-clamp-4 text-[13.5px] leading-6 text-muted-foreground">
-                  {post.excerpt || post.body.split("\n\n")[0] || "Read the full announcement from Dawood University."}
-                </p>
-              </article>
-            ))}
-          </div>
-        </div>
-      </section>
     </main>
   );
 }
