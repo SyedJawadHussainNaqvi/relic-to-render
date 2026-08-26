@@ -4,10 +4,10 @@ import { ArchivedPage } from "@/components/site/ArchivedPage";
 export const Route = createFileRoute("/incubation-centre")({
   head: () => ({
     meta: [
-      { title: "INCUBATION CENTRE — DUET Karachi" },
-      { name: "description", content: "The proposal filled in all respects and with all required attachments (provided in the template) must reach at the following address on or before 20th Octo" },
-      { property: "og:title", content: "INCUBATION CENTRE — DUET Karachi" },
-      { property: "og:description", content: "The proposal filled in all respects and with all required attachments (provided in the template) must reach at the following address on or before 20th Octo" },
+      { title: "Incubation Centre for Startups — DUET Karachi" },
+      { name: "description", content: "Startup incubation support, proposal requirements and mentoring for student and alumni ventures at DUET Karachi." },
+      { property: "og:title", content: "Incubation Centre for Startups — DUET Karachi" },
+      { property: "og:description", content: "Startup incubation support, proposal requirements and mentoring for student and alumni ventures at DUET Karachi." },
       { property: "og:type", content: "website" },
       { property: "og:url", content: "https://www.duet.edu.pk/incubation-centre" },
       { property: "og:image", content: "https://www.duet.edu.pk/media/about.jpg" },
