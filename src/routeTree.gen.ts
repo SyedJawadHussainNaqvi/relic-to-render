@@ -24,6 +24,7 @@ import { Route as CareerCounsellingRouteImport } from './routes/career-counselli
 import { Route as CareersRouteImport } from './routes/careers'
 import { Route as CertificatesRouteImport } from './routes/certificates'
 import { Route as ConferenceSeminarsRouteImport } from './routes/conference-seminars'
+import { Route as ContactsRouteImport } from './routes/contacts'
 import { Route as ContinuesProfessionalDevelopmentRouteImport } from './routes/continues-professional-development'
 import { Route as ConvocationRouteImport } from './routes/convocation'
 import { Route as DirectoratesRouteImport } from './routes/directorates'
@@ -43,6 +44,7 @@ import { Route as InternshipsRouteImport } from './routes/internships'
 import { Route as JournalRouteImport } from './routes/journal'
 import { Route as MicrosoftForAllRouteImport } from './routes/microsoft-for-all'
 import { Route as NewsRouteImport } from './routes/news'
+import { Route as NewsletterRouteImport } from './routes/newsletter'
 import { Route as OfficeOfResearchInnovationCommercialisationRouteImport } from './routes/office-of-research-innovation-commercialisation'
 import { Route as Officers2RouteImport } from './routes/officers-2'
 import { Route as OrganogramRouteImport } from './routes/organogram'
@@ -164,6 +166,11 @@ const ConferenceSeminarsRoute = ConferenceSeminarsRouteImport.update({
   path: '/conference-seminars',
   getParentRoute: () => rootRouteImport,
 } as any)
+const ContactsRoute = ContactsRouteImport.update({
+  id: '/contacts',
+  path: '/contacts',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const ContinuesProfessionalDevelopmentRoute =
   ContinuesProfessionalDevelopmentRouteImport.update({
     id: '/continues-professional-development',
@@ -261,6 +268,11 @@ const MicrosoftForAllRoute = MicrosoftForAllRouteImport.update({
 const NewsRoute = NewsRouteImport.update({
   id: '/news',
   path: '/news',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const NewsletterRoute = NewsletterRouteImport.update({
+  id: '/newsletter',
+  path: '/newsletter',
   getParentRoute: () => rootRouteImport,
 } as any)
 const OfficeOfResearchInnovationCommercialisationRoute =
@@ -508,6 +520,7 @@ export interface FileRoutesByFullPath {
   '/careers': typeof CareersRoute
   '/certificates': typeof CertificatesRoute
   '/conference-seminars': typeof ConferenceSeminarsRoute
+  '/contacts': typeof ContactsRoute
   '/continues-professional-development': typeof ContinuesProfessionalDevelopmentRoute
   '/convocation': typeof ConvocationRoute
   '/directorates': typeof DirectoratesRoute
@@ -527,6 +540,7 @@ export interface FileRoutesByFullPath {
   '/journal': typeof JournalRoute
   '/microsoft-for-all': typeof MicrosoftForAllRoute
   '/news': typeof NewsRoute
+  '/newsletter': typeof NewsletterRoute
   '/office-of-research-innovation-commercialisation': typeof OfficeOfResearchInnovationCommercialisationRoute
   '/officers-2': typeof Officers2Route
   '/organogram': typeof OrganogramRoute
@@ -588,6 +602,7 @@ export interface FileRoutesByTo {
   '/careers': typeof CareersRoute
   '/certificates': typeof CertificatesRoute
   '/conference-seminars': typeof ConferenceSeminarsRoute
+  '/contacts': typeof ContactsRoute
   '/continues-professional-development': typeof ContinuesProfessionalDevelopmentRoute
   '/convocation': typeof ConvocationRoute
   '/directorates': typeof DirectoratesRoute
@@ -607,6 +622,7 @@ export interface FileRoutesByTo {
   '/journal': typeof JournalRoute
   '/microsoft-for-all': typeof MicrosoftForAllRoute
   '/news': typeof NewsRoute
+  '/newsletter': typeof NewsletterRoute
   '/office-of-research-innovation-commercialisation': typeof OfficeOfResearchInnovationCommercialisationRoute
   '/officers-2': typeof Officers2Route
   '/organogram': typeof OrganogramRoute
@@ -669,6 +685,7 @@ export interface FileRoutesById {
   '/careers': typeof CareersRoute
   '/certificates': typeof CertificatesRoute
   '/conference-seminars': typeof ConferenceSeminarsRoute
+  '/contacts': typeof ContactsRoute
   '/continues-professional-development': typeof ContinuesProfessionalDevelopmentRoute
   '/convocation': typeof ConvocationRoute
   '/directorates': typeof DirectoratesRoute
@@ -688,6 +705,7 @@ export interface FileRoutesById {
   '/journal': typeof JournalRoute
   '/microsoft-for-all': typeof MicrosoftForAllRoute
   '/news': typeof NewsRoute
+  '/newsletter': typeof NewsletterRoute
   '/office-of-research-innovation-commercialisation': typeof OfficeOfResearchInnovationCommercialisationRoute
   '/officers-2': typeof Officers2Route
   '/organogram': typeof OrganogramRoute
@@ -751,6 +769,7 @@ export interface FileRouteTypes {
     | '/careers'
     | '/certificates'
     | '/conference-seminars'
+    | '/contacts'
     | '/continues-professional-development'
     | '/convocation'
     | '/directorates'
@@ -770,6 +789,7 @@ export interface FileRouteTypes {
     | '/journal'
     | '/microsoft-for-all'
     | '/news'
+    | '/newsletter'
     | '/office-of-research-innovation-commercialisation'
     | '/officers-2'
     | '/organogram'
@@ -831,6 +851,7 @@ export interface FileRouteTypes {
     | '/careers'
     | '/certificates'
     | '/conference-seminars'
+    | '/contacts'
     | '/continues-professional-development'
     | '/convocation'
     | '/directorates'
@@ -850,6 +871,7 @@ export interface FileRouteTypes {
     | '/journal'
     | '/microsoft-for-all'
     | '/news'
+    | '/newsletter'
     | '/office-of-research-innovation-commercialisation'
     | '/officers-2'
     | '/organogram'
@@ -911,6 +933,7 @@ export interface FileRouteTypes {
     | '/careers'
     | '/certificates'
     | '/conference-seminars'
+    | '/contacts'
     | '/continues-professional-development'
     | '/convocation'
     | '/directorates'
@@ -930,6 +953,7 @@ export interface FileRouteTypes {
     | '/journal'
     | '/microsoft-for-all'
     | '/news'
+    | '/newsletter'
     | '/office-of-research-innovation-commercialisation'
     | '/officers-2'
     | '/organogram'
@@ -993,6 +1017,7 @@ export interface RootRouteChildren {
   CareersRoute: typeof CareersRoute
   CertificatesRoute: typeof CertificatesRoute
   ConferenceSeminarsRoute: typeof ConferenceSeminarsRoute
+  ContactsRoute: typeof ContactsRoute
   ContinuesProfessionalDevelopmentRoute: typeof ContinuesProfessionalDevelopmentRoute
   ConvocationRoute: typeof ConvocationRoute
   DirectoratesRoute: typeof DirectoratesRoute
@@ -1012,6 +1037,7 @@ export interface RootRouteChildren {
   JournalRoute: typeof JournalRoute
   MicrosoftForAllRoute: typeof MicrosoftForAllRoute
   NewsRoute: typeof NewsRoute
+  NewsletterRoute: typeof NewsletterRoute
   OfficeOfResearchInnovationCommercialisationRoute: typeof OfficeOfResearchInnovationCommercialisationRoute
   Officers2Route: typeof Officers2Route
   OrganogramRoute: typeof OrganogramRoute
@@ -1160,6 +1186,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof ConferenceSeminarsRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/contacts': {
+      id: '/contacts'
+      path: '/contacts'
+      fullPath: '/contacts'
+      preLoaderRoute: typeof ContactsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/continues-professional-development': {
       id: '/continues-professional-development'
       path: '/continues-professional-development'
@@ -1291,6 +1324,13 @@ declare module '@tanstack/react-router' {
       path: '/news'
       fullPath: '/news'
       preLoaderRoute: typeof NewsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/newsletter': {
+      id: '/newsletter'
+      path: '/newsletter'
+      fullPath: '/newsletter'
+      preLoaderRoute: typeof NewsletterRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/office-of-research-innovation-commercialisation': {
@@ -1657,6 +1697,7 @@ const rootRouteChildren: RootRouteChildren = {
   CareersRoute: CareersRoute,
   CertificatesRoute: CertificatesRoute,
   ConferenceSeminarsRoute: ConferenceSeminarsRoute,
+  ContactsRoute: ContactsRoute,
   ContinuesProfessionalDevelopmentRoute: ContinuesProfessionalDevelopmentRoute,
   ConvocationRoute: ConvocationRoute,
   DirectoratesRoute: DirectoratesRoute,
@@ -1676,6 +1717,7 @@ const rootRouteChildren: RootRouteChildren = {
   JournalRoute: JournalRoute,
   MicrosoftForAllRoute: MicrosoftForAllRoute,
   NewsRoute: NewsRoute,
+  NewsletterRoute: NewsletterRoute,
   OfficeOfResearchInnovationCommercialisationRoute:
     OfficeOfResearchInnovationCommercialisationRoute,
   Officers2Route: Officers2Route,
