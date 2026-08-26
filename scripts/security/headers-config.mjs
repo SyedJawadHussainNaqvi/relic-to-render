@@ -58,15 +58,28 @@ export function sha256Base64(source) {
   return `sha256-${createHash("sha256").update(source, "utf8").digest("base64")}`;
 }
 
-/** Inline <script> bodies of an HTML document, in document order. */
+/**
+ * Inline <script> bodies of an HTML document, in document order.
+ *
+ * Uses a spec-compliant HTML parser rather than a regex: serialized page data
+ * can contain sequences (`<!--`, `<script`) that change where the parser ends
+ * the script, and a hash taken from the wrong slice never matches the browser.
+ */
 export function inlineScripts(html) {
+  const { parse } = parse5;
   const out = [];
-  const re = /<script(?![^>]*\ssrc=)([^>]*)>([\s\S]*?)<\/script>/gi;
-  let m;
-  while ((m = re.exec(html))) {
-    if (/\btype\s*=\s*"(?!module|text\/javascript|application\/ld\+json)/i.test(m[1])) continue;
-    out.push(m[2]);
-  }
+
+  const visit = (node) => {
+    if (node.nodeName === "script") {
+      const attrs = new Map((node.attrs ?? []).map((a) => [a.name, a.value]));
+      const text = (node.childNodes ?? []).map((c) => c.value ?? "").join("");
+      if (!attrs.has("src") && text) out.push(text);
+      return;
+    }
+    for (const child of node.childNodes ?? []) visit(child);
+  };
+
+  visit(parse(html));
   return out;
 }
 
