@@ -58,9 +58,6 @@ export const Route = createFileRoute("/")({
             },
           ],
           numberOfStudents: 3000,
-          department: Array.from({ length: 13 }).length
-            ? undefined
-            : undefined,
           subOrganization: [
             { "@type": "CollegeOrUniversity", name: "DUET Main Campus, Karachi" },
             { "@type": "CollegeOrUniversity", name: "DUET Second Campus, Karachi" },
