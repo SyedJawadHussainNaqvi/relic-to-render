@@ -22,6 +22,53 @@ export const Route = createFileRoute("/contacts")({
       { name: "twitter:image", content: "https://www.duet.edu.pk/media/about.jpg" },
     ],
     links: [{ rel: "canonical", href: "https://www.duet.edu.pk/contacts" }],
+    scripts: [
+      {
+        type: "application/ld+json",
+        children: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "CollegeOrUniversity",
+          name: "Dawood University of Engineering & Technology",
+          alternateName: ["DUET Karachi", "DUET"],
+          url: "https://www.duet.edu.pk/",
+          logo: "https://www.duet.edu.pk/media/duet_logo-300x227.png",
+          telephone: "+92-21-99213151",
+          email: "info@duet.edu.pk",
+          address: {
+            "@type": "PostalAddress",
+            streetAddress: "New M. A. Jinnah Road",
+            addressLocality: "Karachi",
+            addressRegion: "Sindh",
+            postalCode: "74800",
+            addressCountry: "PK",
+          },
+          contactPoint: [
+            {
+              "@type": "ContactPoint",
+              contactType: "admissions",
+              telephone: "+92-21-99230706",
+              email: "admissions@duet.edu.pk",
+              areaServed: "PK",
+            },
+            {
+              "@type": "ContactPoint",
+              contactType: "registrar",
+              telephone: "+92-21-99232645",
+              email: "registrar@duet.edu.pk",
+              areaServed: "PK",
+            },
+            {
+              "@type": "ContactPoint",
+              contactType: "examinations",
+              telephone: "+92-21-99230476",
+              email: "controller.examination@duet.edu.pk",
+              areaServed: "PK",
+            },
+          ],
+        }),
+      },
+    ],
+
   }),
   component: ContactsPage,
 });

@@ -4,10 +4,10 @@ import { ArchivedPage } from "@/components/site/ArchivedPage";
 export const Route = createFileRoute("/quality-enhancement-cell")({
   head: () => ({
     meta: [
-      { title: "Quality Enhancement cell — DUET Karachi" },
-      { name: "description", content: "Quality Assurance (QA) holds an indispensable importance in a world where competition is changing gears every now and then. In an ever-evolving education s" },
-      { property: "og:title", content: "Quality Enhancement cell — DUET Karachi" },
-      { property: "og:description", content: "Quality Assurance (QA) holds an indispensable importance in a world where competition is changing gears every now and then. In an ever-evolving education s" },
+      { title: "Quality Enhancement Cell (QEC) — DUET Karachi" },
+      { name: "description", content: "The Quality Enhancement Cell at DUET Karachi manages HEC quality assurance, self-assessment reports and programme accreditation." },
+      { property: "og:title", content: "Quality Enhancement Cell (QEC) — DUET Karachi" },
+      { property: "og:description", content: "The Quality Enhancement Cell at DUET Karachi manages HEC quality assurance, self-assessment reports and programme accreditation." },
       { property: "og:type", content: "website" },
       { property: "og:url", content: "https://www.duet.edu.pk/quality-enhancement-cell" },
       { property: "og:image", content: "https://www.duet.edu.pk/media/about.jpg" },

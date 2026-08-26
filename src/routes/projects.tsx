@@ -4,10 +4,10 @@ import { ArchivedPage } from "@/components/site/ArchivedPage";
 export const Route = createFileRoute("/projects")({
   head: () => ({
     meta: [
-      { title: "Projects — DUET Karachi" },
-      { name: "description", content: "Research Project Completion Report 2022" },
-      { property: "og:title", content: "Projects — DUET Karachi" },
-      { property: "og:description", content: "Research Project Completion Report 2022" },
+      { title: "Research Projects — DUET Karachi" },
+      { name: "description", content: "Funded and completed research projects at DUET Karachi across engineering, energy, environment and materials disciplines in Pakistan." },
+      { property: "og:title", content: "Research Projects — DUET Karachi" },
+      { property: "og:description", content: "Funded and completed research projects at DUET Karachi across engineering, energy, environment and materials disciplines in Pakistan." },
       { property: "og:type", content: "website" },
       { property: "og:url", content: "https://www.duet.edu.pk/projects" },
       { property: "og:image", content: "https://www.duet.edu.pk/media/about.jpg" },

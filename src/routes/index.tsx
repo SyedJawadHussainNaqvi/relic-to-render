@@ -8,12 +8,16 @@ import { newsQueryOptions, resolveSlides, slidesQueryOptions } from "@/lib/site-
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Dawood University of Engineering & Technology, Karachi" },
+      { title: "DUET Karachi | Dawood University of Engineering & Technology" },
       {
         name: "description",
         content:
-          "Dawood University of Engineering & Technology (DUET) Karachi — a public sector engineering university offering undergraduate, postgraduate and PhD programs across two campuses.",
+          "Dawood University of Engineering & Technology (DUET), Karachi — public sector engineering university in Pakistan offering BE, BS, MS and PhD programs, admissions, fee structure, results and research.",
       },
+      { name: "keywords", content: "DUET Karachi, Dawood University, engineering universities in Karachi, DUET admission, DUET fee structure, DUET results, engineering university Pakistan" },
+      { name: "geo.region", content: "PK-SD" },
+      { name: "geo.placename", content: "Karachi" },
+
       { property: "og:title", content: "Dawood University of Engineering & Technology, Karachi" },
       {
         property: "og:description",
@@ -33,7 +37,7 @@ export const Route = createFileRoute("/")({
           "@context": "https://schema.org",
           "@type": "CollegeOrUniversity",
           name: "Dawood University of Engineering & Technology",
-          alternateName: "DUET Karachi",
+          alternateName: ["DUET Karachi", "DUET", "Dawood University", "DCET Karachi"],
           url: "https://www.duet.edu.pk/",
           logo: "https://www.duet.edu.pk/media/duet_logo-300x227.png",
           image: "https://www.duet.edu.pk/media/about.jpg",
@@ -48,11 +52,27 @@ export const Route = createFileRoute("/")({
             postalCode: "74800",
             addressCountry: "PK",
           },
+          telephone: "+92-21-99213151",
+          email: "info@duet.edu.pk",
+          areaServed: [
+            { "@type": "City", name: "Karachi" },
+            { "@type": "Country", name: "Pakistan" },
+          ],
           contactPoint: [
             {
               "@type": "ContactPoint",
               contactType: "admissions",
               url: "https://admissions.duet.edu.pk/",
+              telephone: "+92-21-99230706",
+              email: "admissions@duet.edu.pk",
+              areaServed: "PK",
+              availableLanguage: ["en", "ur"],
+            },
+            {
+              "@type": "ContactPoint",
+              contactType: "customer support",
+              telephone: "+92-21-99213151",
+              email: "info@duet.edu.pk",
               areaServed: "PK",
               availableLanguage: ["en", "ur"],
             },
@@ -62,7 +82,12 @@ export const Route = createFileRoute("/")({
             { "@type": "CollegeOrUniversity", name: "DUET Main Campus, Karachi" },
             { "@type": "CollegeOrUniversity", name: "DUET Second Campus, Karachi" },
           ],
-          sameAs: ["https://admissions.duet.edu.pk/"],
+          sameAs: [
+            "https://admissions.duet.edu.pk/",
+            "https://admission.duet.edu.pk/",
+            "https://qobe.duet.edu.pk/",
+          ],
+
         }),
       },
     ],
