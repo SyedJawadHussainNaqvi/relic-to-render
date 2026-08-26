@@ -106,7 +106,8 @@ function AuthPage() {
       <h1 className="font-display text-2xl font-semibold text-brand">Staff sign in</h1>
       <div className="mt-1 h-1 w-24 bg-accent" />
       <p className="mt-4 text-[14px] text-muted-foreground">
-        Sign in to update the homepage slider, news &amp; events and site navigation.
+        Sign in to update the homepage slider, news &amp; events and site navigation. Access is
+        limited to the university's authorised CMS accounts.
       </p>
 
       <form onSubmit={submit} className="mt-6 space-y-4 rounded border border-border bg-card p-6">
