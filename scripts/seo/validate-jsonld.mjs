@@ -54,21 +54,30 @@ function typesOf(node) {
   return Array.isArray(t) ? t : t ? [t] : [];
 }
 
-function walk(node, path, visit) {
+function walk(node, path, visit, topLevel = true) {
   if (Array.isArray(node)) {
-    node.forEach((child, i) => walk(child, `${path}[${i}]`, visit));
+    node.forEach((child, i) => walk(child, `${path}[${i}]`, visit, topLevel));
     return;
   }
   if (!node || typeof node !== "object") return;
-  visit(node, path);
+  // A bare @graph wrapper is not an entity: its members are the top-level entities.
+  if (Array.isArray(node["@graph"])) {
+    walk(node["@graph"], `${path}.@graph`, visit, topLevel);
+    return;
+  }
+  visit(node, path, topLevel);
   for (const [key, value] of Object.entries(node)) {
     if (key.startsWith("@")) continue;
-    walk(value, `${path}.${key}`, visit);
+    walk(value, `${path}.${key}`, visit, false);
   }
 }
 
-/** Validates one entity node. Returns issue strings. */
-function checkNode(node, nodePath) {
+/**
+ * Validates one entity node. Required-property checks apply to top-level
+ * entities only; nested nodes (addresses, sub-organisations, contact points)
+ * are checked for shape, URLs and dates.
+ */
+function checkNode(node, nodePath, topLevel = true) {
   const issues = [];
   const types = typesOf(node);
   if (types.length === 0) {
@@ -76,15 +85,17 @@ function checkNode(node, nodePath) {
     return issues;
   }
 
-  for (const type of types) {
-    for (const prop of REQUIRED_PROPS[type] ?? []) {
-      const value = node[prop];
-      const empty =
-        value === undefined ||
-        value === null ||
-        (typeof value === "string" && value.trim() === "") ||
-        (Array.isArray(value) && value.length === 0);
-      if (empty) issues.push(`${nodePath}: ${type} is missing required property "${prop}"`);
+  if (topLevel) {
+    for (const type of types) {
+      for (const prop of REQUIRED_PROPS[type] ?? []) {
+        const value = node[prop];
+        const empty =
+          value === undefined ||
+          value === null ||
+          (typeof value === "string" && value.trim() === "") ||
+          (Array.isArray(value) && value.length === 0);
+        if (empty) issues.push(`${nodePath}: ${type} is missing required property "${prop}"`);
+      }
     }
   }
 
