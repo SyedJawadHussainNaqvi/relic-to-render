@@ -222,6 +222,27 @@ export async function validateJsonLd({ target, root = "dist/client", paths } = {
   };
 }
 
+/**
+ * Optionally pushes the run to the SEO monitoring dashboard.
+ * Set SEO_REPORT_URL (e.g. https://www.duet.edu.pk/api/public/seo-collect)
+ * and CRON_SECRET to record structured-data history.
+ */
+async function publishReport(report) {
+  const url = process.env.SEO_REPORT_URL;
+  const secret = process.env.CRON_SECRET;
+  if (!url || !secret) return;
+  try {
+    const res = await fetch(url, {
+      method: "POST",
+      headers: { "Content-Type": "application/json", Authorization: `Bearer ${secret}` },
+      body: JSON.stringify({ kind: "jsonld", source: "build", report }),
+    });
+    console.log(`[validate-jsonld] report upload ${res.status}`);
+  } catch (error) {
+    console.warn(`[validate-jsonld] report upload failed: ${String(error)}`);
+  }
+}
+
 if (import.meta.url === `file://${process.argv[1]}`) {
   const report = await validateJsonLd({ target: process.argv[2] });
   await mkdir("reports", { recursive: true });
@@ -232,5 +253,6 @@ if (import.meta.url === `file://${process.argv[1]}`) {
   console.log(
     `[validate-jsonld] ${report.pages_passed}/${report.pages_total} page(s) have valid structured data on ${report.target}`,
   );
+  await publishReport(report);
   if (report.pages_failed) process.exit(1);
 }
