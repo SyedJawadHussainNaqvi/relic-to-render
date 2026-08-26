@@ -94,6 +94,6 @@ export async function sitemapPaths(root = "dist/client") {
 if (import.meta.url === `file://${process.argv[1]}`) {
   const portArg = process.argv.indexOf("--port");
   const port = portArg > -1 ? Number(process.argv[portArg + 1]) : 4400;
-  const server = await startStaticServer({ port });
+  const server = await serveStatic({ port });
   console.log(`[serve-static] ${server.origin}`);
 }
