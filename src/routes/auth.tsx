@@ -23,9 +23,14 @@ export const Route = createFileRoute("/auth")({
   component: AuthPage,
 });
 
+const NOT_ALLOWED =
+  "This email is not authorised for CMS access. Contact the university administrator.";
+
 function AuthPage() {
   const navigate = useNavigate();
   const router = useRouter();
+  const register = useServerFn(registerCmsUser);
+  const verifySession = useServerFn(verifyCmsSession);
   const [mode, setMode] = useState<"signin" | "signup">("signin");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -33,10 +38,29 @@ function AuthPage() {
   const [message, setMessage] = useState<string | null>(null);
   const [error, setError] = useState<string | null>(null);
 
+  /** Signs the session out unless the account is on the CMS allowlist. */
+  async function gateSession(): Promise<boolean> {
+    try {
+      const result = await verifySession({ data: undefined });
+      if (result.allowed) return true;
+    } catch {
+      // fall through to sign-out below
+    }
+    await supabase.auth.signOut();
+    setError(NOT_ALLOWED);
+    return false;
+  }
+
   useEffect(() => {
-    supabase.auth.getSession().then(({ data }) => {
-      if (data.session) navigate({ to: "/admin" });
+    let active = true;
+    supabase.auth.getSession().then(async ({ data }) => {
+      if (!data.session || !active) return;
+      if (await gateSession()) navigate({ to: "/admin" });
     });
+    return () => {
+      active = false;
+    };
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [navigate]);
 
   async function submit(e: React.FormEvent) {
@@ -47,18 +71,18 @@ function AuthPage() {
     if (mode === "signin") {
       const { error: err } = await supabase.auth.signInWithPassword({ email, password });
       if (err) setError(err.message);
-      else {
+      else if (await gateSession()) {
         await router.invalidate();
         navigate({ to: "/admin" });
       }
     } else {
-      const { error: err } = await supabase.auth.signUp({
-        email,
-        password,
-        options: { emailRedirectTo: `${window.location.origin}/admin` },
-      });
-      if (err) setError(err.message);
-      else setMessage("Account created. If email confirmation is required, check your inbox.");
+      try {
+        const result = await register({ data: { email, password } });
+        if (result.ok) setMessage(result.message);
+        else setError(result.message);
+      } catch {
+        setError("Could not create the account. Please try again.");
+      }
     }
     setBusy(false);
   }
@@ -73,8 +97,9 @@ function AuthPage() {
       return;
     }
     if (result.redirected) return;
-    navigate({ to: "/admin" });
+    if (await gateSession()) navigate({ to: "/admin" });
   }
+
 
   return (
     <main className="mx-auto max-w-md px-4 py-16">
