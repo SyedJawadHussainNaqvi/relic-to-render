@@ -14,6 +14,27 @@ export type Database = {
   }
   public: {
     Tables: {
+      cms_allowed_emails: {
+        Row: {
+          created_at: string
+          email: string
+          id: string
+          note: string | null
+        }
+        Insert: {
+          created_at?: string
+          email: string
+          id?: string
+          note?: string | null
+        }
+        Update: {
+          created_at?: string
+          email?: string
+          id?: string
+          note?: string | null
+        }
+        Relationships: []
+      }
       nav_items: {
         Row: {
           created_at: string

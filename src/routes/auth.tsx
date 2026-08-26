@@ -1,7 +1,9 @@
 import { createFileRoute, useNavigate, useRouter } from "@tanstack/react-router";
 import { useEffect, useState } from "react";
+import { useServerFn } from "@tanstack/react-start";
 import { supabase } from "@/integrations/supabase/client";
 import { lovable } from "@/integrations/lovable/index";
+import { registerCmsUser, verifyCmsSession } from "@/lib/cms-access.functions";
 
 export const Route = createFileRoute("/auth")({
   head: () => ({
@@ -21,9 +23,14 @@ export const Route = createFileRoute("/auth")({
   component: AuthPage,
 });
 
+const NOT_ALLOWED =
+  "This email is not authorised for CMS access. Contact the university administrator.";
+
 function AuthPage() {
   const navigate = useNavigate();
   const router = useRouter();
+  const register = useServerFn(registerCmsUser);
+  const verifySession = useServerFn(verifyCmsSession);
   const [mode, setMode] = useState<"signin" | "signup">("signin");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -31,10 +38,29 @@ function AuthPage() {
   const [message, setMessage] = useState<string | null>(null);
   const [error, setError] = useState<string | null>(null);
 
+  /** Signs the session out unless the account is on the CMS allowlist. */
+  async function gateSession(): Promise<boolean> {
+    try {
+      const result = await verifySession({ data: undefined });
+      if (result.allowed) return true;
+    } catch {
+      // fall through to sign-out below
+    }
+    await supabase.auth.signOut();
+    setError(NOT_ALLOWED);
+    return false;
+  }
+
   useEffect(() => {
-    supabase.auth.getSession().then(({ data }) => {
-      if (data.session) navigate({ to: "/admin" });
+    let active = true;
+    supabase.auth.getSession().then(async ({ data }) => {
+      if (!data.session || !active) return;
+      if (await gateSession()) navigate({ to: "/admin" });
     });
+    return () => {
+      active = false;
+    };
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [navigate]);
 
   async function submit(e: React.FormEvent) {
@@ -45,18 +71,18 @@ function AuthPage() {
     if (mode === "signin") {
       const { error: err } = await supabase.auth.signInWithPassword({ email, password });
       if (err) setError(err.message);
-      else {
+      else if (await gateSession()) {
         await router.invalidate();
         navigate({ to: "/admin" });
       }
     } else {
-      const { error: err } = await supabase.auth.signUp({
-        email,
-        password,
-        options: { emailRedirectTo: `${window.location.origin}/admin` },
-      });
-      if (err) setError(err.message);
-      else setMessage("Account created. If email confirmation is required, check your inbox.");
+      try {
+        const result = await register({ data: { email, password } });
+        if (result.ok) setMessage(result.message);
+        else setError(result.message);
+      } catch {
+        setError("Could not create the account. Please try again.");
+      }
     }
     setBusy(false);
   }
@@ -71,15 +97,17 @@ function AuthPage() {
       return;
     }
     if (result.redirected) return;
-    navigate({ to: "/admin" });
+    if (await gateSession()) navigate({ to: "/admin" });
   }
+
 
   return (
     <main className="mx-auto max-w-md px-4 py-16">
       <h1 className="font-display text-2xl font-semibold text-brand">Staff sign in</h1>
       <div className="mt-1 h-1 w-24 bg-accent" />
       <p className="mt-4 text-[14px] text-muted-foreground">
-        Sign in to update the homepage slider, news &amp; events and site navigation.
+        Sign in to update the homepage slider, news &amp; events and site navigation. Access is
+        limited to the university's authorised CMS accounts.
       </p>
 
       <form onSubmit={submit} className="mt-6 space-y-4 rounded border border-border bg-card p-6">
@@ -104,7 +132,7 @@ function AuthPage() {
             id="password"
             type="password"
             required
-            minLength={6}
+            minLength={8}
             value={password}
             onChange={(e) => setPassword(e.target.value)}
             className="mt-1 w-full rounded border border-border bg-background px-3 py-2 text-sm"
