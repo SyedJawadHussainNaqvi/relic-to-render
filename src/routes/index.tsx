@@ -52,11 +52,27 @@ export const Route = createFileRoute("/")({
             postalCode: "74800",
             addressCountry: "PK",
           },
+          telephone: "+92-21-99213151",
+          email: "info@duet.edu.pk",
+          areaServed: [
+            { "@type": "City", name: "Karachi" },
+            { "@type": "Country", name: "Pakistan" },
+          ],
           contactPoint: [
             {
               "@type": "ContactPoint",
               contactType: "admissions",
               url: "https://admissions.duet.edu.pk/",
+              telephone: "+92-21-99230706",
+              email: "admissions@duet.edu.pk",
+              areaServed: "PK",
+              availableLanguage: ["en", "ur"],
+            },
+            {
+              "@type": "ContactPoint",
+              contactType: "customer support",
+              telephone: "+92-21-99213151",
+              email: "info@duet.edu.pk",
               areaServed: "PK",
               availableLanguage: ["en", "ur"],
             },
@@ -66,7 +82,12 @@ export const Route = createFileRoute("/")({
             { "@type": "CollegeOrUniversity", name: "DUET Main Campus, Karachi" },
             { "@type": "CollegeOrUniversity", name: "DUET Second Campus, Karachi" },
           ],
-          sameAs: ["https://admissions.duet.edu.pk/"],
+          sameAs: [
+            "https://admissions.duet.edu.pk/",
+            "https://admission.duet.edu.pk/",
+            "https://qobe.duet.edu.pk/",
+          ],
+
         }),
       },
     ],
