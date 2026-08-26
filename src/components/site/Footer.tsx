@@ -115,7 +115,7 @@ export function Footer() {
           )}
         </div>
         <div className="mt-1">
-          Developed and Secure by{" "}
+          Secured and Developed By{" "}
           <a
             href="https://www.quantum-horizons.com/"
             target="_blank"
