@@ -1,9 +1,9 @@
 {
   "target": "http://localhost:4399",
-  "generated_at": "2026-08-26T02:17:22.418Z",
+  "generated_at": "2026-08-26T02:17:59.700Z",
   "pages_total": 66,
-  "pages_passed": 63,
-  "pages_failed": 3,
+  "pages_passed": 64,
+  "pages_failed": 2,
   "results": [
     {
       "path": "/",
@@ -13,16 +13,9 @@
         "ContactPoint",
         "PostalAddress"
       ],
-      "errors": [
-        "block[0].subOrganization[0]: CollegeOrUniversity is missing required property \"url\"",
-        "block[0].subOrganization[0]: CollegeOrUniversity is missing required property \"description\"",
-        "block[0].subOrganization[0]: CollegeOrUniversity is missing required property \"address\"",
-        "block[0].subOrganization[1]: CollegeOrUniversity is missing required property \"url\"",
-        "block[0].subOrganization[1]: CollegeOrUniversity is missing required property \"description\"",
-        "block[0].subOrganization[1]: CollegeOrUniversity is missing required property \"address\""
-      ],
+      "errors": [],
       "warnings": [],
-      "passed": false
+      "passed": true
     },
     {
       "path": "/about-duet",
@@ -107,10 +100,17 @@
     {
       "path": "/academics",
       "blocks": 1,
-      "types": [],
+      "types": [
+        "BreadcrumbList",
+        "CollegeOrUniversity",
+        "ListItem",
+        "Organization",
+        "PostalAddress",
+        "WebPage"
+      ],
       "errors": [
-        "block[0]: object has no @type",
-        "route must expose BreadcrumbList structured data"
+        "block[0].@graph[0]: CollegeOrUniversity is missing required property \"description\"",
+        "block[0].@graph[3].isPartOf: object has no @type"
       ],
       "warnings": [],
       "passed": false
@@ -208,10 +208,18 @@
     {
       "path": "/admissions",
       "blocks": 1,
-      "types": [],
+      "types": [
+        "BreadcrumbList",
+        "CollegeOrUniversity",
+        "ContactPoint",
+        "ListItem",
+        "Organization",
+        "PostalAddress",
+        "WebPage"
+      ],
       "errors": [
-        "block[0]: object has no @type",
-        "route must expose BreadcrumbList structured data"
+        "block[0].@graph[0]: CollegeOrUniversity is missing required property \"description\"",
+        "block[0].@graph[3].isPartOf: object has no @type"
       ],
       "warnings": [],
       "passed": false

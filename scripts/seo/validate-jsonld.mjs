@@ -164,9 +164,9 @@ export function validateHtml(path, html) {
       }
     }
 
-    walk(parsed, `block[${index}]`, (node, nodePath) => {
+    walk(parsed, `block[${index}]`, (node, nodePath, topLevel) => {
       for (const type of typesOf(node)) foundTypes.add(type);
-      errors.push(...checkNode(node, nodePath));
+      errors.push(...checkNode(node, nodePath, topLevel));
     });
   });
 
