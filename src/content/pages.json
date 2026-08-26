@@ -1,9 +1,44 @@
 {
  "/about-cemet": {
   "title": "ABOUT CEMET",
-  "description": "",
+  "description": "CEMET at DUET Karachi supports student and graduate entrepreneurs with mentoring, workspace and startup grant opportunities.",
   "sidebar": [],
-  "blocks": []
+  "blocks": [
+   {
+    "t": "h",
+    "level": 2,
+    "text": "About CEMET"
+   },
+   {
+    "t": "p",
+    "text": "CEMET is DUET Karachi's centre for entrepreneurship and emerging technologies. It helps students, graduates and faculty move engineering ideas towards commercial products by combining technical mentoring with business support."
+   },
+   {
+    "t": "h",
+    "level": 2,
+    "text": "What CEMET offers"
+   },
+   {
+    "t": "list",
+    "ordered": false,
+    "items": [
+     "Mentoring and technical guidance from DUET faculty and industry practitioners",
+     "Workspace and laboratory access for prototyping",
+     "Startup grant opportunities under the DUET-CEMET grant programme",
+     "Training, seminars and workshops on product development and business planning",
+     "Links to the university's Business Incubation Centre and industry partners"
+    ]
+   },
+   {
+    "t": "h",
+    "level": 2,
+    "text": "Applying for the DUET-CEMET startup grant"
+   },
+   {
+    "t": "p",
+    "text": "Eligibility criteria and the proposal template for the DUET-CEMET startup grant are published on the DUET-CEMET page. Completed proposals with all required attachments must be submitted to the address given in the grant document."
+   }
+  ]
  },
  "/about-duet": {
   "title": "About DUET",
@@ -95,7 +130,7 @@
   "blocks": [
    {
     "t": "h",
-    "level": 1,
+    "level": 2,
     "text": "University Vision"
    },
    {
@@ -105,7 +140,7 @@
    },
    {
     "t": "h",
-    "level": 1,
+    "level": 2,
     "text": "University Mission"
    },
    {
@@ -116,7 +151,7 @@
  },
  "/academic-calendar": {
   "title": "Academic Calendar",
-  "description": "The foundation stone of the Dawood College was laid by the former President of Pakistan (Late) Field Marshal Muhammad Ayub Khan in 1962. The Government of ",
+  "description": "Download the DUET Karachi academic calendars for BE, BS and MS/PhD programs, with semester dates, examination periods and breaks.",
   "sidebar": [
    {
     "text": "Academic Calendar",
@@ -154,8 +189,8 @@
   "blocks": [
    {
     "t": "h",
-    "level": 3,
-    "text": "Academic Calendar 22-23 Academic Calendar BE Academic Calendar BS Academic Calendar MS/PhD."
+    "level": 2,
+    "text": "Academic Calendars for Download"
    },
    {
     "t": "links",
@@ -260,9 +295,69 @@
  },
  "/admissions": {
   "title": "Admissions",
-  "description": "",
+  "description": "Admissions at Dawood University of Engineering & Technology, Karachi: programs offered, how to apply, fee structure, scholarships and the admissions office contact.",
   "sidebar": [],
-  "blocks": []
+  "blocks": [
+   {
+    "t": "h",
+    "level": 2,
+    "text": "Admissions at DUET Karachi"
+   },
+   {
+    "t": "p",
+    "text": "Dawood University of Engineering & Technology (DUET), Karachi is a public sector university offering undergraduate BE and BS programs as well as postgraduate MS and PhD programs in engineering, architecture, computing and applied sciences. Admissions are managed by the Directorate of Admissions and are announced for each intake on this website."
+   },
+   {
+    "t": "h",
+    "level": 2,
+    "text": "How to apply"
+   },
+   {
+    "t": "list",
+    "ordered": true,
+    "items": [
+     "Review the program list to choose an undergraduate or postgraduate degree.",
+     "Read the admission advertisement for the current intake, published on this page and in national newspapers.",
+     "Submit the online application form with scanned academic documents, CNIC/B-Form and a recent photograph.",
+     "Pay the application processing fee and keep the deposit slip for your records.",
+     "Appear in the admission test/interview where required, then check the published merit list."
+    ]
+   },
+   {
+    "t": "h",
+    "level": 2,
+    "text": "Documents usually required"
+   },
+   {
+    "t": "list",
+    "ordered": false,
+    "items": [
+     "Matriculation and Intermediate (or equivalent) marksheets and certificates",
+     "Transcript and degree for postgraduate applicants",
+     "CNIC or B-Form and domicile certificate",
+     "Recent passport-size photographs",
+     "Fee deposit slip for the application processing fee"
+    ]
+   },
+   {
+    "t": "h",
+    "level": 2,
+    "text": "Fees and financial support"
+   },
+   {
+    "t": "p",
+    "text": "Program-wise fees are listed on the Fee Structures page. Need-based and merit scholarships, plus departmental financial assistance, are available to enrolled students."
+   },
+   {
+    "t": "h",
+    "level": 2,
+    "text": "Contact the Directorate of Admissions"
+   },
+   {
+    "t": "p",
+    "text": "Directorate of Admissions, DUET Karachi — Phone: +92 21 99230706, +92 345 3656773 — Email: admissions@duet.edu.pk"
+   }
+  ]
  },
  "/alumni": {
   "title": "Alumni",
