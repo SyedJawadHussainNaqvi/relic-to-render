@@ -1,17 +1,80 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { ArchivedPage } from "@/components/site/ArchivedPage";
 
+const URL = "https://www.duet.edu.pk/academics";
+const TITLE = "Academics — DUET Karachi";
+const DESCRIPTION =
+  "Academics at Dawood University of Engineering & Technology, Karachi — faculties, departments, academic calendar, regulations and outcome-based education.";
+
 export const Route = createFileRoute("/academics")({
   head: () => ({
     meta: [
-      { title: "Academics — DUET Karachi" },
-      { name: "description", content: "Academics at Dawood University of Engineering & Technology, Karachi." },
-      { property: "og:title", content: "Academics — DUET Karachi" },
-      { property: "og:description", content: "Academics at Dawood University of Engineering & Technology, Karachi." },
+      { title: TITLE },
+      { name: "description", content: DESCRIPTION },
+      { property: "og:title", content: TITLE },
+      { property: "og:description", content: DESCRIPTION },
       { property: "og:type", content: "website" },
-      { property: "og:url", content: "/academics" },
+      { property: "og:url", content: URL },
+      { property: "og:image", content: "https://www.duet.edu.pk/media/about.jpg" },
+      { name: "twitter:card", content: "summary_large_image" },
+      { name: "twitter:title", content: TITLE },
+      { name: "twitter:description", content: DESCRIPTION },
+      { name: "twitter:image", content: "https://www.duet.edu.pk/media/about.jpg" },
     ],
-    links: [{ rel: "canonical", href: "/academics" }],
+    links: [{ rel: "canonical", href: URL }],
+    scripts: [
+      {
+        type: "application/ld+json",
+        children: JSON.stringify({
+          "@context": "https://schema.org",
+          "@graph": [
+            {
+              "@type": "CollegeOrUniversity",
+              "@id": "https://www.duet.edu.pk/#university",
+              name: "Dawood University of Engineering & Technology",
+              alternateName: "DUET Karachi",
+              url: "https://www.duet.edu.pk/",
+              logo: "https://www.duet.edu.pk/media/duet_logo-300x227.png",
+              foundingDate: "1962",
+              address: {
+                "@type": "PostalAddress",
+                streetAddress: "New M. A. Jinnah Road",
+                addressLocality: "Karachi",
+                addressRegion: "Sindh",
+                postalCode: "74800",
+                addressCountry: "PK",
+              },
+              department: [
+                { "@type": "Organization", name: "Faculty & Departments", url: "https://www.duet.edu.pk/faculty-departments" },
+                { "@type": "Organization", name: "Postgraduate Studies", url: "https://www.duet.edu.pk/postgraduate-studies" },
+              ],
+            },
+            {
+              "@type": "Organization",
+              "@id": "https://www.duet.edu.pk/#organization",
+              name: "Dawood University of Engineering & Technology",
+              url: "https://www.duet.edu.pk/",
+              logo: "https://www.duet.edu.pk/media/duet_logo-300x227.png",
+            },
+            {
+              "@type": "BreadcrumbList",
+              itemListElement: [
+                { "@type": "ListItem", position: 1, name: "Home", item: "https://www.duet.edu.pk/" },
+                { "@type": "ListItem", position: 2, name: "Academics", item: URL },
+              ],
+            },
+            {
+              "@type": "WebPage",
+              "@id": URL,
+              url: URL,
+              name: TITLE,
+              description: DESCRIPTION,
+              isPartOf: { "@id": "https://www.duet.edu.pk/#university" },
+            },
+          ],
+        }),
+      },
+    ],
   }),
   component: () => <ArchivedPage path="/academics" />,
 });
