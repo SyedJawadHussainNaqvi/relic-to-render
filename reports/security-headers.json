@@ -1,6 +1,6 @@
 {
   "target": "http://localhost:4399",
-  "generated_at": "2026-08-26T01:33:24.996Z",
+  "generated_at": "2026-08-26T01:38:35.636Z",
   "routes_total": 68,
   "routes_passed": 68,
   "routes_failed": 0,
@@ -18,8 +18,8 @@
         "content-type": "text/html; charset=utf-8",
         "cross-origin-opener-policy": "same-origin",
         "cross-origin-resource-policy": "same-site",
-        "date": "Wed, 26 Aug 2026 01:33:21 GMT",
-        "etag": "\"3f85884a350b9069e04147d3c1199b9718e42a6c\"",
+        "date": "Wed, 26 Aug 2026 01:38:32 GMT",
+        "etag": "\"0edb168971ca3b771e08cb81a35b4afaaad920e5\"",
         "keep-alive": "timeout=5",
         "permissions-policy": "geolocation=(), microphone=(), camera=()",
         "referrer-policy": "strict-origin-when-cross-origin",
@@ -28,7 +28,7 @@
         "x-dns-prefetch-control": "on",
         "x-frame-options": "SAMEORIGIN"
       },
-      "response_ms": 43
+      "response_ms": 40
     },
     {
       "path": "/about-duet",
@@ -43,8 +43,8 @@
         "content-type": "text/html; charset=utf-8",
         "cross-origin-opener-policy": "same-origin",
         "cross-origin-resource-policy": "same-site",
-        "date": "Wed, 26 Aug 2026 01:33:21 GMT",
-        "etag": "\"01020c90041446e0523dbd39d03799c87c605d47\"",
+        "date": "Wed, 26 Aug 2026 01:38:32 GMT",
+        "etag": "\"691b45dcd0b2b6f721602698630bfe695956b3e9\"",
         "keep-alive": "timeout=5",
         "permissions-policy": "geolocation=(), microphone=(), camera=()",
         "referrer-policy": "strict-origin-when-cross-origin",
@@ -68,8 +68,8 @@
         "content-type": "text/html; charset=utf-8",
         "cross-origin-opener-policy": "same-origin",
         "cross-origin-resource-policy": "same-site",
-        "date": "Wed, 26 Aug 2026 01:33:21 GMT",
-        "etag": "\"a69497544cf35e6d8fe1d35ddfa5b5b1c276d5af\"",
+        "date": "Wed, 26 Aug 2026 01:38:32 GMT",
+        "etag": "\"7215276c15fcf614efb8a012487aa3bf4bb533eb\"",
         "keep-alive": "timeout=5",
         "permissions-policy": "geolocation=(), microphone=(), camera=()",
         "referrer-policy": "strict-origin-when-cross-origin",
@@ -93,8 +93,8 @@
         "content-type": "text/html; charset=utf-8",
         "cross-origin-opener-policy": "same-origin",
         "cross-origin-resource-policy": "same-site",
-        "date": "Wed, 26 Aug 2026 01:33:21 GMT",
-        "etag": "\"2a635d913a5f3c89a394d5aba9cc96b5f4dddeb5\"",
+        "date": "Wed, 26 Aug 2026 01:38:32 GMT",
+        "etag": "\"61539acac0a77c0a20e42887dc7a4da2200933b7\"",
         "keep-alive": "timeout=5",
         "permissions-policy": "geolocation=(), microphone=(), camera=()",
         "referrer-policy": "strict-origin-when-cross-origin",
@@ -103,7 +103,7 @@
         "x-dns-prefetch-control": "on",
         "x-frame-options": "SAMEORIGIN"
       },
-      "response_ms": 5
+      "response_ms": 4
     },
     {
       "path": "/vice-chancellors-message-2",
@@ -118,8 +118,8 @@
         "content-type": "text/html; charset=utf-8",
         "cross-origin-opener-policy": "same-origin",
         "cross-origin-resource-policy": "same-site",
-        "date": "Wed, 26 Aug 2026 01:33:21 GMT",
-        "etag": "\"d6a4507f39f4cac0b6abe08b4178549f889e8a74\"",
+        "date": "Wed, 26 Aug 2026 01:38:32 GMT",
+        "etag": "\"b797154a741a0066376b8253ae9389a2e998b901\"",
         "keep-alive": "timeout=5",
         "permissions-policy": "geolocation=(), microphone=(), camera=()",
         "referrer-policy": "strict-origin-when-cross-origin",
@@ -128,7 +128,7 @@
         "x-dns-prefetch-control": "on",
         "x-frame-options": "SAMEORIGIN"
       },
-      "response_ms": 4
+      "response_ms": 5
     },
     {
       "path": "/authorities",
@@ -143,8 +143,8 @@
         "content-type": "text/html; charset=utf-8",
         "cross-origin-opener-policy": "same-origin",
         "cross-origin-resource-policy": "same-site",
-        "date": "Wed, 26 Aug 2026 01:33:21 GMT",
-        "etag": "\"6b729632255e7d9af7cbad712bf6761e628b8e61\"",
+        "date": "Wed, 26 Aug 2026 01:38:32 GMT",
+        "etag": "\"128e5896bed0a1d8dcdac3f91064adba8013ac7c\"",
         "keep-alive": "timeout=5",
         "permissions-policy": "geolocation=(), microphone=(), camera=()",
         "referrer-policy": "strict-origin-when-cross-origin",
@@ -153,7 +153,7 @@
         "x-dns-prefetch-control": "on",
         "x-frame-options": "SAMEORIGIN"
       },
-      "response_ms": 6
+      "response_ms": 4
     },
     {
       "path": "/officers-2",
@@ -168,8 +168,8 @@
         "content-type": "text/html; charset=utf-8",
         "cross-origin-opener-policy": "same-origin",
         "cross-origin-resource-policy": "same-site",
-        "date": "Wed, 26 Aug 2026 01:33:21 GMT",
-        "etag": "\"63d666dd35823bbc791aa4121238126f9c902d5b\"",
+        "date": "Wed, 26 Aug 2026 01:38:32 GMT",
+        "etag": "\"29b60c848e42ce331f221b87accdcd15323bc702\"",
         "keep-alive": "timeout=5",
         "permissions-policy": "geolocation=(), microphone=(), camera=()",
         "referrer-policy": "strict-origin-when-cross-origin",
@@ -178,7 +178,7 @@
         "x-dns-prefetch-control": "on",
         "x-frame-options": "SAMEORIGIN"
       },
-      "response_ms": 3
+      "response_ms": 4
     },
     {
       "path": "/organogram",
@@ -193,8 +193,8 @@
         "content-type": "text/html; charset=utf-8",
         "cross-origin-opener-policy": "same-origin",
         "cross-origin-resource-policy": "same-site",
-        "date": "Wed, 26 Aug 2026 01:33:21 GMT",
-        "etag": "\"865dd7c02b4d3952b719a7550f66147aac01fcbf\"",
+        "date": "Wed, 26 Aug 2026 01:38:32 GMT",
+        "etag": "\"1b373da47792b02b66ed6dba8bef220ea41e93f3\"",
         "keep-alive": "timeout=5",
         "permissions-policy": "geolocation=(), microphone=(), camera=()",
         "referrer-policy": "strict-origin-when-cross-origin",
@@ -203,7 +203,7 @@
         "x-dns-prefetch-control": "on",
         "x-frame-options": "SAMEORIGIN"
       },
-      "response_ms": 3
+      "response_ms": 6
     },
     {
       "path": "/directorates",
@@ -218,8 +218,8 @@
         "content-type": "text/html; charset=utf-8",
         "cross-origin-opener-policy": "same-origin",
         "cross-origin-resource-policy": "same-site",
-        "date": "Wed, 26 Aug 2026 01:33:21 GMT",
-        "etag": "\"24677ff024dbf6e50133ec665887a194c053bc8f\"",
+        "date": "Wed, 26 Aug 2026 01:38:32 GMT",
+        "etag": "\"bb7bfce7091ea4b952d694bff2d3c4243c19597a\"",
         "keep-alive": "timeout=5",
         "permissions-policy": "geolocation=(), microphone=(), camera=()",
         "referrer-policy": "strict-origin-when-cross-origin",
@@ -228,7 +228,7 @@
         "x-dns-prefetch-control": "on",
         "x-frame-options": "SAMEORIGIN"
       },
-      "response_ms": 6
+      "response_ms": 9
     },
     {
       "path": "/academics",
@@ -243,8 +243,8 @@
         "content-type": "text/html; charset=utf-8",
         "cross-origin-opener-policy": "same-origin",
         "cross-origin-resource-policy": "same-site",
-        "date": "Wed, 26 Aug 2026 01:33:21 GMT",
-        "etag": "\"f539325246a8f4dd8e6f081f0aed2776acb46473\"",
+        "date": "Wed, 26 Aug 2026 01:38:32 GMT",
+        "etag": "\"2653fe162374d2faf29b7af1a74b18dcc52387fa\"",
         "keep-alive": "timeout=5",
         "permissions-policy": "geolocation=(), microphone=(), camera=()",
         "referrer-policy": "strict-origin-when-cross-origin",
@@ -253,7 +253,7 @@
         "x-dns-prefetch-control": "on",
         "x-frame-options": "SAMEORIGIN"
       },
-      "response_ms": 5
+      "response_ms": 3
     },
     {
       "path": "/academic-calendar",
@@ -268,8 +268,8 @@
         "content-type": "text/html; charset=utf-8",
         "cross-origin-opener-policy": "same-origin",
         "cross-origin-resource-policy": "same-site",
-        "date": "Wed, 26 Aug 2026 01:33:21 GMT",
-        "etag": "\"301db545114f60024fa709584cd3ce84265228e7\"",
+        "date": "Wed, 26 Aug 2026 01:38:32 GMT",
+        "etag": "\"a036c8d3a75454433fdc8d373f7bf2fd077fc8d5\"",
         "keep-alive": "timeout=5",
         "permissions-policy": "geolocation=(), microphone=(), camera=()",
         "referrer-policy": "strict-origin-when-cross-origin",
@@ -278,7 +278,7 @@
         "x-dns-prefetch-control": "on",
         "x-frame-options": "SAMEORIGIN"
       },
-      "response_ms": 5
+      "response_ms": 4
     },
     {
       "path": "/faculty-departments",
@@ -293,8 +293,8 @@
         "content-type": "text/html; charset=utf-8",
         "cross-origin-opener-policy": "same-origin",
         "cross-origin-resource-policy": "same-site",
-        "date": "Wed, 26 Aug 2026 01:33:21 GMT",
-        "etag": "\"08e78639a8353f7d24817982810aacd9bcc84b27\"",
+        "date": "Wed, 26 Aug 2026 01:38:32 GMT",
+        "etag": "\"f406a5b5126fdfaefeffbd4d6a7bff60a9ef12e9\"",
         "keep-alive": "timeout=5",
         "permissions-policy": "geolocation=(), microphone=(), camera=()",
         "referrer-policy": "strict-origin-when-cross-origin",
@@ -303,7 +303,7 @@
         "x-dns-prefetch-control": "on",
         "x-frame-options": "SAMEORIGIN"
       },
-      "response_ms": 2
+      "response_ms": 4
     },
     {
       "path": "/undergrad-programs",
@@ -318,8 +318,8 @@
         "content-type": "text/html; charset=utf-8",
         "cross-origin-opener-policy": "same-origin",
         "cross-origin-resource-policy": "same-site",
-        "date": "Wed, 26 Aug 2026 01:33:21 GMT",
-        "etag": "\"4668ee9b8e40773bc65f66ebf716dfad551c072a\"",
+        "date": "Wed, 26 Aug 2026 01:38:32 GMT",
+        "etag": "\"d9817b28e17d309690e43ba9f870362ab5ae5003\"",
         "keep-alive": "timeout=5",
         "permissions-policy": "geolocation=(), microphone=(), camera=()",
         "referrer-policy": "strict-origin-when-cross-origin",
@@ -328,7 +328,7 @@
         "x-dns-prefetch-control": "on",
         "x-frame-options": "SAMEORIGIN"
       },
-      "response_ms": 3
+      "response_ms": 7
     },
     {
       "path": "/undergrad-regulations",
@@ -343,8 +343,8 @@
         "content-type": "text/html; charset=utf-8",
         "cross-origin-opener-policy": "same-origin",
         "cross-origin-resource-policy": "same-site",
-        "date": "Wed, 26 Aug 2026 01:33:21 GMT",
-        "etag": "\"f77fadc133e845b0c716f6d7a119cd855150c983\"",
+        "date": "Wed, 26 Aug 2026 01:38:32 GMT",
+        "etag": "\"ef0939230d283a8276dc7536fc829a6db7ede4d1\"",
         "keep-alive": "timeout=5",
         "permissions-policy": "geolocation=(), microphone=(), camera=()",
         "referrer-policy": "strict-origin-when-cross-origin",
@@ -353,7 +353,7 @@
         "x-dns-prefetch-control": "on",
         "x-frame-options": "SAMEORIGIN"
       },
-      "response_ms": 3
+      "response_ms": 2
     },
     {
       "path": "/postgraduate-programs",
@@ -368,8 +368,8 @@
         "content-type": "text/html; charset=utf-8",
         "cross-origin-opener-policy": "same-origin",
         "cross-origin-resource-policy": "same-site",
-        "date": "Wed, 26 Aug 2026 01:33:21 GMT",
-        "etag": "\"7bc1c39144396fd06c52e0eb7458f454d860a969\"",
+        "date": "Wed, 26 Aug 2026 01:38:32 GMT",
+        "etag": "\"65f6d51bf9eaf18982aa88a2ff06f30f3ec708ef\"",
         "keep-alive": "timeout=5",
         "permissions-policy": "geolocation=(), microphone=(), camera=()",
         "referrer-policy": "strict-origin-when-cross-origin",
@@ -378,7 +378,7 @@
         "x-dns-prefetch-control": "on",
         "x-frame-options": "SAMEORIGIN"
       },
-      "response_ms": 2
+      "response_ms": 1
     },
     {
       "path": "/postgraduate-regulations",
@@ -393,8 +393,8 @@
         "content-type": "text/html; charset=utf-8",
         "cross-origin-opener-policy": "same-origin",
         "cross-origin-resource-policy": "same-site",
-        "date": "Wed, 26 Aug 2026 01:33:21 GMT",
-        "etag": "\"9cb8ad6f4c39804a657f884434a2be0dbbec9ba4\"",
+        "date": "Wed, 26 Aug 2026 01:38:32 GMT",
+        "etag": "\"e0fffcf4ade67e256691e031ebf3690f1741d650\"",
         "keep-alive": "timeout=5",
         "permissions-policy": "geolocation=(), microphone=(), camera=()",
         "referrer-policy": "strict-origin-when-cross-origin",
@@ -403,7 +403,7 @@
         "x-dns-prefetch-control": "on",
         "x-frame-options": "SAMEORIGIN"
       },
-      "response_ms": 4
+      "response_ms": 2
     },
     {
       "path": "/postgraduate-studies",
@@ -418,8 +418,8 @@
         "content-type": "text/html; charset=utf-8",
         "cross-origin-opener-policy": "same-origin",
         "cross-origin-resource-policy": "same-site",
-        "date": "Wed, 26 Aug 2026 01:33:21 GMT",
-        "etag": "\"98d6c18c9d3e6337a367247405029c47f202a4b5\"",
+        "date": "Wed, 26 Aug 2026 01:38:32 GMT",
+        "etag": "\"c76694bc2d954bd45717cf35633ecde8bc77d775\"",
         "keep-alive": "timeout=5",
         "permissions-policy": "geolocation=(), microphone=(), camera=()",
         "referrer-policy": "strict-origin-when-cross-origin",
@@ -428,7 +428,7 @@
         "x-dns-prefetch-control": "on",
         "x-frame-options": "SAMEORIGIN"
       },
-      "response_ms": 2
+      "response_ms": 8
     },
     {
       "path": "/regulations",
@@ -443,8 +443,8 @@
         "content-type": "text/html; charset=utf-8",
         "cross-origin-opener-policy": "same-origin",
         "cross-origin-resource-policy": "same-site",
-        "date": "Wed, 26 Aug 2026 01:33:21 GMT",
-        "etag": "\"f7078b9c28ab6f2a3c2cd1c145a76190f7b3cc76\"",
+        "date": "Wed, 26 Aug 2026 01:38:32 GMT",
+        "etag": "\"03bbdd32a24557aeadb2903a5b525a2a8d28da62\"",
         "keep-alive": "timeout=5",
         "permissions-policy": "geolocation=(), microphone=(), camera=()",
         "referrer-policy": "strict-origin-when-cross-origin",
@@ -453,7 +453,7 @@
         "x-dns-prefetch-control": "on",
         "x-frame-options": "SAMEORIGIN"
       },
-      "response_ms": 9
+      "response_ms": 2
     },
     {
       "path": "/outcome-based-education-obe",
@@ -468,8 +468,8 @@
         "content-type": "text/html; charset=utf-8",
         "cross-origin-opener-policy": "same-origin",
         "cross-origin-resource-policy": "same-site",
-        "date": "Wed, 26 Aug 2026 01:33:21 GMT",
-        "etag": "\"4900b82a2e636bb1ab600dc2af2af129883e2adc\"",
+        "date": "Wed, 26 Aug 2026 01:38:32 GMT",
+        "etag": "\"3b0e3ef2cc80817c3c1b98b0d02e3d311d358922\"",
         "keep-alive": "timeout=5",
         "permissions-policy": "geolocation=(), microphone=(), camera=()",
         "referrer-policy": "strict-origin-when-cross-origin",
@@ -493,8 +493,8 @@
         "content-type": "text/html; charset=utf-8",
         "cross-origin-opener-policy": "same-origin",
         "cross-origin-resource-policy": "same-site",
-        "date": "Wed, 26 Aug 2026 01:33:21 GMT",
-        "etag": "\"880f95681bfe8182ce4685b603b5675a6446251c\"",
+        "date": "Wed, 26 Aug 2026 01:38:32 GMT",
+        "etag": "\"d4a28889c074f1012bfa6b998f98928de81dd3f9\"",
         "keep-alive": "timeout=5",
         "permissions-policy": "geolocation=(), microphone=(), camera=()",
         "referrer-policy": "strict-origin-when-cross-origin",
@@ -503,7 +503,7 @@
         "x-dns-prefetch-control": "on",
         "x-frame-options": "SAMEORIGIN"
       },
-      "response_ms": 5
+      "response_ms": 3
     },
     {
       "path": "/fee-structure",
@@ -518,8 +518,8 @@
         "content-type": "text/html; charset=utf-8",
         "cross-origin-opener-policy": "same-origin",
         "cross-origin-resource-policy": "same-site",
-        "date": "Wed, 26 Aug 2026 01:33:21 GMT",
-        "etag": "\"76889a466a9d36dd5574be408313788a06bb51fa\"",
+        "date": "Wed, 26 Aug 2026 01:38:32 GMT",
+        "etag": "\"6e12b325ca37f708b85fb5e7503009d6f10686ee\"",
         "keep-alive": "timeout=5",
         "permissions-policy": "geolocation=(), microphone=(), camera=()",
         "referrer-policy": "strict-origin-when-cross-origin",
@@ -528,7 +528,7 @@
         "x-dns-prefetch-control": "on",
         "x-frame-options": "SAMEORIGIN"
       },
-      "response_ms": 2
+      "response_ms": 8
     },
     {
       "path": "/scholarships",
@@ -543,8 +543,8 @@
         "content-type": "text/html; charset=utf-8",
         "cross-origin-opener-policy": "same-origin",
         "cross-origin-resource-policy": "same-site",
-        "date": "Wed, 26 Aug 2026 01:33:21 GMT",
-        "etag": "\"cbc823fecd31e96fd107ae3ad5bd74f2c02d290e\"",
+        "date": "Wed, 26 Aug 2026 01:38:32 GMT",
+        "etag": "\"87ee793de81ce0cdfb13f84845fd02ebe223e56b\"",
         "keep-alive": "timeout=5",
         "permissions-policy": "geolocation=(), microphone=(), camera=()",
         "referrer-policy": "strict-origin-when-cross-origin",
@@ -553,7 +553,7 @@
         "x-dns-prefetch-control": "on",
         "x-frame-options": "SAMEORIGIN"
       },
-      "response_ms": 4
+      "response_ms": 2
     },
     {
       "path": "/scholarships-2",
@@ -568,8 +568,8 @@
         "content-type": "text/html; charset=utf-8",
         "cross-origin-opener-policy": "same-origin",
         "cross-origin-resource-policy": "same-site",
-        "date": "Wed, 26 Aug 2026 01:33:21 GMT",
-        "etag": "\"b50d7b975d350533454bae49d9efdda1c82c6324\"",
+        "date": "Wed, 26 Aug 2026 01:38:32 GMT",
+        "etag": "\"4cc085573c61f068a963fbf57609df73a4ab686a\"",
         "keep-alive": "timeout=5",
         "permissions-policy": "geolocation=(), microphone=(), camera=()",
         "referrer-policy": "strict-origin-when-cross-origin",
@@ -578,7 +578,7 @@
         "x-dns-prefetch-control": "on",
         "x-frame-options": "SAMEORIGIN"
       },
-      "response_ms": 4
+      "response_ms": 3
     },
     {
       "path": "/financial-assistance-departments",
@@ -593,8 +593,8 @@
         "content-type": "text/html; charset=utf-8",
         "cross-origin-opener-policy": "same-origin",
         "cross-origin-resource-policy": "same-site",
-        "date": "Wed, 26 Aug 2026 01:33:21 GMT",
-        "etag": "\"5d538bb09c18133702dd030b00b0e168b85d7e5b\"",
+        "date": "Wed, 26 Aug 2026 01:38:32 GMT",
+        "etag": "\"2e9fa6bbd9d0a12fb488bb52580cf48cd9c5bb83\"",
         "keep-alive": "timeout=5",
         "permissions-policy": "geolocation=(), microphone=(), camera=()",
         "referrer-policy": "strict-origin-when-cross-origin",
@@ -603,7 +603,7 @@
         "x-dns-prefetch-control": "on",
         "x-frame-options": "SAMEORIGIN"
       },
-      "response_ms": 2
+      "response_ms": 1
     },
     {
       "path": "/examinations",
@@ -618,8 +618,8 @@
         "content-type": "text/html; charset=utf-8",
         "cross-origin-opener-policy": "same-origin",
         "cross-origin-resource-policy": "same-site",
-        "date": "Wed, 26 Aug 2026 01:33:21 GMT",
-        "etag": "\"e3943f7efe6ba3ebee4866b79048e53c80f11947\"",
+        "date": "Wed, 26 Aug 2026 01:38:32 GMT",
+        "etag": "\"ec22e1e16bea353ee8fcc025d11928524c991489\"",
         "keep-alive": "timeout=5",
         "permissions-policy": "geolocation=(), microphone=(), camera=()",
         "referrer-policy": "strict-origin-when-cross-origin",
@@ -628,7 +628,7 @@
         "x-dns-prefetch-control": "on",
         "x-frame-options": "SAMEORIGIN"
       },
-      "response_ms": 4
+      "response_ms": 1
     },
     {
       "path": "/results",
@@ -643,8 +643,8 @@
         "content-type": "text/html; charset=utf-8",
         "cross-origin-opener-policy": "same-origin",
         "cross-origin-resource-policy": "same-site",
-        "date": "Wed, 26 Aug 2026 01:33:21 GMT",
-        "etag": "\"0a4275e7806ebe70cf6d9049680e32f50c632684\"",
+        "date": "Wed, 26 Aug 2026 01:38:32 GMT",
+        "etag": "\"c87d8ff2ad6bb0ab90c60a0f7d90418c08697ba2\"",
         "keep-alive": "timeout=5",
         "permissions-policy": "geolocation=(), microphone=(), camera=()",
         "referrer-policy": "strict-origin-when-cross-origin",
@@ -653,7 +653,7 @@
         "x-dns-prefetch-control": "on",
         "x-frame-options": "SAMEORIGIN"
       },
-      "response_ms": 4
+      "response_ms": 5
     },
     {
       "path": "/schedule",
@@ -668,8 +668,8 @@
         "content-type": "text/html; charset=utf-8",
         "cross-origin-opener-policy": "same-origin",
         "cross-origin-resource-policy": "same-site",
-        "date": "Wed, 26 Aug 2026 01:33:21 GMT",
-        "etag": "\"84da2e40e4bcfb4d21d8465df1fab1bd8ca84e7b\"",
+        "date": "Wed, 26 Aug 2026 01:38:32 GMT",
+        "etag": "\"0e324514b4117d2dd7e5525c23199cae39a385ed\"",
         "keep-alive": "timeout=5",
         "permissions-policy": "geolocation=(), microphone=(), camera=()",
         "referrer-policy": "strict-origin-when-cross-origin",
@@ -678,7 +678,7 @@
         "x-dns-prefetch-control": "on",
         "x-frame-options": "SAMEORIGIN"
       },
-      "response_ms": 2
+      "response_ms": 3
     },
     {
       "path": "/certificates",
@@ -693,8 +693,8 @@
         "content-type": "text/html; charset=utf-8",
         "cross-origin-opener-policy": "same-origin",
         "cross-origin-resource-policy": "same-site",
-        "date": "Wed, 26 Aug 2026 01:33:21 GMT",
-        "etag": "\"d05c175089273b376540a2c6fd9a7a0df02dc0d8\"",
+        "date": "Wed, 26 Aug 2026 01:38:32 GMT",
+        "etag": "\"5d61c9452030b3e03f8decd241eab5cd7c02ac9c\"",
         "keep-alive": "timeout=5",
         "permissions-policy": "geolocation=(), microphone=(), camera=()",
         "referrer-policy": "strict-origin-when-cross-origin",
@@ -703,7 +703,7 @@
         "x-dns-prefetch-control": "on",
         "x-frame-options": "SAMEORIGIN"
       },
-      "response_ms": 3
+      "response_ms": 2
     },
     {
       "path": "/convocation",
@@ -718,8 +718,8 @@
         "content-type": "text/html; charset=utf-8",
         "cross-origin-opener-policy": "same-origin",
         "cross-origin-resource-policy": "same-site",
-        "date": "Wed, 26 Aug 2026 01:33:21 GMT",
-        "etag": "\"9c2c8951ae28ab136980e68a08f70a45cad39f0c\"",
+        "date": "Wed, 26 Aug 2026 01:38:32 GMT",
+        "etag": "\"9944cafecb17216f03fdf3c8826c0d97e2044e49\"",
         "keep-alive": "timeout=5",
         "permissions-policy": "geolocation=(), microphone=(), camera=()",
         "referrer-policy": "strict-origin-when-cross-origin",
@@ -728,7 +728,7 @@
         "x-dns-prefetch-control": "on",
         "x-frame-options": "SAMEORIGIN"
       },
-      "response_ms": 4
+      "response_ms": 7
     },
     {
       "path": "/research-2",
@@ -743,8 +743,8 @@
         "content-type": "text/html; charset=utf-8",
         "cross-origin-opener-policy": "same-origin",
         "cross-origin-resource-policy": "same-site",
-        "date": "Wed, 26 Aug 2026 01:33:21 GMT",
-        "etag": "\"a0636799f99ea3509ce7528c61f8e78f8a556825\"",
+        "date": "Wed, 26 Aug 2026 01:38:32 GMT",
+        "etag": "\"9a8d0f7f7ce7407b1b7dc8dfdcae101ba4a79391\"",
         "keep-alive": "timeout=5",
         "permissions-policy": "geolocation=(), microphone=(), camera=()",
         "referrer-policy": "strict-origin-when-cross-origin",
@@ -753,7 +753,7 @@
         "x-dns-prefetch-control": "on",
         "x-frame-options": "SAMEORIGIN"
       },
-      "response_ms": 2
+      "response_ms": 3
     },
     {
       "path": "/office-of-research-innovation-commercialisation",
@@ -768,8 +768,8 @@
         "content-type": "text/html; charset=utf-8",
         "cross-origin-opener-policy": "same-origin",
         "cross-origin-resource-policy": "same-site",
-        "date": "Wed, 26 Aug 2026 01:33:21 GMT",
-        "etag": "\"36a27485cd04fc8350f7deca89a89c76015f1f79\"",
+        "date": "Wed, 26 Aug 2026 01:38:32 GMT",
+        "etag": "\"5ff462c9490ec656273d4f265fa351fdde9a2894\"",
         "keep-alive": "timeout=5",
         "permissions-policy": "geolocation=(), microphone=(), camera=()",
         "referrer-policy": "strict-origin-when-cross-origin",
@@ -778,7 +778,7 @@
         "x-dns-prefetch-control": "on",
         "x-frame-options": "SAMEORIGIN"
       },
-      "response_ms": 2
+      "response_ms": 3
     },
     {
       "path": "/hec-approved-phd-supervisors",
@@ -793,8 +793,8 @@
         "content-type": "text/html; charset=utf-8",
         "cross-origin-opener-policy": "same-origin",
         "cross-origin-resource-policy": "same-site",
-        "date": "Wed, 26 Aug 2026 01:33:21 GMT",
-        "etag": "\"aa4bb0b5253f1d70c4951b9ff5f7ced900ab110a\"",
+        "date": "Wed, 26 Aug 2026 01:38:32 GMT",
+        "etag": "\"970922e8c011f39f9301582d973d431a29c6c22c\"",
         "keep-alive": "timeout=5",
         "permissions-policy": "geolocation=(), microphone=(), camera=()",
         "referrer-policy": "strict-origin-when-cross-origin",
@@ -803,7 +803,7 @@
         "x-dns-prefetch-control": "on",
         "x-frame-options": "SAMEORIGIN"
       },
-      "response_ms": 3
+      "response_ms": 2
     },
     {
       "path": "/publications",
@@ -818,8 +818,8 @@
         "content-type": "text/html; charset=utf-8",
         "cross-origin-opener-policy": "same-origin",
         "cross-origin-resource-policy": "same-site",
-        "date": "Wed, 26 Aug 2026 01:33:21 GMT",
-        "etag": "\"9bb4257827dd8be5a5d9c9c6315d7e0bf82602cc\"",
+        "date": "Wed, 26 Aug 2026 01:38:32 GMT",
+        "etag": "\"9cbf59d068527253a04e58032918cf26a6a9e107\"",
         "keep-alive": "timeout=5",
         "permissions-policy": "geolocation=(), microphone=(), camera=()",
         "referrer-policy": "strict-origin-when-cross-origin",
@@ -843,8 +843,8 @@
         "content-type": "text/html; charset=utf-8",
         "cross-origin-opener-policy": "same-origin",
         "cross-origin-resource-policy": "same-site",
-        "date": "Wed, 26 Aug 2026 01:33:21 GMT",
-        "etag": "\"70ebf2850b7935566d73f5a62d7577eca07f638a\"",
+        "date": "Wed, 26 Aug 2026 01:38:32 GMT",
+        "etag": "\"8738655c14ab18eb20b158bbb5df64e976d7fd0c\"",
         "keep-alive": "timeout=5",
         "permissions-policy": "geolocation=(), microphone=(), camera=()",
         "referrer-policy": "strict-origin-when-cross-origin",
@@ -868,8 +868,8 @@
         "content-type": "text/html; charset=utf-8",
         "cross-origin-opener-policy": "same-origin",
         "cross-origin-resource-policy": "same-site",
-        "date": "Wed, 26 Aug 2026 01:33:21 GMT",
-        "etag": "\"51dd3379429e60e3efbbb799c3fbf8a8f6e1d4bc\"",
+        "date": "Wed, 26 Aug 2026 01:38:32 GMT",
+        "etag": "\"7af298f425be033509011bbc51db3dd494c1d645\"",
         "keep-alive": "timeout=5",
         "permissions-policy": "geolocation=(), microphone=(), camera=()",
         "referrer-policy": "strict-origin-when-cross-origin",
@@ -878,7 +878,7 @@
         "x-dns-prefetch-control": "on",
         "x-frame-options": "SAMEORIGIN"
       },
-      "response_ms": 2
+      "response_ms": 4
     },
     {
       "path": "/funding-agencies",
@@ -893,8 +893,8 @@
         "content-type": "text/html; charset=utf-8",
         "cross-origin-opener-policy": "same-origin",
         "cross-origin-resource-policy": "same-site",
-        "date": "Wed, 26 Aug 2026 01:33:21 GMT",
-        "etag": "\"c79a4d09ca63a021d287b57eadb6fe005cf3cb06\"",
+        "date": "Wed, 26 Aug 2026 01:38:32 GMT",
+        "etag": "\"81dcc9d2394da3ba7d9f9ba5359d3493352bc548\"",
         "keep-alive": "timeout=5",
         "permissions-policy": "geolocation=(), microphone=(), camera=()",
         "referrer-policy": "strict-origin-when-cross-origin",
@@ -903,7 +903,7 @@
         "x-dns-prefetch-control": "on",
         "x-frame-options": "SAMEORIGIN"
       },
-      "response_ms": 3
+      "response_ms": 2
     },
     {
       "path": "/plagiarism-policy",
@@ -918,8 +918,8 @@
         "content-type": "text/html; charset=utf-8",
         "cross-origin-opener-policy": "same-origin",
         "cross-origin-resource-policy": "same-site",
-        "date": "Wed, 26 Aug 2026 01:33:21 GMT",
-        "etag": "\"cca75009753254bfc733070d19a33609161c1615\"",
+        "date": "Wed, 26 Aug 2026 01:38:32 GMT",
+        "etag": "\"6ba109bfcaeff035f65f886076ca1d30103f17ce\"",
         "keep-alive": "timeout=5",
         "permissions-policy": "geolocation=(), microphone=(), camera=()",
         "referrer-policy": "strict-origin-when-cross-origin",
@@ -928,7 +928,7 @@
         "x-dns-prefetch-control": "on",
         "x-frame-options": "SAMEORIGIN"
       },
-      "response_ms": 3
+      "response_ms": 2
     },
     {
       "path": "/research-ethics-policy",
@@ -943,8 +943,8 @@
         "content-type": "text/html; charset=utf-8",
         "cross-origin-opener-policy": "same-origin",
         "cross-origin-resource-policy": "same-site",
-        "date": "Wed, 26 Aug 2026 01:33:21 GMT",
-        "etag": "\"38feb589135d7193936ee393fc86ba65c52ffd35\"",
+        "date": "Wed, 26 Aug 2026 01:38:32 GMT",
+        "etag": "\"85de466f7045ad9ccf95d0c0b72ba2cc1c267739\"",
         "keep-alive": "timeout=5",
         "permissions-policy": "geolocation=(), microphone=(), camera=()",
         "referrer-policy": "strict-origin-when-cross-origin",
@@ -953,7 +953,7 @@
         "x-dns-prefetch-control": "on",
         "x-frame-options": "SAMEORIGIN"
       },
-      "response_ms": 2
+      "response_ms": 4
     },
     {
       "path": "/conference-seminars",
@@ -968,8 +968,8 @@
         "content-type": "text/html; charset=utf-8",
         "cross-origin-opener-policy": "same-origin",
         "cross-origin-resource-policy": "same-site",
-        "date": "Wed, 26 Aug 2026 01:33:21 GMT",
-        "etag": "\"86937dc5f070ad73db15e4cf58270f6ff30f7f6a\"",
+        "date": "Wed, 26 Aug 2026 01:38:32 GMT",
+        "etag": "\"b12a99c0a7510f894cd3abc4fd43a1dfe6cbb66e\"",
         "keep-alive": "timeout=5",
         "permissions-policy": "geolocation=(), microphone=(), camera=()",
         "referrer-policy": "strict-origin-when-cross-origin",
@@ -978,7 +978,7 @@
         "x-dns-prefetch-control": "on",
         "x-frame-options": "SAMEORIGIN"
       },
-      "response_ms": 3
+      "response_ms": 2
     },
     {
       "path": "/seminars-workshops",
@@ -993,8 +993,8 @@
         "content-type": "text/html; charset=utf-8",
         "cross-origin-opener-policy": "same-origin",
         "cross-origin-resource-policy": "same-site",
-        "date": "Wed, 26 Aug 2026 01:33:21 GMT",
-        "etag": "\"eedfa437040a6180d11934fb27d708c3b9cd8712\"",
+        "date": "Wed, 26 Aug 2026 01:38:32 GMT",
+        "etag": "\"7b071f6fb23dc96457344cdf8a9ad165e61c6e40\"",
         "keep-alive": "timeout=5",
         "permissions-policy": "geolocation=(), microphone=(), camera=()",
         "referrer-policy": "strict-origin-when-cross-origin",
@@ -1003,7 +1003,7 @@
         "x-dns-prefetch-control": "on",
         "x-frame-options": "SAMEORIGIN"
       },
-      "response_ms": 3
+      "response_ms": 2
     },
     {
       "path": "/quality-enhancement-cell",
@@ -1018,8 +1018,8 @@
         "content-type": "text/html; charset=utf-8",
         "cross-origin-opener-policy": "same-origin",
         "cross-origin-resource-policy": "same-site",
-        "date": "Wed, 26 Aug 2026 01:33:21 GMT",
-        "etag": "\"f0cef85ed2993ea4d0ac82069f733cf286e1ca4b\"",
+        "date": "Wed, 26 Aug 2026 01:38:32 GMT",
+        "etag": "\"c4c54d563a88753a93c9953f8e43bdec119c61f0\"",
         "keep-alive": "timeout=5",
         "permissions-policy": "geolocation=(), microphone=(), camera=()",
         "referrer-policy": "strict-origin-when-cross-origin",
@@ -1028,7 +1028,7 @@
         "x-dns-prefetch-control": "on",
         "x-frame-options": "SAMEORIGIN"
       },
-      "response_ms": 3
+      "response_ms": 4
     },
     {
       "path": "/continues-professional-development",
@@ -1043,8 +1043,8 @@
         "content-type": "text/html; charset=utf-8",
         "cross-origin-opener-policy": "same-origin",
         "cross-origin-resource-policy": "same-site",
-        "date": "Wed, 26 Aug 2026 01:33:21 GMT",
-        "etag": "\"fac4f0f3c435a023764f86855bd6108d4fc710ae\"",
+        "date": "Wed, 26 Aug 2026 01:38:32 GMT",
+        "etag": "\"0bf3fc71884cddc4ff26e99abb52fb1538f81dac\"",
         "keep-alive": "timeout=5",
         "permissions-policy": "geolocation=(), microphone=(), camera=()",
         "referrer-policy": "strict-origin-when-cross-origin",
@@ -1053,7 +1053,7 @@
         "x-dns-prefetch-control": "on",
         "x-frame-options": "SAMEORIGIN"
       },
-      "response_ms": 3
+      "response_ms": 2
     },
     {
       "path": "/university-linkages",
@@ -1068,8 +1068,8 @@
         "content-type": "text/html; charset=utf-8",
         "cross-origin-opener-policy": "same-origin",
         "cross-origin-resource-policy": "same-site",
-        "date": "Wed, 26 Aug 2026 01:33:21 GMT",
-        "etag": "\"e4441ea45ecdfee6158497df4adc71ff8fab64e1\"",
+        "date": "Wed, 26 Aug 2026 01:38:32 GMT",
+        "etag": "\"19bb84983193fed64aae3c81ee842ef57db27550\"",
         "keep-alive": "timeout=5",
         "permissions-policy": "geolocation=(), microphone=(), camera=()",
         "referrer-policy": "strict-origin-when-cross-origin",
@@ -1093,8 +1093,8 @@
         "content-type": "text/html; charset=utf-8",
         "cross-origin-opener-policy": "same-origin",
         "cross-origin-resource-policy": "same-site",
-        "date": "Wed, 26 Aug 2026 01:33:21 GMT",
-        "etag": "\"b26694234e2419cca2594ac9f8baad6fe9bb966f\"",
+        "date": "Wed, 26 Aug 2026 01:38:32 GMT",
+        "etag": "\"73e1a0a9f187d9b6e000e8f0105f26fe6e93c22f\"",
         "keep-alive": "timeout=5",
         "permissions-policy": "geolocation=(), microphone=(), camera=()",
         "referrer-policy": "strict-origin-when-cross-origin",
@@ -1103,7 +1103,7 @@
         "x-dns-prefetch-control": "on",
         "x-frame-options": "SAMEORIGIN"
       },
-      "response_ms": 2
+      "response_ms": 3
     },
     {
       "path": "/business-incubation-center",
@@ -1118,8 +1118,8 @@
         "content-type": "text/html; charset=utf-8",
         "cross-origin-opener-policy": "same-origin",
         "cross-origin-resource-policy": "same-site",
-        "date": "Wed, 26 Aug 2026 01:33:21 GMT",
-        "etag": "\"8c5843e2ea7b9ad4a790972a97773b8928932399\"",
+        "date": "Wed, 26 Aug 2026 01:38:32 GMT",
+        "etag": "\"be6de64f60d56df19dedc09bd4ed5c5c32a84512\"",
         "keep-alive": "timeout=5",
         "permissions-policy": "geolocation=(), microphone=(), camera=()",
         "referrer-policy": "strict-origin-when-cross-origin",
@@ -1128,7 +1128,7 @@
         "x-dns-prefetch-control": "on",
         "x-frame-options": "SAMEORIGIN"
       },
-      "response_ms": 1
+      "response_ms": 3
     },
     {
       "path": "/incubation-centre",
@@ -1143,8 +1143,8 @@
         "content-type": "text/html; charset=utf-8",
         "cross-origin-opener-policy": "same-origin",
         "cross-origin-resource-policy": "same-site",
-        "date": "Wed, 26 Aug 2026 01:33:21 GMT",
-        "etag": "\"43928bf81fc7e45bb737fb6318c26ada4ebaefa9\"",
+        "date": "Wed, 26 Aug 2026 01:38:32 GMT",
+        "etag": "\"d9cd7aff0970cdab03fda791f5de020f4b9843ae\"",
         "keep-alive": "timeout=5",
         "permissions-policy": "geolocation=(), microphone=(), camera=()",
         "referrer-policy": "strict-origin-when-cross-origin",
@@ -1153,7 +1153,7 @@
         "x-dns-prefetch-control": "on",
         "x-frame-options": "SAMEORIGIN"
       },
-      "response_ms": 4
+      "response_ms": 2
     },
     {
       "path": "/duet-cemet",
@@ -1168,8 +1168,8 @@
         "content-type": "text/html; charset=utf-8",
         "cross-origin-opener-policy": "same-origin",
         "cross-origin-resource-policy": "same-site",
-        "date": "Wed, 26 Aug 2026 01:33:21 GMT",
-        "etag": "\"8dfb88350c3d0054220c704f7f952b71b4c4fd61\"",
+        "date": "Wed, 26 Aug 2026 01:38:32 GMT",
+        "etag": "\"3e09d98fc67e9693ea15abf130829cb43f2c4836\"",
         "keep-alive": "timeout=5",
         "permissions-policy": "geolocation=(), microphone=(), camera=()",
         "referrer-policy": "strict-origin-when-cross-origin",
@@ -1178,7 +1178,7 @@
         "x-dns-prefetch-control": "on",
         "x-frame-options": "SAMEORIGIN"
       },
-      "response_ms": 2
+      "response_ms": 3
     },
     {
       "path": "/about-cemet",
@@ -1193,8 +1193,8 @@
         "content-type": "text/html; charset=utf-8",
         "cross-origin-opener-policy": "same-origin",
         "cross-origin-resource-policy": "same-site",
-        "date": "Wed, 26 Aug 2026 01:33:21 GMT",
-        "etag": "\"4a7e219ad257e961efd6f5c294182359e62ac340\"",
+        "date": "Wed, 26 Aug 2026 01:38:32 GMT",
+        "etag": "\"0a62ae8dc246590cb8e810074a784da43ce44e7d\"",
         "keep-alive": "timeout=5",
         "permissions-policy": "geolocation=(), microphone=(), camera=()",
         "referrer-policy": "strict-origin-when-cross-origin",
@@ -1203,7 +1203,7 @@
         "x-dns-prefetch-control": "on",
         "x-frame-options": "SAMEORIGIN"
       },
-      "response_ms": 1
+      "response_ms": 2
     },
     {
       "path": "/microsoft-for-all",
@@ -1218,8 +1218,8 @@
         "content-type": "text/html; charset=utf-8",
         "cross-origin-opener-policy": "same-origin",
         "cross-origin-resource-policy": "same-site",
-        "date": "Wed, 26 Aug 2026 01:33:21 GMT",
-        "etag": "\"f465c6f5c552fd045a7292ddb967c6eaccedd3a5\"",
+        "date": "Wed, 26 Aug 2026 01:38:32 GMT",
+        "etag": "\"02787fcd46d11f4695fc1a686debdf6fe83a9756\"",
         "keep-alive": "timeout=5",
         "permissions-policy": "geolocation=(), microphone=(), camera=()",
         "referrer-policy": "strict-origin-when-cross-origin",
@@ -1243,8 +1243,8 @@
         "content-type": "text/html; charset=utf-8",
         "cross-origin-opener-policy": "same-origin",
         "cross-origin-resource-policy": "same-site",
-        "date": "Wed, 26 Aug 2026 01:33:21 GMT",
-        "etag": "\"7ec1d6d8568f6dfa6d5fc9bb8067d06058fb72e7\"",
+        "date": "Wed, 26 Aug 2026 01:38:32 GMT",
+        "etag": "\"e3dd4ed443300b0a11941273df6a0360782eba12\"",
         "keep-alive": "timeout=5",
         "permissions-policy": "geolocation=(), microphone=(), camera=()",
         "referrer-policy": "strict-origin-when-cross-origin",
@@ -1253,7 +1253,7 @@
         "x-dns-prefetch-control": "on",
         "x-frame-options": "SAMEORIGIN"
       },
-      "response_ms": 3
+      "response_ms": 2
     },
     {
       "path": "/students",
@@ -1268,8 +1268,8 @@
         "content-type": "text/html; charset=utf-8",
         "cross-origin-opener-policy": "same-origin",
         "cross-origin-resource-policy": "same-site",
-        "date": "Wed, 26 Aug 2026 01:33:21 GMT",
-        "etag": "\"4bde479e4d43603a8a86b318ddb53cbc60b5d0a6\"",
+        "date": "Wed, 26 Aug 2026 01:38:32 GMT",
+        "etag": "\"466181dd0d7d02aa1db3a3148a17c33737f09593\"",
         "keep-alive": "timeout=5",
         "permissions-policy": "geolocation=(), microphone=(), camera=()",
         "referrer-policy": "strict-origin-when-cross-origin",
@@ -1278,7 +1278,7 @@
         "x-dns-prefetch-control": "on",
         "x-frame-options": "SAMEORIGIN"
       },
-      "response_ms": 3
+      "response_ms": 2
     },
     {
       "path": "/students-affairs",
@@ -1293,8 +1293,8 @@
         "content-type": "text/html; charset=utf-8",
         "cross-origin-opener-policy": "same-origin",
         "cross-origin-resource-policy": "same-site",
-        "date": "Wed, 26 Aug 2026 01:33:21 GMT",
-        "etag": "\"c9e584bcfd77bd14bf8b83f1c348d1c5e3d971f0\"",
+        "date": "Wed, 26 Aug 2026 01:38:32 GMT",
+        "etag": "\"bfb9ed2bdc47c780846a919f6afbdf9215f5ca5b\"",
         "keep-alive": "timeout=5",
         "permissions-policy": "geolocation=(), microphone=(), camera=()",
         "referrer-policy": "strict-origin-when-cross-origin",
@@ -1318,8 +1318,8 @@
         "content-type": "text/html; charset=utf-8",
         "cross-origin-opener-policy": "same-origin",
         "cross-origin-resource-policy": "same-site",
-        "date": "Wed, 26 Aug 2026 01:33:21 GMT",
-        "etag": "\"c8eb2114e44113a08cd4a125d0adff3c957cea4c\"",
+        "date": "Wed, 26 Aug 2026 01:38:32 GMT",
+        "etag": "\"de959848e71d880dde321dac73ed7a1829d477ed\"",
         "keep-alive": "timeout=5",
         "permissions-policy": "geolocation=(), microphone=(), camera=()",
         "referrer-policy": "strict-origin-when-cross-origin",
@@ -1343,8 +1343,8 @@
         "content-type": "text/html; charset=utf-8",
         "cross-origin-opener-policy": "same-origin",
         "cross-origin-resource-policy": "same-site",
-        "date": "Wed, 26 Aug 2026 01:33:21 GMT",
-        "etag": "\"5554e792ad23dd71cbaccb107bc13e7eef3adf6d\"",
+        "date": "Wed, 26 Aug 2026 01:38:32 GMT",
+        "etag": "\"4ec3d927eaf4ec8a9f92ee28c66a8e0dae3f837a\"",
         "keep-alive": "timeout=5",
         "permissions-policy": "geolocation=(), microphone=(), camera=()",
         "referrer-policy": "strict-origin-when-cross-origin",
@@ -1353,7 +1353,7 @@
         "x-dns-prefetch-control": "on",
         "x-frame-options": "SAMEORIGIN"
       },
-      "response_ms": 2
+      "response_ms": 3
     },
     {
       "path": "/career-counselling",
@@ -1368,8 +1368,8 @@
         "content-type": "text/html; charset=utf-8",
         "cross-origin-opener-policy": "same-origin",
         "cross-origin-resource-policy": "same-site",
-        "date": "Wed, 26 Aug 2026 01:33:21 GMT",
-        "etag": "\"7cae516566d8642badada1ef8d9b63cd96f71d44\"",
+        "date": "Wed, 26 Aug 2026 01:38:32 GMT",
+        "etag": "\"a60cac0f66b452a9a0303a060c1e6f055b6abddd\"",
         "keep-alive": "timeout=5",
         "permissions-policy": "geolocation=(), microphone=(), camera=()",
         "referrer-policy": "strict-origin-when-cross-origin",
@@ -1393,8 +1393,8 @@
         "content-type": "text/html; charset=utf-8",
         "cross-origin-opener-policy": "same-origin",
         "cross-origin-resource-policy": "same-site",
-        "date": "Wed, 26 Aug 2026 01:33:21 GMT",
-        "etag": "\"7a41a1c391246514e07617e92e1ca855e0235220\"",
+        "date": "Wed, 26 Aug 2026 01:38:32 GMT",
+        "etag": "\"2bad7900c8236ced12896334d84eea8de81bfe9c\"",
         "keep-alive": "timeout=5",
         "permissions-policy": "geolocation=(), microphone=(), camera=()",
         "referrer-policy": "strict-origin-when-cross-origin",
@@ -1403,7 +1403,7 @@
         "x-dns-prefetch-control": "on",
         "x-frame-options": "SAMEORIGIN"
       },
-      "response_ms": 4
+      "response_ms": 2
     },
     {
       "path": "/internships",
@@ -1418,8 +1418,8 @@
         "content-type": "text/html; charset=utf-8",
         "cross-origin-opener-policy": "same-origin",
         "cross-origin-resource-policy": "same-site",
-        "date": "Wed, 26 Aug 2026 01:33:21 GMT",
-        "etag": "\"1735e5cbe0ed13481c904cd35809fdc8bbc03386\"",
+        "date": "Wed, 26 Aug 2026 01:38:32 GMT",
+        "etag": "\"b86d95e740c020528f7654e6ece0019154e554f7\"",
         "keep-alive": "timeout=5",
         "permissions-policy": "geolocation=(), microphone=(), camera=()",
         "referrer-policy": "strict-origin-when-cross-origin",
@@ -1428,7 +1428,7 @@
         "x-dns-prefetch-control": "on",
         "x-frame-options": "SAMEORIGIN"
       },
-      "response_ms": 3
+      "response_ms": 4
     },
     {
       "path": "/industrial-liasons-alumni-affairs",
@@ -1443,8 +1443,8 @@
         "content-type": "text/html; charset=utf-8",
         "cross-origin-opener-policy": "same-origin",
         "cross-origin-resource-policy": "same-site",
-        "date": "Wed, 26 Aug 2026 01:33:21 GMT",
-        "etag": "\"9a9ca5ae92c0f95eead6d84d9782cb0a12eb6fef\"",
+        "date": "Wed, 26 Aug 2026 01:38:32 GMT",
+        "etag": "\"054966703176375c20fc0a040bb7302dcbad00c8\"",
         "keep-alive": "timeout=5",
         "permissions-policy": "geolocation=(), microphone=(), camera=()",
         "referrer-policy": "strict-origin-when-cross-origin",
@@ -1468,8 +1468,8 @@
         "content-type": "text/html; charset=utf-8",
         "cross-origin-opener-policy": "same-origin",
         "cross-origin-resource-policy": "same-site",
-        "date": "Wed, 26 Aug 2026 01:33:21 GMT",
-        "etag": "\"d43b12cfab10eefeebd469dad6b60c11ca0a629c\"",
+        "date": "Wed, 26 Aug 2026 01:38:32 GMT",
+        "etag": "\"63fc147a071f39e56828a41825d84de089f1c369\"",
         "keep-alive": "timeout=5",
         "permissions-policy": "geolocation=(), microphone=(), camera=()",
         "referrer-policy": "strict-origin-when-cross-origin",
@@ -1478,7 +1478,7 @@
         "x-dns-prefetch-control": "on",
         "x-frame-options": "SAMEORIGIN"
       },
-      "response_ms": 3
+      "response_ms": 2
     },
     {
       "path": "/shuttle-bus-routes",
@@ -1493,8 +1493,8 @@
         "content-type": "text/html; charset=utf-8",
         "cross-origin-opener-policy": "same-origin",
         "cross-origin-resource-policy": "same-site",
-        "date": "Wed, 26 Aug 2026 01:33:21 GMT",
-        "etag": "\"307d16a0a2b8ee7ba0920fe330272f7fb319c4ce\"",
+        "date": "Wed, 26 Aug 2026 01:38:32 GMT",
+        "etag": "\"5aa050f6d65b845e4c6da5c1e003d508950135a4\"",
         "keep-alive": "timeout=5",
         "permissions-policy": "geolocation=(), microphone=(), camera=()",
         "referrer-policy": "strict-origin-when-cross-origin",
@@ -1503,7 +1503,7 @@
         "x-dns-prefetch-control": "on",
         "x-frame-options": "SAMEORIGIN"
       },
-      "response_ms": 2
+      "response_ms": 3
     },
     {
       "path": "/news",
@@ -1518,8 +1518,8 @@
         "content-type": "text/html; charset=utf-8",
         "cross-origin-opener-policy": "same-origin",
         "cross-origin-resource-policy": "same-site",
-        "date": "Wed, 26 Aug 2026 01:33:21 GMT",
-        "etag": "\"c9afb8ef5c4a011ae34d48c6841c2c4abb811d43\"",
+        "date": "Wed, 26 Aug 2026 01:38:32 GMT",
+        "etag": "\"f6dbc7000ae04d013becf7a4bfa7cdb5ce904c7a\"",
         "keep-alive": "timeout=5",
         "permissions-policy": "geolocation=(), microphone=(), camera=()",
         "referrer-policy": "strict-origin-when-cross-origin",
@@ -1528,7 +1528,7 @@
         "x-dns-prefetch-control": "on",
         "x-frame-options": "SAMEORIGIN"
       },
-      "response_ms": 3
+      "response_ms": 1
     },
     {
       "path": "/tenders",
@@ -1543,8 +1543,8 @@
         "content-type": "text/html; charset=utf-8",
         "cross-origin-opener-policy": "same-origin",
         "cross-origin-resource-policy": "same-site",
-        "date": "Wed, 26 Aug 2026 01:33:21 GMT",
-        "etag": "\"c0ce7f1021aa83acaacce9288effbd87ace53360\"",
+        "date": "Wed, 26 Aug 2026 01:38:32 GMT",
+        "etag": "\"fc3c753db171b44a3694c9231da447c2240288eb\"",
         "keep-alive": "timeout=5",
         "permissions-policy": "geolocation=(), microphone=(), camera=()",
         "referrer-policy": "strict-origin-when-cross-origin",
@@ -1553,7 +1553,7 @@
         "x-dns-prefetch-control": "on",
         "x-frame-options": "SAMEORIGIN"
       },
-      "response_ms": 8
+      "response_ms": 1
     },
     {
       "path": "/downloads",
@@ -1568,8 +1568,8 @@
         "content-type": "text/html; charset=utf-8",
         "cross-origin-opener-policy": "same-origin",
         "cross-origin-resource-policy": "same-site",
-        "date": "Wed, 26 Aug 2026 01:33:21 GMT",
-        "etag": "\"04a1418089c86dcb464d26249953258f3055d625\"",
+        "date": "Wed, 26 Aug 2026 01:38:32 GMT",
+        "etag": "\"4e4269d9214be890235dc87a3d2debc39a5e819d\"",
         "keep-alive": "timeout=5",
         "permissions-policy": "geolocation=(), microphone=(), camera=()",
         "referrer-policy": "strict-origin-when-cross-origin",
@@ -1578,7 +1578,7 @@
         "x-dns-prefetch-control": "on",
         "x-frame-options": "SAMEORIGIN"
       },
-      "response_ms": 2
+      "response_ms": 3
     },
     {
       "path": "/downloads-2",
@@ -1593,8 +1593,8 @@
         "content-type": "text/html; charset=utf-8",
         "cross-origin-opener-policy": "same-origin",
         "cross-origin-resource-policy": "same-site",
-        "date": "Wed, 26 Aug 2026 01:33:21 GMT",
-        "etag": "\"0054a349d899513717c6b5c803f8ec6c70651cb9\"",
+        "date": "Wed, 26 Aug 2026 01:38:32 GMT",
+        "etag": "\"6464b2bb1d2fef01d96e68d783fa48d04b70da55\"",
         "keep-alive": "timeout=5",
         "permissions-policy": "geolocation=(), microphone=(), camera=()",
         "referrer-policy": "strict-origin-when-cross-origin",
@@ -1603,7 +1603,7 @@
         "x-dns-prefetch-control": "on",
         "x-frame-options": "SAMEORIGIN"
       },
-      "response_ms": 2
+      "response_ms": 4
     },
     {
       "path": "/annual-report",
@@ -1618,8 +1618,8 @@
         "content-type": "text/html; charset=utf-8",
         "cross-origin-opener-policy": "same-origin",
         "cross-origin-resource-policy": "same-site",
-        "date": "Wed, 26 Aug 2026 01:33:21 GMT",
-        "etag": "\"bc080ef160d65300f398986bdeeb809b3584bacb\"",
+        "date": "Wed, 26 Aug 2026 01:38:32 GMT",
+        "etag": "\"d65720b84100b222e86ec7b08b955d9594a5d724\"",
         "keep-alive": "timeout=5",
         "permissions-policy": "geolocation=(), microphone=(), camera=()",
         "referrer-policy": "strict-origin-when-cross-origin",
@@ -1643,8 +1643,8 @@
         "content-type": "text/html; charset=utf-8",
         "cross-origin-opener-policy": "same-origin",
         "cross-origin-resource-policy": "same-site",
-        "date": "Wed, 26 Aug 2026 01:33:21 GMT",
-        "etag": "\"1a068c9c03c2696bcfeac277cd783c7cac62a32d\"",
+        "date": "Wed, 26 Aug 2026 01:38:32 GMT",
+        "etag": "\"f186f21bc45f652d2a133adfc8ae650d1eab3062\"",
         "keep-alive": "timeout=5",
         "permissions-policy": "geolocation=(), microphone=(), camera=()",
         "referrer-policy": "strict-origin-when-cross-origin",
@@ -1653,7 +1653,7 @@
         "x-dns-prefetch-control": "on",
         "x-frame-options": "SAMEORIGIN"
       },
-      "response_ms": 4
+      "response_ms": 2
     },
     {
       "path": "/robots.txt",
@@ -1668,8 +1668,8 @@
         "content-type": "text/plain",
         "cross-origin-opener-policy": "same-origin",
         "cross-origin-resource-policy": "same-site",
-        "date": "Wed, 26 Aug 2026 01:33:21 GMT",
-        "etag": "\"63948b0f7c5dd4a1a0181604e92473f0dfccb9cb\"",
+        "date": "Wed, 26 Aug 2026 01:38:32 GMT",
+        "etag": "\"87e2861666d0178dc46c1ccd95ed8015cbb19763\"",
         "keep-alive": "timeout=5",
         "permissions-policy": "geolocation=(), microphone=(), camera=()",
         "referrer-policy": "strict-origin-when-cross-origin",
@@ -1693,8 +1693,8 @@
         "content-type": "application/xml",
         "cross-origin-opener-policy": "same-origin",
         "cross-origin-resource-policy": "same-site",
-        "date": "Wed, 26 Aug 2026 01:33:21 GMT",
-        "etag": "\"45001f74b44462ced919761f96dba280f19e4635\"",
+        "date": "Wed, 26 Aug 2026 01:38:32 GMT",
+        "etag": "\"46f81ff4495052b30f2dd433faa9499ce664086a\"",
         "keep-alive": "timeout=5",
         "permissions-policy": "geolocation=(), microphone=(), camera=()",
         "referrer-policy": "strict-origin-when-cross-origin",
@@ -1703,7 +1703,7 @@
         "x-dns-prefetch-control": "on",
         "x-frame-options": "SAMEORIGIN"
       },
-      "response_ms": 1
+      "response_ms": 2
     }
   ]
 }
