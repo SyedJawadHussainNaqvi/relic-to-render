@@ -82,6 +82,7 @@ import { Route as AboutDuetVisionMissionRouteImport } from './routes/about-duet.
 import { Route as AuthenticatedAdminIndexRouteImport } from './routes/_authenticated/admin.index'
 import { Route as AuthenticatedAdminNavigationRouteImport } from './routes/_authenticated/admin.navigation'
 import { Route as AuthenticatedAdminNewsRouteImport } from './routes/_authenticated/admin.news'
+import { Route as AuthenticatedAdminSeoRouteImport } from './routes/_authenticated/admin.seo'
 import { Route as AuthenticatedAdminSocRouteImport } from './routes/_authenticated/admin.soc'
 import { Route as ApiPublicCspReportRouteImport } from './routes/api/public/csp-report'
 import { Route as ApiPublicSeoCollectRouteImport } from './routes/api/public/seo-collect'
@@ -461,6 +462,11 @@ const AuthenticatedAdminNewsRoute = AuthenticatedAdminNewsRouteImport.update({
   path: '/news',
   getParentRoute: () => AuthenticatedAdminRoute,
 } as any)
+const AuthenticatedAdminSeoRoute = AuthenticatedAdminSeoRouteImport.update({
+  id: '/seo',
+  path: '/seo',
+  getParentRoute: () => AuthenticatedAdminRoute,
+} as any)
 const AuthenticatedAdminSocRoute = AuthenticatedAdminSocRouteImport.update({
   id: '/soc',
   path: '/soc',
@@ -559,6 +565,7 @@ export interface FileRoutesByFullPath {
   '/about-duet/': typeof AboutDuetIndexRoute
   '/admin/navigation': typeof AuthenticatedAdminNavigationRoute
   '/admin/news': typeof AuthenticatedAdminNewsRoute
+  '/admin/seo': typeof AuthenticatedAdminSeoRoute
   '/admin/soc': typeof AuthenticatedAdminSocRoute
   '/api/public/csp-report': typeof ApiPublicCspReportRoute
   '/api/public/seo-collect': typeof ApiPublicSeoCollectRoute
@@ -637,6 +644,7 @@ export interface FileRoutesByTo {
   '/about-duet': typeof AboutDuetIndexRoute
   '/admin/navigation': typeof AuthenticatedAdminNavigationRoute
   '/admin/news': typeof AuthenticatedAdminNewsRoute
+  '/admin/seo': typeof AuthenticatedAdminSeoRoute
   '/admin/soc': typeof AuthenticatedAdminSocRoute
   '/api/public/csp-report': typeof ApiPublicCspReportRoute
   '/api/public/seo-collect': typeof ApiPublicSeoCollectRoute
@@ -718,6 +726,7 @@ export interface FileRoutesById {
   '/about-duet/': typeof AboutDuetIndexRoute
   '/_authenticated/admin/navigation': typeof AuthenticatedAdminNavigationRoute
   '/_authenticated/admin/news': typeof AuthenticatedAdminNewsRoute
+  '/_authenticated/admin/seo': typeof AuthenticatedAdminSeoRoute
   '/_authenticated/admin/soc': typeof AuthenticatedAdminSocRoute
   '/api/public/csp-report': typeof ApiPublicCspReportRoute
   '/api/public/seo-collect': typeof ApiPublicSeoCollectRoute
@@ -799,6 +808,7 @@ export interface FileRouteTypes {
     | '/about-duet/'
     | '/admin/navigation'
     | '/admin/news'
+    | '/admin/seo'
     | '/admin/soc'
     | '/api/public/csp-report'
     | '/api/public/seo-collect'
@@ -877,6 +887,7 @@ export interface FileRouteTypes {
     | '/about-duet'
     | '/admin/navigation'
     | '/admin/news'
+    | '/admin/seo'
     | '/admin/soc'
     | '/api/public/csp-report'
     | '/api/public/seo-collect'
@@ -957,6 +968,7 @@ export interface FileRouteTypes {
     | '/about-duet/'
     | '/_authenticated/admin/navigation'
     | '/_authenticated/admin/news'
+    | '/_authenticated/admin/seo'
     | '/_authenticated/admin/soc'
     | '/api/public/csp-report'
     | '/api/public/seo-collect'
@@ -1554,6 +1566,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof AuthenticatedAdminNewsRouteImport
       parentRoute: typeof AuthenticatedAdminRoute
     }
+    '/_authenticated/admin/seo': {
+      id: '/_authenticated/admin/seo'
+      path: '/seo'
+      fullPath: '/admin/seo'
+      preLoaderRoute: typeof AuthenticatedAdminSeoRouteImport
+      parentRoute: typeof AuthenticatedAdminRoute
+    }
     '/_authenticated/admin/soc': {
       id: '/_authenticated/admin/soc'
       path: '/soc'
@@ -1595,6 +1614,7 @@ declare module '@tanstack/react-router' {
 interface AuthenticatedAdminRouteChildren {
   AuthenticatedAdminNavigationRoute: typeof AuthenticatedAdminNavigationRoute
   AuthenticatedAdminNewsRoute: typeof AuthenticatedAdminNewsRoute
+  AuthenticatedAdminSeoRoute: typeof AuthenticatedAdminSeoRoute
   AuthenticatedAdminSocRoute: typeof AuthenticatedAdminSocRoute
   AuthenticatedAdminIndexRoute: typeof AuthenticatedAdminIndexRoute
 }
@@ -1602,6 +1622,7 @@ interface AuthenticatedAdminRouteChildren {
 const AuthenticatedAdminRouteChildren: AuthenticatedAdminRouteChildren = {
   AuthenticatedAdminNavigationRoute: AuthenticatedAdminNavigationRoute,
   AuthenticatedAdminNewsRoute: AuthenticatedAdminNewsRoute,
+  AuthenticatedAdminSeoRoute: AuthenticatedAdminSeoRoute,
   AuthenticatedAdminSocRoute: AuthenticatedAdminSocRoute,
   AuthenticatedAdminIndexRoute: AuthenticatedAdminIndexRoute,
 }
