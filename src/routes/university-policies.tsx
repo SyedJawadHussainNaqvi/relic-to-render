@@ -9,9 +9,9 @@ export const Route = createFileRoute("/university-policies")({
       { property: "og:title", content: "University Policies — DUET Karachi" },
       { property: "og:description", content: "POLICY ON DRUGS & TOBACCO ABUSE" },
       { property: "og:type", content: "website" },
-      { property: "og:url", content: "/university-policies" },
+      { property: "og:url", content: "https://www.duet.edu.pk/university-policies" },
     ],
-    links: [{ rel: "canonical", href: "/university-policies" }],
+    links: [{ rel: "canonical", href: "https://www.duet.edu.pk/university-policies" }],
   }),
   component: () => <ArchivedPage path="/university-policies" />,
 });

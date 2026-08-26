@@ -9,9 +9,9 @@ export const Route = createFileRoute("/information-technology")({
       { property: "og:title", content: "Information Technology — DUET Karachi" },
       { property: "og:description", content: "The Directorate of Information Technology (IT) at DUET has advanced infrastructure with robust Information and Communication System. The directorate provid" },
       { property: "og:type", content: "website" },
-      { property: "og:url", content: "/information-technology" },
+      { property: "og:url", content: "https://www.duet.edu.pk/information-technology" },
     ],
-    links: [{ rel: "canonical", href: "/information-technology" }],
+    links: [{ rel: "canonical", href: "https://www.duet.edu.pk/information-technology" }],
   }),
   component: () => <ArchivedPage path="/information-technology" />,
 });

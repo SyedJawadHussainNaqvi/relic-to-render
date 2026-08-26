@@ -9,9 +9,9 @@ export const Route = createFileRoute("/convocation")({
       { property: "og:title", content: "Convocation — DUET Karachi" },
       { property: "og:description", content: "Convocation at Dawood University of Engineering & Technology, Karachi." },
       { property: "og:type", content: "website" },
-      { property: "og:url", content: "/convocation" },
+      { property: "og:url", content: "https://www.duet.edu.pk/convocation" },
     ],
-    links: [{ rel: "canonical", href: "/convocation" }],
+    links: [{ rel: "canonical", href: "https://www.duet.edu.pk/convocation" }],
   }),
   component: () => <ArchivedPage path="/convocation" />,
 });

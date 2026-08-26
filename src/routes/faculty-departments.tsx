@@ -9,9 +9,9 @@ export const Route = createFileRoute("/faculty-departments")({
       { property: "og:title", content: "Faculty & Departments — DUET Karachi" },
       { property: "og:description", content: "The foundation stone of the Dawood College was laid by the former President of Pakistan (Late) Field Marshal Muhammad Ayub Khan in 1962. The Government of " },
       { property: "og:type", content: "website" },
-      { property: "og:url", content: "/faculty-departments" },
+      { property: "og:url", content: "https://www.duet.edu.pk/faculty-departments" },
     ],
-    links: [{ rel: "canonical", href: "/faculty-departments" }],
+    links: [{ rel: "canonical", href: "https://www.duet.edu.pk/faculty-departments" }],
   }),
   component: () => <ArchivedPage path="/faculty-departments" />,
 });

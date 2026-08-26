@@ -9,9 +9,9 @@ export const Route = createFileRoute("/postgraduate-studies")({
       { property: "og:title", content: "Postgraduate Studies — DUET Karachi" },
       { property: "og:description", content: "DUET started postgraduate program through the Directorate of Postgraduate Studies in 2017 in different fields of engineering. Currently the postgraduate pr" },
       { property: "og:type", content: "website" },
-      { property: "og:url", content: "/postgraduate-studies" },
+      { property: "og:url", content: "https://www.duet.edu.pk/postgraduate-studies" },
     ],
-    links: [{ rel: "canonical", href: "/postgraduate-studies" }],
+    links: [{ rel: "canonical", href: "https://www.duet.edu.pk/postgraduate-studies" }],
   }),
   component: () => <ArchivedPage path="/postgraduate-studies" />,
 });

@@ -16,7 +16,7 @@ export function Footer() {
       <div className="mx-auto grid max-w-[1200px] gap-8 px-4 py-10 sm:grid-cols-2 lg:grid-cols-4">
         <div>
           <div className="flex items-center gap-3">
-            {logoSquare ? <img src={logoSquare} alt="DUET monogram" className="h-14 w-14" /> : null}
+            {logoSquare ? <img src={logoSquare} alt="DUET monogram" width={56} height={56} className="h-14 w-14" /> : null}
             <span className="font-display text-lg font-semibold">DUET Karachi</span>
           </div>
           <p className="mt-3 text-[13px] leading-relaxed text-white/80">
@@ -31,18 +31,18 @@ export function Footer() {
         </div>
 
         <div>
-          <h2 className="font-display text-sm font-semibold uppercase tracking-wider text-accent">
+          <h2 className="font-display text-sm font-semibold uppercase tracking-wider text-accent-on-brand">
             Quick Links
           </h2>
           <ul className="mt-3 space-y-1.5 text-[13px] text-white/85">
             {utilityLinks.map((l) => (
               <li key={l.label}>
                 {l.href ? (
-                  <a href={l.href} target="_blank" rel="noreferrer" className="hover:text-accent">
+                  <a href={l.href} target="_blank" rel="noreferrer" className="hover:text-accent-on-brand">
                     {l.label}
                   </a>
                 ) : (
-                  <Link to={l.to ?? "/"} className="hover:text-accent">
+                  <Link to={l.to ?? "/"} className="hover:text-accent-on-brand">
                     {l.label}
                   </Link>
                 )}
@@ -52,13 +52,13 @@ export function Footer() {
         </div>
 
         <div>
-          <h2 className="font-display text-sm font-semibold uppercase tracking-wider text-accent">
+          <h2 className="font-display text-sm font-semibold uppercase tracking-wider text-accent-on-brand">
             University
           </h2>
           <ul className="mt-3 space-y-1.5 text-[13px] text-white/85">
             {mainMenu.slice(0, 5).map((g) => (
               <li key={g.label}>
-                <Link to={g.to ?? "/"} className="hover:text-accent">
+                <Link to={g.to ?? "/"} className="hover:text-accent-on-brand">
                   {g.label}
                 </Link>
               </li>
@@ -67,32 +67,32 @@ export function Footer() {
         </div>
 
         <div>
-          <h2 className="font-display text-sm font-semibold uppercase tracking-wider text-accent">
+          <h2 className="font-display text-sm font-semibold uppercase tracking-wider text-accent-on-brand">
             Students
           </h2>
           <ul className="mt-3 space-y-1.5 text-[13px] text-white/85">
             <li>
-              <Link to="/results" className="hover:text-accent">
+              <Link to="/results" className="hover:text-accent-on-brand">
                 Examination Results
               </Link>
             </li>
             <li>
-              <Link to="/academic-calendar" className="hover:text-accent">
+              <Link to="/academic-calendar" className="hover:text-accent-on-brand">
                 Academic Calendar
               </Link>
             </li>
             <li>
-              <Link to="/scholarships" className="hover:text-accent">
+              <Link to="/scholarships" className="hover:text-accent-on-brand">
                 Scholarships
               </Link>
             </li>
             <li>
-              <Link to="/shuttle-bus-routes" className="hover:text-accent">
+              <Link to="/shuttle-bus-routes" className="hover:text-accent-on-brand">
                 Shuttle Bus Routes
               </Link>
             </li>
             <li>
-              <Link to="/news" className="hover:text-accent">
+              <Link to="/news" className="hover:text-accent-on-brand">
                 News &amp; Events
               </Link>
             </li>
@@ -104,11 +104,11 @@ export function Footer() {
         Copyright © Dawood University of Engineering &amp; Technology, Karachi. All rights reserved.
         <span className="px-2">·</span>
         {adminOrigin ? (
-          <a href={`${adminOrigin}/auth`} className="hover:text-accent">
+          <a href={`${adminOrigin}/auth`} className="hover:text-accent-on-brand">
             Staff login
           </a>
         ) : (
-          <Link to="/auth" className="hover:text-accent">
+          <Link to="/auth" className="hover:text-accent-on-brand">
             Staff login
           </Link>
         )}

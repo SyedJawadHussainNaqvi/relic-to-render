@@ -9,9 +9,9 @@ export const Route = createFileRoute("/industrial-liasons-alumni-affairs")({
       { property: "og:title", content: "Industrial Liasons & Alumni Affairs — DUET Karachi" },
       { property: "og:description", content: "Directorate of Industrial Liaison & Alumni Affairs is been working on its full pace since its inception and have achieved major milestones till now. Direct" },
       { property: "og:type", content: "website" },
-      { property: "og:url", content: "/industrial-liasons-alumni-affairs" },
+      { property: "og:url", content: "https://www.duet.edu.pk/industrial-liasons-alumni-affairs" },
     ],
-    links: [{ rel: "canonical", href: "/industrial-liasons-alumni-affairs" }],
+    links: [{ rel: "canonical", href: "https://www.duet.edu.pk/industrial-liasons-alumni-affairs" }],
   }),
   component: () => <ArchivedPage path="/industrial-liasons-alumni-affairs" />,
 });

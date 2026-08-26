@@ -9,9 +9,9 @@ export const Route = createFileRoute("/university-linkages")({
       { property: "og:title", content: "University Linkages — DUET Karachi" },
       { property: "og:description", content: "Memorandum of Understanding Between DUET and NED" },
       { property: "og:type", content: "website" },
-      { property: "og:url", content: "/university-linkages" },
+      { property: "og:url", content: "https://www.duet.edu.pk/university-linkages" },
     ],
-    links: [{ rel: "canonical", href: "/university-linkages" }],
+    links: [{ rel: "canonical", href: "https://www.duet.edu.pk/university-linkages" }],
   }),
   component: () => <ArchivedPage path="/university-linkages" />,
 });

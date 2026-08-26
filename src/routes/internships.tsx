@@ -9,9 +9,9 @@ export const Route = createFileRoute("/internships")({
       { property: "og:title", content: "Internships — DUET Karachi" },
       { property: "og:description", content: "Internships at Dawood University of Engineering & Technology, Karachi." },
       { property: "og:type", content: "website" },
-      { property: "og:url", content: "/internships" },
+      { property: "og:url", content: "https://www.duet.edu.pk/internships" },
     ],
-    links: [{ rel: "canonical", href: "/internships" }],
+    links: [{ rel: "canonical", href: "https://www.duet.edu.pk/internships" }],
   }),
   component: () => <ArchivedPage path="/internships" />,
 });

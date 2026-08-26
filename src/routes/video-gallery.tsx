@@ -9,9 +9,9 @@ export const Route = createFileRoute("/video-gallery")({
       { property: "og:title", content: "Video Gallery — DUET Karachi" },
       { property: "og:description", content: "Video Gallery at Dawood University of Engineering & Technology, Karachi." },
       { property: "og:type", content: "website" },
-      { property: "og:url", content: "/video-gallery" },
+      { property: "og:url", content: "https://www.duet.edu.pk/video-gallery" },
     ],
-    links: [{ rel: "canonical", href: "/video-gallery" }],
+    links: [{ rel: "canonical", href: "https://www.duet.edu.pk/video-gallery" }],
   }),
   component: () => <ArchivedPage path="/video-gallery" />,
 });

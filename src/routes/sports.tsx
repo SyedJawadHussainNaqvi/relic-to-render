@@ -9,9 +9,9 @@ export const Route = createFileRoute("/sports")({
       { property: "og:title", content: "Sports — DUET Karachi" },
       { property: "og:description", content: "The primary function of any university is, off course, academic, but university recognizes the importance & value for development of physical skills and fo" },
       { property: "og:type", content: "website" },
-      { property: "og:url", content: "/sports" },
+      { property: "og:url", content: "https://www.duet.edu.pk/sports" },
     ],
-    links: [{ rel: "canonical", href: "/sports" }],
+    links: [{ rel: "canonical", href: "https://www.duet.edu.pk/sports" }],
   }),
   component: () => <ArchivedPage path="/sports" />,
 });

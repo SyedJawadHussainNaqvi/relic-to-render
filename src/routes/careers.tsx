@@ -9,9 +9,9 @@ export const Route = createFileRoute("/careers")({
       { property: "og:title", content: "CAREERS — DUET Karachi" },
       { property: "og:description", content: "CAREERS at Dawood University of Engineering & Technology, Karachi." },
       { property: "og:type", content: "website" },
-      { property: "og:url", content: "/careers" },
+      { property: "og:url", content: "https://www.duet.edu.pk/careers" },
     ],
-    links: [{ rel: "canonical", href: "/careers" }],
+    links: [{ rel: "canonical", href: "https://www.duet.edu.pk/careers" }],
   }),
   component: () => <ArchivedPage path="/careers" />,
 });

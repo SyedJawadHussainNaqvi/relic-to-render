@@ -63,6 +63,7 @@
   --color-brand-dark: var(--brand-dark);
   --color-brand-foreground: var(--brand-foreground);
   --color-accent-strong: var(--accent-strong);
+  --color-accent-on-brand: var(--accent-on-brand);
   --font-display: "Poppins", "Palanquin", sans-serif;
   --font-sans: "Palanquin", "Poppins", sans-serif;
 }
@@ -105,7 +106,8 @@
   --brand: #4b338c;
   --brand-dark: #3b2870;
   --brand-foreground: #ffffff;
-  --accent-strong: #f99a03;
+  --accent-strong: #8f5600;
+  --accent-on-brand: #ffbe57;
   --primary: #4b338c;
   --primary-foreground: #ffffff;
   --accent: #f99a03;

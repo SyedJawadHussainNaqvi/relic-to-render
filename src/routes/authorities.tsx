@@ -9,9 +9,9 @@ export const Route = createFileRoute("/authorities")({
       { property: "og:title", content: "Authorities — DUET Karachi" },
       { property: "og:description", content: "Authorities at Dawood University of Engineering & Technology, Karachi." },
       { property: "og:type", content: "website" },
-      { property: "og:url", content: "/authorities" },
+      { property: "og:url", content: "https://www.duet.edu.pk/authorities" },
     ],
-    links: [{ rel: "canonical", href: "/authorities" }],
+    links: [{ rel: "canonical", href: "https://www.duet.edu.pk/authorities" }],
   }),
   component: () => <ArchivedPage path="/authorities" />,
 });

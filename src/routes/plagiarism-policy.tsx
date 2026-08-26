@@ -9,9 +9,9 @@ export const Route = createFileRoute("/plagiarism-policy")({
       { property: "og:title", content: "Plagiarism Policy — DUET Karachi" },
       { property: "og:description", content: "Plagiarism Policy of Dawood university of Engineering & Technology, Karachi." },
       { property: "og:type", content: "website" },
-      { property: "og:url", content: "/plagiarism-policy" },
+      { property: "og:url", content: "https://www.duet.edu.pk/plagiarism-policy" },
     ],
-    links: [{ rel: "canonical", href: "/plagiarism-policy" }],
+    links: [{ rel: "canonical", href: "https://www.duet.edu.pk/plagiarism-policy" }],
   }),
   component: () => <ArchivedPage path="/plagiarism-policy" />,
 });
