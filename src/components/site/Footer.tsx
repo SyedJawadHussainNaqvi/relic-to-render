@@ -115,14 +115,14 @@ export function Footer() {
           )}
         </div>
         <div className="mt-1">
-          Developed and Secured by{" "}
+          Developed and Secure by{" "}
           <a
             href="https://www.quantum-horizons.com/"
             target="_blank"
             rel="noopener noreferrer"
             className="hover:text-accent-on-brand"
           >
-            www.quantum-horizons.com
+            Quantum Horizons Pvt Ltd
           </a>
         </div>
       </div>
