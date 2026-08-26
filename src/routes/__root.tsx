@@ -97,6 +97,10 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
       { name: "twitter:site", content: "@DUETKarachi" },
+      {
+        name: "google-site-verification",
+        content: "0XUeXiDbKjdZQVX_KEvypaM4r2KTala0qh_L9Pt9asU",
+      },
     ],
     links: [
       {
