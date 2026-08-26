@@ -37,7 +37,7 @@ export const Route = createFileRoute("/")({
           "@context": "https://schema.org",
           "@type": "CollegeOrUniversity",
           name: "Dawood University of Engineering & Technology",
-          alternateName: "DUET Karachi",
+          alternateName: ["DUET Karachi", "DUET", "Dawood University", "DCET Karachi"],
           url: "https://www.duet.edu.pk/",
           logo: "https://www.duet.edu.pk/media/duet_logo-300x227.png",
           image: "https://www.duet.edu.pk/media/about.jpg",
