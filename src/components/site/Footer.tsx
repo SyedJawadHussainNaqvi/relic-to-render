@@ -101,17 +101,30 @@ export function Footer() {
       </div>
 
       <div className="border-t border-white/15 py-3 text-center text-[12px] text-white/70">
-        Copyright © Dawood University of Engineering &amp; Technology, Karachi. All rights reserved.
-        <span className="px-2">·</span>
-        {adminOrigin ? (
-          <a href={`${adminOrigin}/auth`} className="hover:text-accent-on-brand">
-            Staff login
+        <div>
+          Copyright © Dawood University of Engineering &amp; Technology, Karachi. All rights reserved.
+          <span className="px-2">·</span>
+          {adminOrigin ? (
+            <a href={`${adminOrigin}/auth`} className="hover:text-accent-on-brand">
+              Staff login
+            </a>
+          ) : (
+            <Link to="/auth" className="hover:text-accent-on-brand">
+              Staff login
+            </Link>
+          )}
+        </div>
+        <div className="mt-1">
+          Developed and Secured by{" "}
+          <a
+            href="https://www.quantum-horizons.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:text-accent-on-brand"
+          >
+            www.quantum-horizons.com
           </a>
-        ) : (
-          <Link to="/auth" className="hover:text-accent-on-brand">
-            Staff login
-          </Link>
-        )}
+        </div>
       </div>
     </footer>
   );
