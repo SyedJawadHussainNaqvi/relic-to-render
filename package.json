@@ -15,7 +15,9 @@
     "seo:jsonld": "node scripts/seo/validate-jsonld.mjs",
     "security:headers": "node scripts/security/verify-headers.mjs",
     "security:browsers": "node scripts/security/csp-browser-report.mjs",
-    "security:verify": "npm run security:headers && npm run security:browsers"
+    "security:verify": "npm run security:headers && npm run security:browsers",
+    "security:deps": "node scripts/security/audit-deps.mjs --level=high",
+    "ci:verify": "npm run security:deps && npm run lint && npm run build:static"
   },
   "overrides": {
     "rolldown": "1.2.1"
