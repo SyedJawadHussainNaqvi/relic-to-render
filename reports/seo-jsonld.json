@@ -1,16 +1,18 @@
 {
   "target": "http://localhost:4399",
-  "generated_at": "2026-08-26T02:18:24.319Z",
-  "pages_total": 66,
-  "pages_passed": 66,
-  "pages_failed": 0,
+  "generated_at": "2026-08-27T05:21:42.918Z",
+  "pages_total": 68,
+  "pages_passed": 67,
+  "pages_failed": 1,
   "results": [
     {
       "path": "/",
       "blocks": 1,
       "types": [
+        "City",
         "CollegeOrUniversity",
         "ContactPoint",
+        "Country",
         "PostalAddress"
       ],
       "errors": [],
@@ -629,6 +631,30 @@
         "page has no JSON-LD structured data"
       ],
       "passed": true
+    },
+    {
+      "path": "/newsletter",
+      "blocks": 0,
+      "types": [],
+      "errors": [],
+      "warnings": [
+        "page has no JSON-LD structured data"
+      ],
+      "passed": true
+    },
+    {
+      "path": "/contacts",
+      "blocks": 1,
+      "types": [
+        "CollegeOrUniversity",
+        "ContactPoint",
+        "PostalAddress"
+      ],
+      "errors": [
+        "block[0]: CollegeOrUniversity is missing required property \"description\""
+      ],
+      "warnings": [],
+      "passed": false
     },
     {
       "path": "/tenders",
