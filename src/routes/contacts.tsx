@@ -30,6 +30,9 @@ export const Route = createFileRoute("/contacts")({
           "@type": "CollegeOrUniversity",
           name: "Dawood University of Engineering & Technology",
           alternateName: ["DUET Karachi", "DUET"],
+          description:
+            "Contact details, campus address, phone numbers and department emails for Dawood University of Engineering & Technology (DUET), New M. A. Jinnah Road, Karachi.",
+
           url: "https://www.duet.edu.pk/",
           logo: "https://www.duet.edu.pk/media/duet_logo-300x227.png",
           telephone: "+92-21-99213151",
