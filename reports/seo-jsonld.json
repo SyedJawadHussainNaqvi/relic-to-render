@@ -1,9 +1,9 @@
 {
   "target": "http://localhost:4399",
-  "generated_at": "2026-08-27T05:21:42.918Z",
+  "generated_at": "2026-08-27T05:22:14.373Z",
   "pages_total": 68,
-  "pages_passed": 67,
-  "pages_failed": 1,
+  "pages_passed": 68,
+  "pages_failed": 0,
   "results": [
     {
       "path": "/",
@@ -650,11 +650,9 @@
         "ContactPoint",
         "PostalAddress"
       ],
-      "errors": [
-        "block[0]: CollegeOrUniversity is missing required property \"description\""
-      ],
+      "errors": [],
       "warnings": [],
-      "passed": false
+      "passed": true
     },
     {
       "path": "/tenders",
