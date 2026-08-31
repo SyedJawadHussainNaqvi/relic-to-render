@@ -18,9 +18,19 @@ export function getPage(path: string): PageData | undefined {
   return all[path];
 }
 
+/** A page whose only content is a "Coming Soon..." placeholder has no real body. */
+function isPlaceholder(blocks: Block[]) {
+  return (
+    blocks.length > 0 &&
+    blocks.every((b) => b.t === "h" && /coming\s*soon/i.test((b as { text: string }).text))
+  );
+}
+
 export function ArchivedPage({ path }: { path: string }) {
   const page = all[path];
   if (!page) return <UnderConstruction path={path} />;
+  const hasBody = page.blocks.length > 0 && !isPlaceholder(page.blocks);
+
 
   const group = mainMenu.find((g) => g.to === path);
   const sidebar =
