@@ -9,7 +9,7 @@ export const refreshSeoMonitoring = createServerFn({ method: "POST" })
       .from("user_roles")
       .select("role")
       .eq("user_id", context.userId)
-      .eq("role", "admin");
+      .in("role", ["admin", "super_admin"]);
     if (error) throw new Error(error.message);
     if (!roles?.length) throw new Error("Admin role required.");
 
@@ -25,7 +25,7 @@ export const resubmitSitemap = createServerFn({ method: "POST" })
       .from("user_roles")
       .select("role")
       .eq("user_id", context.userId)
-      .eq("role", "admin");
+      .in("role", ["admin", "super_admin"]);
     if (error) throw new Error(error.message);
     if (!roles?.length) throw new Error("Admin role required.");
 
