@@ -1,8 +1,8 @@
 {
   "target": "http://localhost:4399",
-  "generated_at": "2026-08-27T05:22:14.373Z",
-  "pages_total": 68,
-  "pages_passed": 68,
+  "generated_at": "2026-08-31T08:34:17.739Z",
+  "pages_total": 70,
+  "pages_passed": 70,
   "pages_failed": 0,
   "results": [
     {
@@ -17,6 +17,16 @@
       ],
       "errors": [],
       "warnings": [],
+      "passed": true
+    },
+    {
+      "path": "/about",
+      "blocks": 0,
+      "types": [],
+      "errors": [],
+      "warnings": [
+        "page has no JSON-LD structured data"
+      ],
       "passed": true
     },
     {
@@ -304,6 +314,16 @@
     },
     {
       "path": "/convocation",
+      "blocks": 0,
+      "types": [],
+      "errors": [],
+      "warnings": [
+        "page has no JSON-LD structured data"
+      ],
+      "passed": true
+    },
+    {
+      "path": "/research",
       "blocks": 0,
       "types": [],
       "errors": [],
