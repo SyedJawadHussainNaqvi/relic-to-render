@@ -1,5 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { ArchivedPage } from "@/components/site/ArchivedPage";
+import { DepartmentExplorer } from "@/components/site/DepartmentExplorer";
+import { FacultyDirectory } from "@/components/site/FacultyDirectory";
 
 const URL = "https://www.duet.edu.pk/academics";
 const TITLE = "Academics — DUET Karachi";
@@ -83,5 +85,17 @@ export const Route = createFileRoute("/academics")({
       },
     ],
   }),
-  component: () => <ArchivedPage path="/academics" />,
+  component: AcademicsPage,
+});
+
+function AcademicsPage() {
+  return (
+    <>
+      <ArchivedPage path="/academics" />
+      <div className="mx-auto max-w-[1200px] space-y-12 px-4 pb-12">
+        <DepartmentExplorer />
+        <FacultyDirectory />
+      </div>
+    </>
+  );
 });
