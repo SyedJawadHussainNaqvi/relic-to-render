@@ -1,0 +1,391 @@
+{
+  "generated_at": "2026-08-31T08:40:02.680Z",
+  "pages_total": 64,
+  "pages_failed": 0,
+  "results": [
+    {
+      "path": "/about-cemet",
+      "words": 136,
+      "passed": true,
+      "errors": []
+    },
+    {
+      "path": "/about-duet",
+      "words": 2,
+      "passed": true,
+      "errors": []
+    },
+    {
+      "path": "/about-duet/historic-profile",
+      "words": 595,
+      "passed": true,
+      "errors": []
+    },
+    {
+      "path": "/about-duet/vision-mission",
+      "words": 73,
+      "passed": true,
+      "errors": []
+    },
+    {
+      "path": "/academic-calendar",
+      "words": 149,
+      "passed": true,
+      "errors": []
+    },
+    {
+      "path": "/academics",
+      "words": 1,
+      "passed": true,
+      "errors": []
+    },
+    {
+      "path": "/admissions",
+      "words": 229,
+      "passed": true,
+      "errors": []
+    },
+    {
+      "path": "/alumni",
+      "words": 12,
+      "passed": true,
+      "errors": []
+    },
+    {
+      "path": "/annual-report",
+      "words": 19,
+      "passed": true,
+      "errors": []
+    },
+    {
+      "path": "/authorities",
+      "words": 1125,
+      "passed": true,
+      "errors": []
+    },
+    {
+      "path": "/business-incubation-center",
+      "words": 5,
+      "passed": true,
+      "errors": []
+    },
+    {
+      "path": "/career-counselling",
+      "words": 4,
+      "passed": true,
+      "errors": []
+    },
+    {
+      "path": "/careers",
+      "words": 29,
+      "passed": true,
+      "errors": []
+    },
+    {
+      "path": "/certificates",
+      "words": 3,
+      "passed": true,
+      "errors": []
+    },
+    {
+      "path": "/conference-seminars",
+      "words": 47,
+      "passed": true,
+      "errors": []
+    },
+    {
+      "path": "/continues-professional-development",
+      "words": 170,
+      "passed": true,
+      "errors": []
+    },
+    {
+      "path": "/convocation",
+      "words": 3,
+      "passed": true,
+      "errors": []
+    },
+    {
+      "path": "/directorates",
+      "words": 1,
+      "passed": true,
+      "errors": []
+    },
+    {
+      "path": "/downloads-2",
+      "words": 3,
+      "passed": true,
+      "errors": []
+    },
+    {
+      "path": "/downloads",
+      "words": 68,
+      "passed": true,
+      "errors": []
+    },
+    {
+      "path": "/duet-cemet",
+      "words": 1,
+      "passed": true,
+      "errors": []
+    },
+    {
+      "path": "/examinations",
+      "words": 1,
+      "passed": true,
+      "errors": []
+    },
+    {
+      "path": "/faculty-departments",
+      "words": 281,
+      "passed": true,
+      "errors": []
+    },
+    {
+      "path": "/fee-structure",
+      "words": 526,
+      "passed": true,
+      "errors": []
+    },
+    {
+      "path": "/financial-assistance-departments",
+      "words": 345,
+      "passed": true,
+      "errors": []
+    },
+    {
+      "path": "/funding-agencies",
+      "words": 4,
+      "passed": true,
+      "errors": []
+    },
+    {
+      "path": "/hec-approved-phd-supervisors",
+      "words": 343,
+      "passed": true,
+      "errors": []
+    },
+    {
+      "path": "/incubation-centre",
+      "words": 82,
+      "passed": true,
+      "errors": []
+    },
+    {
+      "path": "/industrial-liasons-alumni-affairs",
+      "words": 233,
+      "passed": true,
+      "errors": []
+    },
+    {
+      "path": "/information-technology",
+      "words": 594,
+      "passed": true,
+      "errors": []
+    },
+    {
+      "path": "/internships",
+      "words": 3,
+      "passed": true,
+      "errors": []
+    },
+    {
+      "path": "/journal",
+      "words": 4,
+      "passed": true,
+      "errors": []
+    },
+    {
+      "path": "/microsoft-for-all",
+      "words": 3,
+      "passed": true,
+      "errors": []
+    },
+    {
+      "path": "/office-of-research-innovation-commercialisation",
+      "words": 211,
+      "passed": true,
+      "errors": []
+    },
+    {
+      "path": "/officers-2",
+      "words": 255,
+      "passed": true,
+      "errors": []
+    },
+    {
+      "path": "/organogram",
+      "words": 1,
+      "passed": true,
+      "errors": []
+    },
+    {
+      "path": "/outcome-based-education-obe",
+      "words": 6,
+      "passed": true,
+      "errors": []
+    },
+    {
+      "path": "/plagiarism-policy",
+      "words": 24,
+      "passed": true,
+      "errors": []
+    },
+    {
+      "path": "/postgraduate-programs",
+      "words": 46,
+      "passed": true,
+      "errors": []
+    },
+    {
+      "path": "/postgraduate-regulations",
+      "words": 14,
+      "passed": true,
+      "errors": []
+    },
+    {
+      "path": "/postgraduate-studies",
+      "words": 131,
+      "passed": true,
+      "errors": []
+    },
+    {
+      "path": "/projects",
+      "words": 21,
+      "passed": true,
+      "errors": []
+    },
+    {
+      "path": "/publications",
+      "words": 72,
+      "passed": true,
+      "errors": []
+    },
+    {
+      "path": "/quality-enhancement-cell",
+      "words": 523,
+      "passed": true,
+      "errors": []
+    },
+    {
+      "path": "/regulations",
+      "words": 3,
+      "passed": true,
+      "errors": []
+    },
+    {
+      "path": "/research-2",
+      "words": 1,
+      "passed": true,
+      "errors": []
+    },
+    {
+      "path": "/research-ethics-policy",
+      "words": 5,
+      "passed": true,
+      "errors": []
+    },
+    {
+      "path": "/results",
+      "words": 649,
+      "passed": true,
+      "errors": []
+    },
+    {
+      "path": "/schedule",
+      "words": 3,
+      "passed": true,
+      "errors": []
+    },
+    {
+      "path": "/scholarships-2",
+      "words": 1,
+      "passed": true,
+      "errors": []
+    },
+    {
+      "path": "/scholarships",
+      "words": 3,
+      "passed": true,
+      "errors": []
+    },
+    {
+      "path": "/seminars-workshops",
+      "words": 5,
+      "passed": true,
+      "errors": []
+    },
+    {
+      "path": "/shuttle-bus-routes",
+      "words": 5,
+      "passed": true,
+      "errors": []
+    },
+    {
+      "path": "/sports",
+      "words": 225,
+      "passed": true,
+      "errors": []
+    },
+    {
+      "path": "/students-affairs",
+      "words": 6,
+      "passed": true,
+      "errors": []
+    },
+    {
+      "path": "/students-societies",
+      "words": 4,
+      "passed": true,
+      "errors": []
+    },
+    {
+      "path": "/students",
+      "words": 1,
+      "passed": true,
+      "errors": []
+    },
+    {
+      "path": "/tenders",
+      "words": 53,
+      "passed": true,
+      "errors": []
+    },
+    {
+      "path": "/undergrad-programs",
+      "words": 55,
+      "passed": true,
+      "errors": []
+    },
+    {
+      "path": "/undergrad-regulations",
+      "words": 17,
+      "passed": true,
+      "errors": []
+    },
+    {
+      "path": "/university-linkages",
+      "words": 25,
+      "passed": true,
+      "errors": []
+    },
+    {
+      "path": "/university-policies",
+      "words": 32,
+      "passed": true,
+      "errors": []
+    },
+    {
+      "path": "/vice-chancellors-message-2",
+      "words": 615,
+      "passed": true,
+      "errors": []
+    },
+    {
+      "path": "/video-gallery",
+      "words": 2,
+      "passed": true,
+      "errors": []
+    }
+  ]
+}
