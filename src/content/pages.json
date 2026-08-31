@@ -1513,21 +1513,277 @@
  },
  "/fee-structure": {
   "title": "Fee Structures",
-  "description": "Namun, ketika Ukraina terjerat dalam konflik mematikan dengan Rusia, Pielieshenko merasa panggilan yang lebih tinggi. Ia tidak hanya ingin memperjuangkan p",
+  "description": "Admission, semester and self-finance fee structure for BE and B.Arch programs at Dawood University of Engineering & Technology, Karachi, under the Fee and Other Miscellaneous Charges Regulations, 2019.",
   "sidebar": [],
   "blocks": [
    {
     "t": "h",
+    "level": 2,
+    "text": "Fee and Other Miscellaneous Charges Regulations, 2019"
+   },
+   {
+    "t": "p",
+    "text": "These regulations shall be called the Fee and Other Miscellaneous Charges Regulations, 2019. They were implemented on Batch-2020 and onwards and apply to all students admitted to the BE / B.Arch programs of Dawood University of Engineering & Technology, Karachi."
+   },
+   {
+    "t": "h",
     "level": 3,
-    "text": "Kisah Oleksandr Pielieshenko, Sang Juara Angkat Besi yang Gugur dalam Perang Melawan Rusia"
+    "text": "Definitions"
+   },
+   {
+    "t": "list",
+    "ordered": false,
+    "items": [
+     "“University” means the Dawood University of Engineering and Technology, Karachi.",
+     "“Act” means the Dawood University of Engineering and Technology, Karachi Act, 2013.",
+     "“Student” means a student (local or foreign) admitted to the University in accordance with the prescribed procedure against a clear seat.",
+     "“Fees” means the amount required to be deposited by a local or foreign student as admission fees and semester fees.",
+     "“Refundable fees” means the amount returned to a student on account of University caution money deposit, excess payment, payment made in error or double payment to the University.",
+     "“Non-refundable fees” means the registration fees."
+    ]
+   },
+   {
+    "t": "h",
+    "level": 3,
+    "text": "Admission-time fee (all schemes and categories)"
+   },
+   {
+    "t": "table",
+    "rows": [
+     [
+      "Head of charges",
+      "Local students (PKR)",
+      "Foreign students (USD)"
+     ],
+     [
+      "Admission Fee (once)",
+      "10,000",
+      ""
+     ],
+     [
+      "Enrolment Fee (once)",
+      "3,000",
+      ""
+     ],
+     [
+      "Documents Verification Fee (once)",
+      "2,500",
+      ""
+     ],
+     [
+      "Identity Card Fee (once)",
+      "500",
+      ""
+     ],
+     [
+      "Total (payable at the time of admission only)",
+      "Rs. 16,000/-",
+      "USD 500/-"
+     ]
+    ]
+   },
+   {
+    "t": "h",
+    "level": 3,
+    "text": "Semester fee"
+   },
+   {
+    "t": "table",
+    "rows": [
+     [
+      "Head of charges",
+      "Local students (PKR)",
+      "Foreign students (USD)"
+     ],
+     [
+      "Tuition Fee (per semester)",
+      "7,000",
+      ""
+     ],
+     [
+      "Games Fee (per semester)",
+      "1,000",
+      ""
+     ],
+     [
+      "Developmental Charges (per semester)",
+      "2,000",
+      ""
+     ],
+     [
+      "Transport Fee (per semester)",
+      "2,000",
+      ""
+     ],
+     [
+      "Examination Fee (per semester)",
+      "2,000",
+      ""
+     ],
+     [
+      "Laboratory / Studio Fee (per semester)",
+      "1,000",
+      ""
+     ],
+     [
+      "Library Membership Fee (per semester)",
+      "1,000",
+      ""
+     ],
+     [
+      "Total (per semester)",
+      "Rs. 16,000/-",
+      "USD 250/-"
+     ]
+    ]
+   },
+   {
+    "t": "h",
+    "level": 3,
+    "text": "Self-finance scheme — local students (payable at the time of admission only)"
+   },
+   {
+    "t": "table",
+    "rows": [
+     [
+      "Department",
+      "Self-finance fee (PKR)"
+     ],
+     [
+      "Electronic Engineering",
+      "750,000/-"
+     ],
+     [
+      "Chemical Engineering",
+      "750,000/-"
+     ],
+     [
+      "Computer Systems Engineering",
+      "750,000/-"
+     ],
+     [
+      "Industrial Engineering and Management",
+      "625,000/-"
+     ],
+     [
+      "Telecommunication Engineering",
+      "625,000/-"
+     ],
+     [
+      "Petroleum and Gas Engineering",
+      "625,000/-"
+     ],
+     [
+      "Architecture and Planning",
+      "625,000/-"
+     ],
+     [
+      "Metallurgy and Materials Engineering",
+      "400,000/-"
+     ],
+     [
+      "Energy and Environment Engineering",
+      "400,000/-"
+     ]
+    ]
+   },
+   {
+    "t": "h",
+    "level": 3,
+    "text": "Self-finance scheme — foreign students (payable at the time of admission only)"
+   },
+   {
+    "t": "table",
+    "rows": [
+     [
+      "Department",
+      "Self-finance fee (USD)"
+     ],
+     [
+      "Electronic Engineering",
+      "USD 8,000/-"
+     ],
+     [
+      "Chemical Engineering",
+      "USD 8,000/-"
+     ],
+     [
+      "Computer Systems Engineering",
+      "USD 8,000/-"
+     ],
+     [
+      "Industrial Engineering and Management",
+      "USD 7,000/-"
+     ],
+     [
+      "Telecommunication Engineering",
+      "USD 7,000/-"
+     ],
+     [
+      "Petroleum and Gas Engineering",
+      "USD 7,000/-"
+     ],
+     [
+      "Architecture and Planning",
+      "USD 7,000/-"
+     ],
+     [
+      "Metallurgy and Materials Engineering",
+      "USD 6,000/-"
+     ],
+     [
+      "Energy and Environment Engineering",
+      "USD 6,000/-"
+     ]
+    ]
+   },
+   {
+    "t": "h",
+    "level": 3,
+    "text": "Conditions for the self-finance scheme"
+   },
+   {
+    "t": "list",
+    "ordered": false,
+    "items": [
+     "The self-finance amount is refunded if a candidate is not admitted / does not secure admission under the self-finance scheme.",
+     "Students admitted under the self-finance scheme are also required to pay University fees and other miscellaneous charges.",
+     "As per HEC policy, the University does not refund fees, including the self-finance scheme fee, after the commencement of classes under any circumstances."
+    ]
+   },
+   {
+    "t": "h",
+    "level": 3,
+    "text": "Modification of regulations"
    },
    {
     "t": "p",
-    "text": "Namun, ketika Ukraina terjerat dalam konflik mematikan dengan Rusia, Pielieshenko merasa panggilan yang lebih tinggi. Ia tidak hanya ingin memperjuangkan prestasi di atas podium, melainkan juga membela tanah airnya di medan perang. Keputusannya untuk bergabung dengan pasukan Ukraina sebagai seorang prajurit merupakan bukti nyata keberaniannya yang tak terbendung."
+    "text": "These regulations are subject to modification by the competent authorities of the University as may be felt appropriate from time to time. For the fee applicable to a specific batch or program, students should confirm the current challan generated on the DUET student portal or contact the Directorate of Finance."
    },
    {
-    "t": "p",
-    "text": "Kisah kepahlawanan Pielieshenko mencapai puncaknya ketika ia terlibat dalam pertempuran sengit melawan pasukan Rusia. Meskipun keberanian dan kekuatannya sebagai atlet angkat besi menjadi modalnya, namun dalam medan perang, kekuatan fisik saja tidak cukup. Dalam pertarungan yang berat, Pielieshenko gugur sebagai seorang prajurit, meninggalkan luka mendalam bagi keluarga, teman, dan seluruh negaranya."
+    "t": "links",
+    "items": [
+     {
+      "t": "link",
+      "text": "Admissions — how to apply",
+      "to": "/admissions"
+     },
+     {
+      "t": "link",
+      "text": "Scholarships and financial assistance",
+      "to": "/scholarships"
+     },
+     {
+      "t": "link",
+      "text": "Undergraduate regulations",
+      "to": "/undergrad-regulations"
+     },
+     {
+      "t": "link",
+      "text": "DUET student portal (generate fee challan)",
+      "href": "https://portal.duet.edu.pk/"
+     }
+    ]
    }
   ]
  },
