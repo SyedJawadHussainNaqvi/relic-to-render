@@ -60,7 +60,7 @@ export function ArchivedPage({ path }: { path: string }) {
 
       <div className="mx-auto grid max-w-[1200px] gap-8 px-4 py-10 lg:grid-cols-[1fr_280px]">
         <article>
-          {page.blocks.length > 0 ? (
+          {hasBody ? (
             <Blocks blocks={page.blocks} />
           ) : (
             <div className="space-y-4">
@@ -84,7 +84,7 @@ export function ArchivedPage({ path }: { path: string }) {
           )}
         </article>
 
-        {sidebar.length > 0 && page.blocks.length > 0 ? (
+        {sidebar.length > 0 && hasBody ? (
           <aside>
             <div className="rounded border border-border bg-card">
               <h2 className="border-b border-border bg-brand px-4 py-2.5 font-display text-sm font-semibold uppercase tracking-wide text-white">
