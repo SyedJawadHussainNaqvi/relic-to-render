@@ -36,7 +36,7 @@ export function useAdmin(): State {
         .from("user_roles")
         .select("role")
         .eq("user_id", user.id)
-        .in("role", ELEVATED as unknown as string[]);
+        .in("role", [...ELEVATED]);
       const isSuperAdmin = Boolean(roles?.some((r) => r.role === "super_admin"));
       const isAdmin = isSuperAdmin || Boolean(roles?.length);
 
