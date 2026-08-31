@@ -3,6 +3,7 @@ import { Blocks, type Block } from "./Blocks";
 import { campusBg } from "@/content/assets";
 import { mainMenu } from "@/content/menu";
 import pages from "@/content/pages.json";
+import { UnderConstruction } from "./UnderConstruction";
 
 type PageData = {
   title: string;
@@ -19,7 +20,7 @@ export function getPage(path: string): PageData | undefined {
 
 export function ArchivedPage({ path }: { path: string }) {
   const page = all[path];
-  if (!page) return null;
+  if (!page) return <UnderConstruction path={path} />;
 
   const group = mainMenu.find((g) => g.to === path);
   const sidebar =
