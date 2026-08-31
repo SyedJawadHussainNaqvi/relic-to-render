@@ -20,17 +20,19 @@ export async function isEmailAllowed(email: string): Promise<boolean> {
   return Boolean(data);
 }
 
-/** Grants the admin role to an allowlisted user id (idempotent). */
+/** Grants the admin role to an allowlisted user id (idempotent).
+ *  Accounts that already hold super_admin are left untouched. */
 export async function grantAdminRole(userId: string): Promise<void> {
   const { data } = await supabaseAdmin
     .from("user_roles")
     .select("id")
     .eq("user_id", userId)
-    .eq("role", "admin")
-    .maybeSingle();
-  if (data) return;
+    .in("role", ["admin", "super_admin"])
+    .limit(1);
+  if (data?.length) return;
   await supabaseAdmin.from("user_roles").insert({ user_id: userId, role: "admin" });
 }
+
 
 /**
  * Creates a confirmed CMS account for an allowlisted address and grants the
