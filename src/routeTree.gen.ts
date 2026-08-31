@@ -58,6 +58,7 @@ import { Route as ProjectsRouteImport } from './routes/projects'
 import { Route as PublicationsRouteImport } from './routes/publications'
 import { Route as QualityEnhancementCellRouteImport } from './routes/quality-enhancement-cell'
 import { Route as RegulationsRouteImport } from './routes/regulations'
+import { Route as ResearchRouteImport } from './routes/research'
 import { Route as Research2RouteImport } from './routes/research-2'
 import { Route as ResearchEthicsPolicyRouteImport } from './routes/research-ethics-policy'
 import { Route as ResultsRouteImport } from './routes/results'
@@ -344,6 +345,11 @@ const RegulationsRoute = RegulationsRouteImport.update({
   path: '/regulations',
   getParentRoute: () => rootRouteImport,
 } as any)
+const ResearchRoute = ResearchRouteImport.update({
+  id: '/research',
+  path: '/research',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const Research2Route = Research2RouteImport.update({
   id: '/research-2',
   path: '/research-2',
@@ -567,6 +573,7 @@ export interface FileRoutesByFullPath {
   '/publications': typeof PublicationsRoute
   '/quality-enhancement-cell': typeof QualityEnhancementCellRoute
   '/regulations': typeof RegulationsRoute
+  '/research': typeof ResearchRoute
   '/research-2': typeof Research2Route
   '/research-ethics-policy': typeof ResearchEthicsPolicyRoute
   '/results': typeof ResultsRoute
@@ -651,6 +658,7 @@ export interface FileRoutesByTo {
   '/publications': typeof PublicationsRoute
   '/quality-enhancement-cell': typeof QualityEnhancementCellRoute
   '/regulations': typeof RegulationsRoute
+  '/research': typeof ResearchRoute
   '/research-2': typeof Research2Route
   '/research-ethics-policy': typeof ResearchEthicsPolicyRoute
   '/results': typeof ResultsRoute
@@ -736,6 +744,7 @@ export interface FileRoutesById {
   '/publications': typeof PublicationsRoute
   '/quality-enhancement-cell': typeof QualityEnhancementCellRoute
   '/regulations': typeof RegulationsRoute
+  '/research': typeof ResearchRoute
   '/research-2': typeof Research2Route
   '/research-ethics-policy': typeof ResearchEthicsPolicyRoute
   '/results': typeof ResultsRoute
@@ -822,6 +831,7 @@ export interface FileRouteTypes {
     | '/publications'
     | '/quality-enhancement-cell'
     | '/regulations'
+    | '/research'
     | '/research-2'
     | '/research-ethics-policy'
     | '/results'
@@ -906,6 +916,7 @@ export interface FileRouteTypes {
     | '/publications'
     | '/quality-enhancement-cell'
     | '/regulations'
+    | '/research'
     | '/research-2'
     | '/research-ethics-policy'
     | '/results'
@@ -990,6 +1001,7 @@ export interface FileRouteTypes {
     | '/publications'
     | '/quality-enhancement-cell'
     | '/regulations'
+    | '/research'
     | '/research-2'
     | '/research-ethics-policy'
     | '/results'
@@ -1076,6 +1088,7 @@ export interface RootRouteChildren {
   PublicationsRoute: typeof PublicationsRoute
   QualityEnhancementCellRoute: typeof QualityEnhancementCellRoute
   RegulationsRoute: typeof RegulationsRoute
+  ResearchRoute: typeof ResearchRoute
   Research2Route: typeof Research2Route
   ResearchEthicsPolicyRoute: typeof ResearchEthicsPolicyRoute
   ResultsRoute: typeof ResultsRoute
@@ -1451,6 +1464,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof RegulationsRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/research': {
+      id: '/research'
+      path: '/research'
+      fullPath: '/research'
+      preLoaderRoute: typeof ResearchRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/research-2': {
       id: '/research-2'
       path: '/research-2'
@@ -1773,6 +1793,7 @@ const rootRouteChildren: RootRouteChildren = {
   PublicationsRoute: PublicationsRoute,
   QualityEnhancementCellRoute: QualityEnhancementCellRoute,
   RegulationsRoute: RegulationsRoute,
+  ResearchRoute: ResearchRoute,
   Research2Route: Research2Route,
   ResearchEthicsPolicyRoute: ResearchEthicsPolicyRoute,
   ResultsRoute: ResultsRoute,
