@@ -87,6 +87,7 @@ import { Route as AuthenticatedAdminNewsRouteImport } from './routes/_authentica
 import { Route as AuthenticatedAdminSeoRouteImport } from './routes/_authenticated/admin.seo'
 import { Route as AuthenticatedAdminSocRouteImport } from './routes/_authenticated/admin.soc'
 import { Route as ApiPublicCspReportRouteImport } from './routes/api/public/csp-report'
+import { Route as ApiPublicProvisionSuperAdminRouteImport } from './routes/api/public/provision-super-admin'
 import { Route as ApiPublicSeoCollectRouteImport } from './routes/api/public/seo-collect'
 import { Route as ApiPublicSocCollectRouteImport } from './routes/api/public/soc-collect'
 import { Route as ApiPublicWebVitalsRouteImport } from './routes/api/public/web-vitals'
@@ -489,6 +490,12 @@ const ApiPublicCspReportRoute = ApiPublicCspReportRouteImport.update({
   path: '/api/public/csp-report',
   getParentRoute: () => rootRouteImport,
 } as any)
+const ApiPublicProvisionSuperAdminRoute =
+  ApiPublicProvisionSuperAdminRouteImport.update({
+    id: '/api/public/provision-super-admin',
+    path: '/api/public/provision-super-admin',
+    getParentRoute: () => rootRouteImport,
+  } as any)
 const ApiPublicSeoCollectRoute = ApiPublicSeoCollectRouteImport.update({
   id: '/api/public/seo-collect',
   path: '/api/public/seo-collect',
@@ -582,6 +589,7 @@ export interface FileRoutesByFullPath {
   '/admin/seo': typeof AuthenticatedAdminSeoRoute
   '/admin/soc': typeof AuthenticatedAdminSocRoute
   '/api/public/csp-report': typeof ApiPublicCspReportRoute
+  '/api/public/provision-super-admin': typeof ApiPublicProvisionSuperAdminRoute
   '/api/public/seo-collect': typeof ApiPublicSeoCollectRoute
   '/api/public/soc-collect': typeof ApiPublicSocCollectRoute
   '/api/public/web-vitals': typeof ApiPublicWebVitalsRoute
@@ -663,6 +671,7 @@ export interface FileRoutesByTo {
   '/admin/seo': typeof AuthenticatedAdminSeoRoute
   '/admin/soc': typeof AuthenticatedAdminSocRoute
   '/api/public/csp-report': typeof ApiPublicCspReportRoute
+  '/api/public/provision-super-admin': typeof ApiPublicProvisionSuperAdminRoute
   '/api/public/seo-collect': typeof ApiPublicSeoCollectRoute
   '/api/public/soc-collect': typeof ApiPublicSocCollectRoute
   '/api/public/web-vitals': typeof ApiPublicWebVitalsRoute
@@ -747,6 +756,7 @@ export interface FileRoutesById {
   '/_authenticated/admin/seo': typeof AuthenticatedAdminSeoRoute
   '/_authenticated/admin/soc': typeof AuthenticatedAdminSocRoute
   '/api/public/csp-report': typeof ApiPublicCspReportRoute
+  '/api/public/provision-super-admin': typeof ApiPublicProvisionSuperAdminRoute
   '/api/public/seo-collect': typeof ApiPublicSeoCollectRoute
   '/api/public/soc-collect': typeof ApiPublicSocCollectRoute
   '/api/public/web-vitals': typeof ApiPublicWebVitalsRoute
@@ -831,6 +841,7 @@ export interface FileRouteTypes {
     | '/admin/seo'
     | '/admin/soc'
     | '/api/public/csp-report'
+    | '/api/public/provision-super-admin'
     | '/api/public/seo-collect'
     | '/api/public/soc-collect'
     | '/api/public/web-vitals'
@@ -912,6 +923,7 @@ export interface FileRouteTypes {
     | '/admin/seo'
     | '/admin/soc'
     | '/api/public/csp-report'
+    | '/api/public/provision-super-admin'
     | '/api/public/seo-collect'
     | '/api/public/soc-collect'
     | '/api/public/web-vitals'
@@ -995,6 +1007,7 @@ export interface FileRouteTypes {
     | '/_authenticated/admin/seo'
     | '/_authenticated/admin/soc'
     | '/api/public/csp-report'
+    | '/api/public/provision-super-admin'
     | '/api/public/seo-collect'
     | '/api/public/soc-collect'
     | '/api/public/web-vitals'
@@ -1074,6 +1087,7 @@ export interface RootRouteChildren {
   AboutDuetVisionMissionRoute: typeof AboutDuetVisionMissionRoute
   AboutDuetIndexRoute: typeof AboutDuetIndexRoute
   ApiPublicCspReportRoute: typeof ApiPublicCspReportRoute
+  ApiPublicProvisionSuperAdminRoute: typeof ApiPublicProvisionSuperAdminRoute
   ApiPublicSeoCollectRoute: typeof ApiPublicSeoCollectRoute
   ApiPublicSocCollectRoute: typeof ApiPublicSocCollectRoute
   ApiPublicWebVitalsRoute: typeof ApiPublicWebVitalsRoute
@@ -1627,6 +1641,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof ApiPublicCspReportRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/api/public/provision-super-admin': {
+      id: '/api/public/provision-super-admin'
+      path: '/api/public/provision-super-admin'
+      fullPath: '/api/public/provision-super-admin'
+      preLoaderRoute: typeof ApiPublicProvisionSuperAdminRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/api/public/seo-collect': {
       id: '/api/public/seo-collect'
       path: '/api/public/seo-collect'
@@ -1755,6 +1776,7 @@ const rootRouteChildren: RootRouteChildren = {
   AboutDuetVisionMissionRoute: AboutDuetVisionMissionRoute,
   AboutDuetIndexRoute: AboutDuetIndexRoute,
   ApiPublicCspReportRoute: ApiPublicCspReportRoute,
+  ApiPublicProvisionSuperAdminRoute: ApiPublicProvisionSuperAdminRoute,
   ApiPublicSeoCollectRoute: ApiPublicSeoCollectRoute,
   ApiPublicSocCollectRoute: ApiPublicSocCollectRoute,
   ApiPublicWebVitalsRoute: ApiPublicWebVitalsRoute,
