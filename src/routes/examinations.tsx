@@ -30,4 +30,4 @@ function ExaminationsPage() {
       </div>
     </>
   );
-});
+}

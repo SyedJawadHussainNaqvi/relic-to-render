@@ -102,4 +102,4 @@ function AdmissionsPage() {
       </div>
     </>
   );
-});
+}

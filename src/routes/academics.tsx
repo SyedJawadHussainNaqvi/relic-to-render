@@ -98,4 +98,4 @@ function AcademicsPage() {
       </div>
     </>
   );
-});
+}
