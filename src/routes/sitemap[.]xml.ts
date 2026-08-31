@@ -11,6 +11,7 @@ interface SitemapEntry {
 
 const entries: SitemapEntry[] = [
   { path: "/", changefreq: "weekly", priority: "1.0" },
+  { path: "/about", changefreq: "monthly", priority: "0.9" },
   { path: "/about-duet", changefreq: "monthly", priority: "0.8" },
   { path: "/about-duet/historic-profile", changefreq: "yearly", priority: "0.6" },
   { path: "/about-duet/vision-mission", changefreq: "yearly", priority: "0.6" },
@@ -39,6 +40,7 @@ const entries: SitemapEntry[] = [
   { path: "/schedule", changefreq: "weekly", priority: "0.7" },
   { path: "/certificates", changefreq: "monthly", priority: "0.6" },
   { path: "/convocation", changefreq: "monthly", priority: "0.6" },
+  { path: "/research", changefreq: "monthly", priority: "0.9" },
   { path: "/research-2", changefreq: "monthly", priority: "0.8" },
   { path: "/office-of-research-innovation-commercialisation", changefreq: "monthly", priority: "0.7" },
   { path: "/hec-approved-phd-supervisors", changefreq: "monthly", priority: "0.6" },

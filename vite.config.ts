@@ -16,7 +16,8 @@ const prerenderAll = process.env["PRERENDER"] === "1";
 
 /** Public route paths derived from src/routes, used as prerender entry points. */
 function publicRoutePaths(): string[] {
-  const skip = /^(__root|_authenticated|auth|api)/;
+  // "$.tsx" is the catch-all fallback route and has no concrete URL to prerender.
+  const skip = /^(__root|_authenticated|auth|api|\$)/;
   const paths = readdirSync("src/routes")
     .filter((f) => /\.tsx$/.test(f) && !skip.test(f))
     .map((f) =>

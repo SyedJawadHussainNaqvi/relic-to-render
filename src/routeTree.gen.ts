@@ -10,7 +10,9 @@
 
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
+import { Route as SplatRouteImport } from './routes/$'
 import { Route as AuthenticatedRouteRouteImport } from './routes/_authenticated/route'
+import { Route as AboutRouteImport } from './routes/about'
 import { Route as AboutCemetRouteImport } from './routes/about-cemet'
 import { Route as AcademicCalendarRouteImport } from './routes/academic-calendar'
 import { Route as AcademicsRouteImport } from './routes/academics'
@@ -57,6 +59,7 @@ import { Route as ProjectsRouteImport } from './routes/projects'
 import { Route as PublicationsRouteImport } from './routes/publications'
 import { Route as QualityEnhancementCellRouteImport } from './routes/quality-enhancement-cell'
 import { Route as RegulationsRouteImport } from './routes/regulations'
+import { Route as ResearchRouteImport } from './routes/research'
 import { Route as Research2RouteImport } from './routes/research-2'
 import { Route as ResearchEthicsPolicyRouteImport } from './routes/research-ethics-policy'
 import { Route as ResultsRouteImport } from './routes/results'
@@ -97,8 +100,18 @@ const IndexRoute = IndexRouteImport.update({
   path: '/',
   getParentRoute: () => rootRouteImport,
 } as any)
+const SplatRoute = SplatRouteImport.update({
+  id: '/$',
+  path: '/$',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const AuthenticatedRouteRoute = AuthenticatedRouteRouteImport.update({
   id: '/_authenticated',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const AboutRoute = AboutRouteImport.update({
+  id: '/about',
+  path: '/about',
   getParentRoute: () => rootRouteImport,
 } as any)
 const AboutCemetRoute = AboutCemetRouteImport.update({
@@ -338,6 +351,11 @@ const RegulationsRoute = RegulationsRouteImport.update({
   path: '/regulations',
   getParentRoute: () => rootRouteImport,
 } as any)
+const ResearchRoute = ResearchRouteImport.update({
+  id: '/research',
+  path: '/research',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const Research2Route = Research2RouteImport.update({
   id: '/research-2',
   path: '/research-2',
@@ -514,6 +532,8 @@ const ApiPublicWebVitalsRoute = ApiPublicWebVitalsRouteImport.update({
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
+  '/$': typeof SplatRoute
+  '/about': typeof AboutRoute
   '/about-cemet': typeof AboutCemetRoute
   '/academic-calendar': typeof AcademicCalendarRoute
   '/academics': typeof AcademicsRoute
@@ -560,6 +580,7 @@ export interface FileRoutesByFullPath {
   '/publications': typeof PublicationsRoute
   '/quality-enhancement-cell': typeof QualityEnhancementCellRoute
   '/regulations': typeof RegulationsRoute
+  '/research': typeof ResearchRoute
   '/research-2': typeof Research2Route
   '/research-ethics-policy': typeof ResearchEthicsPolicyRoute
   '/results': typeof ResultsRoute
@@ -597,6 +618,8 @@ export interface FileRoutesByFullPath {
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
+  '/$': typeof SplatRoute
+  '/about': typeof AboutRoute
   '/about-cemet': typeof AboutCemetRoute
   '/academic-calendar': typeof AcademicCalendarRoute
   '/academics': typeof AcademicsRoute
@@ -643,6 +666,7 @@ export interface FileRoutesByTo {
   '/publications': typeof PublicationsRoute
   '/quality-enhancement-cell': typeof QualityEnhancementCellRoute
   '/regulations': typeof RegulationsRoute
+  '/research': typeof ResearchRoute
   '/research-2': typeof Research2Route
   '/research-ethics-policy': typeof ResearchEthicsPolicyRoute
   '/results': typeof ResultsRoute
@@ -681,6 +705,8 @@ export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
   '/_authenticated': typeof AuthenticatedRouteRouteWithChildren
+  '/$': typeof SplatRoute
+  '/about': typeof AboutRoute
   '/about-cemet': typeof AboutCemetRoute
   '/academic-calendar': typeof AcademicCalendarRoute
   '/academics': typeof AcademicsRoute
@@ -727,6 +753,7 @@ export interface FileRoutesById {
   '/publications': typeof PublicationsRoute
   '/quality-enhancement-cell': typeof QualityEnhancementCellRoute
   '/regulations': typeof RegulationsRoute
+  '/research': typeof ResearchRoute
   '/research-2': typeof Research2Route
   '/research-ethics-policy': typeof ResearchEthicsPolicyRoute
   '/results': typeof ResultsRoute
@@ -766,6 +793,8 @@ export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
   fullPaths:
     | '/'
+    | '/$'
+    | '/about'
     | '/about-cemet'
     | '/academic-calendar'
     | '/academics'
@@ -812,6 +841,7 @@ export interface FileRouteTypes {
     | '/publications'
     | '/quality-enhancement-cell'
     | '/regulations'
+    | '/research'
     | '/research-2'
     | '/research-ethics-policy'
     | '/results'
@@ -849,6 +879,8 @@ export interface FileRouteTypes {
   fileRoutesByTo: FileRoutesByTo
   to:
     | '/'
+    | '/$'
+    | '/about'
     | '/about-cemet'
     | '/academic-calendar'
     | '/academics'
@@ -895,6 +927,7 @@ export interface FileRouteTypes {
     | '/publications'
     | '/quality-enhancement-cell'
     | '/regulations'
+    | '/research'
     | '/research-2'
     | '/research-ethics-policy'
     | '/results'
@@ -932,6 +965,8 @@ export interface FileRouteTypes {
     | '__root__'
     | '/'
     | '/_authenticated'
+    | '/$'
+    | '/about'
     | '/about-cemet'
     | '/academic-calendar'
     | '/academics'
@@ -978,6 +1013,7 @@ export interface FileRouteTypes {
     | '/publications'
     | '/quality-enhancement-cell'
     | '/regulations'
+    | '/research'
     | '/research-2'
     | '/research-ethics-policy'
     | '/results'
@@ -1017,6 +1053,8 @@ export interface FileRouteTypes {
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   AuthenticatedRouteRoute: typeof AuthenticatedRouteRouteWithChildren
+  SplatRoute: typeof SplatRoute
+  AboutRoute: typeof AboutRoute
   AboutCemetRoute: typeof AboutCemetRoute
   AcademicCalendarRoute: typeof AcademicCalendarRoute
   AcademicsRoute: typeof AcademicsRoute
@@ -1063,6 +1101,7 @@ export interface RootRouteChildren {
   PublicationsRoute: typeof PublicationsRoute
   QualityEnhancementCellRoute: typeof QualityEnhancementCellRoute
   RegulationsRoute: typeof RegulationsRoute
+  ResearchRoute: typeof ResearchRoute
   Research2Route: typeof Research2Route
   ResearchEthicsPolicyRoute: typeof ResearchEthicsPolicyRoute
   ResultsRoute: typeof ResultsRoute
@@ -1102,11 +1141,25 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof IndexRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/$': {
+      id: '/$'
+      path: '/$'
+      fullPath: '/$'
+      preLoaderRoute: typeof SplatRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/_authenticated': {
       id: '/_authenticated'
       path: ''
       fullPath: '/'
       preLoaderRoute: typeof AuthenticatedRouteRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/about': {
+      id: '/about'
+      path: '/about'
+      fullPath: '/about'
+      preLoaderRoute: typeof AboutRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/about-cemet': {
@@ -1431,6 +1484,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof RegulationsRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/research': {
+      id: '/research'
+      path: '/research'
+      fullPath: '/research'
+      preLoaderRoute: typeof ResearchRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/research-2': {
       id: '/research-2'
       path: '/research-2'
@@ -1705,6 +1765,8 @@ const AuthenticatedRouteRouteWithChildren =
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   AuthenticatedRouteRoute: AuthenticatedRouteRouteWithChildren,
+  SplatRoute: SplatRoute,
+  AboutRoute: AboutRoute,
   AboutCemetRoute: AboutCemetRoute,
   AcademicCalendarRoute: AcademicCalendarRoute,
   AcademicsRoute: AcademicsRoute,
@@ -1752,6 +1814,7 @@ const rootRouteChildren: RootRouteChildren = {
   PublicationsRoute: PublicationsRoute,
   QualityEnhancementCellRoute: QualityEnhancementCellRoute,
   RegulationsRoute: RegulationsRoute,
+  ResearchRoute: ResearchRoute,
   Research2Route: Research2Route,
   ResearchEthicsPolicyRoute: ResearchEthicsPolicyRoute,
   ResultsRoute: ResultsRoute,

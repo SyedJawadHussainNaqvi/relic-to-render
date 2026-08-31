@@ -1,5 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { ArchivedPage } from "@/components/site/ArchivedPage";
+import { PortalCta } from "@/components/site/PortalCta";
+import { StudentServices } from "@/components/site/StudentServices";
 
 export const Route = createFileRoute("/students")({
   head: () => ({
@@ -15,5 +17,17 @@ export const Route = createFileRoute("/students")({
     ],
     links: [{ rel: "canonical", href: "https://www.duet.edu.pk/students" }],
   }),
-  component: () => <ArchivedPage path="/students" />,
+  component: StudentsPage,
 });
+
+function StudentsPage() {
+  return (
+    <>
+      <ArchivedPage path="/students" />
+      <div className="mx-auto max-w-[1200px] space-y-12 px-4 pb-12">
+        <PortalCta portals={["student", "library", "admissions"]} heading="Student portals" />
+        <StudentServices />
+      </div>
+    </>
+  );
+}

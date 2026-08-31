@@ -1,5 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { ArchivedPage } from "@/components/site/ArchivedPage";
+import { PortalCta } from "@/components/site/PortalCta";
 
 const URL = "https://www.duet.edu.pk/admissions";
 const TITLE = "Admissions — DUET Karachi";
@@ -89,5 +90,16 @@ export const Route = createFileRoute("/admissions")({
       },
     ],
   }),
-  component: () => <ArchivedPage path="/admissions" />,
+  component: AdmissionsPage,
 });
+
+function AdmissionsPage() {
+  return (
+    <>
+      <ArchivedPage path="/admissions" />
+      <div className="mx-auto max-w-[1200px] px-4 pb-12">
+        <PortalCta portals={["admissions", "student", "library"]} heading="Apply & manage your application" />
+      </div>
+    </>
+  );
+}
